@@ -78,7 +78,17 @@
             this.labelInToCmOutput = new System.Windows.Forms.Label();
             this.textBoxInchInput = new System.Windows.Forms.TextBox();
             this.labelInToCm = new System.Windows.Forms.Label();
-            this.buttonClearAll = new System.Windows.Forms.Button();
+            this.buttonClearSeriesResistance = new System.Windows.Forms.Button();
+            this.buttonClearSeriesCapacitance = new System.Windows.Forms.Button();
+            this.buttonClearHypotenuse = new System.Windows.Forms.Button();
+            this.buttonClearLeapYear = new System.Windows.Forms.Button();
+            this.buttonClearWithTax = new System.Windows.Forms.Button();
+            this.buttonClearInToCm = new System.Windows.Forms.Button();
+            this.buttonClearParallelResistance = new System.Windows.Forms.Button();
+            this.buttonClearParallelCapacitance = new System.Windows.Forms.Button();
+            this.buttonClearAreaOfCircle = new System.Windows.Forms.Button();
+            this.buttonClearFactorial = new System.Windows.Forms.Button();
+            this.buttonClearLbToKg = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelSeriesResistance
@@ -553,17 +563,138 @@
             this.labelInToCm.TabIndex = 50;
             this.labelInToCm.Text = "In to Cm";
             // 
-            // buttonClearAll
+            // buttonClearSeriesResistance
             // 
-            this.buttonClearAll.BackColor = System.Drawing.Color.Red;
-            this.buttonClearAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonClearAll.ForeColor = System.Drawing.Color.White;
-            this.buttonClearAll.Location = new System.Drawing.Point(476, 533);
-            this.buttonClearAll.Name = "buttonClearAll";
-            this.buttonClearAll.Size = new System.Drawing.Size(75, 23);
-            this.buttonClearAll.TabIndex = 55;
-            this.buttonClearAll.Text = "Clear All";
-            this.buttonClearAll.UseVisualStyleBackColor = false;
+            this.buttonClearSeriesResistance.BackColor = System.Drawing.Color.Red;
+            this.buttonClearSeriesResistance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClearSeriesResistance.ForeColor = System.Drawing.Color.White;
+            this.buttonClearSeriesResistance.Location = new System.Drawing.Point(148, 57);
+            this.buttonClearSeriesResistance.Name = "buttonClearSeriesResistance";
+            this.buttonClearSeriesResistance.Size = new System.Drawing.Size(75, 23);
+            this.buttonClearSeriesResistance.TabIndex = 55;
+            this.buttonClearSeriesResistance.Text = "Clear";
+            this.buttonClearSeriesResistance.UseVisualStyleBackColor = false;
+            this.buttonClearSeriesResistance.Click += new System.EventHandler(this.buttonClearSeriesResistance_Click);
+            // 
+            // buttonClearSeriesCapacitance
+            // 
+            this.buttonClearSeriesCapacitance.BackColor = System.Drawing.Color.Red;
+            this.buttonClearSeriesCapacitance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClearSeriesCapacitance.ForeColor = System.Drawing.Color.White;
+            this.buttonClearSeriesCapacitance.Location = new System.Drawing.Point(148, 141);
+            this.buttonClearSeriesCapacitance.Name = "buttonClearSeriesCapacitance";
+            this.buttonClearSeriesCapacitance.Size = new System.Drawing.Size(75, 23);
+            this.buttonClearSeriesCapacitance.TabIndex = 56;
+            this.buttonClearSeriesCapacitance.Text = "Clear";
+            this.buttonClearSeriesCapacitance.UseVisualStyleBackColor = false;
+            // 
+            // buttonClearHypotenuse
+            // 
+            this.buttonClearHypotenuse.BackColor = System.Drawing.Color.Red;
+            this.buttonClearHypotenuse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClearHypotenuse.ForeColor = System.Drawing.Color.White;
+            this.buttonClearHypotenuse.Location = new System.Drawing.Point(148, 227);
+            this.buttonClearHypotenuse.Name = "buttonClearHypotenuse";
+            this.buttonClearHypotenuse.Size = new System.Drawing.Size(75, 23);
+            this.buttonClearHypotenuse.TabIndex = 57;
+            this.buttonClearHypotenuse.Text = "Clear";
+            this.buttonClearHypotenuse.UseVisualStyleBackColor = false;
+            // 
+            // buttonClearLeapYear
+            // 
+            this.buttonClearLeapYear.BackColor = System.Drawing.Color.Red;
+            this.buttonClearLeapYear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClearLeapYear.ForeColor = System.Drawing.Color.White;
+            this.buttonClearLeapYear.Location = new System.Drawing.Point(148, 311);
+            this.buttonClearLeapYear.Name = "buttonClearLeapYear";
+            this.buttonClearLeapYear.Size = new System.Drawing.Size(75, 23);
+            this.buttonClearLeapYear.TabIndex = 58;
+            this.buttonClearLeapYear.Text = "Clear";
+            this.buttonClearLeapYear.UseVisualStyleBackColor = false;
+            // 
+            // buttonClearWithTax
+            // 
+            this.buttonClearWithTax.BackColor = System.Drawing.Color.Red;
+            this.buttonClearWithTax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClearWithTax.ForeColor = System.Drawing.Color.White;
+            this.buttonClearWithTax.Location = new System.Drawing.Point(148, 402);
+            this.buttonClearWithTax.Name = "buttonClearWithTax";
+            this.buttonClearWithTax.Size = new System.Drawing.Size(75, 23);
+            this.buttonClearWithTax.TabIndex = 59;
+            this.buttonClearWithTax.Text = "Clear";
+            this.buttonClearWithTax.UseVisualStyleBackColor = false;
+            // 
+            // buttonClearInToCm
+            // 
+            this.buttonClearInToCm.BackColor = System.Drawing.Color.Red;
+            this.buttonClearInToCm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClearInToCm.ForeColor = System.Drawing.Color.White;
+            this.buttonClearInToCm.Location = new System.Drawing.Point(148, 489);
+            this.buttonClearInToCm.Name = "buttonClearInToCm";
+            this.buttonClearInToCm.Size = new System.Drawing.Size(75, 23);
+            this.buttonClearInToCm.TabIndex = 60;
+            this.buttonClearInToCm.Text = "Clear";
+            this.buttonClearInToCm.UseVisualStyleBackColor = false;
+            // 
+            // buttonClearParallelResistance
+            // 
+            this.buttonClearParallelResistance.BackColor = System.Drawing.Color.Red;
+            this.buttonClearParallelResistance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClearParallelResistance.ForeColor = System.Drawing.Color.White;
+            this.buttonClearParallelResistance.Location = new System.Drawing.Point(435, 57);
+            this.buttonClearParallelResistance.Name = "buttonClearParallelResistance";
+            this.buttonClearParallelResistance.Size = new System.Drawing.Size(75, 23);
+            this.buttonClearParallelResistance.TabIndex = 61;
+            this.buttonClearParallelResistance.Text = "Clear";
+            this.buttonClearParallelResistance.UseVisualStyleBackColor = false;
+            // 
+            // buttonClearParallelCapacitance
+            // 
+            this.buttonClearParallelCapacitance.BackColor = System.Drawing.Color.Red;
+            this.buttonClearParallelCapacitance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClearParallelCapacitance.ForeColor = System.Drawing.Color.White;
+            this.buttonClearParallelCapacitance.Location = new System.Drawing.Point(435, 141);
+            this.buttonClearParallelCapacitance.Name = "buttonClearParallelCapacitance";
+            this.buttonClearParallelCapacitance.Size = new System.Drawing.Size(75, 23);
+            this.buttonClearParallelCapacitance.TabIndex = 62;
+            this.buttonClearParallelCapacitance.Text = "Clear";
+            this.buttonClearParallelCapacitance.UseVisualStyleBackColor = false;
+            // 
+            // buttonClearAreaOfCircle
+            // 
+            this.buttonClearAreaOfCircle.BackColor = System.Drawing.Color.Red;
+            this.buttonClearAreaOfCircle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClearAreaOfCircle.ForeColor = System.Drawing.Color.White;
+            this.buttonClearAreaOfCircle.Location = new System.Drawing.Point(435, 227);
+            this.buttonClearAreaOfCircle.Name = "buttonClearAreaOfCircle";
+            this.buttonClearAreaOfCircle.Size = new System.Drawing.Size(75, 23);
+            this.buttonClearAreaOfCircle.TabIndex = 63;
+            this.buttonClearAreaOfCircle.Text = "Clear";
+            this.buttonClearAreaOfCircle.UseVisualStyleBackColor = false;
+            // 
+            // buttonClearFactorial
+            // 
+            this.buttonClearFactorial.BackColor = System.Drawing.Color.Red;
+            this.buttonClearFactorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClearFactorial.ForeColor = System.Drawing.Color.White;
+            this.buttonClearFactorial.Location = new System.Drawing.Point(435, 311);
+            this.buttonClearFactorial.Name = "buttonClearFactorial";
+            this.buttonClearFactorial.Size = new System.Drawing.Size(75, 23);
+            this.buttonClearFactorial.TabIndex = 64;
+            this.buttonClearFactorial.Text = "Clear";
+            this.buttonClearFactorial.UseVisualStyleBackColor = false;
+            // 
+            // buttonClearLbToKg
+            // 
+            this.buttonClearLbToKg.BackColor = System.Drawing.Color.Red;
+            this.buttonClearLbToKg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClearLbToKg.ForeColor = System.Drawing.Color.White;
+            this.buttonClearLbToKg.Location = new System.Drawing.Point(435, 402);
+            this.buttonClearLbToKg.Name = "buttonClearLbToKg";
+            this.buttonClearLbToKg.Size = new System.Drawing.Size(75, 23);
+            this.buttonClearLbToKg.TabIndex = 65;
+            this.buttonClearLbToKg.Text = "Clear";
+            this.buttonClearLbToKg.UseVisualStyleBackColor = false;
             // 
             // FormMain
             // 
@@ -571,7 +702,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(572, 568);
-            this.Controls.Add(this.buttonClearAll);
+            this.Controls.Add(this.buttonClearLbToKg);
+            this.Controls.Add(this.buttonClearFactorial);
+            this.Controls.Add(this.buttonClearAreaOfCircle);
+            this.Controls.Add(this.buttonClearParallelCapacitance);
+            this.Controls.Add(this.buttonClearParallelResistance);
+            this.Controls.Add(this.buttonClearInToCm);
+            this.Controls.Add(this.buttonClearWithTax);
+            this.Controls.Add(this.buttonClearLeapYear);
+            this.Controls.Add(this.buttonClearHypotenuse);
+            this.Controls.Add(this.buttonClearSeriesCapacitance);
+            this.Controls.Add(this.buttonClearSeriesResistance);
             this.Controls.Add(this.buttonIntoCm);
             this.Controls.Add(this.labelInToCmOutput);
             this.Controls.Add(this.textBoxInchInput);
@@ -682,7 +823,17 @@
         private System.Windows.Forms.Label labelInToCmOutput;
         private System.Windows.Forms.TextBox textBoxInchInput;
         private System.Windows.Forms.Label labelInToCm;
-        private System.Windows.Forms.Button buttonClearAll;
+        private System.Windows.Forms.Button buttonClearSeriesResistance;
+        private System.Windows.Forms.Button buttonClearSeriesCapacitance;
+        private System.Windows.Forms.Button buttonClearHypotenuse;
+        private System.Windows.Forms.Button buttonClearLeapYear;
+        private System.Windows.Forms.Button buttonClearWithTax;
+        private System.Windows.Forms.Button buttonClearInToCm;
+        private System.Windows.Forms.Button buttonClearParallelResistance;
+        private System.Windows.Forms.Button buttonClearParallelCapacitance;
+        private System.Windows.Forms.Button buttonClearAreaOfCircle;
+        private System.Windows.Forms.Button buttonClearFactorial;
+        private System.Windows.Forms.Button buttonClearLbToKg;
     }
 }
 

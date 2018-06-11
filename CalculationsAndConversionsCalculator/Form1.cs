@@ -72,5 +72,13 @@ namespace CalculationsAndConversionsCalculator
             return false;
 
         }
+
+        private void buttonClearSeriesResistance_Click(object sender, EventArgs e)
+        {
+            textBoxSeriesResistanceValue1.Clear();
+            textBoxSeriesResistanceValue2.Clear();
+            labelSeriesResistanceOutput.Text = "";
+            textBoxSeriesResistanceValue1.Focus();
+        }
     }
 }
