@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace CalculationsAndConversionsCalculator
 {
@@ -10,28 +9,10 @@ namespace CalculationsAndConversionsCalculator
             InitializeComponent();
         }
 
-        private void buttonSeriesResistance_Click(object sender, EventArgs e)
-        {
-            if (IsMissingValidate(textBoxSeriesResistanceValue1)) return;
-            if (IsNumberValidate(textBoxSeriesResistanceValue1)) return;
-            if (IsZeroOrLess(textBoxSeriesResistanceValue1)) return;
-
-            if (IsMissingValidate(textBoxSeriesResistanceValue2)) return;
-            if (IsNumberValidate(textBoxSeriesResistanceValue2)) return;
-            if (IsZeroOrLess(textBoxSeriesResistanceValue2)) return;
-
-            double.TryParse(textBoxSeriesResistanceValue1.Text, out double sr1);
-            double.TryParse(textBoxSeriesResistanceValue2.Text, out double sr2);
-
-            var srOutput = $"{sr1 + sr2:F}";
-            labelSeriesResistanceOutput.Text = "= " + srOutput;
-
-        }
-
         //METHOD CHECKS IF A NUMBER
-        private bool IsNumberValidate(TextBox textBox)
+        private bool IsNumberValidate(string text, TextBox textBox)
         {
-            var isNumber = double.TryParse(textBox.Text, out var inputResult);
+            var isNumber = double.TryParse(text, out var inputResult);
             if (!isNumber)
             {
                 MessageBox.Show("Not A Number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -44,9 +25,9 @@ namespace CalculationsAndConversionsCalculator
         }
 
         //CHECKS IF ZERO OR LESS
-        private bool IsZeroOrLess(TextBox textBox)
+        private bool IsZeroOrLess(string text, TextBox textBox)
         {
-            var checker = double.TryParse(textBox.Text, out var number);
+            var checker = double.TryParse(text, out var number);
 
             if (checker && number <= 0)
             {
@@ -73,12 +54,62 @@ namespace CalculationsAndConversionsCalculator
 
         }
 
-        private void buttonClearSeriesResistance_Click(object sender, EventArgs e)
+        private void buttonCircuitResistanceClear_Click(object sender, System.EventArgs e)
         {
-            textBoxSeriesResistanceValue1.Clear();
-            textBoxSeriesResistanceValue2.Clear();
-            labelSeriesResistanceOutput.Text = "";
-            textBoxSeriesResistanceValue1.Focus();
+            textBoxResistorSeries.Clear();
+            textBoxResistorParallel.Clear();
+            textBoxInductorSeries.Clear();
+            textBoxInductorParallel.Clear();
+            textBoxCapacitorSeries.Clear();
+            textBoxCapacitorParallel.Clear();
+            labelCircuitOutput.Text = "";
+            textBoxResistorSeries.Focus();
+        }
+
+        private void buttonCircuitResistanceCalculate_Click(object sender, System.EventArgs e)
+        {
+            string[] rsInput = textBoxResistorSeries.Lines;
+            string[] rpInput = textBoxResistorParallel.Lines;
+
+            double rs = 0;
+            double rp = 0;
+
+            //RESISTANCE SERIES INPUT
+            foreach (var t in rsInput)
+            {
+                if (IsNumberValidate(t, textBoxResistorSeries)) break;
+                if (IsZeroOrLess(t, textBoxResistorSeries)) break;
+
+                double.TryParse(t, out double rsOutPut);
+
+                rs += rsOutPut;
+            }
+
+            //RESISTANCE PARALLEL INPUT
+            foreach (var t in rpInput)
+            {
+                if (IsNumberValidate(t, textBoxResistorParallel)) break;
+                if (IsZeroOrLess(t, textBoxResistorParallel)) break;
+
+                if (string.IsNullOrEmpty(t)) continue;
+                double.TryParse(t, out double rpOutPut);
+                rp += (1 / rpOutPut);
+            }
+
+            if (rp != 0)
+            {
+                rp = 1 / rp;
+            }
+
+            var totalRsRp = (rs + rp).ToString("F");
+
+            labelCircuitOutput.Text = totalRsRp + " ohms";
+        }
+
+        private void button1_Click(object sender, System.EventArgs e)
+        {
+            if (panelCircuit.Visible) panelCircuit.Hide();
+            else panelCircuit.Show();
         }
     }
 }
