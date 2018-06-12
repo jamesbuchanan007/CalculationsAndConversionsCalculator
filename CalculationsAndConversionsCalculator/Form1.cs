@@ -68,42 +68,121 @@ namespace CalculationsAndConversionsCalculator
 
         private void buttonCircuitResistanceCalculate_Click(object sender, System.EventArgs e)
         {
-            string[] rsInput = textBoxResistorSeries.Lines;
-            string[] rpInput = textBoxResistorParallel.Lines;
+            string[] resSeriesInput = textBoxResistorSeries.Lines;
+            string[] resParallelInput = textBoxResistorParallel.Lines;
+            string[] indSeriesInput = textBoxInductorSeries.Lines;
+            string[] indParallelInput = textBoxInductorParallel.Lines;
+            string[] capSeriesInput = textBoxCapacitorSeries.Lines;
+            string[] capParallelInput = textBoxCapacitorParallel.Lines;
 
-            double rs = 0;
-            double rp = 0;
+            double resSeries = 0;
+            double resParallel = 0;
+            double indSeries = 0;
+            double indParallel = 0;
+            double capSeries = 0;
+            double capParallel = 0;
 
             //RESISTANCE SERIES INPUT
-            foreach (var t in rsInput)
+            foreach (var t in resSeriesInput)
             {
+                if (string.IsNullOrEmpty(t)) continue;
                 if (IsNumberValidate(t, textBoxResistorSeries)) break;
                 if (IsZeroOrLess(t, textBoxResistorSeries)) break;
 
-                double.TryParse(t, out double rsOutPut);
+                double.TryParse(t, out double resSeriesOutPut);
 
-                rs += rsOutPut;
+                resSeries += resSeriesOutPut;
             }
 
             //RESISTANCE PARALLEL INPUT
-            foreach (var t in rpInput)
+            foreach (var t in resParallelInput)
             {
+                if (string.IsNullOrEmpty(t)) continue;
                 if (IsNumberValidate(t, textBoxResistorParallel)) break;
                 if (IsZeroOrLess(t, textBoxResistorParallel)) break;
 
                 if (string.IsNullOrEmpty(t)) continue;
-                double.TryParse(t, out double rpOutPut);
-                rp += (1 / rpOutPut);
+                double.TryParse(t, out double resParallelOutPut);
+                resParallel += (1 / resParallelOutPut);
             }
 
-            if (rp != 0)
+            if (resParallel != 0)
             {
-                rp = 1 / rp;
+                resParallel = 1 / resParallel;
             }
 
-            var totalRsRp = (rs + rp).ToString("F");
+            //INDUCTOR SERIES INPUT
+            foreach (var t in indSeriesInput)
+            {
+                if (string.IsNullOrEmpty(t)) continue;
+                if (IsNumberValidate(t, textBoxInductorSeries)) break;
+                if (IsZeroOrLess(t, textBoxInductorSeries)) break;
 
-            labelCircuitOutput.Text = totalRsRp + " ohms";
+                double.TryParse(t, out double indSeriesOutPut);
+
+                indSeries += indSeriesOutPut;
+            }
+
+            //INDUCTOR PARALLEL INPUT
+            foreach (var t in indParallelInput)
+            {
+                if (string.IsNullOrEmpty(t)) continue;
+                if (IsNumberValidate(t, textBoxInductorParallel)) break;
+                if (IsZeroOrLess(t, textBoxInductorParallel)) break;
+
+                if (string.IsNullOrEmpty(t)) continue;
+                double.TryParse(t, out double indParallelOutPut);
+                indParallel += (1 / indParallelOutPut);
+            }
+
+            if (indParallel != 0)
+            {
+                indParallel = 1 / indParallel;
+            }
+
+            //CAPACITOR SERIES INPUT
+            foreach (var t in capSeriesInput)
+            {
+                if (IsNumberValidate(t, textBoxCapacitorSeries)) break;
+                if (IsZeroOrLess(t, textBoxCapacitorSeries)) break;
+                if (string.IsNullOrEmpty(t)) continue;
+
+                if (string.IsNullOrEmpty(t)) continue;
+                double.TryParse(t, out double capSeriesOutPut);
+                capSeries += (1 / capSeriesOutPut);
+
+            }
+
+            if (capSeries != 0)
+            {
+                capSeries = 1 / capSeries;
+            }
+
+
+            //CAPACITOR PARALLEL INPUT
+            foreach (var t in capParallelInput)
+            {
+                if (IsNumberValidate(t, textBoxCapacitorParallel)) break;
+                if (IsZeroOrLess(t, textBoxCapacitorParallel)) break;
+
+                double.TryParse(t, out double capParallelOutPut);
+
+                capParallel += capParallelOutPut;
+            }
+
+
+
+
+            //TOTAL
+            var totalRsRpIsIpCsCp = (
+                resSeries +
+                resParallel +
+                indSeries +
+                indParallel +
+                capSeries +
+                capParallel).ToString("F");
+
+            labelCircuitOutput.Text = totalRsRpIsIpCsCp + " Ohms";
         }
 
         private void button1_Click(object sender, System.EventArgs e)
