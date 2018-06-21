@@ -29,55 +29,55 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.buttonClearAreaOfCircle = new System.Windows.Forms.Button();
-            this.buttonClearHypotenuse = new System.Windows.Forms.Button();
-            this.buttonAreaOfCircle = new System.Windows.Forms.Button();
-            this.textBoxAreaofCircleDiameter = new System.Windows.Forms.TextBox();
-            this.buttonHypotenuse = new System.Windows.Forms.Button();
+            this.buttonCircleClear = new System.Windows.Forms.Button();
+            this.buttonHypotenuseClear = new System.Windows.Forms.Button();
+            this.buttonCircleCalculate = new System.Windows.Forms.Button();
+            this.textBoxAreaofCircleDiameterInput = new System.Windows.Forms.TextBox();
+            this.buttonHypotenuseCalculate = new System.Windows.Forms.Button();
             this.labelHypotenuseOutput = new System.Windows.Forms.Label();
             this.textBoxHypotenuseSideA = new System.Windows.Forms.TextBox();
-            this.buttonCircuitryExit = new System.Windows.Forms.Button();
-            this.buttonCircuitryHome = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.buttonMathFormulaFormExit = new System.Windows.Forms.Button();
+            this.buttonMathFormulaFormHome = new System.Windows.Forms.Button();
+            this.textBoxFractionAdditionA = new System.Windows.Forms.TextBox();
+            this.textBoxFractionAdditionB = new System.Windows.Forms.TextBox();
+            this.textBoxFractionAdditionC = new System.Windows.Forms.TextBox();
+            this.textBoxFractionAdditionD = new System.Windows.Forms.TextBox();
+            this.textBoxFractionAdditionDenominator = new System.Windows.Forms.TextBox();
+            this.textBoxFractionAdditionNumerator = new System.Windows.Forms.TextBox();
+            this.textBoxFractionsAdditionMixedWholeNumber = new System.Windows.Forms.TextBox();
+            this.textBoxFractionsAdditionMixedDenominator = new System.Windows.Forms.TextBox();
+            this.textBoxFractionsAdditionMixedNumerator = new System.Windows.Forms.TextBox();
             this.labelFractionAddition = new System.Windows.Forms.Label();
             this.labelFractionSubtraction = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBoxFractionsSubtractionMixedDenominator = new System.Windows.Forms.TextBox();
+            this.textBoxFractionsSubtractionMixedNumerator = new System.Windows.Forms.TextBox();
+            this.textBoxFractionsSubtractionMixedWholeNumber = new System.Windows.Forms.TextBox();
+            this.textBoxFractionSubtractionDenominator = new System.Windows.Forms.TextBox();
+            this.textBoxFractionSubtractionNumerator = new System.Windows.Forms.TextBox();
+            this.textBoxFractionSubtractionD = new System.Windows.Forms.TextBox();
+            this.textBoxFractionSubtractionC = new System.Windows.Forms.TextBox();
+            this.textBoxFractionSubtractionB = new System.Windows.Forms.TextBox();
+            this.textBoxFractionSubtractionA = new System.Windows.Forms.TextBox();
             this.labelFractionMultiplying = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.textBoxFractionsMultiplyingMixedDenominator = new System.Windows.Forms.TextBox();
+            this.textBoxFractionsMultiplyingMixedNumerator = new System.Windows.Forms.TextBox();
+            this.textBoxFractionsMultiplyingMixedWholeNumber = new System.Windows.Forms.TextBox();
+            this.textBoxFractionMultiplyingDenominator = new System.Windows.Forms.TextBox();
+            this.textBoxFractionMultiplyingNumerator = new System.Windows.Forms.TextBox();
+            this.textBoxFractionMultiplyingD = new System.Windows.Forms.TextBox();
+            this.textBoxFractionMultiplyingC = new System.Windows.Forms.TextBox();
+            this.textBoxFractionMultiplyingB = new System.Windows.Forms.TextBox();
+            this.textBoxFractionMultiplyingA = new System.Windows.Forms.TextBox();
             this.labelFractionDividing = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
+            this.textBoxFractionsDividingMixedDenominator = new System.Windows.Forms.TextBox();
+            this.textBoxFractionsDividingMixedNumerator = new System.Windows.Forms.TextBox();
+            this.textBoxFractionsDividingMixedWholeNumber = new System.Windows.Forms.TextBox();
+            this.textBoxFractionDividingDenominator = new System.Windows.Forms.TextBox();
+            this.textBoxFractionDividingNumerator = new System.Windows.Forms.TextBox();
+            this.textBoxFractionDividingD = new System.Windows.Forms.TextBox();
+            this.textBoxFractionDividingC = new System.Windows.Forms.TextBox();
+            this.textBoxFractionDividingB = new System.Windows.Forms.TextBox();
+            this.textBoxFractionDividingA = new System.Windows.Forms.TextBox();
             this.labelFractionPlusSign = new System.Windows.Forms.Label();
             this.labelFractionMinusSign = new System.Windows.Forms.Label();
             this.labelFractionTimesSign = new System.Windows.Forms.Label();
@@ -86,47 +86,47 @@
             this.labelFractionEqualSign2 = new System.Windows.Forms.Label();
             this.labelFractionEqualSign3 = new System.Windows.Forms.Label();
             this.labelFractionEqualSign4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonFractionsCalculate = new System.Windows.Forms.Button();
+            this.buttonFractionsClear = new System.Windows.Forms.Button();
             this.groupBoxFractions = new System.Windows.Forms.GroupBox();
             this.groupBoxHypotenuse = new System.Windows.Forms.GroupBox();
             this.groupBoxCircle = new System.Windows.Forms.GroupBox();
             this.labelAreaOfCircleDiameter = new System.Windows.Forms.Label();
             this.labelCircleArea = new System.Windows.Forms.Label();
-            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.textBoxCircleAreaOutput = new System.Windows.Forms.TextBox();
             this.labelCircleCircumference = new System.Windows.Forms.Label();
-            this.textBox38 = new System.Windows.Forms.TextBox();
+            this.textBoxCircleCircumberenceOutput = new System.Windows.Forms.TextBox();
             this.groupBoxSphere = new System.Windows.Forms.GroupBox();
             this.labelSphereSurfaceArea = new System.Windows.Forms.Label();
-            this.textBox39 = new System.Windows.Forms.TextBox();
+            this.textBoxSphereSurfaceAreaOutput = new System.Windows.Forms.TextBox();
             this.labelSphereVolume = new System.Windows.Forms.Label();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.textBoxSphereVolumeOutput = new System.Windows.Forms.TextBox();
+            this.labelSphereDiameter = new System.Windows.Forms.Label();
+            this.textBoxSphereDiameterInput = new System.Windows.Forms.TextBox();
+            this.buttonSphereCalculate = new System.Windows.Forms.Button();
+            this.buttonSphereClear = new System.Windows.Forms.Button();
             this.groupBoxCylinder = new System.Windows.Forms.GroupBox();
             this.labelCylinderLateralArea = new System.Windows.Forms.Label();
-            this.textBox42 = new System.Windows.Forms.TextBox();
+            this.textBoxCylinderLateralAreaOutput = new System.Windows.Forms.TextBox();
             this.labelCylinderVolume = new System.Windows.Forms.Label();
-            this.textBox43 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox44 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.textBoxCylinderVolumeOutput = new System.Windows.Forms.TextBox();
+            this.labelCylinderDiameter = new System.Windows.Forms.Label();
+            this.textBoxCylinderDiameterInput = new System.Windows.Forms.TextBox();
+            this.buttonCylinderCalculate = new System.Windows.Forms.Button();
+            this.buttonCylinderClear = new System.Windows.Forms.Button();
             this.labelCylinderTotalSurfaceArea = new System.Windows.Forms.Label();
-            this.textBox45 = new System.Windows.Forms.TextBox();
+            this.textBoxCylinderTotalSurfaceAreaOutput = new System.Windows.Forms.TextBox();
             this.groupBoxCone = new System.Windows.Forms.GroupBox();
             this.labelConeTotalSurfaceAre = new System.Windows.Forms.Label();
-            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.textBoxConeTotalSurfaceAreaOutput = new System.Windows.Forms.TextBox();
             this.labelConeLateralArea = new System.Windows.Forms.Label();
-            this.textBox47 = new System.Windows.Forms.TextBox();
+            this.textBoxConeLateralAreaOutput = new System.Windows.Forms.TextBox();
             this.labelConeVolume = new System.Windows.Forms.Label();
-            this.textBox48 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox49 = new System.Windows.Forms.TextBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.textBoxConeVolumeOutput = new System.Windows.Forms.TextBox();
+            this.labelConeDiameter = new System.Windows.Forms.Label();
+            this.textBoxConeDiameterInput = new System.Windows.Forms.TextBox();
+            this.buttonConeCalculate = new System.Windows.Forms.Button();
+            this.buttonConeClear = new System.Windows.Forms.Button();
             this.textBoxHypotenuseSideB = new System.Windows.Forms.TextBox();
             this.textBoxHypotenuseSideC = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
@@ -138,62 +138,62 @@
             this.groupBoxCone.SuspendLayout();
             this.SuspendLayout();
             // 
-            // buttonClearAreaOfCircle
+            // buttonCircleClear
             // 
-            this.buttonClearAreaOfCircle.BackColor = System.Drawing.Color.Red;
-            this.buttonClearAreaOfCircle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonClearAreaOfCircle.ForeColor = System.Drawing.Color.White;
-            this.buttonClearAreaOfCircle.Location = new System.Drawing.Point(87, 138);
-            this.buttonClearAreaOfCircle.Name = "buttonClearAreaOfCircle";
-            this.buttonClearAreaOfCircle.Size = new System.Drawing.Size(75, 23);
-            this.buttonClearAreaOfCircle.TabIndex = 74;
-            this.buttonClearAreaOfCircle.Text = "Clear";
-            this.buttonClearAreaOfCircle.UseVisualStyleBackColor = false;
+            this.buttonCircleClear.BackColor = System.Drawing.Color.Red;
+            this.buttonCircleClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCircleClear.ForeColor = System.Drawing.Color.White;
+            this.buttonCircleClear.Location = new System.Drawing.Point(87, 138);
+            this.buttonCircleClear.Name = "buttonCircleClear";
+            this.buttonCircleClear.Size = new System.Drawing.Size(75, 23);
+            this.buttonCircleClear.TabIndex = 74;
+            this.buttonCircleClear.Text = "Clear";
+            this.buttonCircleClear.UseVisualStyleBackColor = false;
             // 
-            // buttonClearHypotenuse
+            // buttonHypotenuseClear
             // 
-            this.buttonClearHypotenuse.BackColor = System.Drawing.Color.Red;
-            this.buttonClearHypotenuse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonClearHypotenuse.ForeColor = System.Drawing.Color.White;
-            this.buttonClearHypotenuse.Location = new System.Drawing.Point(168, 45);
-            this.buttonClearHypotenuse.Name = "buttonClearHypotenuse";
-            this.buttonClearHypotenuse.Size = new System.Drawing.Size(75, 23);
-            this.buttonClearHypotenuse.TabIndex = 73;
-            this.buttonClearHypotenuse.Text = "Clear";
-            this.buttonClearHypotenuse.UseVisualStyleBackColor = false;
+            this.buttonHypotenuseClear.BackColor = System.Drawing.Color.Red;
+            this.buttonHypotenuseClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHypotenuseClear.ForeColor = System.Drawing.Color.White;
+            this.buttonHypotenuseClear.Location = new System.Drawing.Point(168, 45);
+            this.buttonHypotenuseClear.Name = "buttonHypotenuseClear";
+            this.buttonHypotenuseClear.Size = new System.Drawing.Size(75, 23);
+            this.buttonHypotenuseClear.TabIndex = 73;
+            this.buttonHypotenuseClear.Text = "Clear";
+            this.buttonHypotenuseClear.UseVisualStyleBackColor = false;
             // 
-            // buttonAreaOfCircle
+            // buttonCircleCalculate
             // 
-            this.buttonAreaOfCircle.BackColor = System.Drawing.Color.Lime;
-            this.buttonAreaOfCircle.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonAreaOfCircle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAreaOfCircle.ForeColor = System.Drawing.Color.Black;
-            this.buttonAreaOfCircle.Location = new System.Drawing.Point(6, 138);
-            this.buttonAreaOfCircle.Name = "buttonAreaOfCircle";
-            this.buttonAreaOfCircle.Size = new System.Drawing.Size(75, 23);
-            this.buttonAreaOfCircle.TabIndex = 72;
-            this.buttonAreaOfCircle.Text = "Calculate";
-            this.buttonAreaOfCircle.UseVisualStyleBackColor = false;
+            this.buttonCircleCalculate.BackColor = System.Drawing.Color.Lime;
+            this.buttonCircleCalculate.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonCircleCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCircleCalculate.ForeColor = System.Drawing.Color.Black;
+            this.buttonCircleCalculate.Location = new System.Drawing.Point(6, 138);
+            this.buttonCircleCalculate.Name = "buttonCircleCalculate";
+            this.buttonCircleCalculate.Size = new System.Drawing.Size(75, 23);
+            this.buttonCircleCalculate.TabIndex = 72;
+            this.buttonCircleCalculate.Text = "Calculate";
+            this.buttonCircleCalculate.UseVisualStyleBackColor = false;
             // 
-            // textBoxAreaofCircleDiameter
+            // textBoxAreaofCircleDiameterInput
             // 
-            this.textBoxAreaofCircleDiameter.Location = new System.Drawing.Point(6, 34);
-            this.textBoxAreaofCircleDiameter.Name = "textBoxAreaofCircleDiameter";
-            this.textBoxAreaofCircleDiameter.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAreaofCircleDiameter.TabIndex = 70;
+            this.textBoxAreaofCircleDiameterInput.Location = new System.Drawing.Point(6, 34);
+            this.textBoxAreaofCircleDiameterInput.Name = "textBoxAreaofCircleDiameterInput";
+            this.textBoxAreaofCircleDiameterInput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxAreaofCircleDiameterInput.TabIndex = 70;
             // 
-            // buttonHypotenuse
+            // buttonHypotenuseCalculate
             // 
-            this.buttonHypotenuse.BackColor = System.Drawing.Color.Lime;
-            this.buttonHypotenuse.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonHypotenuse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHypotenuse.ForeColor = System.Drawing.Color.Black;
-            this.buttonHypotenuse.Location = new System.Drawing.Point(7, 45);
-            this.buttonHypotenuse.Name = "buttonHypotenuse";
-            this.buttonHypotenuse.Size = new System.Drawing.Size(75, 23);
-            this.buttonHypotenuse.TabIndex = 68;
-            this.buttonHypotenuse.Text = "Calculate";
-            this.buttonHypotenuse.UseVisualStyleBackColor = false;
+            this.buttonHypotenuseCalculate.BackColor = System.Drawing.Color.Lime;
+            this.buttonHypotenuseCalculate.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonHypotenuseCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHypotenuseCalculate.ForeColor = System.Drawing.Color.Black;
+            this.buttonHypotenuseCalculate.Location = new System.Drawing.Point(7, 45);
+            this.buttonHypotenuseCalculate.Name = "buttonHypotenuseCalculate";
+            this.buttonHypotenuseCalculate.Size = new System.Drawing.Size(75, 23);
+            this.buttonHypotenuseCalculate.TabIndex = 68;
+            this.buttonHypotenuseCalculate.Text = "Calculate";
+            this.buttonHypotenuseCalculate.UseVisualStyleBackColor = false;
             // 
             // labelHypotenuseOutput
             // 
@@ -211,94 +211,94 @@
             this.textBoxHypotenuseSideA.TabIndex = 65;
             this.toolTip1.SetToolTip(this.textBoxHypotenuseSideA, "Side A");
             // 
-            // buttonCircuitryExit
+            // buttonMathFormulaFormExit
             // 
-            this.buttonCircuitryExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.buttonCircuitryExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCircuitryExit.ForeColor = System.Drawing.Color.White;
-            this.buttonCircuitryExit.Location = new System.Drawing.Point(550, 420);
-            this.buttonCircuitryExit.Name = "buttonCircuitryExit";
-            this.buttonCircuitryExit.Size = new System.Drawing.Size(75, 23);
-            this.buttonCircuitryExit.TabIndex = 92;
-            this.buttonCircuitryExit.Text = "Exit Program";
-            this.buttonCircuitryExit.UseVisualStyleBackColor = false;
-            this.buttonCircuitryExit.Click += new System.EventHandler(this.buttonCircuitryExit_Click);
+            this.buttonMathFormulaFormExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.buttonMathFormulaFormExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMathFormulaFormExit.ForeColor = System.Drawing.Color.White;
+            this.buttonMathFormulaFormExit.Location = new System.Drawing.Point(550, 420);
+            this.buttonMathFormulaFormExit.Name = "buttonMathFormulaFormExit";
+            this.buttonMathFormulaFormExit.Size = new System.Drawing.Size(75, 23);
+            this.buttonMathFormulaFormExit.TabIndex = 92;
+            this.buttonMathFormulaFormExit.Text = "Exit Program";
+            this.buttonMathFormulaFormExit.UseVisualStyleBackColor = false;
+            this.buttonMathFormulaFormExit.Click += new System.EventHandler(this.buttonCircuitryExit_Click);
             // 
-            // buttonCircuitryHome
+            // buttonMathFormulaFormHome
             // 
-            this.buttonCircuitryHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.buttonCircuitryHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCircuitryHome.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonCircuitryHome.Location = new System.Drawing.Point(9, 420);
-            this.buttonCircuitryHome.Name = "buttonCircuitryHome";
-            this.buttonCircuitryHome.Size = new System.Drawing.Size(75, 23);
-            this.buttonCircuitryHome.TabIndex = 91;
-            this.buttonCircuitryHome.Text = "Home";
-            this.buttonCircuitryHome.UseVisualStyleBackColor = false;
-            this.buttonCircuitryHome.Click += new System.EventHandler(this.buttonCircuitryHome_Click);
+            this.buttonMathFormulaFormHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.buttonMathFormulaFormHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMathFormulaFormHome.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonMathFormulaFormHome.Location = new System.Drawing.Point(9, 420);
+            this.buttonMathFormulaFormHome.Name = "buttonMathFormulaFormHome";
+            this.buttonMathFormulaFormHome.Size = new System.Drawing.Size(75, 23);
+            this.buttonMathFormulaFormHome.TabIndex = 91;
+            this.buttonMathFormulaFormHome.Text = "Home";
+            this.buttonMathFormulaFormHome.UseVisualStyleBackColor = false;
+            this.buttonMathFormulaFormHome.Click += new System.EventHandler(this.buttonCircuitryHome_Click);
             // 
-            // textBox1
+            // textBoxFractionAdditionA
             // 
-            this.textBox1.Location = new System.Drawing.Point(79, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(20, 20);
-            this.textBox1.TabIndex = 94;
+            this.textBoxFractionAdditionA.Location = new System.Drawing.Point(79, 19);
+            this.textBoxFractionAdditionA.Name = "textBoxFractionAdditionA";
+            this.textBoxFractionAdditionA.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionAdditionA.TabIndex = 94;
             // 
-            // textBox2
+            // textBoxFractionAdditionB
             // 
-            this.textBox2.Location = new System.Drawing.Point(79, 45);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(20, 20);
-            this.textBox2.TabIndex = 95;
+            this.textBoxFractionAdditionB.Location = new System.Drawing.Point(79, 45);
+            this.textBoxFractionAdditionB.Name = "textBoxFractionAdditionB";
+            this.textBoxFractionAdditionB.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionAdditionB.TabIndex = 95;
             // 
-            // textBox3
+            // textBoxFractionAdditionC
             // 
-            this.textBox3.Location = new System.Drawing.Point(120, 19);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(20, 20);
-            this.textBox3.TabIndex = 96;
+            this.textBoxFractionAdditionC.Location = new System.Drawing.Point(120, 19);
+            this.textBoxFractionAdditionC.Name = "textBoxFractionAdditionC";
+            this.textBoxFractionAdditionC.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionAdditionC.TabIndex = 96;
             // 
-            // textBox4
+            // textBoxFractionAdditionD
             // 
-            this.textBox4.Location = new System.Drawing.Point(120, 45);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(20, 20);
-            this.textBox4.TabIndex = 97;
+            this.textBoxFractionAdditionD.Location = new System.Drawing.Point(120, 45);
+            this.textBoxFractionAdditionD.Name = "textBoxFractionAdditionD";
+            this.textBoxFractionAdditionD.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionAdditionD.TabIndex = 97;
             // 
-            // textBox5
+            // textBoxFractionAdditionDenominator
             // 
-            this.textBox5.Location = new System.Drawing.Point(165, 45);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(20, 20);
-            this.textBox5.TabIndex = 99;
+            this.textBoxFractionAdditionDenominator.Location = new System.Drawing.Point(165, 45);
+            this.textBoxFractionAdditionDenominator.Name = "textBoxFractionAdditionDenominator";
+            this.textBoxFractionAdditionDenominator.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionAdditionDenominator.TabIndex = 99;
             // 
-            // textBox6
+            // textBoxFractionAdditionNumerator
             // 
-            this.textBox6.Location = new System.Drawing.Point(165, 19);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(20, 20);
-            this.textBox6.TabIndex = 98;
+            this.textBoxFractionAdditionNumerator.Location = new System.Drawing.Point(165, 19);
+            this.textBoxFractionAdditionNumerator.Name = "textBoxFractionAdditionNumerator";
+            this.textBoxFractionAdditionNumerator.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionAdditionNumerator.TabIndex = 98;
             // 
-            // textBox7
+            // textBoxFractionsAdditionMixedWholeNumber
             // 
-            this.textBox7.Location = new System.Drawing.Point(211, 31);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(20, 20);
-            this.textBox7.TabIndex = 100;
+            this.textBoxFractionsAdditionMixedWholeNumber.Location = new System.Drawing.Point(211, 31);
+            this.textBoxFractionsAdditionMixedWholeNumber.Name = "textBoxFractionsAdditionMixedWholeNumber";
+            this.textBoxFractionsAdditionMixedWholeNumber.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionsAdditionMixedWholeNumber.TabIndex = 100;
             // 
-            // textBox8
+            // textBoxFractionsAdditionMixedDenominator
             // 
-            this.textBox8.Location = new System.Drawing.Point(237, 45);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(20, 20);
-            this.textBox8.TabIndex = 102;
+            this.textBoxFractionsAdditionMixedDenominator.Location = new System.Drawing.Point(237, 45);
+            this.textBoxFractionsAdditionMixedDenominator.Name = "textBoxFractionsAdditionMixedDenominator";
+            this.textBoxFractionsAdditionMixedDenominator.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionsAdditionMixedDenominator.TabIndex = 102;
             // 
-            // textBox9
+            // textBoxFractionsAdditionMixedNumerator
             // 
-            this.textBox9.Location = new System.Drawing.Point(237, 19);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(20, 20);
-            this.textBox9.TabIndex = 101;
+            this.textBoxFractionsAdditionMixedNumerator.Location = new System.Drawing.Point(237, 19);
+            this.textBoxFractionsAdditionMixedNumerator.Name = "textBoxFractionsAdditionMixedNumerator";
+            this.textBoxFractionsAdditionMixedNumerator.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionsAdditionMixedNumerator.TabIndex = 101;
             // 
             // labelFractionAddition
             // 
@@ -318,68 +318,68 @@
             this.labelFractionSubtraction.TabIndex = 113;
             this.labelFractionSubtraction.Text = "Subtraction";
             // 
-            // textBox10
+            // textBoxFractionsSubtractionMixedDenominator
             // 
-            this.textBox10.Location = new System.Drawing.Point(237, 106);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(20, 20);
-            this.textBox10.TabIndex = 112;
+            this.textBoxFractionsSubtractionMixedDenominator.Location = new System.Drawing.Point(237, 106);
+            this.textBoxFractionsSubtractionMixedDenominator.Name = "textBoxFractionsSubtractionMixedDenominator";
+            this.textBoxFractionsSubtractionMixedDenominator.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionsSubtractionMixedDenominator.TabIndex = 112;
             // 
-            // textBox11
+            // textBoxFractionsSubtractionMixedNumerator
             // 
-            this.textBox11.Location = new System.Drawing.Point(237, 80);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(20, 20);
-            this.textBox11.TabIndex = 111;
+            this.textBoxFractionsSubtractionMixedNumerator.Location = new System.Drawing.Point(237, 80);
+            this.textBoxFractionsSubtractionMixedNumerator.Name = "textBoxFractionsSubtractionMixedNumerator";
+            this.textBoxFractionsSubtractionMixedNumerator.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionsSubtractionMixedNumerator.TabIndex = 111;
             // 
-            // textBox12
+            // textBoxFractionsSubtractionMixedWholeNumber
             // 
-            this.textBox12.Location = new System.Drawing.Point(211, 92);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(20, 20);
-            this.textBox12.TabIndex = 110;
+            this.textBoxFractionsSubtractionMixedWholeNumber.Location = new System.Drawing.Point(211, 92);
+            this.textBoxFractionsSubtractionMixedWholeNumber.Name = "textBoxFractionsSubtractionMixedWholeNumber";
+            this.textBoxFractionsSubtractionMixedWholeNumber.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionsSubtractionMixedWholeNumber.TabIndex = 110;
             // 
-            // textBox13
+            // textBoxFractionSubtractionDenominator
             // 
-            this.textBox13.Location = new System.Drawing.Point(165, 106);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(20, 20);
-            this.textBox13.TabIndex = 109;
+            this.textBoxFractionSubtractionDenominator.Location = new System.Drawing.Point(165, 106);
+            this.textBoxFractionSubtractionDenominator.Name = "textBoxFractionSubtractionDenominator";
+            this.textBoxFractionSubtractionDenominator.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionSubtractionDenominator.TabIndex = 109;
             // 
-            // textBox14
+            // textBoxFractionSubtractionNumerator
             // 
-            this.textBox14.Location = new System.Drawing.Point(165, 80);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(20, 20);
-            this.textBox14.TabIndex = 108;
+            this.textBoxFractionSubtractionNumerator.Location = new System.Drawing.Point(165, 80);
+            this.textBoxFractionSubtractionNumerator.Name = "textBoxFractionSubtractionNumerator";
+            this.textBoxFractionSubtractionNumerator.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionSubtractionNumerator.TabIndex = 108;
             // 
-            // textBox15
+            // textBoxFractionSubtractionD
             // 
-            this.textBox15.Location = new System.Drawing.Point(120, 106);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(20, 20);
-            this.textBox15.TabIndex = 107;
+            this.textBoxFractionSubtractionD.Location = new System.Drawing.Point(120, 106);
+            this.textBoxFractionSubtractionD.Name = "textBoxFractionSubtractionD";
+            this.textBoxFractionSubtractionD.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionSubtractionD.TabIndex = 107;
             // 
-            // textBox16
+            // textBoxFractionSubtractionC
             // 
-            this.textBox16.Location = new System.Drawing.Point(120, 80);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(20, 20);
-            this.textBox16.TabIndex = 106;
+            this.textBoxFractionSubtractionC.Location = new System.Drawing.Point(120, 80);
+            this.textBoxFractionSubtractionC.Name = "textBoxFractionSubtractionC";
+            this.textBoxFractionSubtractionC.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionSubtractionC.TabIndex = 106;
             // 
-            // textBox17
+            // textBoxFractionSubtractionB
             // 
-            this.textBox17.Location = new System.Drawing.Point(79, 106);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(20, 20);
-            this.textBox17.TabIndex = 105;
+            this.textBoxFractionSubtractionB.Location = new System.Drawing.Point(79, 106);
+            this.textBoxFractionSubtractionB.Name = "textBoxFractionSubtractionB";
+            this.textBoxFractionSubtractionB.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionSubtractionB.TabIndex = 105;
             // 
-            // textBox18
+            // textBoxFractionSubtractionA
             // 
-            this.textBox18.Location = new System.Drawing.Point(79, 80);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(20, 20);
-            this.textBox18.TabIndex = 104;
+            this.textBoxFractionSubtractionA.Location = new System.Drawing.Point(79, 80);
+            this.textBoxFractionSubtractionA.Name = "textBoxFractionSubtractionA";
+            this.textBoxFractionSubtractionA.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionSubtractionA.TabIndex = 104;
             // 
             // labelFractionMultiplying
             // 
@@ -390,68 +390,68 @@
             this.labelFractionMultiplying.TabIndex = 123;
             this.labelFractionMultiplying.Text = "Multiplying";
             // 
-            // textBox19
+            // textBoxFractionsMultiplyingMixedDenominator
             // 
-            this.textBox19.Location = new System.Drawing.Point(237, 168);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(20, 20);
-            this.textBox19.TabIndex = 122;
+            this.textBoxFractionsMultiplyingMixedDenominator.Location = new System.Drawing.Point(237, 168);
+            this.textBoxFractionsMultiplyingMixedDenominator.Name = "textBoxFractionsMultiplyingMixedDenominator";
+            this.textBoxFractionsMultiplyingMixedDenominator.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionsMultiplyingMixedDenominator.TabIndex = 122;
             // 
-            // textBox20
+            // textBoxFractionsMultiplyingMixedNumerator
             // 
-            this.textBox20.Location = new System.Drawing.Point(237, 142);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(20, 20);
-            this.textBox20.TabIndex = 121;
+            this.textBoxFractionsMultiplyingMixedNumerator.Location = new System.Drawing.Point(237, 142);
+            this.textBoxFractionsMultiplyingMixedNumerator.Name = "textBoxFractionsMultiplyingMixedNumerator";
+            this.textBoxFractionsMultiplyingMixedNumerator.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionsMultiplyingMixedNumerator.TabIndex = 121;
             // 
-            // textBox21
+            // textBoxFractionsMultiplyingMixedWholeNumber
             // 
-            this.textBox21.Location = new System.Drawing.Point(211, 154);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(20, 20);
-            this.textBox21.TabIndex = 120;
+            this.textBoxFractionsMultiplyingMixedWholeNumber.Location = new System.Drawing.Point(211, 154);
+            this.textBoxFractionsMultiplyingMixedWholeNumber.Name = "textBoxFractionsMultiplyingMixedWholeNumber";
+            this.textBoxFractionsMultiplyingMixedWholeNumber.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionsMultiplyingMixedWholeNumber.TabIndex = 120;
             // 
-            // textBox22
+            // textBoxFractionMultiplyingDenominator
             // 
-            this.textBox22.Location = new System.Drawing.Point(165, 168);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(20, 20);
-            this.textBox22.TabIndex = 119;
+            this.textBoxFractionMultiplyingDenominator.Location = new System.Drawing.Point(165, 168);
+            this.textBoxFractionMultiplyingDenominator.Name = "textBoxFractionMultiplyingDenominator";
+            this.textBoxFractionMultiplyingDenominator.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionMultiplyingDenominator.TabIndex = 119;
             // 
-            // textBox23
+            // textBoxFractionMultiplyingNumerator
             // 
-            this.textBox23.Location = new System.Drawing.Point(165, 142);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(20, 20);
-            this.textBox23.TabIndex = 118;
+            this.textBoxFractionMultiplyingNumerator.Location = new System.Drawing.Point(165, 142);
+            this.textBoxFractionMultiplyingNumerator.Name = "textBoxFractionMultiplyingNumerator";
+            this.textBoxFractionMultiplyingNumerator.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionMultiplyingNumerator.TabIndex = 118;
             // 
-            // textBox24
+            // textBoxFractionMultiplyingD
             // 
-            this.textBox24.Location = new System.Drawing.Point(120, 168);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(20, 20);
-            this.textBox24.TabIndex = 117;
+            this.textBoxFractionMultiplyingD.Location = new System.Drawing.Point(120, 168);
+            this.textBoxFractionMultiplyingD.Name = "textBoxFractionMultiplyingD";
+            this.textBoxFractionMultiplyingD.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionMultiplyingD.TabIndex = 117;
             // 
-            // textBox25
+            // textBoxFractionMultiplyingC
             // 
-            this.textBox25.Location = new System.Drawing.Point(120, 142);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(20, 20);
-            this.textBox25.TabIndex = 116;
+            this.textBoxFractionMultiplyingC.Location = new System.Drawing.Point(120, 142);
+            this.textBoxFractionMultiplyingC.Name = "textBoxFractionMultiplyingC";
+            this.textBoxFractionMultiplyingC.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionMultiplyingC.TabIndex = 116;
             // 
-            // textBox26
+            // textBoxFractionMultiplyingB
             // 
-            this.textBox26.Location = new System.Drawing.Point(79, 168);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(20, 20);
-            this.textBox26.TabIndex = 115;
+            this.textBoxFractionMultiplyingB.Location = new System.Drawing.Point(79, 168);
+            this.textBoxFractionMultiplyingB.Name = "textBoxFractionMultiplyingB";
+            this.textBoxFractionMultiplyingB.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionMultiplyingB.TabIndex = 115;
             // 
-            // textBox27
+            // textBoxFractionMultiplyingA
             // 
-            this.textBox27.Location = new System.Drawing.Point(79, 142);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(20, 20);
-            this.textBox27.TabIndex = 114;
+            this.textBoxFractionMultiplyingA.Location = new System.Drawing.Point(79, 142);
+            this.textBoxFractionMultiplyingA.Name = "textBoxFractionMultiplyingA";
+            this.textBoxFractionMultiplyingA.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionMultiplyingA.TabIndex = 114;
             // 
             // labelFractionDividing
             // 
@@ -462,68 +462,68 @@
             this.labelFractionDividing.TabIndex = 133;
             this.labelFractionDividing.Text = "Dividing";
             // 
-            // textBox28
+            // textBoxFractionsDividingMixedDenominator
             // 
-            this.textBox28.Location = new System.Drawing.Point(237, 229);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(20, 20);
-            this.textBox28.TabIndex = 132;
+            this.textBoxFractionsDividingMixedDenominator.Location = new System.Drawing.Point(237, 229);
+            this.textBoxFractionsDividingMixedDenominator.Name = "textBoxFractionsDividingMixedDenominator";
+            this.textBoxFractionsDividingMixedDenominator.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionsDividingMixedDenominator.TabIndex = 132;
             // 
-            // textBox29
+            // textBoxFractionsDividingMixedNumerator
             // 
-            this.textBox29.Location = new System.Drawing.Point(237, 203);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(20, 20);
-            this.textBox29.TabIndex = 131;
+            this.textBoxFractionsDividingMixedNumerator.Location = new System.Drawing.Point(237, 203);
+            this.textBoxFractionsDividingMixedNumerator.Name = "textBoxFractionsDividingMixedNumerator";
+            this.textBoxFractionsDividingMixedNumerator.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionsDividingMixedNumerator.TabIndex = 131;
             // 
-            // textBox30
+            // textBoxFractionsDividingMixedWholeNumber
             // 
-            this.textBox30.Location = new System.Drawing.Point(211, 215);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(20, 20);
-            this.textBox30.TabIndex = 130;
+            this.textBoxFractionsDividingMixedWholeNumber.Location = new System.Drawing.Point(211, 215);
+            this.textBoxFractionsDividingMixedWholeNumber.Name = "textBoxFractionsDividingMixedWholeNumber";
+            this.textBoxFractionsDividingMixedWholeNumber.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionsDividingMixedWholeNumber.TabIndex = 130;
             // 
-            // textBox31
+            // textBoxFractionDividingDenominator
             // 
-            this.textBox31.Location = new System.Drawing.Point(165, 229);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(20, 20);
-            this.textBox31.TabIndex = 129;
+            this.textBoxFractionDividingDenominator.Location = new System.Drawing.Point(165, 229);
+            this.textBoxFractionDividingDenominator.Name = "textBoxFractionDividingDenominator";
+            this.textBoxFractionDividingDenominator.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionDividingDenominator.TabIndex = 129;
             // 
-            // textBox32
+            // textBoxFractionDividingNumerator
             // 
-            this.textBox32.Location = new System.Drawing.Point(165, 203);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(20, 20);
-            this.textBox32.TabIndex = 128;
+            this.textBoxFractionDividingNumerator.Location = new System.Drawing.Point(165, 203);
+            this.textBoxFractionDividingNumerator.Name = "textBoxFractionDividingNumerator";
+            this.textBoxFractionDividingNumerator.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionDividingNumerator.TabIndex = 128;
             // 
-            // textBox33
+            // textBoxFractionDividingD
             // 
-            this.textBox33.Location = new System.Drawing.Point(120, 229);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(20, 20);
-            this.textBox33.TabIndex = 127;
+            this.textBoxFractionDividingD.Location = new System.Drawing.Point(120, 229);
+            this.textBoxFractionDividingD.Name = "textBoxFractionDividingD";
+            this.textBoxFractionDividingD.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionDividingD.TabIndex = 127;
             // 
-            // textBox34
+            // textBoxFractionDividingC
             // 
-            this.textBox34.Location = new System.Drawing.Point(120, 203);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(20, 20);
-            this.textBox34.TabIndex = 126;
+            this.textBoxFractionDividingC.Location = new System.Drawing.Point(120, 203);
+            this.textBoxFractionDividingC.Name = "textBoxFractionDividingC";
+            this.textBoxFractionDividingC.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionDividingC.TabIndex = 126;
             // 
-            // textBox35
+            // textBoxFractionDividingB
             // 
-            this.textBox35.Location = new System.Drawing.Point(79, 229);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(20, 20);
-            this.textBox35.TabIndex = 125;
+            this.textBoxFractionDividingB.Location = new System.Drawing.Point(79, 229);
+            this.textBoxFractionDividingB.Name = "textBoxFractionDividingB";
+            this.textBoxFractionDividingB.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionDividingB.TabIndex = 125;
             // 
-            // textBox36
+            // textBoxFractionDividingA
             // 
-            this.textBox36.Location = new System.Drawing.Point(79, 203);
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(20, 20);
-            this.textBox36.TabIndex = 124;
+            this.textBoxFractionDividingA.Location = new System.Drawing.Point(79, 203);
+            this.textBoxFractionDividingA.Name = "textBoxFractionDividingA";
+            this.textBoxFractionDividingA.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionDividingA.TabIndex = 124;
             // 
             // labelFractionPlusSign
             // 
@@ -597,83 +597,83 @@
             this.labelFractionEqualSign4.TabIndex = 141;
             this.labelFractionEqualSign4.Text = "=";
             // 
-            // button1
+            // buttonFractionsCalculate
             // 
-            this.button1.BackColor = System.Drawing.Color.Lime;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(24, 272);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 143;
-            this.button1.Text = "Calculate";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonFractionsCalculate.BackColor = System.Drawing.Color.Lime;
+            this.buttonFractionsCalculate.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonFractionsCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonFractionsCalculate.ForeColor = System.Drawing.Color.Black;
+            this.buttonFractionsCalculate.Location = new System.Drawing.Point(24, 272);
+            this.buttonFractionsCalculate.Name = "buttonFractionsCalculate";
+            this.buttonFractionsCalculate.Size = new System.Drawing.Size(75, 23);
+            this.buttonFractionsCalculate.TabIndex = 143;
+            this.buttonFractionsCalculate.Text = "Calculate";
+            this.buttonFractionsCalculate.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // buttonFractionsClear
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(182, 272);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 143;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonFractionsClear.BackColor = System.Drawing.Color.Red;
+            this.buttonFractionsClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonFractionsClear.ForeColor = System.Drawing.Color.White;
+            this.buttonFractionsClear.Location = new System.Drawing.Point(182, 272);
+            this.buttonFractionsClear.Name = "buttonFractionsClear";
+            this.buttonFractionsClear.Size = new System.Drawing.Size(75, 23);
+            this.buttonFractionsClear.TabIndex = 143;
+            this.buttonFractionsClear.Text = "Clear";
+            this.buttonFractionsClear.UseVisualStyleBackColor = false;
             // 
             // groupBoxFractions
             // 
-            this.groupBoxFractions.Controls.Add(this.button2);
-            this.groupBoxFractions.Controls.Add(this.textBox18);
-            this.groupBoxFractions.Controls.Add(this.button1);
-            this.groupBoxFractions.Controls.Add(this.textBox24);
-            this.groupBoxFractions.Controls.Add(this.textBox23);
+            this.groupBoxFractions.Controls.Add(this.buttonFractionsClear);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionSubtractionA);
+            this.groupBoxFractions.Controls.Add(this.buttonFractionsCalculate);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionMultiplyingD);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionMultiplyingNumerator);
             this.groupBoxFractions.Controls.Add(this.labelFractionEqualSign4);
-            this.groupBoxFractions.Controls.Add(this.textBox25);
-            this.groupBoxFractions.Controls.Add(this.textBox1);
-            this.groupBoxFractions.Controls.Add(this.textBox22);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionMultiplyingC);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionAdditionA);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionMultiplyingDenominator);
             this.groupBoxFractions.Controls.Add(this.labelFractionEqualSign3);
-            this.groupBoxFractions.Controls.Add(this.textBox26);
-            this.groupBoxFractions.Controls.Add(this.textBox2);
-            this.groupBoxFractions.Controls.Add(this.textBox21);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionMultiplyingB);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionAdditionB);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionsMultiplyingMixedWholeNumber);
             this.groupBoxFractions.Controls.Add(this.labelFractionEqualSign2);
-            this.groupBoxFractions.Controls.Add(this.textBox27);
-            this.groupBoxFractions.Controls.Add(this.textBox3);
-            this.groupBoxFractions.Controls.Add(this.textBox20);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionMultiplyingA);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionAdditionC);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionsMultiplyingMixedNumerator);
             this.groupBoxFractions.Controls.Add(this.labelFractionEqualSign1);
             this.groupBoxFractions.Controls.Add(this.labelFractionSubtraction);
-            this.groupBoxFractions.Controls.Add(this.textBox4);
-            this.groupBoxFractions.Controls.Add(this.textBox19);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionAdditionD);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionsMultiplyingMixedDenominator);
             this.groupBoxFractions.Controls.Add(this.labelFractionDividedSign);
-            this.groupBoxFractions.Controls.Add(this.textBox10);
-            this.groupBoxFractions.Controls.Add(this.textBox6);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionsSubtractionMixedDenominator);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionAdditionNumerator);
             this.groupBoxFractions.Controls.Add(this.labelFractionMultiplying);
             this.groupBoxFractions.Controls.Add(this.labelFractionTimesSign);
-            this.groupBoxFractions.Controls.Add(this.textBox11);
-            this.groupBoxFractions.Controls.Add(this.textBox5);
-            this.groupBoxFractions.Controls.Add(this.textBox36);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionsSubtractionMixedNumerator);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionAdditionDenominator);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionDividingA);
             this.groupBoxFractions.Controls.Add(this.labelFractionMinusSign);
-            this.groupBoxFractions.Controls.Add(this.textBox12);
-            this.groupBoxFractions.Controls.Add(this.textBox7);
-            this.groupBoxFractions.Controls.Add(this.textBox35);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionsSubtractionMixedWholeNumber);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionsAdditionMixedWholeNumber);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionDividingB);
             this.groupBoxFractions.Controls.Add(this.labelFractionPlusSign);
-            this.groupBoxFractions.Controls.Add(this.textBox13);
-            this.groupBoxFractions.Controls.Add(this.textBox9);
-            this.groupBoxFractions.Controls.Add(this.textBox34);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionSubtractionDenominator);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionsAdditionMixedNumerator);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionDividingC);
             this.groupBoxFractions.Controls.Add(this.labelFractionDividing);
-            this.groupBoxFractions.Controls.Add(this.textBox14);
-            this.groupBoxFractions.Controls.Add(this.textBox8);
-            this.groupBoxFractions.Controls.Add(this.textBox33);
-            this.groupBoxFractions.Controls.Add(this.textBox28);
-            this.groupBoxFractions.Controls.Add(this.textBox15);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionSubtractionNumerator);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionsAdditionMixedDenominator);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionDividingD);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionsDividingMixedDenominator);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionSubtractionD);
             this.groupBoxFractions.Controls.Add(this.labelFractionAddition);
-            this.groupBoxFractions.Controls.Add(this.textBox32);
-            this.groupBoxFractions.Controls.Add(this.textBox29);
-            this.groupBoxFractions.Controls.Add(this.textBox16);
-            this.groupBoxFractions.Controls.Add(this.textBox31);
-            this.groupBoxFractions.Controls.Add(this.textBox30);
-            this.groupBoxFractions.Controls.Add(this.textBox17);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionDividingNumerator);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionsDividingMixedNumerator);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionSubtractionC);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionDividingDenominator);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionsDividingMixedWholeNumber);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionSubtractionB);
             this.groupBoxFractions.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxFractions.Location = new System.Drawing.Point(9, 93);
             this.groupBoxFractions.Name = "groupBoxFractions";
@@ -688,8 +688,8 @@
             this.groupBoxHypotenuse.Controls.Add(this.textBoxHypotenuseSideB);
             this.groupBoxHypotenuse.Controls.Add(this.textBoxHypotenuseSideA);
             this.groupBoxHypotenuse.Controls.Add(this.labelHypotenuseOutput);
-            this.groupBoxHypotenuse.Controls.Add(this.buttonHypotenuse);
-            this.groupBoxHypotenuse.Controls.Add(this.buttonClearHypotenuse);
+            this.groupBoxHypotenuse.Controls.Add(this.buttonHypotenuseCalculate);
+            this.groupBoxHypotenuse.Controls.Add(this.buttonHypotenuseClear);
             this.groupBoxHypotenuse.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxHypotenuse.Location = new System.Drawing.Point(9, 9);
             this.groupBoxHypotenuse.Name = "groupBoxHypotenuse";
@@ -701,13 +701,13 @@
             // groupBoxCircle
             // 
             this.groupBoxCircle.Controls.Add(this.labelCircleCircumference);
-            this.groupBoxCircle.Controls.Add(this.textBox38);
+            this.groupBoxCircle.Controls.Add(this.textBoxCircleCircumberenceOutput);
             this.groupBoxCircle.Controls.Add(this.labelCircleArea);
-            this.groupBoxCircle.Controls.Add(this.textBox37);
+            this.groupBoxCircle.Controls.Add(this.textBoxCircleAreaOutput);
             this.groupBoxCircle.Controls.Add(this.labelAreaOfCircleDiameter);
-            this.groupBoxCircle.Controls.Add(this.textBoxAreaofCircleDiameter);
-            this.groupBoxCircle.Controls.Add(this.buttonAreaOfCircle);
-            this.groupBoxCircle.Controls.Add(this.buttonClearAreaOfCircle);
+            this.groupBoxCircle.Controls.Add(this.textBoxAreaofCircleDiameterInput);
+            this.groupBoxCircle.Controls.Add(this.buttonCircleCalculate);
+            this.groupBoxCircle.Controls.Add(this.buttonCircleClear);
             this.groupBoxCircle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxCircle.Location = new System.Drawing.Point(285, 9);
             this.groupBoxCircle.Name = "groupBoxCircle";
@@ -734,13 +734,13 @@
             this.labelCircleArea.TabIndex = 75;
             this.labelCircleArea.Text = "Area";
             // 
-            // textBox37
+            // textBoxCircleAreaOutput
             // 
-            this.textBox37.Location = new System.Drawing.Point(6, 73);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.ReadOnly = true;
-            this.textBox37.Size = new System.Drawing.Size(100, 20);
-            this.textBox37.TabIndex = 76;
+            this.textBoxCircleAreaOutput.Location = new System.Drawing.Point(6, 73);
+            this.textBoxCircleAreaOutput.Name = "textBoxCircleAreaOutput";
+            this.textBoxCircleAreaOutput.ReadOnly = true;
+            this.textBoxCircleAreaOutput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCircleAreaOutput.TabIndex = 76;
             // 
             // labelCircleCircumference
             // 
@@ -751,24 +751,24 @@
             this.labelCircleCircumference.TabIndex = 77;
             this.labelCircleCircumference.Text = "Circumference";
             // 
-            // textBox38
+            // textBoxCircleCircumberenceOutput
             // 
-            this.textBox38.Location = new System.Drawing.Point(6, 112);
-            this.textBox38.Name = "textBox38";
-            this.textBox38.ReadOnly = true;
-            this.textBox38.Size = new System.Drawing.Size(100, 20);
-            this.textBox38.TabIndex = 78;
+            this.textBoxCircleCircumberenceOutput.Location = new System.Drawing.Point(6, 112);
+            this.textBoxCircleCircumberenceOutput.Name = "textBoxCircleCircumberenceOutput";
+            this.textBoxCircleCircumberenceOutput.ReadOnly = true;
+            this.textBoxCircleCircumberenceOutput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCircleCircumberenceOutput.TabIndex = 78;
             // 
             // groupBoxSphere
             // 
             this.groupBoxSphere.Controls.Add(this.labelSphereSurfaceArea);
-            this.groupBoxSphere.Controls.Add(this.textBox39);
+            this.groupBoxSphere.Controls.Add(this.textBoxSphereSurfaceAreaOutput);
             this.groupBoxSphere.Controls.Add(this.labelSphereVolume);
-            this.groupBoxSphere.Controls.Add(this.textBox40);
-            this.groupBoxSphere.Controls.Add(this.label3);
-            this.groupBoxSphere.Controls.Add(this.textBox41);
-            this.groupBoxSphere.Controls.Add(this.button3);
-            this.groupBoxSphere.Controls.Add(this.button4);
+            this.groupBoxSphere.Controls.Add(this.textBoxSphereVolumeOutput);
+            this.groupBoxSphere.Controls.Add(this.labelSphereDiameter);
+            this.groupBoxSphere.Controls.Add(this.textBoxSphereDiameterInput);
+            this.groupBoxSphere.Controls.Add(this.buttonSphereCalculate);
+            this.groupBoxSphere.Controls.Add(this.buttonSphereClear);
             this.groupBoxSphere.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxSphere.Location = new System.Drawing.Point(458, 9);
             this.groupBoxSphere.Name = "groupBoxSphere";
@@ -786,13 +786,13 @@
             this.labelSphereSurfaceArea.TabIndex = 77;
             this.labelSphereSurfaceArea.Text = "Surface Area";
             // 
-            // textBox39
+            // textBoxSphereSurfaceAreaOutput
             // 
-            this.textBox39.Location = new System.Drawing.Point(6, 112);
-            this.textBox39.Name = "textBox39";
-            this.textBox39.ReadOnly = true;
-            this.textBox39.Size = new System.Drawing.Size(100, 20);
-            this.textBox39.TabIndex = 78;
+            this.textBoxSphereSurfaceAreaOutput.Location = new System.Drawing.Point(6, 112);
+            this.textBoxSphereSurfaceAreaOutput.Name = "textBoxSphereSurfaceAreaOutput";
+            this.textBoxSphereSurfaceAreaOutput.ReadOnly = true;
+            this.textBoxSphereSurfaceAreaOutput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSphereSurfaceAreaOutput.TabIndex = 78;
             // 
             // labelSphereVolume
             // 
@@ -803,67 +803,67 @@
             this.labelSphereVolume.TabIndex = 75;
             this.labelSphereVolume.Text = "Volume";
             // 
-            // textBox40
+            // textBoxSphereVolumeOutput
             // 
-            this.textBox40.Location = new System.Drawing.Point(6, 73);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.ReadOnly = true;
-            this.textBox40.Size = new System.Drawing.Size(100, 20);
-            this.textBox40.TabIndex = 76;
+            this.textBoxSphereVolumeOutput.Location = new System.Drawing.Point(6, 73);
+            this.textBoxSphereVolumeOutput.Name = "textBoxSphereVolumeOutput";
+            this.textBoxSphereVolumeOutput.ReadOnly = true;
+            this.textBoxSphereVolumeOutput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSphereVolumeOutput.TabIndex = 76;
             // 
-            // label3
+            // labelSphereDiameter
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 18);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Diameter";
+            this.labelSphereDiameter.AutoSize = true;
+            this.labelSphereDiameter.Location = new System.Drawing.Point(3, 18);
+            this.labelSphereDiameter.Name = "labelSphereDiameter";
+            this.labelSphereDiameter.Size = new System.Drawing.Size(57, 13);
+            this.labelSphereDiameter.TabIndex = 0;
+            this.labelSphereDiameter.Text = "Diameter";
             // 
-            // textBox41
+            // textBoxSphereDiameterInput
             // 
-            this.textBox41.Location = new System.Drawing.Point(6, 34);
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(100, 20);
-            this.textBox41.TabIndex = 70;
+            this.textBoxSphereDiameterInput.Location = new System.Drawing.Point(6, 34);
+            this.textBoxSphereDiameterInput.Name = "textBoxSphereDiameterInput";
+            this.textBoxSphereDiameterInput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSphereDiameterInput.TabIndex = 70;
             // 
-            // button3
+            // buttonSphereCalculate
             // 
-            this.button3.BackColor = System.Drawing.Color.Lime;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(6, 138);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 72;
-            this.button3.Text = "Calculate";
-            this.button3.UseVisualStyleBackColor = false;
+            this.buttonSphereCalculate.BackColor = System.Drawing.Color.Lime;
+            this.buttonSphereCalculate.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonSphereCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSphereCalculate.ForeColor = System.Drawing.Color.Black;
+            this.buttonSphereCalculate.Location = new System.Drawing.Point(6, 138);
+            this.buttonSphereCalculate.Name = "buttonSphereCalculate";
+            this.buttonSphereCalculate.Size = new System.Drawing.Size(75, 23);
+            this.buttonSphereCalculate.TabIndex = 72;
+            this.buttonSphereCalculate.Text = "Calculate";
+            this.buttonSphereCalculate.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // buttonSphereClear
             // 
-            this.button4.BackColor = System.Drawing.Color.Red;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(87, 138);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 74;
-            this.button4.Text = "Clear";
-            this.button4.UseVisualStyleBackColor = false;
+            this.buttonSphereClear.BackColor = System.Drawing.Color.Red;
+            this.buttonSphereClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSphereClear.ForeColor = System.Drawing.Color.White;
+            this.buttonSphereClear.Location = new System.Drawing.Point(87, 138);
+            this.buttonSphereClear.Name = "buttonSphereClear";
+            this.buttonSphereClear.Size = new System.Drawing.Size(75, 23);
+            this.buttonSphereClear.TabIndex = 74;
+            this.buttonSphereClear.Text = "Clear";
+            this.buttonSphereClear.UseVisualStyleBackColor = false;
             // 
             // groupBoxCylinder
             // 
             this.groupBoxCylinder.Controls.Add(this.labelCylinderTotalSurfaceArea);
-            this.groupBoxCylinder.Controls.Add(this.textBox45);
+            this.groupBoxCylinder.Controls.Add(this.textBoxCylinderTotalSurfaceAreaOutput);
             this.groupBoxCylinder.Controls.Add(this.labelCylinderLateralArea);
-            this.groupBoxCylinder.Controls.Add(this.textBox42);
+            this.groupBoxCylinder.Controls.Add(this.textBoxCylinderLateralAreaOutput);
             this.groupBoxCylinder.Controls.Add(this.labelCylinderVolume);
-            this.groupBoxCylinder.Controls.Add(this.textBox43);
-            this.groupBoxCylinder.Controls.Add(this.label4);
-            this.groupBoxCylinder.Controls.Add(this.textBox44);
-            this.groupBoxCylinder.Controls.Add(this.button5);
-            this.groupBoxCylinder.Controls.Add(this.button6);
+            this.groupBoxCylinder.Controls.Add(this.textBoxCylinderVolumeOutput);
+            this.groupBoxCylinder.Controls.Add(this.labelCylinderDiameter);
+            this.groupBoxCylinder.Controls.Add(this.textBoxCylinderDiameterInput);
+            this.groupBoxCylinder.Controls.Add(this.buttonCylinderCalculate);
+            this.groupBoxCylinder.Controls.Add(this.buttonCylinderClear);
             this.groupBoxCylinder.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxCylinder.Location = new System.Drawing.Point(285, 189);
             this.groupBoxCylinder.Name = "groupBoxCylinder";
@@ -881,13 +881,13 @@
             this.labelCylinderLateralArea.TabIndex = 77;
             this.labelCylinderLateralArea.Text = "Lateral Area";
             // 
-            // textBox42
+            // textBoxCylinderLateralAreaOutput
             // 
-            this.textBox42.Location = new System.Drawing.Point(6, 112);
-            this.textBox42.Name = "textBox42";
-            this.textBox42.ReadOnly = true;
-            this.textBox42.Size = new System.Drawing.Size(100, 20);
-            this.textBox42.TabIndex = 78;
+            this.textBoxCylinderLateralAreaOutput.Location = new System.Drawing.Point(6, 112);
+            this.textBoxCylinderLateralAreaOutput.Name = "textBoxCylinderLateralAreaOutput";
+            this.textBoxCylinderLateralAreaOutput.ReadOnly = true;
+            this.textBoxCylinderLateralAreaOutput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCylinderLateralAreaOutput.TabIndex = 78;
             // 
             // labelCylinderVolume
             // 
@@ -898,54 +898,54 @@
             this.labelCylinderVolume.TabIndex = 75;
             this.labelCylinderVolume.Text = "Volume";
             // 
-            // textBox43
+            // textBoxCylinderVolumeOutput
             // 
-            this.textBox43.Location = new System.Drawing.Point(6, 73);
-            this.textBox43.Name = "textBox43";
-            this.textBox43.ReadOnly = true;
-            this.textBox43.Size = new System.Drawing.Size(100, 20);
-            this.textBox43.TabIndex = 76;
+            this.textBoxCylinderVolumeOutput.Location = new System.Drawing.Point(6, 73);
+            this.textBoxCylinderVolumeOutput.Name = "textBoxCylinderVolumeOutput";
+            this.textBoxCylinderVolumeOutput.ReadOnly = true;
+            this.textBoxCylinderVolumeOutput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCylinderVolumeOutput.TabIndex = 76;
             // 
-            // label4
+            // labelCylinderDiameter
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 18);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Diameter";
+            this.labelCylinderDiameter.AutoSize = true;
+            this.labelCylinderDiameter.Location = new System.Drawing.Point(3, 18);
+            this.labelCylinderDiameter.Name = "labelCylinderDiameter";
+            this.labelCylinderDiameter.Size = new System.Drawing.Size(57, 13);
+            this.labelCylinderDiameter.TabIndex = 0;
+            this.labelCylinderDiameter.Text = "Diameter";
             // 
-            // textBox44
+            // textBoxCylinderDiameterInput
             // 
-            this.textBox44.Location = new System.Drawing.Point(6, 34);
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(100, 20);
-            this.textBox44.TabIndex = 70;
+            this.textBoxCylinderDiameterInput.Location = new System.Drawing.Point(6, 34);
+            this.textBoxCylinderDiameterInput.Name = "textBoxCylinderDiameterInput";
+            this.textBoxCylinderDiameterInput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCylinderDiameterInput.TabIndex = 70;
             // 
-            // button5
+            // buttonCylinderCalculate
             // 
-            this.button5.BackColor = System.Drawing.Color.Lime;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(6, 176);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 72;
-            this.button5.Text = "Calculate";
-            this.button5.UseVisualStyleBackColor = false;
+            this.buttonCylinderCalculate.BackColor = System.Drawing.Color.Lime;
+            this.buttonCylinderCalculate.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonCylinderCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCylinderCalculate.ForeColor = System.Drawing.Color.Black;
+            this.buttonCylinderCalculate.Location = new System.Drawing.Point(6, 176);
+            this.buttonCylinderCalculate.Name = "buttonCylinderCalculate";
+            this.buttonCylinderCalculate.Size = new System.Drawing.Size(75, 23);
+            this.buttonCylinderCalculate.TabIndex = 72;
+            this.buttonCylinderCalculate.Text = "Calculate";
+            this.buttonCylinderCalculate.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // buttonCylinderClear
             // 
-            this.button6.BackColor = System.Drawing.Color.Red;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(87, 176);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 74;
-            this.button6.Text = "Clear";
-            this.button6.UseVisualStyleBackColor = false;
+            this.buttonCylinderClear.BackColor = System.Drawing.Color.Red;
+            this.buttonCylinderClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCylinderClear.ForeColor = System.Drawing.Color.White;
+            this.buttonCylinderClear.Location = new System.Drawing.Point(87, 176);
+            this.buttonCylinderClear.Name = "buttonCylinderClear";
+            this.buttonCylinderClear.Size = new System.Drawing.Size(75, 23);
+            this.buttonCylinderClear.TabIndex = 74;
+            this.buttonCylinderClear.Text = "Clear";
+            this.buttonCylinderClear.UseVisualStyleBackColor = false;
             // 
             // labelCylinderTotalSurfaceArea
             // 
@@ -956,26 +956,26 @@
             this.labelCylinderTotalSurfaceArea.TabIndex = 79;
             this.labelCylinderTotalSurfaceArea.Text = "Total Surface Area";
             // 
-            // textBox45
+            // textBoxCylinderTotalSurfaceAreaOutput
             // 
-            this.textBox45.Location = new System.Drawing.Point(6, 150);
-            this.textBox45.Name = "textBox45";
-            this.textBox45.ReadOnly = true;
-            this.textBox45.Size = new System.Drawing.Size(100, 20);
-            this.textBox45.TabIndex = 80;
+            this.textBoxCylinderTotalSurfaceAreaOutput.Location = new System.Drawing.Point(6, 150);
+            this.textBoxCylinderTotalSurfaceAreaOutput.Name = "textBoxCylinderTotalSurfaceAreaOutput";
+            this.textBoxCylinderTotalSurfaceAreaOutput.ReadOnly = true;
+            this.textBoxCylinderTotalSurfaceAreaOutput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCylinderTotalSurfaceAreaOutput.TabIndex = 80;
             // 
             // groupBoxCone
             // 
             this.groupBoxCone.Controls.Add(this.labelConeTotalSurfaceAre);
-            this.groupBoxCone.Controls.Add(this.textBox46);
+            this.groupBoxCone.Controls.Add(this.textBoxConeTotalSurfaceAreaOutput);
             this.groupBoxCone.Controls.Add(this.labelConeLateralArea);
-            this.groupBoxCone.Controls.Add(this.textBox47);
+            this.groupBoxCone.Controls.Add(this.textBoxConeLateralAreaOutput);
             this.groupBoxCone.Controls.Add(this.labelConeVolume);
-            this.groupBoxCone.Controls.Add(this.textBox48);
-            this.groupBoxCone.Controls.Add(this.label9);
-            this.groupBoxCone.Controls.Add(this.textBox49);
-            this.groupBoxCone.Controls.Add(this.button7);
-            this.groupBoxCone.Controls.Add(this.button8);
+            this.groupBoxCone.Controls.Add(this.textBoxConeVolumeOutput);
+            this.groupBoxCone.Controls.Add(this.labelConeDiameter);
+            this.groupBoxCone.Controls.Add(this.textBoxConeDiameterInput);
+            this.groupBoxCone.Controls.Add(this.buttonConeCalculate);
+            this.groupBoxCone.Controls.Add(this.buttonConeClear);
             this.groupBoxCone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxCone.Location = new System.Drawing.Point(458, 189);
             this.groupBoxCone.Name = "groupBoxCone";
@@ -993,13 +993,13 @@
             this.labelConeTotalSurfaceAre.TabIndex = 79;
             this.labelConeTotalSurfaceAre.Text = "Total Surface Area";
             // 
-            // textBox46
+            // textBoxConeTotalSurfaceAreaOutput
             // 
-            this.textBox46.Location = new System.Drawing.Point(6, 150);
-            this.textBox46.Name = "textBox46";
-            this.textBox46.ReadOnly = true;
-            this.textBox46.Size = new System.Drawing.Size(100, 20);
-            this.textBox46.TabIndex = 80;
+            this.textBoxConeTotalSurfaceAreaOutput.Location = new System.Drawing.Point(6, 150);
+            this.textBoxConeTotalSurfaceAreaOutput.Name = "textBoxConeTotalSurfaceAreaOutput";
+            this.textBoxConeTotalSurfaceAreaOutput.ReadOnly = true;
+            this.textBoxConeTotalSurfaceAreaOutput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxConeTotalSurfaceAreaOutput.TabIndex = 80;
             // 
             // labelConeLateralArea
             // 
@@ -1010,13 +1010,13 @@
             this.labelConeLateralArea.TabIndex = 77;
             this.labelConeLateralArea.Text = "Lateral Area";
             // 
-            // textBox47
+            // textBoxConeLateralAreaOutput
             // 
-            this.textBox47.Location = new System.Drawing.Point(6, 112);
-            this.textBox47.Name = "textBox47";
-            this.textBox47.ReadOnly = true;
-            this.textBox47.Size = new System.Drawing.Size(100, 20);
-            this.textBox47.TabIndex = 78;
+            this.textBoxConeLateralAreaOutput.Location = new System.Drawing.Point(6, 112);
+            this.textBoxConeLateralAreaOutput.Name = "textBoxConeLateralAreaOutput";
+            this.textBoxConeLateralAreaOutput.ReadOnly = true;
+            this.textBoxConeLateralAreaOutput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxConeLateralAreaOutput.TabIndex = 78;
             // 
             // labelConeVolume
             // 
@@ -1027,54 +1027,54 @@
             this.labelConeVolume.TabIndex = 75;
             this.labelConeVolume.Text = "Volume";
             // 
-            // textBox48
+            // textBoxConeVolumeOutput
             // 
-            this.textBox48.Location = new System.Drawing.Point(6, 73);
-            this.textBox48.Name = "textBox48";
-            this.textBox48.ReadOnly = true;
-            this.textBox48.Size = new System.Drawing.Size(100, 20);
-            this.textBox48.TabIndex = 76;
+            this.textBoxConeVolumeOutput.Location = new System.Drawing.Point(6, 73);
+            this.textBoxConeVolumeOutput.Name = "textBoxConeVolumeOutput";
+            this.textBoxConeVolumeOutput.ReadOnly = true;
+            this.textBoxConeVolumeOutput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxConeVolumeOutput.TabIndex = 76;
             // 
-            // label9
+            // labelConeDiameter
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 18);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 13);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Diameter";
+            this.labelConeDiameter.AutoSize = true;
+            this.labelConeDiameter.Location = new System.Drawing.Point(3, 18);
+            this.labelConeDiameter.Name = "labelConeDiameter";
+            this.labelConeDiameter.Size = new System.Drawing.Size(57, 13);
+            this.labelConeDiameter.TabIndex = 0;
+            this.labelConeDiameter.Text = "Diameter";
             // 
-            // textBox49
+            // textBoxConeDiameterInput
             // 
-            this.textBox49.Location = new System.Drawing.Point(6, 34);
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(100, 20);
-            this.textBox49.TabIndex = 70;
+            this.textBoxConeDiameterInput.Location = new System.Drawing.Point(6, 34);
+            this.textBoxConeDiameterInput.Name = "textBoxConeDiameterInput";
+            this.textBoxConeDiameterInput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxConeDiameterInput.TabIndex = 70;
             // 
-            // button7
+            // buttonConeCalculate
             // 
-            this.button7.BackColor = System.Drawing.Color.Lime;
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.Location = new System.Drawing.Point(6, 176);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 72;
-            this.button7.Text = "Calculate";
-            this.button7.UseVisualStyleBackColor = false;
+            this.buttonConeCalculate.BackColor = System.Drawing.Color.Lime;
+            this.buttonConeCalculate.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonConeCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonConeCalculate.ForeColor = System.Drawing.Color.Black;
+            this.buttonConeCalculate.Location = new System.Drawing.Point(6, 176);
+            this.buttonConeCalculate.Name = "buttonConeCalculate";
+            this.buttonConeCalculate.Size = new System.Drawing.Size(75, 23);
+            this.buttonConeCalculate.TabIndex = 72;
+            this.buttonConeCalculate.Text = "Calculate";
+            this.buttonConeCalculate.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // buttonConeClear
             // 
-            this.button8.BackColor = System.Drawing.Color.Red;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(87, 176);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 74;
-            this.button8.Text = "Clear";
-            this.button8.UseVisualStyleBackColor = false;
+            this.buttonConeClear.BackColor = System.Drawing.Color.Red;
+            this.buttonConeClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonConeClear.ForeColor = System.Drawing.Color.White;
+            this.buttonConeClear.Location = new System.Drawing.Point(87, 176);
+            this.buttonConeClear.Name = "buttonConeClear";
+            this.buttonConeClear.Size = new System.Drawing.Size(75, 23);
+            this.buttonConeClear.TabIndex = 74;
+            this.buttonConeClear.Text = "Clear";
+            this.buttonConeClear.UseVisualStyleBackColor = false;
             // 
             // textBoxHypotenuseSideB
             // 
@@ -1104,8 +1104,8 @@
             this.Controls.Add(this.groupBoxCircle);
             this.Controls.Add(this.groupBoxHypotenuse);
             this.Controls.Add(this.groupBoxFractions);
-            this.Controls.Add(this.buttonCircuitryExit);
-            this.Controls.Add(this.buttonCircuitryHome);
+            this.Controls.Add(this.buttonMathFormulaFormExit);
+            this.Controls.Add(this.buttonMathFormulaFormHome);
             this.Name = "formMathFormulas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Math Formulas";
@@ -1127,55 +1127,55 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonClearAreaOfCircle;
-        private System.Windows.Forms.Button buttonClearHypotenuse;
-        private System.Windows.Forms.Button buttonAreaOfCircle;
-        private System.Windows.Forms.TextBox textBoxAreaofCircleDiameter;
-        private System.Windows.Forms.Button buttonHypotenuse;
+        private System.Windows.Forms.Button buttonCircleClear;
+        private System.Windows.Forms.Button buttonHypotenuseClear;
+        private System.Windows.Forms.Button buttonCircleCalculate;
+        private System.Windows.Forms.TextBox textBoxAreaofCircleDiameterInput;
+        private System.Windows.Forms.Button buttonHypotenuseCalculate;
         private System.Windows.Forms.Label labelHypotenuseOutput;
         private System.Windows.Forms.TextBox textBoxHypotenuseSideA;
-        private System.Windows.Forms.Button buttonCircuitryExit;
-        private System.Windows.Forms.Button buttonCircuitryHome;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Button buttonMathFormulaFormExit;
+        private System.Windows.Forms.Button buttonMathFormulaFormHome;
+        private System.Windows.Forms.TextBox textBoxFractionAdditionA;
+        private System.Windows.Forms.TextBox textBoxFractionAdditionB;
+        private System.Windows.Forms.TextBox textBoxFractionAdditionC;
+        private System.Windows.Forms.TextBox textBoxFractionAdditionD;
+        private System.Windows.Forms.TextBox textBoxFractionAdditionDenominator;
+        private System.Windows.Forms.TextBox textBoxFractionAdditionNumerator;
+        private System.Windows.Forms.TextBox textBoxFractionsAdditionMixedWholeNumber;
+        private System.Windows.Forms.TextBox textBoxFractionsAdditionMixedDenominator;
+        private System.Windows.Forms.TextBox textBoxFractionsAdditionMixedNumerator;
         private System.Windows.Forms.Label labelFractionAddition;
         private System.Windows.Forms.Label labelFractionSubtraction;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox textBoxFractionsSubtractionMixedDenominator;
+        private System.Windows.Forms.TextBox textBoxFractionsSubtractionMixedNumerator;
+        private System.Windows.Forms.TextBox textBoxFractionsSubtractionMixedWholeNumber;
+        private System.Windows.Forms.TextBox textBoxFractionSubtractionDenominator;
+        private System.Windows.Forms.TextBox textBoxFractionSubtractionNumerator;
+        private System.Windows.Forms.TextBox textBoxFractionSubtractionD;
+        private System.Windows.Forms.TextBox textBoxFractionSubtractionC;
+        private System.Windows.Forms.TextBox textBoxFractionSubtractionB;
+        private System.Windows.Forms.TextBox textBoxFractionSubtractionA;
         private System.Windows.Forms.Label labelFractionMultiplying;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox textBoxFractionsMultiplyingMixedDenominator;
+        private System.Windows.Forms.TextBox textBoxFractionsMultiplyingMixedNumerator;
+        private System.Windows.Forms.TextBox textBoxFractionsMultiplyingMixedWholeNumber;
+        private System.Windows.Forms.TextBox textBoxFractionMultiplyingDenominator;
+        private System.Windows.Forms.TextBox textBoxFractionMultiplyingNumerator;
+        private System.Windows.Forms.TextBox textBoxFractionMultiplyingD;
+        private System.Windows.Forms.TextBox textBoxFractionMultiplyingC;
+        private System.Windows.Forms.TextBox textBoxFractionMultiplyingB;
+        private System.Windows.Forms.TextBox textBoxFractionMultiplyingA;
         private System.Windows.Forms.Label labelFractionDividing;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.TextBox textBox36;
+        private System.Windows.Forms.TextBox textBoxFractionsDividingMixedDenominator;
+        private System.Windows.Forms.TextBox textBoxFractionsDividingMixedNumerator;
+        private System.Windows.Forms.TextBox textBoxFractionsDividingMixedWholeNumber;
+        private System.Windows.Forms.TextBox textBoxFractionDividingDenominator;
+        private System.Windows.Forms.TextBox textBoxFractionDividingNumerator;
+        private System.Windows.Forms.TextBox textBoxFractionDividingD;
+        private System.Windows.Forms.TextBox textBoxFractionDividingC;
+        private System.Windows.Forms.TextBox textBoxFractionDividingB;
+        private System.Windows.Forms.TextBox textBoxFractionDividingA;
         private System.Windows.Forms.Label labelFractionPlusSign;
         private System.Windows.Forms.Label labelFractionMinusSign;
         private System.Windows.Forms.Label labelFractionTimesSign;
@@ -1184,8 +1184,8 @@
         private System.Windows.Forms.Label labelFractionEqualSign2;
         private System.Windows.Forms.Label labelFractionEqualSign3;
         private System.Windows.Forms.Label labelFractionEqualSign4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonFractionsClear;
+        private System.Windows.Forms.Button buttonFractionsCalculate;
         private System.Windows.Forms.GroupBox groupBoxFractions;
         private System.Windows.Forms.GroupBox groupBoxHypotenuse;
         private System.Windows.Forms.GroupBox groupBoxCircle;
@@ -1194,39 +1194,39 @@
         private System.Windows.Forms.TextBox textBoxHypotenuseSideC;
         private System.Windows.Forms.TextBox textBoxHypotenuseSideB;
         private System.Windows.Forms.Label labelCircleCircumference;
-        private System.Windows.Forms.TextBox textBox38;
+        private System.Windows.Forms.TextBox textBoxCircleCircumberenceOutput;
         private System.Windows.Forms.Label labelCircleArea;
-        private System.Windows.Forms.TextBox textBox37;
+        private System.Windows.Forms.TextBox textBoxCircleAreaOutput;
         private System.Windows.Forms.GroupBox groupBoxSphere;
         private System.Windows.Forms.Label labelSphereSurfaceArea;
-        private System.Windows.Forms.TextBox textBox39;
+        private System.Windows.Forms.TextBox textBoxSphereSurfaceAreaOutput;
         private System.Windows.Forms.Label labelSphereVolume;
-        private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox41;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox textBoxSphereVolumeOutput;
+        private System.Windows.Forms.Label labelSphereDiameter;
+        private System.Windows.Forms.TextBox textBoxSphereDiameterInput;
+        private System.Windows.Forms.Button buttonSphereCalculate;
+        private System.Windows.Forms.Button buttonSphereClear;
         private System.Windows.Forms.GroupBox groupBoxCylinder;
         private System.Windows.Forms.Label labelCylinderTotalSurfaceArea;
-        private System.Windows.Forms.TextBox textBox45;
+        private System.Windows.Forms.TextBox textBoxCylinderTotalSurfaceAreaOutput;
         private System.Windows.Forms.Label labelCylinderLateralArea;
-        private System.Windows.Forms.TextBox textBox42;
+        private System.Windows.Forms.TextBox textBoxCylinderLateralAreaOutput;
         private System.Windows.Forms.Label labelCylinderVolume;
-        private System.Windows.Forms.TextBox textBox43;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox44;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox textBoxCylinderVolumeOutput;
+        private System.Windows.Forms.Label labelCylinderDiameter;
+        private System.Windows.Forms.TextBox textBoxCylinderDiameterInput;
+        private System.Windows.Forms.Button buttonCylinderCalculate;
+        private System.Windows.Forms.Button buttonCylinderClear;
         private System.Windows.Forms.GroupBox groupBoxCone;
         private System.Windows.Forms.Label labelConeTotalSurfaceAre;
-        private System.Windows.Forms.TextBox textBox46;
+        private System.Windows.Forms.TextBox textBoxConeTotalSurfaceAreaOutput;
         private System.Windows.Forms.Label labelConeLateralArea;
-        private System.Windows.Forms.TextBox textBox47;
+        private System.Windows.Forms.TextBox textBoxConeLateralAreaOutput;
         private System.Windows.Forms.Label labelConeVolume;
-        private System.Windows.Forms.TextBox textBox48;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox49;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.TextBox textBoxConeVolumeOutput;
+        private System.Windows.Forms.Label labelConeDiameter;
+        private System.Windows.Forms.TextBox textBoxConeDiameterInput;
+        private System.Windows.Forms.Button buttonConeCalculate;
+        private System.Windows.Forms.Button buttonConeClear;
     }
 }
