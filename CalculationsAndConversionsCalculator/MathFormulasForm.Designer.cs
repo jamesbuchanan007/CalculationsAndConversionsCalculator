@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.buttonClearAreaOfCircle = new System.Windows.Forms.Button();
             this.buttonClearHypotenuse = new System.Windows.Forms.Button();
             this.buttonAreaOfCircle = new System.Windows.Forms.Button();
             this.textBoxAreaofCircleDiameter = new System.Windows.Forms.TextBox();
             this.buttonHypotenuse = new System.Windows.Forms.Button();
             this.labelHypotenuseOutput = new System.Windows.Forms.Label();
-            this.textBoxHypotenuseSideB = new System.Windows.Forms.TextBox();
             this.textBoxHypotenuseSideA = new System.Windows.Forms.TextBox();
             this.buttonCircuitryExit = new System.Windows.Forms.Button();
             this.buttonCircuitryHome = new System.Windows.Forms.Button();
@@ -90,12 +90,52 @@
             this.button2 = new System.Windows.Forms.Button();
             this.groupBoxFractions = new System.Windows.Forms.GroupBox();
             this.groupBoxHypotenuse = new System.Windows.Forms.GroupBox();
-            this.groupBoxAreaOfCircle = new System.Windows.Forms.GroupBox();
-            this.labelAreaOfCircleOutput = new System.Windows.Forms.Label();
+            this.groupBoxCircle = new System.Windows.Forms.GroupBox();
             this.labelAreaOfCircleDiameter = new System.Windows.Forms.Label();
+            this.labelCircleArea = new System.Windows.Forms.Label();
+            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.labelCircleCircumference = new System.Windows.Forms.Label();
+            this.textBox38 = new System.Windows.Forms.TextBox();
+            this.groupBoxSphere = new System.Windows.Forms.GroupBox();
+            this.labelSphereSurfaceArea = new System.Windows.Forms.Label();
+            this.textBox39 = new System.Windows.Forms.TextBox();
+            this.labelSphereVolume = new System.Windows.Forms.Label();
+            this.textBox40 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox41 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.groupBoxCylinder = new System.Windows.Forms.GroupBox();
+            this.labelCylinderLateralArea = new System.Windows.Forms.Label();
+            this.textBox42 = new System.Windows.Forms.TextBox();
+            this.labelCylinderVolume = new System.Windows.Forms.Label();
+            this.textBox43 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox44 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.labelCylinderTotalSurfaceArea = new System.Windows.Forms.Label();
+            this.textBox45 = new System.Windows.Forms.TextBox();
+            this.groupBoxCone = new System.Windows.Forms.GroupBox();
+            this.labelConeTotalSurfaceAre = new System.Windows.Forms.Label();
+            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.labelConeLateralArea = new System.Windows.Forms.Label();
+            this.textBox47 = new System.Windows.Forms.TextBox();
+            this.labelConeVolume = new System.Windows.Forms.Label();
+            this.textBox48 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox49 = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.textBoxHypotenuseSideB = new System.Windows.Forms.TextBox();
+            this.textBoxHypotenuseSideC = new System.Windows.Forms.TextBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBoxFractions.SuspendLayout();
             this.groupBoxHypotenuse.SuspendLayout();
-            this.groupBoxAreaOfCircle.SuspendLayout();
+            this.groupBoxCircle.SuspendLayout();
+            this.groupBoxSphere.SuspendLayout();
+            this.groupBoxCylinder.SuspendLayout();
+            this.groupBoxCone.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonClearAreaOfCircle
@@ -103,7 +143,7 @@
             this.buttonClearAreaOfCircle.BackColor = System.Drawing.Color.Red;
             this.buttonClearAreaOfCircle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClearAreaOfCircle.ForeColor = System.Drawing.Color.White;
-            this.buttonClearAreaOfCircle.Location = new System.Drawing.Point(102, 71);
+            this.buttonClearAreaOfCircle.Location = new System.Drawing.Point(87, 138);
             this.buttonClearAreaOfCircle.Name = "buttonClearAreaOfCircle";
             this.buttonClearAreaOfCircle.Size = new System.Drawing.Size(75, 23);
             this.buttonClearAreaOfCircle.TabIndex = 74;
@@ -115,7 +155,7 @@
             this.buttonClearHypotenuse.BackColor = System.Drawing.Color.Red;
             this.buttonClearHypotenuse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClearHypotenuse.ForeColor = System.Drawing.Color.White;
-            this.buttonClearHypotenuse.Location = new System.Drawing.Point(207, 45);
+            this.buttonClearHypotenuse.Location = new System.Drawing.Point(168, 45);
             this.buttonClearHypotenuse.Name = "buttonClearHypotenuse";
             this.buttonClearHypotenuse.Size = new System.Drawing.Size(75, 23);
             this.buttonClearHypotenuse.TabIndex = 73;
@@ -128,7 +168,7 @@
             this.buttonAreaOfCircle.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.buttonAreaOfCircle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAreaOfCircle.ForeColor = System.Drawing.Color.Black;
-            this.buttonAreaOfCircle.Location = new System.Drawing.Point(5, 71);
+            this.buttonAreaOfCircle.Location = new System.Drawing.Point(6, 138);
             this.buttonAreaOfCircle.Name = "buttonAreaOfCircle";
             this.buttonAreaOfCircle.Size = new System.Drawing.Size(75, 23);
             this.buttonAreaOfCircle.TabIndex = 72;
@@ -137,7 +177,7 @@
             // 
             // textBoxAreaofCircleDiameter
             // 
-            this.textBoxAreaofCircleDiameter.Location = new System.Drawing.Point(21, 42);
+            this.textBoxAreaofCircleDiameter.Location = new System.Drawing.Point(6, 34);
             this.textBoxAreaofCircleDiameter.Name = "textBoxAreaofCircleDiameter";
             this.textBoxAreaofCircleDiameter.Size = new System.Drawing.Size(100, 20);
             this.textBoxAreaofCircleDiameter.TabIndex = 70;
@@ -163,26 +203,20 @@
             this.labelHypotenuseOutput.Size = new System.Drawing.Size(0, 13);
             this.labelHypotenuseOutput.TabIndex = 67;
             // 
-            // textBoxHypotenuseSideB
-            // 
-            this.textBoxHypotenuseSideB.Location = new System.Drawing.Point(115, 19);
-            this.textBoxHypotenuseSideB.Name = "textBoxHypotenuseSideB";
-            this.textBoxHypotenuseSideB.Size = new System.Drawing.Size(100, 20);
-            this.textBoxHypotenuseSideB.TabIndex = 66;
-            // 
             // textBoxHypotenuseSideA
             // 
             this.textBoxHypotenuseSideA.Location = new System.Drawing.Point(8, 19);
             this.textBoxHypotenuseSideA.Name = "textBoxHypotenuseSideA";
-            this.textBoxHypotenuseSideA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxHypotenuseSideA.Size = new System.Drawing.Size(74, 20);
             this.textBoxHypotenuseSideA.TabIndex = 65;
+            this.toolTip1.SetToolTip(this.textBoxHypotenuseSideA, "Side A");
             // 
             // buttonCircuitryExit
             // 
             this.buttonCircuitryExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonCircuitryExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCircuitryExit.ForeColor = System.Drawing.Color.White;
-            this.buttonCircuitryExit.Location = new System.Drawing.Point(503, 495);
+            this.buttonCircuitryExit.Location = new System.Drawing.Point(550, 420);
             this.buttonCircuitryExit.Name = "buttonCircuitryExit";
             this.buttonCircuitryExit.Size = new System.Drawing.Size(75, 23);
             this.buttonCircuitryExit.TabIndex = 92;
@@ -195,7 +229,7 @@
             this.buttonCircuitryHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.buttonCircuitryHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCircuitryHome.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonCircuitryHome.Location = new System.Drawing.Point(9, 440);
+            this.buttonCircuitryHome.Location = new System.Drawing.Point(9, 420);
             this.buttonCircuitryHome.Name = "buttonCircuitryHome";
             this.buttonCircuitryHome.Size = new System.Drawing.Size(75, 23);
             this.buttonCircuitryHome.TabIndex = 91;
@@ -650,6 +684,7 @@
             // 
             // groupBoxHypotenuse
             // 
+            this.groupBoxHypotenuse.Controls.Add(this.textBoxHypotenuseSideC);
             this.groupBoxHypotenuse.Controls.Add(this.textBoxHypotenuseSideB);
             this.groupBoxHypotenuse.Controls.Add(this.textBoxHypotenuseSideA);
             this.groupBoxHypotenuse.Controls.Add(this.labelHypotenuseOutput);
@@ -658,49 +693,415 @@
             this.groupBoxHypotenuse.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxHypotenuse.Location = new System.Drawing.Point(9, 9);
             this.groupBoxHypotenuse.Name = "groupBoxHypotenuse";
-            this.groupBoxHypotenuse.Size = new System.Drawing.Size(287, 78);
+            this.groupBoxHypotenuse.Size = new System.Drawing.Size(257, 78);
             this.groupBoxHypotenuse.TabIndex = 144;
             this.groupBoxHypotenuse.TabStop = false;
             this.groupBoxHypotenuse.Text = "Hypotenuse";
             // 
-            // groupBoxAreaOfCircle
+            // groupBoxCircle
             // 
-            this.groupBoxAreaOfCircle.Controls.Add(this.labelAreaOfCircleOutput);
-            this.groupBoxAreaOfCircle.Controls.Add(this.labelAreaOfCircleDiameter);
-            this.groupBoxAreaOfCircle.Controls.Add(this.textBoxAreaofCircleDiameter);
-            this.groupBoxAreaOfCircle.Controls.Add(this.buttonAreaOfCircle);
-            this.groupBoxAreaOfCircle.Controls.Add(this.buttonClearAreaOfCircle);
-            this.groupBoxAreaOfCircle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxAreaOfCircle.Location = new System.Drawing.Point(316, 9);
-            this.groupBoxAreaOfCircle.Name = "groupBoxAreaOfCircle";
-            this.groupBoxAreaOfCircle.Size = new System.Drawing.Size(187, 100);
-            this.groupBoxAreaOfCircle.TabIndex = 145;
-            this.groupBoxAreaOfCircle.TabStop = false;
-            this.groupBoxAreaOfCircle.Text = "Area of Circle";
-            // 
-            // labelAreaOfCircleOutput
-            // 
-            this.labelAreaOfCircleOutput.AutoSize = true;
-            this.labelAreaOfCircleOutput.Location = new System.Drawing.Point(136, 45);
-            this.labelAreaOfCircleOutput.Name = "labelAreaOfCircleOutput";
-            this.labelAreaOfCircleOutput.Size = new System.Drawing.Size(0, 13);
-            this.labelAreaOfCircleOutput.TabIndex = 75;
+            this.groupBoxCircle.Controls.Add(this.labelCircleCircumference);
+            this.groupBoxCircle.Controls.Add(this.textBox38);
+            this.groupBoxCircle.Controls.Add(this.labelCircleArea);
+            this.groupBoxCircle.Controls.Add(this.textBox37);
+            this.groupBoxCircle.Controls.Add(this.labelAreaOfCircleDiameter);
+            this.groupBoxCircle.Controls.Add(this.textBoxAreaofCircleDiameter);
+            this.groupBoxCircle.Controls.Add(this.buttonAreaOfCircle);
+            this.groupBoxCircle.Controls.Add(this.buttonClearAreaOfCircle);
+            this.groupBoxCircle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxCircle.Location = new System.Drawing.Point(285, 9);
+            this.groupBoxCircle.Name = "groupBoxCircle";
+            this.groupBoxCircle.Size = new System.Drawing.Size(167, 169);
+            this.groupBoxCircle.TabIndex = 145;
+            this.groupBoxCircle.TabStop = false;
+            this.groupBoxCircle.Text = "Circle";
             // 
             // labelAreaOfCircleDiameter
             // 
             this.labelAreaOfCircleDiameter.AutoSize = true;
-            this.labelAreaOfCircleDiameter.Location = new System.Drawing.Point(18, 26);
+            this.labelAreaOfCircleDiameter.Location = new System.Drawing.Point(3, 18);
             this.labelAreaOfCircleDiameter.Name = "labelAreaOfCircleDiameter";
             this.labelAreaOfCircleDiameter.Size = new System.Drawing.Size(57, 13);
             this.labelAreaOfCircleDiameter.TabIndex = 0;
             this.labelAreaOfCircleDiameter.Text = "Diameter";
             // 
+            // labelCircleArea
+            // 
+            this.labelCircleArea.AutoSize = true;
+            this.labelCircleArea.Location = new System.Drawing.Point(3, 57);
+            this.labelCircleArea.Name = "labelCircleArea";
+            this.labelCircleArea.Size = new System.Drawing.Size(33, 13);
+            this.labelCircleArea.TabIndex = 75;
+            this.labelCircleArea.Text = "Area";
+            // 
+            // textBox37
+            // 
+            this.textBox37.Location = new System.Drawing.Point(6, 73);
+            this.textBox37.Name = "textBox37";
+            this.textBox37.ReadOnly = true;
+            this.textBox37.Size = new System.Drawing.Size(100, 20);
+            this.textBox37.TabIndex = 76;
+            // 
+            // labelCircleCircumference
+            // 
+            this.labelCircleCircumference.AutoSize = true;
+            this.labelCircleCircumference.Location = new System.Drawing.Point(3, 96);
+            this.labelCircleCircumference.Name = "labelCircleCircumference";
+            this.labelCircleCircumference.Size = new System.Drawing.Size(88, 13);
+            this.labelCircleCircumference.TabIndex = 77;
+            this.labelCircleCircumference.Text = "Circumference";
+            // 
+            // textBox38
+            // 
+            this.textBox38.Location = new System.Drawing.Point(6, 112);
+            this.textBox38.Name = "textBox38";
+            this.textBox38.ReadOnly = true;
+            this.textBox38.Size = new System.Drawing.Size(100, 20);
+            this.textBox38.TabIndex = 78;
+            // 
+            // groupBoxSphere
+            // 
+            this.groupBoxSphere.Controls.Add(this.labelSphereSurfaceArea);
+            this.groupBoxSphere.Controls.Add(this.textBox39);
+            this.groupBoxSphere.Controls.Add(this.labelSphereVolume);
+            this.groupBoxSphere.Controls.Add(this.textBox40);
+            this.groupBoxSphere.Controls.Add(this.label3);
+            this.groupBoxSphere.Controls.Add(this.textBox41);
+            this.groupBoxSphere.Controls.Add(this.button3);
+            this.groupBoxSphere.Controls.Add(this.button4);
+            this.groupBoxSphere.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxSphere.Location = new System.Drawing.Point(458, 9);
+            this.groupBoxSphere.Name = "groupBoxSphere";
+            this.groupBoxSphere.Size = new System.Drawing.Size(167, 169);
+            this.groupBoxSphere.TabIndex = 146;
+            this.groupBoxSphere.TabStop = false;
+            this.groupBoxSphere.Text = "Sphere";
+            // 
+            // labelSphereSurfaceArea
+            // 
+            this.labelSphereSurfaceArea.AutoSize = true;
+            this.labelSphereSurfaceArea.Location = new System.Drawing.Point(3, 96);
+            this.labelSphereSurfaceArea.Name = "labelSphereSurfaceArea";
+            this.labelSphereSurfaceArea.Size = new System.Drawing.Size(81, 13);
+            this.labelSphereSurfaceArea.TabIndex = 77;
+            this.labelSphereSurfaceArea.Text = "Surface Area";
+            // 
+            // textBox39
+            // 
+            this.textBox39.Location = new System.Drawing.Point(6, 112);
+            this.textBox39.Name = "textBox39";
+            this.textBox39.ReadOnly = true;
+            this.textBox39.Size = new System.Drawing.Size(100, 20);
+            this.textBox39.TabIndex = 78;
+            // 
+            // labelSphereVolume
+            // 
+            this.labelSphereVolume.AutoSize = true;
+            this.labelSphereVolume.Location = new System.Drawing.Point(3, 57);
+            this.labelSphereVolume.Name = "labelSphereVolume";
+            this.labelSphereVolume.Size = new System.Drawing.Size(48, 13);
+            this.labelSphereVolume.TabIndex = 75;
+            this.labelSphereVolume.Text = "Volume";
+            // 
+            // textBox40
+            // 
+            this.textBox40.Location = new System.Drawing.Point(6, 73);
+            this.textBox40.Name = "textBox40";
+            this.textBox40.ReadOnly = true;
+            this.textBox40.Size = new System.Drawing.Size(100, 20);
+            this.textBox40.TabIndex = 76;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Diameter";
+            // 
+            // textBox41
+            // 
+            this.textBox41.Location = new System.Drawing.Point(6, 34);
+            this.textBox41.Name = "textBox41";
+            this.textBox41.Size = new System.Drawing.Size(100, 20);
+            this.textBox41.TabIndex = 70;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Lime;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.Location = new System.Drawing.Point(6, 138);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 72;
+            this.button3.Text = "Calculate";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Red;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(87, 138);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 74;
+            this.button4.Text = "Clear";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // groupBoxCylinder
+            // 
+            this.groupBoxCylinder.Controls.Add(this.labelCylinderTotalSurfaceArea);
+            this.groupBoxCylinder.Controls.Add(this.textBox45);
+            this.groupBoxCylinder.Controls.Add(this.labelCylinderLateralArea);
+            this.groupBoxCylinder.Controls.Add(this.textBox42);
+            this.groupBoxCylinder.Controls.Add(this.labelCylinderVolume);
+            this.groupBoxCylinder.Controls.Add(this.textBox43);
+            this.groupBoxCylinder.Controls.Add(this.label4);
+            this.groupBoxCylinder.Controls.Add(this.textBox44);
+            this.groupBoxCylinder.Controls.Add(this.button5);
+            this.groupBoxCylinder.Controls.Add(this.button6);
+            this.groupBoxCylinder.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxCylinder.Location = new System.Drawing.Point(285, 189);
+            this.groupBoxCylinder.Name = "groupBoxCylinder";
+            this.groupBoxCylinder.Size = new System.Drawing.Size(167, 209);
+            this.groupBoxCylinder.TabIndex = 146;
+            this.groupBoxCylinder.TabStop = false;
+            this.groupBoxCylinder.Text = "Cylinder";
+            // 
+            // labelCylinderLateralArea
+            // 
+            this.labelCylinderLateralArea.AutoSize = true;
+            this.labelCylinderLateralArea.Location = new System.Drawing.Point(3, 96);
+            this.labelCylinderLateralArea.Name = "labelCylinderLateralArea";
+            this.labelCylinderLateralArea.Size = new System.Drawing.Size(76, 13);
+            this.labelCylinderLateralArea.TabIndex = 77;
+            this.labelCylinderLateralArea.Text = "Lateral Area";
+            // 
+            // textBox42
+            // 
+            this.textBox42.Location = new System.Drawing.Point(6, 112);
+            this.textBox42.Name = "textBox42";
+            this.textBox42.ReadOnly = true;
+            this.textBox42.Size = new System.Drawing.Size(100, 20);
+            this.textBox42.TabIndex = 78;
+            // 
+            // labelCylinderVolume
+            // 
+            this.labelCylinderVolume.AutoSize = true;
+            this.labelCylinderVolume.Location = new System.Drawing.Point(3, 57);
+            this.labelCylinderVolume.Name = "labelCylinderVolume";
+            this.labelCylinderVolume.Size = new System.Drawing.Size(48, 13);
+            this.labelCylinderVolume.TabIndex = 75;
+            this.labelCylinderVolume.Text = "Volume";
+            // 
+            // textBox43
+            // 
+            this.textBox43.Location = new System.Drawing.Point(6, 73);
+            this.textBox43.Name = "textBox43";
+            this.textBox43.ReadOnly = true;
+            this.textBox43.Size = new System.Drawing.Size(100, 20);
+            this.textBox43.TabIndex = 76;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 18);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Diameter";
+            // 
+            // textBox44
+            // 
+            this.textBox44.Location = new System.Drawing.Point(6, 34);
+            this.textBox44.Name = "textBox44";
+            this.textBox44.Size = new System.Drawing.Size(100, 20);
+            this.textBox44.TabIndex = 70;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Lime;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Location = new System.Drawing.Point(6, 176);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 72;
+            this.button5.Text = "Calculate";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Red;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(87, 176);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 74;
+            this.button6.Text = "Clear";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // labelCylinderTotalSurfaceArea
+            // 
+            this.labelCylinderTotalSurfaceArea.AutoSize = true;
+            this.labelCylinderTotalSurfaceArea.Location = new System.Drawing.Point(3, 134);
+            this.labelCylinderTotalSurfaceArea.Name = "labelCylinderTotalSurfaceArea";
+            this.labelCylinderTotalSurfaceArea.Size = new System.Drawing.Size(114, 13);
+            this.labelCylinderTotalSurfaceArea.TabIndex = 79;
+            this.labelCylinderTotalSurfaceArea.Text = "Total Surface Area";
+            // 
+            // textBox45
+            // 
+            this.textBox45.Location = new System.Drawing.Point(6, 150);
+            this.textBox45.Name = "textBox45";
+            this.textBox45.ReadOnly = true;
+            this.textBox45.Size = new System.Drawing.Size(100, 20);
+            this.textBox45.TabIndex = 80;
+            // 
+            // groupBoxCone
+            // 
+            this.groupBoxCone.Controls.Add(this.labelConeTotalSurfaceAre);
+            this.groupBoxCone.Controls.Add(this.textBox46);
+            this.groupBoxCone.Controls.Add(this.labelConeLateralArea);
+            this.groupBoxCone.Controls.Add(this.textBox47);
+            this.groupBoxCone.Controls.Add(this.labelConeVolume);
+            this.groupBoxCone.Controls.Add(this.textBox48);
+            this.groupBoxCone.Controls.Add(this.label9);
+            this.groupBoxCone.Controls.Add(this.textBox49);
+            this.groupBoxCone.Controls.Add(this.button7);
+            this.groupBoxCone.Controls.Add(this.button8);
+            this.groupBoxCone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxCone.Location = new System.Drawing.Point(458, 189);
+            this.groupBoxCone.Name = "groupBoxCone";
+            this.groupBoxCone.Size = new System.Drawing.Size(167, 209);
+            this.groupBoxCone.TabIndex = 147;
+            this.groupBoxCone.TabStop = false;
+            this.groupBoxCone.Text = "Cone";
+            // 
+            // labelConeTotalSurfaceAre
+            // 
+            this.labelConeTotalSurfaceAre.AutoSize = true;
+            this.labelConeTotalSurfaceAre.Location = new System.Drawing.Point(3, 134);
+            this.labelConeTotalSurfaceAre.Name = "labelConeTotalSurfaceAre";
+            this.labelConeTotalSurfaceAre.Size = new System.Drawing.Size(114, 13);
+            this.labelConeTotalSurfaceAre.TabIndex = 79;
+            this.labelConeTotalSurfaceAre.Text = "Total Surface Area";
+            // 
+            // textBox46
+            // 
+            this.textBox46.Location = new System.Drawing.Point(6, 150);
+            this.textBox46.Name = "textBox46";
+            this.textBox46.ReadOnly = true;
+            this.textBox46.Size = new System.Drawing.Size(100, 20);
+            this.textBox46.TabIndex = 80;
+            // 
+            // labelConeLateralArea
+            // 
+            this.labelConeLateralArea.AutoSize = true;
+            this.labelConeLateralArea.Location = new System.Drawing.Point(3, 96);
+            this.labelConeLateralArea.Name = "labelConeLateralArea";
+            this.labelConeLateralArea.Size = new System.Drawing.Size(76, 13);
+            this.labelConeLateralArea.TabIndex = 77;
+            this.labelConeLateralArea.Text = "Lateral Area";
+            // 
+            // textBox47
+            // 
+            this.textBox47.Location = new System.Drawing.Point(6, 112);
+            this.textBox47.Name = "textBox47";
+            this.textBox47.ReadOnly = true;
+            this.textBox47.Size = new System.Drawing.Size(100, 20);
+            this.textBox47.TabIndex = 78;
+            // 
+            // labelConeVolume
+            // 
+            this.labelConeVolume.AutoSize = true;
+            this.labelConeVolume.Location = new System.Drawing.Point(3, 57);
+            this.labelConeVolume.Name = "labelConeVolume";
+            this.labelConeVolume.Size = new System.Drawing.Size(48, 13);
+            this.labelConeVolume.TabIndex = 75;
+            this.labelConeVolume.Text = "Volume";
+            // 
+            // textBox48
+            // 
+            this.textBox48.Location = new System.Drawing.Point(6, 73);
+            this.textBox48.Name = "textBox48";
+            this.textBox48.ReadOnly = true;
+            this.textBox48.Size = new System.Drawing.Size(100, 20);
+            this.textBox48.TabIndex = 76;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(3, 18);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(57, 13);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Diameter";
+            // 
+            // textBox49
+            // 
+            this.textBox49.Location = new System.Drawing.Point(6, 34);
+            this.textBox49.Name = "textBox49";
+            this.textBox49.Size = new System.Drawing.Size(100, 20);
+            this.textBox49.TabIndex = 70;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Lime;
+            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ForeColor = System.Drawing.Color.Black;
+            this.button7.Location = new System.Drawing.Point(6, 176);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 72;
+            this.button7.Text = "Calculate";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Red;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(87, 176);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 74;
+            this.button8.Text = "Clear";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // textBoxHypotenuseSideB
+            // 
+            this.textBoxHypotenuseSideB.Location = new System.Drawing.Point(88, 19);
+            this.textBoxHypotenuseSideB.Name = "textBoxHypotenuseSideB";
+            this.textBoxHypotenuseSideB.Size = new System.Drawing.Size(74, 20);
+            this.textBoxHypotenuseSideB.TabIndex = 74;
+            this.toolTip1.SetToolTip(this.textBoxHypotenuseSideB, "Side B");
+            // 
+            // textBoxHypotenuseSideC
+            // 
+            this.textBoxHypotenuseSideC.Location = new System.Drawing.Point(168, 19);
+            this.textBoxHypotenuseSideC.Name = "textBoxHypotenuseSideC";
+            this.textBoxHypotenuseSideC.ReadOnly = true;
+            this.textBoxHypotenuseSideC.Size = new System.Drawing.Size(74, 20);
+            this.textBoxHypotenuseSideC.TabIndex = 75;
+            this.toolTip1.SetToolTip(this.textBoxHypotenuseSideC, "Side C");
+            // 
             // formMathFormulas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(664, 552);
-            this.Controls.Add(this.groupBoxAreaOfCircle);
+            this.ClientSize = new System.Drawing.Size(638, 455);
+            this.Controls.Add(this.groupBoxCone);
+            this.Controls.Add(this.groupBoxCylinder);
+            this.Controls.Add(this.groupBoxSphere);
+            this.Controls.Add(this.groupBoxCircle);
             this.Controls.Add(this.groupBoxHypotenuse);
             this.Controls.Add(this.groupBoxFractions);
             this.Controls.Add(this.buttonCircuitryExit);
@@ -712,8 +1113,14 @@
             this.groupBoxFractions.PerformLayout();
             this.groupBoxHypotenuse.ResumeLayout(false);
             this.groupBoxHypotenuse.PerformLayout();
-            this.groupBoxAreaOfCircle.ResumeLayout(false);
-            this.groupBoxAreaOfCircle.PerformLayout();
+            this.groupBoxCircle.ResumeLayout(false);
+            this.groupBoxCircle.PerformLayout();
+            this.groupBoxSphere.ResumeLayout(false);
+            this.groupBoxSphere.PerformLayout();
+            this.groupBoxCylinder.ResumeLayout(false);
+            this.groupBoxCylinder.PerformLayout();
+            this.groupBoxCone.ResumeLayout(false);
+            this.groupBoxCone.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -726,7 +1133,6 @@
         private System.Windows.Forms.TextBox textBoxAreaofCircleDiameter;
         private System.Windows.Forms.Button buttonHypotenuse;
         private System.Windows.Forms.Label labelHypotenuseOutput;
-        private System.Windows.Forms.TextBox textBoxHypotenuseSideB;
         private System.Windows.Forms.TextBox textBoxHypotenuseSideA;
         private System.Windows.Forms.Button buttonCircuitryExit;
         private System.Windows.Forms.Button buttonCircuitryHome;
@@ -782,8 +1188,45 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBoxFractions;
         private System.Windows.Forms.GroupBox groupBoxHypotenuse;
-        private System.Windows.Forms.GroupBox groupBoxAreaOfCircle;
-        private System.Windows.Forms.Label labelAreaOfCircleOutput;
+        private System.Windows.Forms.GroupBox groupBoxCircle;
         private System.Windows.Forms.Label labelAreaOfCircleDiameter;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.TextBox textBoxHypotenuseSideC;
+        private System.Windows.Forms.TextBox textBoxHypotenuseSideB;
+        private System.Windows.Forms.Label labelCircleCircumference;
+        private System.Windows.Forms.TextBox textBox38;
+        private System.Windows.Forms.Label labelCircleArea;
+        private System.Windows.Forms.TextBox textBox37;
+        private System.Windows.Forms.GroupBox groupBoxSphere;
+        private System.Windows.Forms.Label labelSphereSurfaceArea;
+        private System.Windows.Forms.TextBox textBox39;
+        private System.Windows.Forms.Label labelSphereVolume;
+        private System.Windows.Forms.TextBox textBox40;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox41;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.GroupBox groupBoxCylinder;
+        private System.Windows.Forms.Label labelCylinderTotalSurfaceArea;
+        private System.Windows.Forms.TextBox textBox45;
+        private System.Windows.Forms.Label labelCylinderLateralArea;
+        private System.Windows.Forms.TextBox textBox42;
+        private System.Windows.Forms.Label labelCylinderVolume;
+        private System.Windows.Forms.TextBox textBox43;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox44;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.GroupBox groupBoxCone;
+        private System.Windows.Forms.Label labelConeTotalSurfaceAre;
+        private System.Windows.Forms.TextBox textBox46;
+        private System.Windows.Forms.Label labelConeLateralArea;
+        private System.Windows.Forms.TextBox textBox47;
+        private System.Windows.Forms.Label labelConeVolume;
+        private System.Windows.Forms.TextBox textBox48;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox49;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }
