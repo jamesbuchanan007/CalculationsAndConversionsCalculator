@@ -45,16 +45,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CircuitryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CircuitryForm.Designer.cs">
+      <DependentUpon>CircuitryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConversionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConversionsForm.Designer.cs">
+      <DependentUpon>ConversionsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MathFormulasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MathFormulasForm.Designer.cs">
+      <DependentUpon>MathFormulasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiscellaneousForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiscellaneousForm.Designer.cs">
+      <DependentUpon>MiscellaneousForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CircuitryForm.resx">
+      <DependentUpon>CircuitryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConversionsForm.resx">
+      <DependentUpon>ConversionsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MathFormulasForm.resx">
+      <DependentUpon>MathFormulasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiscellaneousForm.resx">
+      <DependentUpon>MiscellaneousForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
