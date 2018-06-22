@@ -211,6 +211,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxAreaofCircleDiameterInput.Size = new System.Drawing.Size(100, 20);
             this.textBoxAreaofCircleDiameterInput.TabIndex = 70;
             this.textBoxAreaofCircleDiameterInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBoxAreaofCircleDiameterInput, "Enter Diameter (Radius * 2)");
             // 
             // buttonHypotenuseCalculate
             // 
@@ -869,6 +870,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxCircleUOM.Size = new System.Drawing.Size(27, 20);
             this.textBoxCircleUOM.TabIndex = 79;
             this.textBoxCircleUOM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBoxCircleUOM, "Enter Unit of Measure");
             // 
             // labelCircleCircumference
             // 
@@ -980,6 +982,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxSphereUOM.Size = new System.Drawing.Size(27, 20);
             this.textBoxSphereUOM.TabIndex = 80;
             this.textBoxSphereUOM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBoxSphereUOM, "Enter Unit of Measure");
             // 
             // labelSphereSurfaceArea
             // 
@@ -1039,6 +1042,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxSphereDiameterInput.Size = new System.Drawing.Size(100, 20);
             this.textBoxSphereDiameterInput.TabIndex = 70;
             this.textBoxSphereDiameterInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBoxSphereDiameterInput, "Enter Diameter (Radius * 2)");
             // 
             // buttonSphereCalculate
             // 
@@ -1161,6 +1165,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxCylinderUOM.Size = new System.Drawing.Size(27, 20);
             this.textBoxCylinderUOM.TabIndex = 82;
             this.textBoxCylinderUOM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBoxCylinderUOM, "Enter Unit of Measure");
             // 
             // labelCylinderTotalSurfaceArea
             // 
@@ -1240,6 +1245,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxCylinderDiameterInput.Size = new System.Drawing.Size(46, 20);
             this.textBoxCylinderDiameterInput.TabIndex = 70;
             this.textBoxCylinderDiameterInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBoxCylinderDiameterInput, "Enter Diameter (Radius * 2)");
             // 
             // buttonCylinderCalculate
             // 
@@ -1372,6 +1378,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxConeUOM.Size = new System.Drawing.Size(27, 20);
             this.textBoxConeUOM.TabIndex = 81;
             this.textBoxConeUOM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBoxConeUOM, "Enter Unit of Measure");
             // 
             // textBoxConeDiameterInput
             // 
@@ -1381,6 +1388,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxConeDiameterInput.Size = new System.Drawing.Size(46, 20);
             this.textBoxConeDiameterInput.TabIndex = 87;
             this.textBoxConeDiameterInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBoxConeDiameterInput, "Enter Diameter (Radius * 2)");
             // 
             // labelConeTotalSurfaceAre
             // 
