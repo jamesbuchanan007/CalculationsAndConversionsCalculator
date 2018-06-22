@@ -95,6 +95,8 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxHypotenuseSideC = new System.Windows.Forms.TextBox();
             this.textBoxHypotenuseSideB = new System.Windows.Forms.TextBox();
             this.groupBoxCircle = new System.Windows.Forms.GroupBox();
+            this.buttonCircleCircumferenceClipboard = new System.Windows.Forms.Button();
+            this.buttonCircleAreaClipboard = new System.Windows.Forms.Button();
             this.labelCircleUOM = new System.Windows.Forms.Label();
             this.textBoxCircleUOM = new System.Windows.Forms.TextBox();
             this.labelCircleCircumference = new System.Windows.Forms.Label();
@@ -103,6 +105,8 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxCircleAreaOutput = new System.Windows.Forms.TextBox();
             this.labelAreaOfCircleDiameter = new System.Windows.Forms.Label();
             this.groupBoxSphere = new System.Windows.Forms.GroupBox();
+            this.buttonSphereSurfaceAreaClipboard = new System.Windows.Forms.Button();
+            this.buttonSphereVolumeClipboard = new System.Windows.Forms.Button();
             this.labelSphereUOM = new System.Windows.Forms.Label();
             this.textBoxSphereUOM = new System.Windows.Forms.TextBox();
             this.labelSphereSurfaceArea = new System.Windows.Forms.Label();
@@ -114,6 +118,11 @@ namespace CalculationsAndConversionsCalculator
             this.buttonSphereCalculate = new System.Windows.Forms.Button();
             this.buttonSphereClear = new System.Windows.Forms.Button();
             this.groupBoxCylinder = new System.Windows.Forms.GroupBox();
+            this.buttonCylinderSurfaceAreaClipboard = new System.Windows.Forms.Button();
+            this.buttonCylinderLateralAreaClipboard = new System.Windows.Forms.Button();
+            this.buttonCylinderVolumeClipboard = new System.Windows.Forms.Button();
+            this.labelCylinderHeight = new System.Windows.Forms.Label();
+            this.textBoxCylinderHeightInput = new System.Windows.Forms.TextBox();
             this.labelCylinderUOM = new System.Windows.Forms.Label();
             this.textBoxCylinderUOM = new System.Windows.Forms.TextBox();
             this.labelCylinderTotalSurfaceArea = new System.Windows.Forms.Label();
@@ -127,8 +136,15 @@ namespace CalculationsAndConversionsCalculator
             this.buttonCylinderCalculate = new System.Windows.Forms.Button();
             this.buttonCylinderClear = new System.Windows.Forms.Button();
             this.groupBoxCone = new System.Windows.Forms.GroupBox();
+            this.buttonConeSurfaceAreaClipboard = new System.Windows.Forms.Button();
+            this.buttonConeLateralAreaClipboard = new System.Windows.Forms.Button();
+            this.buttonConeVolumeClipboard = new System.Windows.Forms.Button();
+            this.labelConeHeight = new System.Windows.Forms.Label();
+            this.textBoxConeHeightInput = new System.Windows.Forms.TextBox();
             this.labelConeUOM = new System.Windows.Forms.Label();
+            this.labelConeDiameter = new System.Windows.Forms.Label();
             this.textBoxConeUOM = new System.Windows.Forms.TextBox();
+            this.textBoxConeDiameterInput = new System.Windows.Forms.TextBox();
             this.labelConeTotalSurfaceAre = new System.Windows.Forms.Label();
             this.textBoxConeTotalSurfaceAreaOutput = new System.Windows.Forms.TextBox();
             this.labelConeLateralArea = new System.Windows.Forms.Label();
@@ -138,22 +154,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonConeCalculate = new System.Windows.Forms.Button();
             this.buttonConeClear = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.labelCylinderHeight = new System.Windows.Forms.Label();
-            this.textBoxCylinderHeightInput = new System.Windows.Forms.TextBox();
-            this.labelConeHeight = new System.Windows.Forms.Label();
-            this.textBoxConeHeightInput = new System.Windows.Forms.TextBox();
-            this.labelConeDiameter = new System.Windows.Forms.Label();
-            this.textBoxConeDiameterInput = new System.Windows.Forms.TextBox();
-            this.buttonCircleAreaClipboard = new System.Windows.Forms.Button();
-            this.buttonbuttonCircleCircleClipboard = new System.Windows.Forms.Button();
-            this.buttonSphereVolumeClipboard = new System.Windows.Forms.Button();
-            this.buttonSphereSurfaceAreaClipboard = new System.Windows.Forms.Button();
-            this.buttonCylinderVolumeClipboard = new System.Windows.Forms.Button();
-            this.buttonCylinderLateralAreaClipboard = new System.Windows.Forms.Button();
-            this.buttonCylinderSurfaceAreaClipboard = new System.Windows.Forms.Button();
-            this.buttonConeSurfaceAreaClipboard = new System.Windows.Forms.Button();
-            this.buttonConeLateralAreaClipboard = new System.Windows.Forms.Button();
-            this.buttonConeVolumeClipboard = new System.Windows.Forms.Button();
+            this.buttonHypotenuseClipboard = new System.Windows.Forms.Button();
             this.groupBoxFractions.SuspendLayout();
             this.groupBoxHypotenuse.SuspendLayout();
             this.groupBoxCircle.SuspendLayout();
@@ -180,7 +181,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonHypotenuseClear.BackColor = System.Drawing.Color.Red;
             this.buttonHypotenuseClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonHypotenuseClear.ForeColor = System.Drawing.Color.White;
-            this.buttonHypotenuseClear.Location = new System.Drawing.Point(168, 45);
+            this.buttonHypotenuseClear.Location = new System.Drawing.Point(189, 45);
             this.buttonHypotenuseClear.Name = "buttonHypotenuseClear";
             this.buttonHypotenuseClear.Size = new System.Drawing.Size(75, 23);
             this.buttonHypotenuseClear.TabIndex = 73;
@@ -691,7 +692,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonFractionsCalculate.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.buttonFractionsCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonFractionsCalculate.ForeColor = System.Drawing.Color.Black;
-            this.buttonFractionsCalculate.Location = new System.Drawing.Point(24, 272);
+            this.buttonFractionsCalculate.Location = new System.Drawing.Point(3, 272);
             this.buttonFractionsCalculate.Name = "buttonFractionsCalculate";
             this.buttonFractionsCalculate.Size = new System.Drawing.Size(75, 23);
             this.buttonFractionsCalculate.TabIndex = 143;
@@ -703,7 +704,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonFractionsClear.BackColor = System.Drawing.Color.Red;
             this.buttonFractionsClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonFractionsClear.ForeColor = System.Drawing.Color.White;
-            this.buttonFractionsClear.Location = new System.Drawing.Point(182, 272);
+            this.buttonFractionsClear.Location = new System.Drawing.Point(189, 272);
             this.buttonFractionsClear.Name = "buttonFractionsClear";
             this.buttonFractionsClear.Size = new System.Drawing.Size(75, 23);
             this.buttonFractionsClear.TabIndex = 143;
@@ -772,6 +773,7 @@ namespace CalculationsAndConversionsCalculator
             // 
             // groupBoxHypotenuse
             // 
+            this.groupBoxHypotenuse.Controls.Add(this.buttonHypotenuseClipboard);
             this.groupBoxHypotenuse.Controls.Add(this.textBoxHypotenuseSideC);
             this.groupBoxHypotenuse.Controls.Add(this.textBoxHypotenuseSideB);
             this.groupBoxHypotenuse.Controls.Add(this.textBoxHypotenuseSideA);
@@ -781,7 +783,7 @@ namespace CalculationsAndConversionsCalculator
             this.groupBoxHypotenuse.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxHypotenuse.Location = new System.Drawing.Point(9, 9);
             this.groupBoxHypotenuse.Name = "groupBoxHypotenuse";
-            this.groupBoxHypotenuse.Size = new System.Drawing.Size(257, 78);
+            this.groupBoxHypotenuse.Size = new System.Drawing.Size(270, 78);
             this.groupBoxHypotenuse.TabIndex = 144;
             this.groupBoxHypotenuse.TabStop = false;
             this.groupBoxHypotenuse.Text = "Hypotenuse";
@@ -792,7 +794,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxHypotenuseSideC.Location = new System.Drawing.Point(168, 19);
             this.textBoxHypotenuseSideC.Name = "textBoxHypotenuseSideC";
             this.textBoxHypotenuseSideC.ReadOnly = true;
-            this.textBoxHypotenuseSideC.Size = new System.Drawing.Size(74, 20);
+            this.textBoxHypotenuseSideC.Size = new System.Drawing.Size(71, 20);
             this.textBoxHypotenuseSideC.TabIndex = 75;
             this.textBoxHypotenuseSideC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBoxHypotenuseSideC, "Side C");
@@ -802,14 +804,14 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxHypotenuseSideB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxHypotenuseSideB.Location = new System.Drawing.Point(88, 19);
             this.textBoxHypotenuseSideB.Name = "textBoxHypotenuseSideB";
-            this.textBoxHypotenuseSideB.Size = new System.Drawing.Size(74, 20);
+            this.textBoxHypotenuseSideB.Size = new System.Drawing.Size(73, 20);
             this.textBoxHypotenuseSideB.TabIndex = 74;
             this.textBoxHypotenuseSideB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBoxHypotenuseSideB, "Side B");
             // 
             // groupBoxCircle
             // 
-            this.groupBoxCircle.Controls.Add(this.buttonbuttonCircleCircleClipboard);
+            this.groupBoxCircle.Controls.Add(this.buttonCircleCircumferenceClipboard);
             this.groupBoxCircle.Controls.Add(this.buttonCircleAreaClipboard);
             this.groupBoxCircle.Controls.Add(this.labelCircleUOM);
             this.groupBoxCircle.Controls.Add(this.textBoxCircleUOM);
@@ -828,6 +830,26 @@ namespace CalculationsAndConversionsCalculator
             this.groupBoxCircle.TabIndex = 145;
             this.groupBoxCircle.TabStop = false;
             this.groupBoxCircle.Text = "Circle";
+            // 
+            // buttonCircleCircumferenceClipboard
+            // 
+            this.buttonCircleCircumferenceClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCircleCircumferenceClipboard.Location = new System.Drawing.Point(114, 110);
+            this.buttonCircleCircumferenceClipboard.Name = "buttonCircleCircumferenceClipboard";
+            this.buttonCircleCircumferenceClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonCircleCircumferenceClipboard.TabIndex = 83;
+            this.toolTip1.SetToolTip(this.buttonCircleCircumferenceClipboard, "Copy To Clipboard");
+            this.buttonCircleCircumferenceClipboard.UseVisualStyleBackColor = true;
+            // 
+            // buttonCircleAreaClipboard
+            // 
+            this.buttonCircleAreaClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCircleAreaClipboard.Location = new System.Drawing.Point(114, 71);
+            this.buttonCircleAreaClipboard.Name = "buttonCircleAreaClipboard";
+            this.buttonCircleAreaClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonCircleAreaClipboard.TabIndex = 82;
+            this.toolTip1.SetToolTip(this.buttonCircleAreaClipboard, "Copy To Clipboard");
+            this.buttonCircleAreaClipboard.UseVisualStyleBackColor = true;
             // 
             // labelCircleUOM
             // 
@@ -919,6 +941,26 @@ namespace CalculationsAndConversionsCalculator
             this.groupBoxSphere.TabIndex = 146;
             this.groupBoxSphere.TabStop = false;
             this.groupBoxSphere.Text = "Sphere";
+            // 
+            // buttonSphereSurfaceAreaClipboard
+            // 
+            this.buttonSphereSurfaceAreaClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSphereSurfaceAreaClipboard.Location = new System.Drawing.Point(112, 110);
+            this.buttonSphereSurfaceAreaClipboard.Name = "buttonSphereSurfaceAreaClipboard";
+            this.buttonSphereSurfaceAreaClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonSphereSurfaceAreaClipboard.TabIndex = 85;
+            this.toolTip1.SetToolTip(this.buttonSphereSurfaceAreaClipboard, "Copy To Clipboard");
+            this.buttonSphereSurfaceAreaClipboard.UseVisualStyleBackColor = true;
+            // 
+            // buttonSphereVolumeClipboard
+            // 
+            this.buttonSphereVolumeClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSphereVolumeClipboard.Location = new System.Drawing.Point(112, 71);
+            this.buttonSphereVolumeClipboard.Name = "buttonSphereVolumeClipboard";
+            this.buttonSphereVolumeClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonSphereVolumeClipboard.TabIndex = 84;
+            this.toolTip1.SetToolTip(this.buttonSphereVolumeClipboard, "Copy To Clipboard");
+            this.buttonSphereVolumeClipboard.UseVisualStyleBackColor = true;
             // 
             // labelSphereUOM
             // 
@@ -1051,6 +1093,55 @@ namespace CalculationsAndConversionsCalculator
             this.groupBoxCylinder.TabIndex = 146;
             this.groupBoxCylinder.TabStop = false;
             this.groupBoxCylinder.Text = "Cylinder";
+            // 
+            // buttonCylinderSurfaceAreaClipboard
+            // 
+            this.buttonCylinderSurfaceAreaClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCylinderSurfaceAreaClipboard.Location = new System.Drawing.Point(113, 148);
+            this.buttonCylinderSurfaceAreaClipboard.Name = "buttonCylinderSurfaceAreaClipboard";
+            this.buttonCylinderSurfaceAreaClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonCylinderSurfaceAreaClipboard.TabIndex = 88;
+            this.toolTip1.SetToolTip(this.buttonCylinderSurfaceAreaClipboard, "Copy To Clipboard");
+            this.buttonCylinderSurfaceAreaClipboard.UseVisualStyleBackColor = true;
+            // 
+            // buttonCylinderLateralAreaClipboard
+            // 
+            this.buttonCylinderLateralAreaClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCylinderLateralAreaClipboard.Location = new System.Drawing.Point(113, 110);
+            this.buttonCylinderLateralAreaClipboard.Name = "buttonCylinderLateralAreaClipboard";
+            this.buttonCylinderLateralAreaClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonCylinderLateralAreaClipboard.TabIndex = 87;
+            this.toolTip1.SetToolTip(this.buttonCylinderLateralAreaClipboard, "Copy To Clipboard");
+            this.buttonCylinderLateralAreaClipboard.UseVisualStyleBackColor = true;
+            // 
+            // buttonCylinderVolumeClipboard
+            // 
+            this.buttonCylinderVolumeClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCylinderVolumeClipboard.Location = new System.Drawing.Point(113, 71);
+            this.buttonCylinderVolumeClipboard.Name = "buttonCylinderVolumeClipboard";
+            this.buttonCylinderVolumeClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonCylinderVolumeClipboard.TabIndex = 86;
+            this.toolTip1.SetToolTip(this.buttonCylinderVolumeClipboard, "Copy To Clipboard");
+            this.buttonCylinderVolumeClipboard.UseVisualStyleBackColor = true;
+            // 
+            // labelCylinderHeight
+            // 
+            this.labelCylinderHeight.AutoSize = true;
+            this.labelCylinderHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCylinderHeight.Location = new System.Drawing.Point(57, 18);
+            this.labelCylinderHeight.Name = "labelCylinderHeight";
+            this.labelCylinderHeight.Size = new System.Drawing.Size(38, 13);
+            this.labelCylinderHeight.TabIndex = 84;
+            this.labelCylinderHeight.Text = "Height";
+            // 
+            // textBoxCylinderHeightInput
+            // 
+            this.textBoxCylinderHeightInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCylinderHeightInput.Location = new System.Drawing.Point(60, 34);
+            this.textBoxCylinderHeightInput.Name = "textBoxCylinderHeightInput";
+            this.textBoxCylinderHeightInput.Size = new System.Drawing.Size(46, 20);
+            this.textBoxCylinderHeightInput.TabIndex = 85;
+            this.textBoxCylinderHeightInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelCylinderUOM
             // 
@@ -1204,6 +1295,55 @@ namespace CalculationsAndConversionsCalculator
             this.groupBoxCone.TabStop = false;
             this.groupBoxCone.Text = "Cone";
             // 
+            // buttonConeSurfaceAreaClipboard
+            // 
+            this.buttonConeSurfaceAreaClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonConeSurfaceAreaClipboard.Location = new System.Drawing.Point(111, 148);
+            this.buttonConeSurfaceAreaClipboard.Name = "buttonConeSurfaceAreaClipboard";
+            this.buttonConeSurfaceAreaClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonConeSurfaceAreaClipboard.TabIndex = 92;
+            this.toolTip1.SetToolTip(this.buttonConeSurfaceAreaClipboard, "Copy To Clipboard");
+            this.buttonConeSurfaceAreaClipboard.UseVisualStyleBackColor = true;
+            // 
+            // buttonConeLateralAreaClipboard
+            // 
+            this.buttonConeLateralAreaClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonConeLateralAreaClipboard.Location = new System.Drawing.Point(111, 110);
+            this.buttonConeLateralAreaClipboard.Name = "buttonConeLateralAreaClipboard";
+            this.buttonConeLateralAreaClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonConeLateralAreaClipboard.TabIndex = 91;
+            this.toolTip1.SetToolTip(this.buttonConeLateralAreaClipboard, "Copy To Clipboard");
+            this.buttonConeLateralAreaClipboard.UseVisualStyleBackColor = true;
+            // 
+            // buttonConeVolumeClipboard
+            // 
+            this.buttonConeVolumeClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonConeVolumeClipboard.Location = new System.Drawing.Point(111, 71);
+            this.buttonConeVolumeClipboard.Name = "buttonConeVolumeClipboard";
+            this.buttonConeVolumeClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonConeVolumeClipboard.TabIndex = 90;
+            this.toolTip1.SetToolTip(this.buttonConeVolumeClipboard, "Copy To Clipboard");
+            this.buttonConeVolumeClipboard.UseVisualStyleBackColor = true;
+            // 
+            // labelConeHeight
+            // 
+            this.labelConeHeight.AutoSize = true;
+            this.labelConeHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConeHeight.Location = new System.Drawing.Point(57, 18);
+            this.labelConeHeight.Name = "labelConeHeight";
+            this.labelConeHeight.Size = new System.Drawing.Size(38, 13);
+            this.labelConeHeight.TabIndex = 88;
+            this.labelConeHeight.Text = "Height";
+            // 
+            // textBoxConeHeightInput
+            // 
+            this.textBoxConeHeightInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxConeHeightInput.Location = new System.Drawing.Point(60, 34);
+            this.textBoxConeHeightInput.Name = "textBoxConeHeightInput";
+            this.textBoxConeHeightInput.Size = new System.Drawing.Size(46, 20);
+            this.textBoxConeHeightInput.TabIndex = 89;
+            this.textBoxConeHeightInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // labelConeUOM
             // 
             this.labelConeUOM.AutoSize = true;
@@ -1214,6 +1354,16 @@ namespace CalculationsAndConversionsCalculator
             this.labelConeUOM.TabIndex = 84;
             this.labelConeUOM.Text = "UoM";
             // 
+            // labelConeDiameter
+            // 
+            this.labelConeDiameter.AutoSize = true;
+            this.labelConeDiameter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConeDiameter.Location = new System.Drawing.Point(3, 18);
+            this.labelConeDiameter.Name = "labelConeDiameter";
+            this.labelConeDiameter.Size = new System.Drawing.Size(49, 13);
+            this.labelConeDiameter.TabIndex = 86;
+            this.labelConeDiameter.Text = "Diameter";
+            // 
             // textBoxConeUOM
             // 
             this.textBoxConeUOM.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1222,6 +1372,15 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxConeUOM.Size = new System.Drawing.Size(27, 20);
             this.textBoxConeUOM.TabIndex = 81;
             this.textBoxConeUOM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxConeDiameterInput
+            // 
+            this.textBoxConeDiameterInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxConeDiameterInput.Location = new System.Drawing.Point(6, 34);
+            this.textBoxConeDiameterInput.Name = "textBoxConeDiameterInput";
+            this.textBoxConeDiameterInput.Size = new System.Drawing.Size(46, 20);
+            this.textBoxConeDiameterInput.TabIndex = 87;
+            this.textBoxConeDiameterInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelConeTotalSurfaceAre
             // 
@@ -1310,152 +1469,15 @@ namespace CalculationsAndConversionsCalculator
             this.buttonConeClear.UseVisualStyleBackColor = false;
             this.buttonConeClear.Click += new System.EventHandler(this.buttonConeClear_Click);
             // 
-            // labelCylinderHeight
+            // buttonHypotenuseClipboard
             // 
-            this.labelCylinderHeight.AutoSize = true;
-            this.labelCylinderHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCylinderHeight.Location = new System.Drawing.Point(57, 18);
-            this.labelCylinderHeight.Name = "labelCylinderHeight";
-            this.labelCylinderHeight.Size = new System.Drawing.Size(38, 13);
-            this.labelCylinderHeight.TabIndex = 84;
-            this.labelCylinderHeight.Text = "Height";
-            // 
-            // textBoxCylinderHeightInput
-            // 
-            this.textBoxCylinderHeightInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCylinderHeightInput.Location = new System.Drawing.Point(60, 34);
-            this.textBoxCylinderHeightInput.Name = "textBoxCylinderHeightInput";
-            this.textBoxCylinderHeightInput.Size = new System.Drawing.Size(46, 20);
-            this.textBoxCylinderHeightInput.TabIndex = 85;
-            this.textBoxCylinderHeightInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // labelConeHeight
-            // 
-            this.labelConeHeight.AutoSize = true;
-            this.labelConeHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelConeHeight.Location = new System.Drawing.Point(57, 18);
-            this.labelConeHeight.Name = "labelConeHeight";
-            this.labelConeHeight.Size = new System.Drawing.Size(38, 13);
-            this.labelConeHeight.TabIndex = 88;
-            this.labelConeHeight.Text = "Height";
-            // 
-            // textBoxConeHeightInput
-            // 
-            this.textBoxConeHeightInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxConeHeightInput.Location = new System.Drawing.Point(60, 34);
-            this.textBoxConeHeightInput.Name = "textBoxConeHeightInput";
-            this.textBoxConeHeightInput.Size = new System.Drawing.Size(46, 20);
-            this.textBoxConeHeightInput.TabIndex = 89;
-            this.textBoxConeHeightInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // labelConeDiameter
-            // 
-            this.labelConeDiameter.AutoSize = true;
-            this.labelConeDiameter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelConeDiameter.Location = new System.Drawing.Point(3, 18);
-            this.labelConeDiameter.Name = "labelConeDiameter";
-            this.labelConeDiameter.Size = new System.Drawing.Size(49, 13);
-            this.labelConeDiameter.TabIndex = 86;
-            this.labelConeDiameter.Text = "Diameter";
-            // 
-            // textBoxConeDiameterInput
-            // 
-            this.textBoxConeDiameterInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxConeDiameterInput.Location = new System.Drawing.Point(6, 34);
-            this.textBoxConeDiameterInput.Name = "textBoxConeDiameterInput";
-            this.textBoxConeDiameterInput.Size = new System.Drawing.Size(46, 20);
-            this.textBoxConeDiameterInput.TabIndex = 87;
-            this.textBoxConeDiameterInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // buttonCircleAreaClipboard
-            // 
-            this.buttonCircleAreaClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCircleAreaClipboard.Location = new System.Drawing.Point(114, 71);
-            this.buttonCircleAreaClipboard.Name = "buttonCircleAreaClipboard";
-            this.buttonCircleAreaClipboard.Size = new System.Drawing.Size(28, 23);
-            this.buttonCircleAreaClipboard.TabIndex = 82;
-            this.buttonCircleAreaClipboard.UseVisualStyleBackColor = true;
-            // 
-            // buttonbuttonCircleCircleClipboard
-            // 
-            this.buttonbuttonCircleCircleClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonbuttonCircleCircleClipboard.Location = new System.Drawing.Point(114, 110);
-            this.buttonbuttonCircleCircleClipboard.Name = "buttonbuttonCircleCircleClipboard";
-            this.buttonbuttonCircleCircleClipboard.Size = new System.Drawing.Size(28, 23);
-            this.buttonbuttonCircleCircleClipboard.TabIndex = 83;
-            this.buttonbuttonCircleCircleClipboard.UseVisualStyleBackColor = true;
-            // 
-            // buttonSphereVolumeClipboard
-            // 
-            this.buttonSphereVolumeClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSphereVolumeClipboard.Location = new System.Drawing.Point(112, 71);
-            this.buttonSphereVolumeClipboard.Name = "buttonSphereVolumeClipboard";
-            this.buttonSphereVolumeClipboard.Size = new System.Drawing.Size(28, 23);
-            this.buttonSphereVolumeClipboard.TabIndex = 84;
-            this.buttonSphereVolumeClipboard.UseVisualStyleBackColor = true;
-            // 
-            // buttonSphereSurfaceAreaClipboard
-            // 
-            this.buttonSphereSurfaceAreaClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSphereSurfaceAreaClipboard.Location = new System.Drawing.Point(112, 110);
-            this.buttonSphereSurfaceAreaClipboard.Name = "buttonSphereSurfaceAreaClipboard";
-            this.buttonSphereSurfaceAreaClipboard.Size = new System.Drawing.Size(28, 23);
-            this.buttonSphereSurfaceAreaClipboard.TabIndex = 85;
-            this.buttonSphereSurfaceAreaClipboard.UseVisualStyleBackColor = true;
-            // 
-            // buttonCylinderVolumeClipboard
-            // 
-            this.buttonCylinderVolumeClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCylinderVolumeClipboard.Location = new System.Drawing.Point(113, 71);
-            this.buttonCylinderVolumeClipboard.Name = "buttonCylinderVolumeClipboard";
-            this.buttonCylinderVolumeClipboard.Size = new System.Drawing.Size(28, 23);
-            this.buttonCylinderVolumeClipboard.TabIndex = 86;
-            this.buttonCylinderVolumeClipboard.UseVisualStyleBackColor = true;
-            // 
-            // buttonCylinderLateralAreaClipboard
-            // 
-            this.buttonCylinderLateralAreaClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCylinderLateralAreaClipboard.Location = new System.Drawing.Point(113, 110);
-            this.buttonCylinderLateralAreaClipboard.Name = "buttonCylinderLateralAreaClipboard";
-            this.buttonCylinderLateralAreaClipboard.Size = new System.Drawing.Size(28, 23);
-            this.buttonCylinderLateralAreaClipboard.TabIndex = 87;
-            this.buttonCylinderLateralAreaClipboard.UseVisualStyleBackColor = true;
-            // 
-            // buttonCylinderSurfaceAreaClipboard
-            // 
-            this.buttonCylinderSurfaceAreaClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCylinderSurfaceAreaClipboard.Location = new System.Drawing.Point(113, 148);
-            this.buttonCylinderSurfaceAreaClipboard.Name = "buttonCylinderSurfaceAreaClipboard";
-            this.buttonCylinderSurfaceAreaClipboard.Size = new System.Drawing.Size(28, 23);
-            this.buttonCylinderSurfaceAreaClipboard.TabIndex = 88;
-            this.buttonCylinderSurfaceAreaClipboard.UseVisualStyleBackColor = true;
-            // 
-            // buttonConeSurfaceAreaClipboard
-            // 
-            this.buttonConeSurfaceAreaClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonConeSurfaceAreaClipboard.Location = new System.Drawing.Point(111, 148);
-            this.buttonConeSurfaceAreaClipboard.Name = "buttonConeSurfaceAreaClipboard";
-            this.buttonConeSurfaceAreaClipboard.Size = new System.Drawing.Size(28, 23);
-            this.buttonConeSurfaceAreaClipboard.TabIndex = 92;
-            this.buttonConeSurfaceAreaClipboard.UseVisualStyleBackColor = true;
-            // 
-            // buttonConeLateralAreaClipboard
-            // 
-            this.buttonConeLateralAreaClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonConeLateralAreaClipboard.Location = new System.Drawing.Point(111, 110);
-            this.buttonConeLateralAreaClipboard.Name = "buttonConeLateralAreaClipboard";
-            this.buttonConeLateralAreaClipboard.Size = new System.Drawing.Size(28, 23);
-            this.buttonConeLateralAreaClipboard.TabIndex = 91;
-            this.buttonConeLateralAreaClipboard.UseVisualStyleBackColor = true;
-            // 
-            // buttonConeVolumeClipboard
-            // 
-            this.buttonConeVolumeClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonConeVolumeClipboard.Location = new System.Drawing.Point(111, 71);
-            this.buttonConeVolumeClipboard.Name = "buttonConeVolumeClipboard";
-            this.buttonConeVolumeClipboard.Size = new System.Drawing.Size(28, 23);
-            this.buttonConeVolumeClipboard.TabIndex = 90;
-            this.buttonConeVolumeClipboard.UseVisualStyleBackColor = true;
+            this.buttonHypotenuseClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHypotenuseClipboard.Location = new System.Drawing.Point(241, 17);
+            this.buttonHypotenuseClipboard.Name = "buttonHypotenuseClipboard";
+            this.buttonHypotenuseClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonHypotenuseClipboard.TabIndex = 83;
+            this.toolTip1.SetToolTip(this.buttonHypotenuseClipboard, "Copy To Clipboard");
+            this.buttonHypotenuseClipboard.UseVisualStyleBackColor = true;
             // 
             // formMathFormulas
             // 
@@ -1605,7 +1627,7 @@ namespace CalculationsAndConversionsCalculator
         private Label labelConeDiameter;
         private TextBox textBoxConeDiameterInput;
         private Button buttonCircleAreaClipboard;
-        private Button buttonbuttonCircleCircleClipboard;
+        private Button buttonCircleCircumferenceClipboard;
         private Button buttonSphereSurfaceAreaClipboard;
         private Button buttonSphereVolumeClipboard;
         private Button buttonCylinderSurfaceAreaClipboard;
@@ -1614,5 +1636,6 @@ namespace CalculationsAndConversionsCalculator
         private Button buttonConeSurfaceAreaClipboard;
         private Button buttonConeLateralAreaClipboard;
         private Button buttonConeVolumeClipboard;
+        private Button buttonHypotenuseClipboard;
     }
 }

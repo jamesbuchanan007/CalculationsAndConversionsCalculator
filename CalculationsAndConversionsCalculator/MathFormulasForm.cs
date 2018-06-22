@@ -9,7 +9,16 @@ namespace CalculationsAndConversionsCalculator
         {
             InitializeComponent();
             buttonCircleAreaClipboard.Text = "\u2702";
-            buttonCircleAreaClipboard.Text = "\u2702";
+            buttonCircleCircumferenceClipboard.Text = "\u2702";
+            buttonSphereVolumeClipboard.Text = "\u2702";
+            buttonSphereSurfaceAreaClipboard.Text = "\u2702";
+            buttonCylinderVolumeClipboard.Text = "\u2702";
+            buttonCylinderLateralAreaClipboard.Text = "\u2702";
+            buttonCylinderSurfaceAreaClipboard.Text = "\u2702";
+            buttonConeVolumeClipboard.Text = "\u2702";
+            buttonConeLateralAreaClipboard.Text = "\u2702";
+            buttonConeSurfaceAreaClipboard.Text = "\u2702";
+            buttonHypotenuseClipboard.Text = "\u2702";
         }
 
         //BACK TO HOME MENU
