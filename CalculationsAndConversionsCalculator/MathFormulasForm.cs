@@ -28,13 +28,11 @@ namespace CalculationsAndConversionsCalculator
             this.Close();
             formMain.Show();
         }
-
         //EXITS APPLICATION
         private void buttonCircuitryExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         //GROUP - HYPOTENUSE - CALCULATE
         private void buttonHypotenuseCalculate_Click(object sender, EventArgs e)
         {
@@ -168,9 +166,6 @@ namespace CalculationsAndConversionsCalculator
 
             textBoxSphereVolumeOutput.Text = volume.ToString("F") + uomCubed;
             textBoxSphereSurfaceAreaOutput.Text = surfaceArea.ToString("F") + uomSquared;
-
-
-
         }
         //GROUP - SPHERE - CLEAR
         private void buttonSphereClear_Click(object sender, EventArgs e)
@@ -181,7 +176,7 @@ namespace CalculationsAndConversionsCalculator
             textBoxSphereSurfaceAreaOutput.Clear();
             textBoxSphereDiameterInput.Focus();
         }
-
+        //GROUP - CYLINDER - CALCULATE
         private void buttonCylinderCalculate_Click(object sender, EventArgs e)
         {
             var numA = double.TryParse(textBoxCylinderDiameterInput.Text, out var diameter);
@@ -438,9 +433,27 @@ namespace CalculationsAndConversionsCalculator
             textBoxFractionAdditionDenominator.Text = denominator.ToString();
             textBoxFractionAdditionNumeratorReduced.Text = numReduced.ToString();
             textBoxFractionAdditionDenominatorReduced.Text = denReduced.ToString();
-        }
 
-        //FIND GREATEST COMMON DIVISOR
+            //MIXED FRACTION CONVERSION
+            if (numReduced > denReduced)
+            {
+                var wholeMixed = Math.Floor((double)(numReduced / denReduced));
+                var numMixed = numReduced % denReduced;
+                textBoxFractionsAdditionMixedWholeNumber.Text = wholeMixed.ToString();
+                textBoxFractionsAdditionMixedNumerator.Text = numMixed.ToString();
+                textBoxFractionsAdditionMixedDenominator.Text = denReduced.ToString();
+            }
+            else
+            {
+                textBoxFractionsAdditionMixedWholeNumber.Clear();
+                textBoxFractionsAdditionMixedNumerator.Clear();
+                textBoxFractionsAdditionMixedDenominator.Clear();
+            }
+            //CONVERT TO DECIMAL
+            var convertDecimal = (double)numReduced / denReduced;
+            textBoxFractionAdditionDecimal.Text = convertDecimal.ToString("F");
+        }
+        //FIND GREATEST COMMON DIVISOR METHOD
         private int GetGreatestCommonDivisor(int numerator, int denominator)
         {
             while (numerator != 0 && denominator != 0)
@@ -454,7 +467,7 @@ namespace CalculationsAndConversionsCalculator
 
             return numerator == 0 ? denominator : numerator;
         }
-
+        //GROUP - FRACTIONS - CLEAR
         private void buttonFractionsClear_Click(object sender, EventArgs e)
         {
             textBoxFractionAdditionA.Clear();
@@ -468,6 +481,7 @@ namespace CalculationsAndConversionsCalculator
             textBoxFractionAdditionDenominatorReduced.Clear();
             textBoxFractionsAdditionMixedDenominator.Clear();
             textBoxFractionsAdditionMixedWholeNumber.Clear();
+            textBoxFractionAdditionDecimal.Clear();
             textBoxFractionSubtractionA.Clear();
             textBoxFractionSubtractionB.Clear();
             textBoxFractionSubtractionC.Clear();
@@ -479,6 +493,7 @@ namespace CalculationsAndConversionsCalculator
             textBoxFractionSubtractionDenominatorReduced.Clear();
             textBoxFractionsSubtractionMixedDenominator.Clear();
             textBoxFractionsSubtractionMixedWholeNumber.Clear();
+            textBoxFractionSubtractionDecimal.Clear();
             textBoxFractionMultiplyingA.Clear();
             textBoxFractionMultiplyingB.Clear();
             textBoxFractionMultiplyingC.Clear();
@@ -490,6 +505,7 @@ namespace CalculationsAndConversionsCalculator
             textBoxFractionMultiplyingDenominatorReduced.Clear();
             textBoxFractionsMultiplyingMixedDenominator.Clear();
             textBoxFractionsMultiplyingMixedWholeNumber.Clear();
+            textBoxFractionMultiplyingDecimal.Clear();
             textBoxFractionDividingA.Clear();
             textBoxFractionDividingB.Clear();
             textBoxFractionDividingC.Clear();
@@ -501,6 +517,290 @@ namespace CalculationsAndConversionsCalculator
             textBoxFractionDividingDenominatorReduced.Clear();
             textBoxFractionsDividingMixedDenominator.Clear();
             textBoxFractionsDividingMixedWholeNumber.Clear();
+            textBoxFractionDividingDecimal.Clear();
+            textBoxFractionAdditionA.Focus();
+        }
+        //GROUP - FRACTIONS - SUBTRACTION - CALCULATE
+        private void buttonFractionsSubtractionCalculate_Click_1(object sender, EventArgs e)
+        {
+            var numA = int.TryParse(textBoxFractionSubtractionA.Text, out var inputA);
+            var numB = int.TryParse(textBoxFractionSubtractionB.Text, out var inputB);
+            var numC = int.TryParse(textBoxFractionSubtractionC.Text, out var inputC);
+            var numD = int.TryParse(textBoxFractionSubtractionD.Text, out var inputD);
+
+            if (string.IsNullOrWhiteSpace(textBoxFractionSubtractionA.Text))
+            {
+                MessageBox.Show("Please enter a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionSubtractionA.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(textBoxFractionSubtractionB.Text))
+            {
+                MessageBox.Show("Please enter a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionSubtractionB.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(textBoxFractionSubtractionC.Text))
+            {
+                MessageBox.Show("Please enter a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionSubtractionC.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(textBoxFractionSubtractionD.Text))
+            {
+                MessageBox.Show("Please enter a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionSubtractionD.Focus();
+                return;
+            }
+
+            if (!numA)
+            {
+                MessageBox.Show("Must be an Integer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionSubtractionA.Clear();
+                textBoxFractionSubtractionA.Focus();
+                return;
+            }
+            if (!numB)
+            {
+                MessageBox.Show("Must be an Integer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionSubtractionB.Clear();
+                textBoxFractionSubtractionB.Focus();
+                return;
+            }
+            if (!numC)
+            {
+                MessageBox.Show("Must be an Integer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionSubtractionC.Clear();
+                textBoxFractionSubtractionC.Focus();
+                return;
+            }
+            if (!numD)
+            {
+                MessageBox.Show("Must be an Integer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionSubtractionD.Clear();
+                textBoxFractionSubtractionD.Focus();
+                return;
+            }
+
+            var numerator = (inputA * inputD) - (inputB * inputC);
+            var denominator = inputB * inputD;
+
+            var gcd = GetGreatestCommonDivisor(numerator, denominator);
+
+            var numReduced = numerator / gcd;
+            var denReduced = denominator / gcd;
+
+            textBoxFractionSubtractionNumerator.Text = numerator.ToString();
+            textBoxFractionSubtractionDenominator.Text = denominator.ToString();
+            textBoxFractionSubtractionNumeratorReduced.Text = numReduced.ToString();
+            textBoxFractionSubtractionDenominatorReduced.Text = denReduced.ToString();
+
+            //MIXED FRACTION CONVERSION
+            if (numReduced > denReduced)
+            {
+                var wholeMixed = Math.Floor((double)(numReduced / denReduced));
+                var numMixed = numReduced % denReduced;
+                textBoxFractionsSubtractionMixedWholeNumber.Text = wholeMixed.ToString();
+                textBoxFractionsSubtractionMixedNumerator.Text = numMixed.ToString();
+                textBoxFractionsSubtractionMixedDenominator.Text = denReduced.ToString();
+            }
+            else
+            {
+                textBoxFractionsSubtractionMixedWholeNumber.Clear();
+                textBoxFractionsSubtractionMixedNumerator.Clear();
+                textBoxFractionsSubtractionMixedDenominator.Clear();
+            }
+            //CONVERT TO DECIMAL
+            var convertDecimal = (double)numReduced / denReduced;
+            textBoxFractionSubtractionDecimal.Text = convertDecimal.ToString("F");
+        }
+        //GROUP - FRACTIONS - MULTIPLYING - CALCULATE
+        private void buttonFractionsMultiplyingCalculate_Click(object sender, EventArgs e)
+        {
+            var numA = int.TryParse(textBoxFractionMultiplyingA.Text, out var inputA);
+            var numB = int.TryParse(textBoxFractionMultiplyingB.Text, out var inputB);
+            var numC = int.TryParse(textBoxFractionMultiplyingC.Text, out var inputC);
+            var numD = int.TryParse(textBoxFractionMultiplyingD.Text, out var inputD);
+
+            if (string.IsNullOrWhiteSpace(textBoxFractionMultiplyingA.Text))
+            {
+                MessageBox.Show("Please enter a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionMultiplyingA.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(textBoxFractionMultiplyingB.Text))
+            {
+                MessageBox.Show("Please enter a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionMultiplyingB.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(textBoxFractionMultiplyingC.Text))
+            {
+                MessageBox.Show("Please enter a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionMultiplyingC.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(textBoxFractionMultiplyingD.Text))
+            {
+                MessageBox.Show("Please enter a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionMultiplyingD.Focus();
+                return;
+            }
+
+            if (!numA)
+            {
+                MessageBox.Show("Must be an Integer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionMultiplyingA.Clear();
+                textBoxFractionMultiplyingA.Focus();
+                return;
+            }
+            if (!numB)
+            {
+                MessageBox.Show("Must be an Integer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionMultiplyingB.Clear();
+                textBoxFractionMultiplyingB.Focus();
+                return;
+            }
+            if (!numC)
+            {
+                MessageBox.Show("Must be an Integer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionMultiplyingC.Clear();
+                textBoxFractionMultiplyingC.Focus();
+                return;
+            }
+            if (!numD)
+            {
+                MessageBox.Show("Must be an Integer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionMultiplyingD.Clear();
+                textBoxFractionMultiplyingD.Focus();
+                return;
+            }
+
+            var numerator = inputA * inputC;
+            var denominator = inputB * inputD;
+
+            var gcd = GetGreatestCommonDivisor(numerator, denominator);
+
+            var numReduced = numerator / gcd;
+            var denReduced = denominator / gcd;
+
+            textBoxFractionMultiplyingNumerator.Text = numerator.ToString();
+            textBoxFractionMultiplyingDenominator.Text = denominator.ToString();
+            textBoxFractionMultiplyingNumeratorReduced.Text = numReduced.ToString();
+            textBoxFractionMultiplyingDenominatorReduced.Text = denReduced.ToString();
+
+            //MIXED FRACTION CONVERSION
+            if (numReduced > denReduced)
+            {
+                var wholeMixed = Math.Floor((double)(numReduced / denReduced));
+                var numMixed = numReduced % denReduced;
+                textBoxFractionsMultiplyingMixedWholeNumber.Text = wholeMixed.ToString();
+                textBoxFractionsMultiplyingMixedNumerator.Text = numMixed.ToString();
+                textBoxFractionsMultiplyingMixedDenominator.Text = denReduced.ToString();
+            }
+            else
+            {
+                textBoxFractionsMultiplyingMixedWholeNumber.Clear();
+                textBoxFractionsMultiplyingMixedNumerator.Clear();
+                textBoxFractionsMultiplyingMixedDenominator.Clear();
+            }
+            //CONVERT TO DECIMAL
+            var convertDecimal = (double)numReduced / denReduced;
+            textBoxFractionMultiplyingDecimal.Text = convertDecimal.ToString("F");
+        }
+        //GROUP - FRACTIONS - DIVIDING - CALCULATE
+        private void buttonFractionsDividingCalculate_Click(object sender, EventArgs e)
+        {
+            var numA = int.TryParse(textBoxFractionDividingA.Text, out var inputA);
+            var numB = int.TryParse(textBoxFractionDividingB.Text, out var inputB);
+            var numC = int.TryParse(textBoxFractionDividingC.Text, out var inputC);
+            var numD = int.TryParse(textBoxFractionDividingD.Text, out var inputD);
+
+            if (string.IsNullOrWhiteSpace(textBoxFractionDividingA.Text))
+            {
+                MessageBox.Show("Please enter a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionDividingA.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(textBoxFractionDividingB.Text))
+            {
+                MessageBox.Show("Please enter a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionDividingB.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(textBoxFractionDividingC.Text))
+            {
+                MessageBox.Show("Please enter a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionDividingC.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(textBoxFractionDividingD.Text))
+            {
+                MessageBox.Show("Please enter a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionDividingD.Focus();
+                return;
+            }
+
+            if (!numA)
+            {
+                MessageBox.Show("Must be an Integer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionDividingA.Clear();
+                textBoxFractionDividingA.Focus();
+                return;
+            }
+            if (!numB)
+            {
+                MessageBox.Show("Must be an Integer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionDividingB.Clear();
+                textBoxFractionDividingB.Focus();
+                return;
+            }
+            if (!numC)
+            {
+                MessageBox.Show("Must be an Integer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionDividingC.Clear();
+                textBoxFractionDividingC.Focus();
+                return;
+            }
+            if (!numD)
+            {
+                MessageBox.Show("Must be an Integer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionDividingD.Clear();
+                textBoxFractionDividingD.Focus();
+                return;
+            }
+
+            var numerator = inputA * inputD;
+            var denominator = inputB * inputC;
+
+            var gcd = GetGreatestCommonDivisor(numerator, denominator);
+
+            var numReduced = numerator / gcd;
+            var denReduced = denominator / gcd;
+
+            textBoxFractionDividingNumerator.Text = numerator.ToString();
+            textBoxFractionDividingDenominator.Text = denominator.ToString();
+            textBoxFractionDividingNumeratorReduced.Text = numReduced.ToString();
+            textBoxFractionDividingDenominatorReduced.Text = denReduced.ToString();
+
+            //MIXED FRACTION CONVERSION
+            if (numReduced > denReduced)
+            {
+                var wholeMixed = Math.Floor((double)(numReduced / denReduced));
+                var numMixed = numReduced % denReduced;
+                textBoxFractionsDividingMixedWholeNumber.Text = wholeMixed.ToString();
+                textBoxFractionsDividingMixedNumerator.Text = numMixed.ToString();
+                textBoxFractionsDividingMixedDenominator.Text = denReduced.ToString();
+            }
+            else
+            {
+                textBoxFractionsDividingMixedWholeNumber.Clear();
+                textBoxFractionsDividingMixedNumerator.Clear();
+                textBoxFractionsDividingMixedDenominator.Clear();
+            }
+            //CONVERT TO DECIMAL
+            var convertDecimal = (double)numReduced / denReduced;
+            textBoxFractionDividingDecimal.Text = convertDecimal.ToString("F");
         }
     }
 }

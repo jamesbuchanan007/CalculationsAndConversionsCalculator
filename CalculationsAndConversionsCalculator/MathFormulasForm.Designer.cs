@@ -91,7 +91,23 @@ namespace CalculationsAndConversionsCalculator
             this.buttonFractionsAdditionCalculate = new System.Windows.Forms.Button();
             this.buttonFractionsClear = new System.Windows.Forms.Button();
             this.groupBoxFractions = new System.Windows.Forms.GroupBox();
+            this.textBoxFractionMultiplyingNumeratorReduced = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxFractionMultiplyingDenominatorReduced = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBoxFractionAdditionNumeratorReduced = new System.Windows.Forms.TextBox();
+            this.textBoxFractionAdditionDenominatorReduced = new System.Windows.Forms.TextBox();
+            this.textBoxFractionSubtractionDenominatorReduced = new System.Windows.Forms.TextBox();
+            this.textBoxFractionSubtractionNumeratorReduced = new System.Windows.Forms.TextBox();
+            this.textBoxFractionDividingNumeratorReduced = new System.Windows.Forms.TextBox();
+            this.textBoxFractionDividingDenominatorReduced = new System.Windows.Forms.TextBox();
+            this.buttonFractionsDividingCalculate = new System.Windows.Forms.Button();
+            this.buttonFractionsMultiplyingCalculate = new System.Windows.Forms.Button();
+            this.buttonFractionsSubtractionCalculate = new System.Windows.Forms.Button();
             this.groupBoxHypotenuse = new System.Windows.Forms.GroupBox();
+            this.buttonHypotenuseClipboard = new System.Windows.Forms.Button();
             this.textBoxHypotenuseSideC = new System.Windows.Forms.TextBox();
             this.textBoxHypotenuseSideB = new System.Windows.Forms.TextBox();
             this.groupBoxCircle = new System.Windows.Forms.GroupBox();
@@ -154,22 +170,18 @@ namespace CalculationsAndConversionsCalculator
             this.buttonConeCalculate = new System.Windows.Forms.Button();
             this.buttonConeClear = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.buttonHypotenuseClipboard = new System.Windows.Forms.Button();
-            this.buttonFractionsSubtractionCalculate = new System.Windows.Forms.Button();
-            this.buttonFractionsMultiplyingCalculate = new System.Windows.Forms.Button();
-            this.buttonFractionsDividingCalculate = new System.Windows.Forms.Button();
-            this.textBoxFractionMultiplyingNumeratorReduced = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBoxFractionMultiplyingDenominatorReduced = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBoxFractionAdditionNumeratorReduced = new System.Windows.Forms.TextBox();
-            this.textBoxFractionAdditionDenominatorReduced = new System.Windows.Forms.TextBox();
-            this.textBoxFractionSubtractionDenominatorReduced = new System.Windows.Forms.TextBox();
-            this.textBoxFractionSubtractionNumeratorReduced = new System.Windows.Forms.TextBox();
-            this.textBoxFractionDividingNumeratorReduced = new System.Windows.Forms.TextBox();
-            this.textBoxFractionDividingDenominatorReduced = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBoxFractionAdditionDecimal = new System.Windows.Forms.TextBox();
+            this.textBoxFractionSubtractionDecimal = new System.Windows.Forms.TextBox();
+            this.textBoxFractionMultiplyingDecimal = new System.Windows.Forms.TextBox();
+            this.textBoxFractionDividingDecimal = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBoxFractions.SuspendLayout();
             this.groupBoxHypotenuse.SuspendLayout();
             this.groupBoxCircle.SuspendLayout();
@@ -186,7 +198,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonCircleClear.Location = new System.Drawing.Point(87, 138);
             this.buttonCircleClear.Name = "buttonCircleClear";
             this.buttonCircleClear.Size = new System.Drawing.Size(75, 23);
-            this.buttonCircleClear.TabIndex = 74;
+            this.buttonCircleClear.TabIndex = 30;
             this.buttonCircleClear.Text = "Clear";
             this.buttonCircleClear.UseVisualStyleBackColor = false;
             this.buttonCircleClear.Click += new System.EventHandler(this.buttonCircleClear_Click);
@@ -199,7 +211,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonHypotenuseClear.Location = new System.Drawing.Point(189, 45);
             this.buttonHypotenuseClear.Name = "buttonHypotenuseClear";
             this.buttonHypotenuseClear.Size = new System.Drawing.Size(75, 23);
-            this.buttonHypotenuseClear.TabIndex = 73;
+            this.buttonHypotenuseClear.TabIndex = 5;
             this.buttonHypotenuseClear.Text = "Clear";
             this.buttonHypotenuseClear.UseVisualStyleBackColor = false;
             this.buttonHypotenuseClear.Click += new System.EventHandler(this.buttonHypotenuseClear_Click);
@@ -213,7 +225,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonCircleCalculate.Location = new System.Drawing.Point(6, 138);
             this.buttonCircleCalculate.Name = "buttonCircleCalculate";
             this.buttonCircleCalculate.Size = new System.Drawing.Size(75, 23);
-            this.buttonCircleCalculate.TabIndex = 72;
+            this.buttonCircleCalculate.TabIndex = 29;
             this.buttonCircleCalculate.Text = "Calculate";
             this.buttonCircleCalculate.UseVisualStyleBackColor = false;
             this.buttonCircleCalculate.Click += new System.EventHandler(this.buttonCircleCalculate_Click);
@@ -224,7 +236,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxAreaofCircleDiameterInput.Location = new System.Drawing.Point(6, 34);
             this.textBoxAreaofCircleDiameterInput.Name = "textBoxAreaofCircleDiameterInput";
             this.textBoxAreaofCircleDiameterInput.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAreaofCircleDiameterInput.TabIndex = 70;
+            this.textBoxAreaofCircleDiameterInput.TabIndex = 27;
             this.textBoxAreaofCircleDiameterInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBoxAreaofCircleDiameterInput, "Enter Diameter (Radius * 2)");
             // 
@@ -237,7 +249,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonHypotenuseCalculate.Location = new System.Drawing.Point(7, 45);
             this.buttonHypotenuseCalculate.Name = "buttonHypotenuseCalculate";
             this.buttonHypotenuseCalculate.Size = new System.Drawing.Size(75, 23);
-            this.buttonHypotenuseCalculate.TabIndex = 68;
+            this.buttonHypotenuseCalculate.TabIndex = 4;
             this.buttonHypotenuseCalculate.Text = "Calculate";
             this.buttonHypotenuseCalculate.UseVisualStyleBackColor = false;
             this.buttonHypotenuseCalculate.Click += new System.EventHandler(this.buttonHypotenuseCalculate_Click);
@@ -256,7 +268,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxHypotenuseSideA.Location = new System.Drawing.Point(8, 19);
             this.textBoxHypotenuseSideA.Name = "textBoxHypotenuseSideA";
             this.textBoxHypotenuseSideA.Size = new System.Drawing.Size(74, 20);
-            this.textBoxHypotenuseSideA.TabIndex = 65;
+            this.textBoxHypotenuseSideA.TabIndex = 1;
             this.textBoxHypotenuseSideA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBoxHypotenuseSideA, "Side A");
             // 
@@ -268,7 +280,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonMathFormulaFormExit.Location = new System.Drawing.Point(665, 420);
             this.buttonMathFormulaFormExit.Name = "buttonMathFormulaFormExit";
             this.buttonMathFormulaFormExit.Size = new System.Drawing.Size(75, 23);
-            this.buttonMathFormulaFormExit.TabIndex = 92;
+            this.buttonMathFormulaFormExit.TabIndex = 46;
             this.buttonMathFormulaFormExit.Text = "Exit Program";
             this.buttonMathFormulaFormExit.UseVisualStyleBackColor = false;
             this.buttonMathFormulaFormExit.Click += new System.EventHandler(this.buttonCircuitryExit_Click);
@@ -281,7 +293,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonMathFormulaFormHome.Location = new System.Drawing.Point(9, 420);
             this.buttonMathFormulaFormHome.Name = "buttonMathFormulaFormHome";
             this.buttonMathFormulaFormHome.Size = new System.Drawing.Size(75, 23);
-            this.buttonMathFormulaFormHome.TabIndex = 91;
+            this.buttonMathFormulaFormHome.TabIndex = 45;
             this.buttonMathFormulaFormHome.Text = "Home";
             this.buttonMathFormulaFormHome.UseVisualStyleBackColor = false;
             this.buttonMathFormulaFormHome.Click += new System.EventHandler(this.buttonCircuitryHome_Click);
@@ -292,7 +304,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionAdditionA.Location = new System.Drawing.Point(79, 19);
             this.textBoxFractionAdditionA.Name = "textBoxFractionAdditionA";
             this.textBoxFractionAdditionA.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionAdditionA.TabIndex = 94;
+            this.textBoxFractionAdditionA.TabIndex = 6;
             this.textBoxFractionAdditionA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionAdditionB
@@ -301,7 +313,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionAdditionB.Location = new System.Drawing.Point(79, 45);
             this.textBoxFractionAdditionB.Name = "textBoxFractionAdditionB";
             this.textBoxFractionAdditionB.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionAdditionB.TabIndex = 95;
+            this.textBoxFractionAdditionB.TabIndex = 7;
             this.textBoxFractionAdditionB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionAdditionC
@@ -310,7 +322,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionAdditionC.Location = new System.Drawing.Point(120, 19);
             this.textBoxFractionAdditionC.Name = "textBoxFractionAdditionC";
             this.textBoxFractionAdditionC.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionAdditionC.TabIndex = 96;
+            this.textBoxFractionAdditionC.TabIndex = 8;
             this.textBoxFractionAdditionC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionAdditionD
@@ -319,7 +331,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionAdditionD.Location = new System.Drawing.Point(120, 45);
             this.textBoxFractionAdditionD.Name = "textBoxFractionAdditionD";
             this.textBoxFractionAdditionD.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionAdditionD.TabIndex = 97;
+            this.textBoxFractionAdditionD.TabIndex = 9;
             this.textBoxFractionAdditionD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionAdditionDenominator
@@ -330,6 +342,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionAdditionDenominator.ReadOnly = true;
             this.textBoxFractionAdditionDenominator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionAdditionDenominator.TabIndex = 99;
+            this.textBoxFractionAdditionDenominator.TabStop = false;
             this.textBoxFractionAdditionDenominator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionAdditionNumerator
@@ -340,36 +353,40 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionAdditionNumerator.ReadOnly = true;
             this.textBoxFractionAdditionNumerator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionAdditionNumerator.TabIndex = 98;
+            this.textBoxFractionAdditionNumerator.TabStop = false;
             this.textBoxFractionAdditionNumerator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionsAdditionMixedWholeNumber
             // 
             this.textBoxFractionsAdditionMixedWholeNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionsAdditionMixedWholeNumber.Location = new System.Drawing.Point(279, 31);
+            this.textBoxFractionsAdditionMixedWholeNumber.Location = new System.Drawing.Point(249, 32);
             this.textBoxFractionsAdditionMixedWholeNumber.Name = "textBoxFractionsAdditionMixedWholeNumber";
             this.textBoxFractionsAdditionMixedWholeNumber.ReadOnly = true;
             this.textBoxFractionsAdditionMixedWholeNumber.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsAdditionMixedWholeNumber.TabIndex = 100;
+            this.textBoxFractionsAdditionMixedWholeNumber.TabStop = false;
             this.textBoxFractionsAdditionMixedWholeNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionsAdditionMixedDenominator
             // 
             this.textBoxFractionsAdditionMixedDenominator.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionsAdditionMixedDenominator.Location = new System.Drawing.Point(305, 45);
+            this.textBoxFractionsAdditionMixedDenominator.Location = new System.Drawing.Point(275, 46);
             this.textBoxFractionsAdditionMixedDenominator.Name = "textBoxFractionsAdditionMixedDenominator";
             this.textBoxFractionsAdditionMixedDenominator.ReadOnly = true;
             this.textBoxFractionsAdditionMixedDenominator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsAdditionMixedDenominator.TabIndex = 102;
+            this.textBoxFractionsAdditionMixedDenominator.TabStop = false;
             this.textBoxFractionsAdditionMixedDenominator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionsAdditionMixedNumerator
             // 
             this.textBoxFractionsAdditionMixedNumerator.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionsAdditionMixedNumerator.Location = new System.Drawing.Point(305, 19);
+            this.textBoxFractionsAdditionMixedNumerator.Location = new System.Drawing.Point(275, 20);
             this.textBoxFractionsAdditionMixedNumerator.Name = "textBoxFractionsAdditionMixedNumerator";
             this.textBoxFractionsAdditionMixedNumerator.ReadOnly = true;
             this.textBoxFractionsAdditionMixedNumerator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsAdditionMixedNumerator.TabIndex = 101;
+            this.textBoxFractionsAdditionMixedNumerator.TabStop = false;
             this.textBoxFractionsAdditionMixedNumerator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelFractionAddition
@@ -395,31 +412,34 @@ namespace CalculationsAndConversionsCalculator
             // textBoxFractionsSubtractionMixedDenominator
             // 
             this.textBoxFractionsSubtractionMixedDenominator.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionsSubtractionMixedDenominator.Location = new System.Drawing.Point(305, 106);
+            this.textBoxFractionsSubtractionMixedDenominator.Location = new System.Drawing.Point(275, 107);
             this.textBoxFractionsSubtractionMixedDenominator.Name = "textBoxFractionsSubtractionMixedDenominator";
             this.textBoxFractionsSubtractionMixedDenominator.ReadOnly = true;
             this.textBoxFractionsSubtractionMixedDenominator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsSubtractionMixedDenominator.TabIndex = 112;
+            this.textBoxFractionsSubtractionMixedDenominator.TabStop = false;
             this.textBoxFractionsSubtractionMixedDenominator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionsSubtractionMixedNumerator
             // 
             this.textBoxFractionsSubtractionMixedNumerator.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionsSubtractionMixedNumerator.Location = new System.Drawing.Point(305, 80);
+            this.textBoxFractionsSubtractionMixedNumerator.Location = new System.Drawing.Point(275, 81);
             this.textBoxFractionsSubtractionMixedNumerator.Name = "textBoxFractionsSubtractionMixedNumerator";
             this.textBoxFractionsSubtractionMixedNumerator.ReadOnly = true;
             this.textBoxFractionsSubtractionMixedNumerator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsSubtractionMixedNumerator.TabIndex = 111;
+            this.textBoxFractionsSubtractionMixedNumerator.TabStop = false;
             this.textBoxFractionsSubtractionMixedNumerator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionsSubtractionMixedWholeNumber
             // 
             this.textBoxFractionsSubtractionMixedWholeNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionsSubtractionMixedWholeNumber.Location = new System.Drawing.Point(279, 92);
+            this.textBoxFractionsSubtractionMixedWholeNumber.Location = new System.Drawing.Point(249, 93);
             this.textBoxFractionsSubtractionMixedWholeNumber.Name = "textBoxFractionsSubtractionMixedWholeNumber";
             this.textBoxFractionsSubtractionMixedWholeNumber.ReadOnly = true;
             this.textBoxFractionsSubtractionMixedWholeNumber.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsSubtractionMixedWholeNumber.TabIndex = 110;
+            this.textBoxFractionsSubtractionMixedWholeNumber.TabStop = false;
             this.textBoxFractionsSubtractionMixedWholeNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionSubtractionDenominator
@@ -430,6 +450,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionSubtractionDenominator.ReadOnly = true;
             this.textBoxFractionSubtractionDenominator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionSubtractionDenominator.TabIndex = 109;
+            this.textBoxFractionSubtractionDenominator.TabStop = false;
             this.textBoxFractionSubtractionDenominator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionSubtractionNumerator
@@ -440,6 +461,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionSubtractionNumerator.ReadOnly = true;
             this.textBoxFractionSubtractionNumerator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionSubtractionNumerator.TabIndex = 108;
+            this.textBoxFractionSubtractionNumerator.TabStop = false;
             this.textBoxFractionSubtractionNumerator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionSubtractionD
@@ -448,7 +470,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionSubtractionD.Location = new System.Drawing.Point(120, 106);
             this.textBoxFractionSubtractionD.Name = "textBoxFractionSubtractionD";
             this.textBoxFractionSubtractionD.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionSubtractionD.TabIndex = 107;
+            this.textBoxFractionSubtractionD.TabIndex = 14;
             this.textBoxFractionSubtractionD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionSubtractionC
@@ -457,7 +479,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionSubtractionC.Location = new System.Drawing.Point(120, 80);
             this.textBoxFractionSubtractionC.Name = "textBoxFractionSubtractionC";
             this.textBoxFractionSubtractionC.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionSubtractionC.TabIndex = 106;
+            this.textBoxFractionSubtractionC.TabIndex = 13;
             this.textBoxFractionSubtractionC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionSubtractionB
@@ -466,7 +488,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionSubtractionB.Location = new System.Drawing.Point(79, 106);
             this.textBoxFractionSubtractionB.Name = "textBoxFractionSubtractionB";
             this.textBoxFractionSubtractionB.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionSubtractionB.TabIndex = 105;
+            this.textBoxFractionSubtractionB.TabIndex = 12;
             this.textBoxFractionSubtractionB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionSubtractionA
@@ -475,7 +497,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionSubtractionA.Location = new System.Drawing.Point(79, 80);
             this.textBoxFractionSubtractionA.Name = "textBoxFractionSubtractionA";
             this.textBoxFractionSubtractionA.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionSubtractionA.TabIndex = 104;
+            this.textBoxFractionSubtractionA.TabIndex = 11;
             this.textBoxFractionSubtractionA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelFractionMultiplying
@@ -491,31 +513,34 @@ namespace CalculationsAndConversionsCalculator
             // textBoxFractionsMultiplyingMixedDenominator
             // 
             this.textBoxFractionsMultiplyingMixedDenominator.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionsMultiplyingMixedDenominator.Location = new System.Drawing.Point(305, 168);
+            this.textBoxFractionsMultiplyingMixedDenominator.Location = new System.Drawing.Point(275, 169);
             this.textBoxFractionsMultiplyingMixedDenominator.Name = "textBoxFractionsMultiplyingMixedDenominator";
             this.textBoxFractionsMultiplyingMixedDenominator.ReadOnly = true;
             this.textBoxFractionsMultiplyingMixedDenominator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsMultiplyingMixedDenominator.TabIndex = 122;
+            this.textBoxFractionsMultiplyingMixedDenominator.TabStop = false;
             this.textBoxFractionsMultiplyingMixedDenominator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionsMultiplyingMixedNumerator
             // 
             this.textBoxFractionsMultiplyingMixedNumerator.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionsMultiplyingMixedNumerator.Location = new System.Drawing.Point(305, 142);
+            this.textBoxFractionsMultiplyingMixedNumerator.Location = new System.Drawing.Point(275, 143);
             this.textBoxFractionsMultiplyingMixedNumerator.Name = "textBoxFractionsMultiplyingMixedNumerator";
             this.textBoxFractionsMultiplyingMixedNumerator.ReadOnly = true;
             this.textBoxFractionsMultiplyingMixedNumerator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsMultiplyingMixedNumerator.TabIndex = 121;
+            this.textBoxFractionsMultiplyingMixedNumerator.TabStop = false;
             this.textBoxFractionsMultiplyingMixedNumerator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionsMultiplyingMixedWholeNumber
             // 
             this.textBoxFractionsMultiplyingMixedWholeNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionsMultiplyingMixedWholeNumber.Location = new System.Drawing.Point(279, 154);
+            this.textBoxFractionsMultiplyingMixedWholeNumber.Location = new System.Drawing.Point(249, 155);
             this.textBoxFractionsMultiplyingMixedWholeNumber.Name = "textBoxFractionsMultiplyingMixedWholeNumber";
             this.textBoxFractionsMultiplyingMixedWholeNumber.ReadOnly = true;
             this.textBoxFractionsMultiplyingMixedWholeNumber.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsMultiplyingMixedWholeNumber.TabIndex = 120;
+            this.textBoxFractionsMultiplyingMixedWholeNumber.TabStop = false;
             this.textBoxFractionsMultiplyingMixedWholeNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionMultiplyingDenominator
@@ -526,6 +551,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionMultiplyingDenominator.ReadOnly = true;
             this.textBoxFractionMultiplyingDenominator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionMultiplyingDenominator.TabIndex = 119;
+            this.textBoxFractionMultiplyingDenominator.TabStop = false;
             this.textBoxFractionMultiplyingDenominator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionMultiplyingNumerator
@@ -536,6 +562,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionMultiplyingNumerator.ReadOnly = true;
             this.textBoxFractionMultiplyingNumerator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionMultiplyingNumerator.TabIndex = 118;
+            this.textBoxFractionMultiplyingNumerator.TabStop = false;
             this.textBoxFractionMultiplyingNumerator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionMultiplyingD
@@ -544,7 +571,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionMultiplyingD.Location = new System.Drawing.Point(120, 168);
             this.textBoxFractionMultiplyingD.Name = "textBoxFractionMultiplyingD";
             this.textBoxFractionMultiplyingD.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionMultiplyingD.TabIndex = 117;
+            this.textBoxFractionMultiplyingD.TabIndex = 19;
             this.textBoxFractionMultiplyingD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionMultiplyingC
@@ -553,7 +580,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionMultiplyingC.Location = new System.Drawing.Point(120, 142);
             this.textBoxFractionMultiplyingC.Name = "textBoxFractionMultiplyingC";
             this.textBoxFractionMultiplyingC.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionMultiplyingC.TabIndex = 116;
+            this.textBoxFractionMultiplyingC.TabIndex = 18;
             this.textBoxFractionMultiplyingC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionMultiplyingB
@@ -562,7 +589,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionMultiplyingB.Location = new System.Drawing.Point(79, 168);
             this.textBoxFractionMultiplyingB.Name = "textBoxFractionMultiplyingB";
             this.textBoxFractionMultiplyingB.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionMultiplyingB.TabIndex = 115;
+            this.textBoxFractionMultiplyingB.TabIndex = 17;
             this.textBoxFractionMultiplyingB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionMultiplyingA
@@ -571,7 +598,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionMultiplyingA.Location = new System.Drawing.Point(79, 142);
             this.textBoxFractionMultiplyingA.Name = "textBoxFractionMultiplyingA";
             this.textBoxFractionMultiplyingA.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionMultiplyingA.TabIndex = 114;
+            this.textBoxFractionMultiplyingA.TabIndex = 16;
             this.textBoxFractionMultiplyingA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelFractionDividing
@@ -587,31 +614,34 @@ namespace CalculationsAndConversionsCalculator
             // textBoxFractionsDividingMixedDenominator
             // 
             this.textBoxFractionsDividingMixedDenominator.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionsDividingMixedDenominator.Location = new System.Drawing.Point(305, 229);
+            this.textBoxFractionsDividingMixedDenominator.Location = new System.Drawing.Point(275, 230);
             this.textBoxFractionsDividingMixedDenominator.Name = "textBoxFractionsDividingMixedDenominator";
             this.textBoxFractionsDividingMixedDenominator.ReadOnly = true;
             this.textBoxFractionsDividingMixedDenominator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsDividingMixedDenominator.TabIndex = 132;
+            this.textBoxFractionsDividingMixedDenominator.TabStop = false;
             this.textBoxFractionsDividingMixedDenominator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionsDividingMixedNumerator
             // 
             this.textBoxFractionsDividingMixedNumerator.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionsDividingMixedNumerator.Location = new System.Drawing.Point(305, 203);
+            this.textBoxFractionsDividingMixedNumerator.Location = new System.Drawing.Point(275, 204);
             this.textBoxFractionsDividingMixedNumerator.Name = "textBoxFractionsDividingMixedNumerator";
             this.textBoxFractionsDividingMixedNumerator.ReadOnly = true;
             this.textBoxFractionsDividingMixedNumerator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsDividingMixedNumerator.TabIndex = 131;
+            this.textBoxFractionsDividingMixedNumerator.TabStop = false;
             this.textBoxFractionsDividingMixedNumerator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionsDividingMixedWholeNumber
             // 
             this.textBoxFractionsDividingMixedWholeNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionsDividingMixedWholeNumber.Location = new System.Drawing.Point(279, 215);
+            this.textBoxFractionsDividingMixedWholeNumber.Location = new System.Drawing.Point(249, 216);
             this.textBoxFractionsDividingMixedWholeNumber.Name = "textBoxFractionsDividingMixedWholeNumber";
             this.textBoxFractionsDividingMixedWholeNumber.ReadOnly = true;
             this.textBoxFractionsDividingMixedWholeNumber.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsDividingMixedWholeNumber.TabIndex = 130;
+            this.textBoxFractionsDividingMixedWholeNumber.TabStop = false;
             this.textBoxFractionsDividingMixedWholeNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionDividingDenominator
@@ -622,6 +652,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionDividingDenominator.ReadOnly = true;
             this.textBoxFractionDividingDenominator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionDividingDenominator.TabIndex = 129;
+            this.textBoxFractionDividingDenominator.TabStop = false;
             this.textBoxFractionDividingDenominator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionDividingNumerator
@@ -632,6 +663,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionDividingNumerator.ReadOnly = true;
             this.textBoxFractionDividingNumerator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionDividingNumerator.TabIndex = 128;
+            this.textBoxFractionDividingNumerator.TabStop = false;
             this.textBoxFractionDividingNumerator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionDividingD
@@ -640,7 +672,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionDividingD.Location = new System.Drawing.Point(120, 229);
             this.textBoxFractionDividingD.Name = "textBoxFractionDividingD";
             this.textBoxFractionDividingD.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionDividingD.TabIndex = 127;
+            this.textBoxFractionDividingD.TabIndex = 24;
             this.textBoxFractionDividingD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionDividingC
@@ -649,7 +681,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionDividingC.Location = new System.Drawing.Point(120, 203);
             this.textBoxFractionDividingC.Name = "textBoxFractionDividingC";
             this.textBoxFractionDividingC.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionDividingC.TabIndex = 126;
+            this.textBoxFractionDividingC.TabIndex = 23;
             this.textBoxFractionDividingC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionDividingB
@@ -658,7 +690,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionDividingB.Location = new System.Drawing.Point(79, 229);
             this.textBoxFractionDividingB.Name = "textBoxFractionDividingB";
             this.textBoxFractionDividingB.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionDividingB.TabIndex = 125;
+            this.textBoxFractionDividingB.TabIndex = 22;
             this.textBoxFractionDividingB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionDividingA
@@ -667,7 +699,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxFractionDividingA.Location = new System.Drawing.Point(79, 203);
             this.textBoxFractionDividingA.Name = "textBoxFractionDividingA";
             this.textBoxFractionDividingA.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionDividingA.TabIndex = 124;
+            this.textBoxFractionDividingA.TabIndex = 21;
             this.textBoxFractionDividingA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelFractionPlusSign
@@ -691,18 +723,20 @@ namespace CalculationsAndConversionsCalculator
             // labelFractionTimesSign
             // 
             this.labelFractionTimesSign.AutoSize = true;
+            this.labelFractionTimesSign.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFractionTimesSign.Location = new System.Drawing.Point(104, 157);
             this.labelFractionTimesSign.Name = "labelFractionTimesSign";
-            this.labelFractionTimesSign.Size = new System.Drawing.Size(13, 13);
+            this.labelFractionTimesSign.Size = new System.Drawing.Size(12, 13);
             this.labelFractionTimesSign.TabIndex = 136;
             this.labelFractionTimesSign.Text = "x";
             // 
             // labelFractionDividedSign
             // 
             this.labelFractionDividedSign.AutoSize = true;
+            this.labelFractionDividedSign.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFractionDividedSign.Location = new System.Drawing.Point(104, 219);
             this.labelFractionDividedSign.Name = "labelFractionDividedSign";
-            this.labelFractionDividedSign.Size = new System.Drawing.Size(13, 13);
+            this.labelFractionDividedSign.Size = new System.Drawing.Size(12, 13);
             this.labelFractionDividedSign.TabIndex = 137;
             this.labelFractionDividedSign.Text = "/";
             // 
@@ -751,7 +785,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonFractionsAdditionCalculate.Location = new System.Drawing.Point(-2, 44);
             this.buttonFractionsAdditionCalculate.Name = "buttonFractionsAdditionCalculate";
             this.buttonFractionsAdditionCalculate.Size = new System.Drawing.Size(75, 23);
-            this.buttonFractionsAdditionCalculate.TabIndex = 143;
+            this.buttonFractionsAdditionCalculate.TabIndex = 10;
             this.buttonFractionsAdditionCalculate.Text = "Calculate";
             this.buttonFractionsAdditionCalculate.UseVisualStyleBackColor = false;
             this.buttonFractionsAdditionCalculate.Click += new System.EventHandler(this.buttonFractionsAdditionCalculate_Click);
@@ -761,16 +795,28 @@ namespace CalculationsAndConversionsCalculator
             this.buttonFractionsClear.BackColor = System.Drawing.Color.Red;
             this.buttonFractionsClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonFractionsClear.ForeColor = System.Drawing.Color.White;
-            this.buttonFractionsClear.Location = new System.Drawing.Point(257, 272);
+            this.buttonFractionsClear.Location = new System.Drawing.Point(227, 273);
             this.buttonFractionsClear.Name = "buttonFractionsClear";
             this.buttonFractionsClear.Size = new System.Drawing.Size(75, 23);
-            this.buttonFractionsClear.TabIndex = 143;
+            this.buttonFractionsClear.TabIndex = 26;
             this.buttonFractionsClear.Text = "Clear";
             this.buttonFractionsClear.UseVisualStyleBackColor = false;
             this.buttonFractionsClear.Click += new System.EventHandler(this.buttonFractionsClear_Click);
             // 
             // groupBoxFractions
             // 
+            this.groupBoxFractions.Controls.Add(this.label9);
+            this.groupBoxFractions.Controls.Add(this.label10);
+            this.groupBoxFractions.Controls.Add(this.label11);
+            this.groupBoxFractions.Controls.Add(this.label12);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionDividingDecimal);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionMultiplyingDecimal);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionSubtractionDecimal);
+            this.groupBoxFractions.Controls.Add(this.textBoxFractionAdditionDecimal);
+            this.groupBoxFractions.Controls.Add(this.label5);
+            this.groupBoxFractions.Controls.Add(this.label6);
+            this.groupBoxFractions.Controls.Add(this.label7);
+            this.groupBoxFractions.Controls.Add(this.label8);
             this.groupBoxFractions.Controls.Add(this.textBoxFractionMultiplyingNumeratorReduced);
             this.groupBoxFractions.Controls.Add(this.label1);
             this.groupBoxFractions.Controls.Add(this.textBoxFractionMultiplyingDenominatorReduced);
@@ -839,10 +885,176 @@ namespace CalculationsAndConversionsCalculator
             this.groupBoxFractions.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxFractions.Location = new System.Drawing.Point(9, 93);
             this.groupBoxFractions.Name = "groupBoxFractions";
-            this.groupBoxFractions.Size = new System.Drawing.Size(338, 305);
+            this.groupBoxFractions.Size = new System.Drawing.Size(385, 305);
             this.groupBoxFractions.TabIndex = 143;
             this.groupBoxFractions.TabStop = false;
             this.groupBoxFractions.Text = "Fractions";
+            // 
+            // textBoxFractionMultiplyingNumeratorReduced
+            // 
+            this.textBoxFractionMultiplyingNumeratorReduced.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFractionMultiplyingNumeratorReduced.Location = new System.Drawing.Point(208, 142);
+            this.textBoxFractionMultiplyingNumeratorReduced.Name = "textBoxFractionMultiplyingNumeratorReduced";
+            this.textBoxFractionMultiplyingNumeratorReduced.ReadOnly = true;
+            this.textBoxFractionMultiplyingNumeratorReduced.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionMultiplyingNumeratorReduced.TabIndex = 151;
+            this.textBoxFractionMultiplyingNumeratorReduced.TabStop = false;
+            this.textBoxFractionMultiplyingNumeratorReduced.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(190, 219);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(14, 13);
+            this.label1.TabIndex = 158;
+            this.label1.Text = "=";
+            // 
+            // textBoxFractionMultiplyingDenominatorReduced
+            // 
+            this.textBoxFractionMultiplyingDenominatorReduced.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFractionMultiplyingDenominatorReduced.Location = new System.Drawing.Point(208, 168);
+            this.textBoxFractionMultiplyingDenominatorReduced.Name = "textBoxFractionMultiplyingDenominatorReduced";
+            this.textBoxFractionMultiplyingDenominatorReduced.ReadOnly = true;
+            this.textBoxFractionMultiplyingDenominatorReduced.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionMultiplyingDenominatorReduced.TabIndex = 152;
+            this.textBoxFractionMultiplyingDenominatorReduced.TabStop = false;
+            this.textBoxFractionMultiplyingDenominatorReduced.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(190, 157);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(14, 13);
+            this.label2.TabIndex = 157;
+            this.label2.Text = "=";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(190, 96);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(14, 13);
+            this.label3.TabIndex = 156;
+            this.label3.Text = "=";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(190, 34);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(14, 13);
+            this.label4.TabIndex = 155;
+            this.label4.Text = "=";
+            // 
+            // textBoxFractionAdditionNumeratorReduced
+            // 
+            this.textBoxFractionAdditionNumeratorReduced.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFractionAdditionNumeratorReduced.Location = new System.Drawing.Point(208, 19);
+            this.textBoxFractionAdditionNumeratorReduced.Name = "textBoxFractionAdditionNumeratorReduced";
+            this.textBoxFractionAdditionNumeratorReduced.ReadOnly = true;
+            this.textBoxFractionAdditionNumeratorReduced.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionAdditionNumeratorReduced.TabIndex = 147;
+            this.textBoxFractionAdditionNumeratorReduced.TabStop = false;
+            this.textBoxFractionAdditionNumeratorReduced.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxFractionAdditionDenominatorReduced
+            // 
+            this.textBoxFractionAdditionDenominatorReduced.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFractionAdditionDenominatorReduced.Location = new System.Drawing.Point(208, 45);
+            this.textBoxFractionAdditionDenominatorReduced.Name = "textBoxFractionAdditionDenominatorReduced";
+            this.textBoxFractionAdditionDenominatorReduced.ReadOnly = true;
+            this.textBoxFractionAdditionDenominatorReduced.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionAdditionDenominatorReduced.TabIndex = 148;
+            this.textBoxFractionAdditionDenominatorReduced.TabStop = false;
+            this.textBoxFractionAdditionDenominatorReduced.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxFractionSubtractionDenominatorReduced
+            // 
+            this.textBoxFractionSubtractionDenominatorReduced.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFractionSubtractionDenominatorReduced.Location = new System.Drawing.Point(208, 106);
+            this.textBoxFractionSubtractionDenominatorReduced.Name = "textBoxFractionSubtractionDenominatorReduced";
+            this.textBoxFractionSubtractionDenominatorReduced.ReadOnly = true;
+            this.textBoxFractionSubtractionDenominatorReduced.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionSubtractionDenominatorReduced.TabIndex = 150;
+            this.textBoxFractionSubtractionDenominatorReduced.TabStop = false;
+            this.textBoxFractionSubtractionDenominatorReduced.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxFractionSubtractionNumeratorReduced
+            // 
+            this.textBoxFractionSubtractionNumeratorReduced.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFractionSubtractionNumeratorReduced.Location = new System.Drawing.Point(208, 80);
+            this.textBoxFractionSubtractionNumeratorReduced.Name = "textBoxFractionSubtractionNumeratorReduced";
+            this.textBoxFractionSubtractionNumeratorReduced.ReadOnly = true;
+            this.textBoxFractionSubtractionNumeratorReduced.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionSubtractionNumeratorReduced.TabIndex = 149;
+            this.textBoxFractionSubtractionNumeratorReduced.TabStop = false;
+            this.textBoxFractionSubtractionNumeratorReduced.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxFractionDividingNumeratorReduced
+            // 
+            this.textBoxFractionDividingNumeratorReduced.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFractionDividingNumeratorReduced.Location = new System.Drawing.Point(208, 203);
+            this.textBoxFractionDividingNumeratorReduced.Name = "textBoxFractionDividingNumeratorReduced";
+            this.textBoxFractionDividingNumeratorReduced.ReadOnly = true;
+            this.textBoxFractionDividingNumeratorReduced.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionDividingNumeratorReduced.TabIndex = 153;
+            this.textBoxFractionDividingNumeratorReduced.TabStop = false;
+            this.textBoxFractionDividingNumeratorReduced.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxFractionDividingDenominatorReduced
+            // 
+            this.textBoxFractionDividingDenominatorReduced.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFractionDividingDenominatorReduced.Location = new System.Drawing.Point(208, 229);
+            this.textBoxFractionDividingDenominatorReduced.Name = "textBoxFractionDividingDenominatorReduced";
+            this.textBoxFractionDividingDenominatorReduced.ReadOnly = true;
+            this.textBoxFractionDividingDenominatorReduced.Size = new System.Drawing.Size(20, 20);
+            this.textBoxFractionDividingDenominatorReduced.TabIndex = 154;
+            this.textBoxFractionDividingDenominatorReduced.TabStop = false;
+            this.textBoxFractionDividingDenominatorReduced.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // buttonFractionsDividingCalculate
+            // 
+            this.buttonFractionsDividingCalculate.BackColor = System.Drawing.Color.Lime;
+            this.buttonFractionsDividingCalculate.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonFractionsDividingCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonFractionsDividingCalculate.ForeColor = System.Drawing.Color.Black;
+            this.buttonFractionsDividingCalculate.Location = new System.Drawing.Point(-2, 228);
+            this.buttonFractionsDividingCalculate.Name = "buttonFractionsDividingCalculate";
+            this.buttonFractionsDividingCalculate.Size = new System.Drawing.Size(75, 23);
+            this.buttonFractionsDividingCalculate.TabIndex = 25;
+            this.buttonFractionsDividingCalculate.Text = "Calculate";
+            this.buttonFractionsDividingCalculate.UseVisualStyleBackColor = false;
+            this.buttonFractionsDividingCalculate.Click += new System.EventHandler(this.buttonFractionsDividingCalculate_Click);
+            // 
+            // buttonFractionsMultiplyingCalculate
+            // 
+            this.buttonFractionsMultiplyingCalculate.BackColor = System.Drawing.Color.Lime;
+            this.buttonFractionsMultiplyingCalculate.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonFractionsMultiplyingCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonFractionsMultiplyingCalculate.ForeColor = System.Drawing.Color.Black;
+            this.buttonFractionsMultiplyingCalculate.Location = new System.Drawing.Point(-2, 167);
+            this.buttonFractionsMultiplyingCalculate.Name = "buttonFractionsMultiplyingCalculate";
+            this.buttonFractionsMultiplyingCalculate.Size = new System.Drawing.Size(75, 23);
+            this.buttonFractionsMultiplyingCalculate.TabIndex = 20;
+            this.buttonFractionsMultiplyingCalculate.Text = "Calculate";
+            this.buttonFractionsMultiplyingCalculate.UseVisualStyleBackColor = false;
+            this.buttonFractionsMultiplyingCalculate.Click += new System.EventHandler(this.buttonFractionsMultiplyingCalculate_Click);
+            // 
+            // buttonFractionsSubtractionCalculate
+            // 
+            this.buttonFractionsSubtractionCalculate.BackColor = System.Drawing.Color.Lime;
+            this.buttonFractionsSubtractionCalculate.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonFractionsSubtractionCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonFractionsSubtractionCalculate.ForeColor = System.Drawing.Color.Black;
+            this.buttonFractionsSubtractionCalculate.Location = new System.Drawing.Point(-2, 104);
+            this.buttonFractionsSubtractionCalculate.Name = "buttonFractionsSubtractionCalculate";
+            this.buttonFractionsSubtractionCalculate.Size = new System.Drawing.Size(75, 23);
+            this.buttonFractionsSubtractionCalculate.TabIndex = 15;
+            this.buttonFractionsSubtractionCalculate.Text = "Calculate";
+            this.buttonFractionsSubtractionCalculate.UseVisualStyleBackColor = false;
+            this.buttonFractionsSubtractionCalculate.Click += new System.EventHandler(this.buttonFractionsSubtractionCalculate_Click_1);
             // 
             // groupBoxHypotenuse
             // 
@@ -861,6 +1073,18 @@ namespace CalculationsAndConversionsCalculator
             this.groupBoxHypotenuse.TabStop = false;
             this.groupBoxHypotenuse.Text = "Hypotenuse";
             // 
+            // buttonHypotenuseClipboard
+            // 
+            this.buttonHypotenuseClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHypotenuseClipboard.Location = new System.Drawing.Point(241, 17);
+            this.buttonHypotenuseClipboard.Name = "buttonHypotenuseClipboard";
+            this.buttonHypotenuseClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonHypotenuseClipboard.TabIndex = 83;
+            this.buttonHypotenuseClipboard.TabStop = false;
+            this.toolTip1.SetToolTip(this.buttonHypotenuseClipboard, "Copy To Clipboard");
+            this.buttonHypotenuseClipboard.UseVisualStyleBackColor = true;
+            this.buttonHypotenuseClipboard.Click += new System.EventHandler(this.buttonHypotenuseClipboard_Click);
+            // 
             // textBoxHypotenuseSideC
             // 
             this.textBoxHypotenuseSideC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -868,7 +1092,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxHypotenuseSideC.Name = "textBoxHypotenuseSideC";
             this.textBoxHypotenuseSideC.ReadOnly = true;
             this.textBoxHypotenuseSideC.Size = new System.Drawing.Size(71, 20);
-            this.textBoxHypotenuseSideC.TabIndex = 75;
+            this.textBoxHypotenuseSideC.TabIndex = 3;
             this.textBoxHypotenuseSideC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBoxHypotenuseSideC, "Side C");
             // 
@@ -878,7 +1102,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxHypotenuseSideB.Location = new System.Drawing.Point(88, 19);
             this.textBoxHypotenuseSideB.Name = "textBoxHypotenuseSideB";
             this.textBoxHypotenuseSideB.Size = new System.Drawing.Size(73, 20);
-            this.textBoxHypotenuseSideB.TabIndex = 74;
+            this.textBoxHypotenuseSideB.TabIndex = 2;
             this.textBoxHypotenuseSideB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBoxHypotenuseSideB, "Side B");
             // 
@@ -911,6 +1135,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonCircleCircumferenceClipboard.Name = "buttonCircleCircumferenceClipboard";
             this.buttonCircleCircumferenceClipboard.Size = new System.Drawing.Size(28, 23);
             this.buttonCircleCircumferenceClipboard.TabIndex = 83;
+            this.buttonCircleCircumferenceClipboard.TabStop = false;
             this.toolTip1.SetToolTip(this.buttonCircleCircumferenceClipboard, "Copy To Clipboard");
             this.buttonCircleCircumferenceClipboard.UseVisualStyleBackColor = true;
             this.buttonCircleCircumferenceClipboard.Click += new System.EventHandler(this.buttonCircleCircumferenceClipboard_Click);
@@ -922,6 +1147,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonCircleAreaClipboard.Name = "buttonCircleAreaClipboard";
             this.buttonCircleAreaClipboard.Size = new System.Drawing.Size(28, 23);
             this.buttonCircleAreaClipboard.TabIndex = 82;
+            this.buttonCircleAreaClipboard.TabStop = false;
             this.toolTip1.SetToolTip(this.buttonCircleAreaClipboard, "Copy To Clipboard");
             this.buttonCircleAreaClipboard.UseVisualStyleBackColor = true;
             this.buttonCircleAreaClipboard.Click += new System.EventHandler(this.buttonCircleAreaClipboard_Click);
@@ -942,7 +1168,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxCircleUOM.Location = new System.Drawing.Point(115, 34);
             this.textBoxCircleUOM.Name = "textBoxCircleUOM";
             this.textBoxCircleUOM.Size = new System.Drawing.Size(27, 20);
-            this.textBoxCircleUOM.TabIndex = 79;
+            this.textBoxCircleUOM.TabIndex = 28;
             this.textBoxCircleUOM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBoxCircleUOM, "Enter Unit of Measure");
             // 
@@ -964,6 +1190,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxCircleCircumberenceOutput.ReadOnly = true;
             this.textBoxCircleCircumberenceOutput.Size = new System.Drawing.Size(100, 20);
             this.textBoxCircleCircumberenceOutput.TabIndex = 78;
+            this.textBoxCircleCircumberenceOutput.TabStop = false;
             this.textBoxCircleCircumberenceOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelCircleArea
@@ -984,6 +1211,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxCircleAreaOutput.ReadOnly = true;
             this.textBoxCircleAreaOutput.Size = new System.Drawing.Size(100, 20);
             this.textBoxCircleAreaOutput.TabIndex = 76;
+            this.textBoxCircleAreaOutput.TabStop = false;
             this.textBoxCircleAreaOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelAreaOfCircleDiameter
@@ -1025,6 +1253,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonSphereSurfaceAreaClipboard.Name = "buttonSphereSurfaceAreaClipboard";
             this.buttonSphereSurfaceAreaClipboard.Size = new System.Drawing.Size(28, 23);
             this.buttonSphereSurfaceAreaClipboard.TabIndex = 85;
+            this.buttonSphereSurfaceAreaClipboard.TabStop = false;
             this.toolTip1.SetToolTip(this.buttonSphereSurfaceAreaClipboard, "Copy To Clipboard");
             this.buttonSphereSurfaceAreaClipboard.UseVisualStyleBackColor = true;
             this.buttonSphereSurfaceAreaClipboard.Click += new System.EventHandler(this.buttonSphereSurfaceAreaClipboard_Click);
@@ -1036,6 +1265,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonSphereVolumeClipboard.Name = "buttonSphereVolumeClipboard";
             this.buttonSphereVolumeClipboard.Size = new System.Drawing.Size(28, 23);
             this.buttonSphereVolumeClipboard.TabIndex = 84;
+            this.buttonSphereVolumeClipboard.TabStop = false;
             this.toolTip1.SetToolTip(this.buttonSphereVolumeClipboard, "Copy To Clipboard");
             this.buttonSphereVolumeClipboard.UseVisualStyleBackColor = true;
             this.buttonSphereVolumeClipboard.Click += new System.EventHandler(this.buttonSphereVolumeClipboard_Click);
@@ -1056,7 +1286,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxSphereUOM.Location = new System.Drawing.Point(112, 34);
             this.textBoxSphereUOM.Name = "textBoxSphereUOM";
             this.textBoxSphereUOM.Size = new System.Drawing.Size(27, 20);
-            this.textBoxSphereUOM.TabIndex = 80;
+            this.textBoxSphereUOM.TabIndex = 32;
             this.textBoxSphereUOM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBoxSphereUOM, "Enter Unit of Measure");
             // 
@@ -1078,6 +1308,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxSphereSurfaceAreaOutput.ReadOnly = true;
             this.textBoxSphereSurfaceAreaOutput.Size = new System.Drawing.Size(100, 20);
             this.textBoxSphereSurfaceAreaOutput.TabIndex = 78;
+            this.textBoxSphereSurfaceAreaOutput.TabStop = false;
             this.textBoxSphereSurfaceAreaOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelSphereVolume
@@ -1098,6 +1329,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxSphereVolumeOutput.ReadOnly = true;
             this.textBoxSphereVolumeOutput.Size = new System.Drawing.Size(100, 20);
             this.textBoxSphereVolumeOutput.TabIndex = 76;
+            this.textBoxSphereVolumeOutput.TabStop = false;
             this.textBoxSphereVolumeOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelSphereDiameter
@@ -1116,7 +1348,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxSphereDiameterInput.Location = new System.Drawing.Point(6, 34);
             this.textBoxSphereDiameterInput.Name = "textBoxSphereDiameterInput";
             this.textBoxSphereDiameterInput.Size = new System.Drawing.Size(100, 20);
-            this.textBoxSphereDiameterInput.TabIndex = 70;
+            this.textBoxSphereDiameterInput.TabIndex = 31;
             this.textBoxSphereDiameterInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBoxSphereDiameterInput, "Enter Diameter (Radius * 2)");
             // 
@@ -1129,7 +1361,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonSphereCalculate.Location = new System.Drawing.Point(6, 138);
             this.buttonSphereCalculate.Name = "buttonSphereCalculate";
             this.buttonSphereCalculate.Size = new System.Drawing.Size(75, 23);
-            this.buttonSphereCalculate.TabIndex = 72;
+            this.buttonSphereCalculate.TabIndex = 33;
             this.buttonSphereCalculate.Text = "Calculate";
             this.buttonSphereCalculate.UseVisualStyleBackColor = false;
             this.buttonSphereCalculate.Click += new System.EventHandler(this.buttonSphereCalculate_Click);
@@ -1142,7 +1374,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonSphereClear.Location = new System.Drawing.Point(87, 138);
             this.buttonSphereClear.Name = "buttonSphereClear";
             this.buttonSphereClear.Size = new System.Drawing.Size(75, 23);
-            this.buttonSphereClear.TabIndex = 74;
+            this.buttonSphereClear.TabIndex = 34;
             this.buttonSphereClear.Text = "Clear";
             this.buttonSphereClear.UseVisualStyleBackColor = false;
             this.buttonSphereClear.Click += new System.EventHandler(this.buttonSphereClear_Click);
@@ -1181,6 +1413,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonCylinderSurfaceAreaClipboard.Name = "buttonCylinderSurfaceAreaClipboard";
             this.buttonCylinderSurfaceAreaClipboard.Size = new System.Drawing.Size(28, 23);
             this.buttonCylinderSurfaceAreaClipboard.TabIndex = 88;
+            this.buttonCylinderSurfaceAreaClipboard.TabStop = false;
             this.toolTip1.SetToolTip(this.buttonCylinderSurfaceAreaClipboard, "Copy To Clipboard");
             this.buttonCylinderSurfaceAreaClipboard.UseVisualStyleBackColor = true;
             this.buttonCylinderSurfaceAreaClipboard.Click += new System.EventHandler(this.buttonCylinderSurfaceAreaClipboard_Click);
@@ -1192,6 +1425,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonCylinderLateralAreaClipboard.Name = "buttonCylinderLateralAreaClipboard";
             this.buttonCylinderLateralAreaClipboard.Size = new System.Drawing.Size(28, 23);
             this.buttonCylinderLateralAreaClipboard.TabIndex = 87;
+            this.buttonCylinderLateralAreaClipboard.TabStop = false;
             this.toolTip1.SetToolTip(this.buttonCylinderLateralAreaClipboard, "Copy To Clipboard");
             this.buttonCylinderLateralAreaClipboard.UseVisualStyleBackColor = true;
             this.buttonCylinderLateralAreaClipboard.Click += new System.EventHandler(this.buttonCylinderLateralAreaClipboard_Click);
@@ -1203,6 +1437,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonCylinderVolumeClipboard.Name = "buttonCylinderVolumeClipboard";
             this.buttonCylinderVolumeClipboard.Size = new System.Drawing.Size(28, 23);
             this.buttonCylinderVolumeClipboard.TabIndex = 86;
+            this.buttonCylinderVolumeClipboard.TabStop = false;
             this.toolTip1.SetToolTip(this.buttonCylinderVolumeClipboard, "Copy To Clipboard");
             this.buttonCylinderVolumeClipboard.UseVisualStyleBackColor = true;
             this.buttonCylinderVolumeClipboard.Click += new System.EventHandler(this.buttonCylinderVolumeClipboard_Click);
@@ -1223,7 +1458,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxCylinderHeightInput.Location = new System.Drawing.Point(60, 34);
             this.textBoxCylinderHeightInput.Name = "textBoxCylinderHeightInput";
             this.textBoxCylinderHeightInput.Size = new System.Drawing.Size(46, 20);
-            this.textBoxCylinderHeightInput.TabIndex = 85;
+            this.textBoxCylinderHeightInput.TabIndex = 36;
             this.textBoxCylinderHeightInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelCylinderUOM
@@ -1242,7 +1477,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxCylinderUOM.Location = new System.Drawing.Point(114, 34);
             this.textBoxCylinderUOM.Name = "textBoxCylinderUOM";
             this.textBoxCylinderUOM.Size = new System.Drawing.Size(27, 20);
-            this.textBoxCylinderUOM.TabIndex = 82;
+            this.textBoxCylinderUOM.TabIndex = 37;
             this.textBoxCylinderUOM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBoxCylinderUOM, "Enter Unit of Measure");
             // 
@@ -1264,6 +1499,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxCylinderTotalSurfaceAreaOutput.ReadOnly = true;
             this.textBoxCylinderTotalSurfaceAreaOutput.Size = new System.Drawing.Size(100, 20);
             this.textBoxCylinderTotalSurfaceAreaOutput.TabIndex = 80;
+            this.textBoxCylinderTotalSurfaceAreaOutput.TabStop = false;
             this.textBoxCylinderTotalSurfaceAreaOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelCylinderLateralArea
@@ -1284,6 +1520,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxCylinderLateralAreaOutput.ReadOnly = true;
             this.textBoxCylinderLateralAreaOutput.Size = new System.Drawing.Size(100, 20);
             this.textBoxCylinderLateralAreaOutput.TabIndex = 78;
+            this.textBoxCylinderLateralAreaOutput.TabStop = false;
             this.textBoxCylinderLateralAreaOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelCylinderVolume
@@ -1304,6 +1541,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxCylinderVolumeOutput.ReadOnly = true;
             this.textBoxCylinderVolumeOutput.Size = new System.Drawing.Size(100, 20);
             this.textBoxCylinderVolumeOutput.TabIndex = 76;
+            this.textBoxCylinderVolumeOutput.TabStop = false;
             this.textBoxCylinderVolumeOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelCylinderDiameter
@@ -1322,7 +1560,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxCylinderDiameterInput.Location = new System.Drawing.Point(6, 34);
             this.textBoxCylinderDiameterInput.Name = "textBoxCylinderDiameterInput";
             this.textBoxCylinderDiameterInput.Size = new System.Drawing.Size(46, 20);
-            this.textBoxCylinderDiameterInput.TabIndex = 70;
+            this.textBoxCylinderDiameterInput.TabIndex = 35;
             this.textBoxCylinderDiameterInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBoxCylinderDiameterInput, "Enter Diameter (Radius * 2)");
             // 
@@ -1335,7 +1573,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonCylinderCalculate.Location = new System.Drawing.Point(6, 176);
             this.buttonCylinderCalculate.Name = "buttonCylinderCalculate";
             this.buttonCylinderCalculate.Size = new System.Drawing.Size(75, 23);
-            this.buttonCylinderCalculate.TabIndex = 72;
+            this.buttonCylinderCalculate.TabIndex = 38;
             this.buttonCylinderCalculate.Text = "Calculate";
             this.buttonCylinderCalculate.UseVisualStyleBackColor = false;
             this.buttonCylinderCalculate.Click += new System.EventHandler(this.buttonCylinderCalculate_Click);
@@ -1348,7 +1586,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonCylinderClear.Location = new System.Drawing.Point(87, 176);
             this.buttonCylinderClear.Name = "buttonCylinderClear";
             this.buttonCylinderClear.Size = new System.Drawing.Size(75, 23);
-            this.buttonCylinderClear.TabIndex = 74;
+            this.buttonCylinderClear.TabIndex = 39;
             this.buttonCylinderClear.Text = "Clear";
             this.buttonCylinderClear.UseVisualStyleBackColor = false;
             this.buttonCylinderClear.Click += new System.EventHandler(this.buttonCylinderClear_Click);
@@ -1387,6 +1625,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonConeSurfaceAreaClipboard.Name = "buttonConeSurfaceAreaClipboard";
             this.buttonConeSurfaceAreaClipboard.Size = new System.Drawing.Size(28, 23);
             this.buttonConeSurfaceAreaClipboard.TabIndex = 92;
+            this.buttonConeSurfaceAreaClipboard.TabStop = false;
             this.toolTip1.SetToolTip(this.buttonConeSurfaceAreaClipboard, "Copy To Clipboard");
             this.buttonConeSurfaceAreaClipboard.UseVisualStyleBackColor = true;
             this.buttonConeSurfaceAreaClipboard.Click += new System.EventHandler(this.buttonConeSurfaceAreaClipboard_Click);
@@ -1398,6 +1637,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonConeLateralAreaClipboard.Name = "buttonConeLateralAreaClipboard";
             this.buttonConeLateralAreaClipboard.Size = new System.Drawing.Size(28, 23);
             this.buttonConeLateralAreaClipboard.TabIndex = 91;
+            this.buttonConeLateralAreaClipboard.TabStop = false;
             this.toolTip1.SetToolTip(this.buttonConeLateralAreaClipboard, "Copy To Clipboard");
             this.buttonConeLateralAreaClipboard.UseVisualStyleBackColor = true;
             this.buttonConeLateralAreaClipboard.Click += new System.EventHandler(this.buttonConeLateralAreaClipboard_Click);
@@ -1409,6 +1649,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonConeVolumeClipboard.Name = "buttonConeVolumeClipboard";
             this.buttonConeVolumeClipboard.Size = new System.Drawing.Size(28, 23);
             this.buttonConeVolumeClipboard.TabIndex = 90;
+            this.buttonConeVolumeClipboard.TabStop = false;
             this.toolTip1.SetToolTip(this.buttonConeVolumeClipboard, "Copy To Clipboard");
             this.buttonConeVolumeClipboard.UseVisualStyleBackColor = true;
             this.buttonConeVolumeClipboard.Click += new System.EventHandler(this.buttonConeVolumeClipboard_Click);
@@ -1429,7 +1670,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxConeHeightInput.Location = new System.Drawing.Point(60, 34);
             this.textBoxConeHeightInput.Name = "textBoxConeHeightInput";
             this.textBoxConeHeightInput.Size = new System.Drawing.Size(46, 20);
-            this.textBoxConeHeightInput.TabIndex = 89;
+            this.textBoxConeHeightInput.TabIndex = 41;
             this.textBoxConeHeightInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelConeUOM
@@ -1458,7 +1699,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxConeUOM.Location = new System.Drawing.Point(112, 34);
             this.textBoxConeUOM.Name = "textBoxConeUOM";
             this.textBoxConeUOM.Size = new System.Drawing.Size(27, 20);
-            this.textBoxConeUOM.TabIndex = 81;
+            this.textBoxConeUOM.TabIndex = 42;
             this.textBoxConeUOM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBoxConeUOM, "Enter Unit of Measure");
             // 
@@ -1468,7 +1709,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxConeDiameterInput.Location = new System.Drawing.Point(6, 34);
             this.textBoxConeDiameterInput.Name = "textBoxConeDiameterInput";
             this.textBoxConeDiameterInput.Size = new System.Drawing.Size(46, 20);
-            this.textBoxConeDiameterInput.TabIndex = 87;
+            this.textBoxConeDiameterInput.TabIndex = 40;
             this.textBoxConeDiameterInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBoxConeDiameterInput, "Enter Diameter (Radius * 2)");
             // 
@@ -1490,6 +1731,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxConeTotalSurfaceAreaOutput.ReadOnly = true;
             this.textBoxConeTotalSurfaceAreaOutput.Size = new System.Drawing.Size(100, 20);
             this.textBoxConeTotalSurfaceAreaOutput.TabIndex = 80;
+            this.textBoxConeTotalSurfaceAreaOutput.TabStop = false;
             this.textBoxConeTotalSurfaceAreaOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelConeLateralArea
@@ -1510,6 +1752,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxConeLateralAreaOutput.ReadOnly = true;
             this.textBoxConeLateralAreaOutput.Size = new System.Drawing.Size(100, 20);
             this.textBoxConeLateralAreaOutput.TabIndex = 78;
+            this.textBoxConeLateralAreaOutput.TabStop = false;
             this.textBoxConeLateralAreaOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelConeVolume
@@ -1530,6 +1773,7 @@ namespace CalculationsAndConversionsCalculator
             this.textBoxConeVolumeOutput.ReadOnly = true;
             this.textBoxConeVolumeOutput.Size = new System.Drawing.Size(100, 20);
             this.textBoxConeVolumeOutput.TabIndex = 76;
+            this.textBoxConeVolumeOutput.TabStop = false;
             this.textBoxConeVolumeOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonConeCalculate
@@ -1541,7 +1785,7 @@ namespace CalculationsAndConversionsCalculator
             this.buttonConeCalculate.Location = new System.Drawing.Point(6, 176);
             this.buttonConeCalculate.Name = "buttonConeCalculate";
             this.buttonConeCalculate.Size = new System.Drawing.Size(75, 23);
-            this.buttonConeCalculate.TabIndex = 72;
+            this.buttonConeCalculate.TabIndex = 43;
             this.buttonConeCalculate.Text = "Calculate";
             this.buttonConeCalculate.UseVisualStyleBackColor = false;
             this.buttonConeCalculate.Click += new System.EventHandler(this.buttonConeCalculate_Click);
@@ -1554,176 +1798,130 @@ namespace CalculationsAndConversionsCalculator
             this.buttonConeClear.Location = new System.Drawing.Point(87, 176);
             this.buttonConeClear.Name = "buttonConeClear";
             this.buttonConeClear.Size = new System.Drawing.Size(75, 23);
-            this.buttonConeClear.TabIndex = 74;
+            this.buttonConeClear.TabIndex = 44;
             this.buttonConeClear.Text = "Clear";
             this.buttonConeClear.UseVisualStyleBackColor = false;
             this.buttonConeClear.Click += new System.EventHandler(this.buttonConeClear_Click);
             // 
-            // buttonHypotenuseClipboard
+            // label5
             // 
-            this.buttonHypotenuseClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHypotenuseClipboard.Location = new System.Drawing.Point(241, 17);
-            this.buttonHypotenuseClipboard.Name = "buttonHypotenuseClipboard";
-            this.buttonHypotenuseClipboard.Size = new System.Drawing.Size(28, 23);
-            this.buttonHypotenuseClipboard.TabIndex = 83;
-            this.toolTip1.SetToolTip(this.buttonHypotenuseClipboard, "Copy To Clipboard");
-            this.buttonHypotenuseClipboard.UseVisualStyleBackColor = true;
-            this.buttonHypotenuseClipboard.Click += new System.EventHandler(this.buttonHypotenuseClipboard_Click);
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(232, 219);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(14, 13);
+            this.label5.TabIndex = 162;
+            this.label5.Text = "=";
             // 
-            // buttonFractionsSubtractionCalculate
+            // label6
             // 
-            this.buttonFractionsSubtractionCalculate.BackColor = System.Drawing.Color.Lime;
-            this.buttonFractionsSubtractionCalculate.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonFractionsSubtractionCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonFractionsSubtractionCalculate.ForeColor = System.Drawing.Color.Black;
-            this.buttonFractionsSubtractionCalculate.Location = new System.Drawing.Point(-2, 104);
-            this.buttonFractionsSubtractionCalculate.Name = "buttonFractionsSubtractionCalculate";
-            this.buttonFractionsSubtractionCalculate.Size = new System.Drawing.Size(75, 23);
-            this.buttonFractionsSubtractionCalculate.TabIndex = 144;
-            this.buttonFractionsSubtractionCalculate.Text = "Calculate";
-            this.buttonFractionsSubtractionCalculate.UseVisualStyleBackColor = false;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(232, 157);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(14, 13);
+            this.label6.TabIndex = 161;
+            this.label6.Text = "=";
             // 
-            // buttonFractionsMultiplyingCalculate
+            // label7
             // 
-            this.buttonFractionsMultiplyingCalculate.BackColor = System.Drawing.Color.Lime;
-            this.buttonFractionsMultiplyingCalculate.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonFractionsMultiplyingCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonFractionsMultiplyingCalculate.ForeColor = System.Drawing.Color.Black;
-            this.buttonFractionsMultiplyingCalculate.Location = new System.Drawing.Point(-2, 167);
-            this.buttonFractionsMultiplyingCalculate.Name = "buttonFractionsMultiplyingCalculate";
-            this.buttonFractionsMultiplyingCalculate.Size = new System.Drawing.Size(75, 23);
-            this.buttonFractionsMultiplyingCalculate.TabIndex = 145;
-            this.buttonFractionsMultiplyingCalculate.Text = "Calculate";
-            this.buttonFractionsMultiplyingCalculate.UseVisualStyleBackColor = false;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(232, 96);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(14, 13);
+            this.label7.TabIndex = 160;
+            this.label7.Text = "=";
             // 
-            // buttonFractionsDividingCalculate
+            // label8
             // 
-            this.buttonFractionsDividingCalculate.BackColor = System.Drawing.Color.Lime;
-            this.buttonFractionsDividingCalculate.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonFractionsDividingCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonFractionsDividingCalculate.ForeColor = System.Drawing.Color.Black;
-            this.buttonFractionsDividingCalculate.Location = new System.Drawing.Point(-2, 228);
-            this.buttonFractionsDividingCalculate.Name = "buttonFractionsDividingCalculate";
-            this.buttonFractionsDividingCalculate.Size = new System.Drawing.Size(75, 23);
-            this.buttonFractionsDividingCalculate.TabIndex = 146;
-            this.buttonFractionsDividingCalculate.Text = "Calculate";
-            this.buttonFractionsDividingCalculate.UseVisualStyleBackColor = false;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(232, 34);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(14, 13);
+            this.label8.TabIndex = 159;
+            this.label8.Text = "=";
             // 
-            // textBoxFractionMultiplyingNumeratorReduced
+            // textBoxFractionAdditionDecimal
             // 
-            this.textBoxFractionMultiplyingNumeratorReduced.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionMultiplyingNumeratorReduced.Location = new System.Drawing.Point(208, 142);
-            this.textBoxFractionMultiplyingNumeratorReduced.Name = "textBoxFractionMultiplyingNumeratorReduced";
-            this.textBoxFractionMultiplyingNumeratorReduced.ReadOnly = true;
-            this.textBoxFractionMultiplyingNumeratorReduced.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionMultiplyingNumeratorReduced.TabIndex = 151;
-            this.textBoxFractionMultiplyingNumeratorReduced.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxFractionAdditionDecimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFractionAdditionDecimal.Location = new System.Drawing.Point(317, 33);
+            this.textBoxFractionAdditionDecimal.Name = "textBoxFractionAdditionDecimal";
+            this.textBoxFractionAdditionDecimal.ReadOnly = true;
+            this.textBoxFractionAdditionDecimal.Size = new System.Drawing.Size(62, 20);
+            this.textBoxFractionAdditionDecimal.TabIndex = 84;
+            this.textBoxFractionAdditionDecimal.TabStop = false;
+            this.textBoxFractionAdditionDecimal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBoxFractionAdditionDecimal, "Side A");
             // 
-            // label1
+            // textBoxFractionSubtractionDecimal
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(190, 219);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(14, 13);
-            this.label1.TabIndex = 158;
-            this.label1.Text = "=";
+            this.textBoxFractionSubtractionDecimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFractionSubtractionDecimal.Location = new System.Drawing.Point(317, 94);
+            this.textBoxFractionSubtractionDecimal.Name = "textBoxFractionSubtractionDecimal";
+            this.textBoxFractionSubtractionDecimal.ReadOnly = true;
+            this.textBoxFractionSubtractionDecimal.Size = new System.Drawing.Size(62, 20);
+            this.textBoxFractionSubtractionDecimal.TabIndex = 163;
+            this.textBoxFractionSubtractionDecimal.TabStop = false;
+            this.textBoxFractionSubtractionDecimal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBoxFractionSubtractionDecimal, "Side A");
             // 
-            // textBoxFractionMultiplyingDenominatorReduced
+            // textBoxFractionMultiplyingDecimal
             // 
-            this.textBoxFractionMultiplyingDenominatorReduced.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionMultiplyingDenominatorReduced.Location = new System.Drawing.Point(208, 168);
-            this.textBoxFractionMultiplyingDenominatorReduced.Name = "textBoxFractionMultiplyingDenominatorReduced";
-            this.textBoxFractionMultiplyingDenominatorReduced.ReadOnly = true;
-            this.textBoxFractionMultiplyingDenominatorReduced.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionMultiplyingDenominatorReduced.TabIndex = 152;
-            this.textBoxFractionMultiplyingDenominatorReduced.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxFractionMultiplyingDecimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFractionMultiplyingDecimal.Location = new System.Drawing.Point(317, 156);
+            this.textBoxFractionMultiplyingDecimal.Name = "textBoxFractionMultiplyingDecimal";
+            this.textBoxFractionMultiplyingDecimal.ReadOnly = true;
+            this.textBoxFractionMultiplyingDecimal.Size = new System.Drawing.Size(62, 20);
+            this.textBoxFractionMultiplyingDecimal.TabIndex = 164;
+            this.textBoxFractionMultiplyingDecimal.TabStop = false;
+            this.textBoxFractionMultiplyingDecimal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBoxFractionMultiplyingDecimal, "Side A");
             // 
-            // label2
+            // textBoxFractionDividingDecimal
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(190, 157);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(14, 13);
-            this.label2.TabIndex = 157;
-            this.label2.Text = "=";
+            this.textBoxFractionDividingDecimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFractionDividingDecimal.Location = new System.Drawing.Point(317, 217);
+            this.textBoxFractionDividingDecimal.Name = "textBoxFractionDividingDecimal";
+            this.textBoxFractionDividingDecimal.ReadOnly = true;
+            this.textBoxFractionDividingDecimal.Size = new System.Drawing.Size(62, 20);
+            this.textBoxFractionDividingDecimal.TabIndex = 165;
+            this.textBoxFractionDividingDecimal.TabStop = false;
+            this.textBoxFractionDividingDecimal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBoxFractionDividingDecimal, "Side A");
             // 
-            // label3
+            // label9
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(190, 96);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(14, 13);
-            this.label3.TabIndex = 156;
-            this.label3.Text = "=";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(299, 219);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(14, 13);
+            this.label9.TabIndex = 169;
+            this.label9.Text = "=";
             // 
-            // label4
+            // label10
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(190, 34);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(14, 13);
-            this.label4.TabIndex = 155;
-            this.label4.Text = "=";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(299, 157);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(14, 13);
+            this.label10.TabIndex = 168;
+            this.label10.Text = "=";
             // 
-            // textBoxFractionAdditionNumeratorReduced
+            // label11
             // 
-            this.textBoxFractionAdditionNumeratorReduced.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionAdditionNumeratorReduced.Location = new System.Drawing.Point(208, 19);
-            this.textBoxFractionAdditionNumeratorReduced.Name = "textBoxFractionAdditionNumeratorReduced";
-            this.textBoxFractionAdditionNumeratorReduced.ReadOnly = true;
-            this.textBoxFractionAdditionNumeratorReduced.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionAdditionNumeratorReduced.TabIndex = 147;
-            this.textBoxFractionAdditionNumeratorReduced.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(299, 96);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(14, 13);
+            this.label11.TabIndex = 167;
+            this.label11.Text = "=";
             // 
-            // textBoxFractionAdditionDenominatorReduced
+            // label12
             // 
-            this.textBoxFractionAdditionDenominatorReduced.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionAdditionDenominatorReduced.Location = new System.Drawing.Point(208, 45);
-            this.textBoxFractionAdditionDenominatorReduced.Name = "textBoxFractionAdditionDenominatorReduced";
-            this.textBoxFractionAdditionDenominatorReduced.ReadOnly = true;
-            this.textBoxFractionAdditionDenominatorReduced.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionAdditionDenominatorReduced.TabIndex = 148;
-            this.textBoxFractionAdditionDenominatorReduced.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBoxFractionSubtractionDenominatorReduced
-            // 
-            this.textBoxFractionSubtractionDenominatorReduced.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionSubtractionDenominatorReduced.Location = new System.Drawing.Point(208, 106);
-            this.textBoxFractionSubtractionDenominatorReduced.Name = "textBoxFractionSubtractionDenominatorReduced";
-            this.textBoxFractionSubtractionDenominatorReduced.ReadOnly = true;
-            this.textBoxFractionSubtractionDenominatorReduced.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionSubtractionDenominatorReduced.TabIndex = 150;
-            this.textBoxFractionSubtractionDenominatorReduced.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBoxFractionSubtractionNumeratorReduced
-            // 
-            this.textBoxFractionSubtractionNumeratorReduced.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionSubtractionNumeratorReduced.Location = new System.Drawing.Point(208, 80);
-            this.textBoxFractionSubtractionNumeratorReduced.Name = "textBoxFractionSubtractionNumeratorReduced";
-            this.textBoxFractionSubtractionNumeratorReduced.ReadOnly = true;
-            this.textBoxFractionSubtractionNumeratorReduced.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionSubtractionNumeratorReduced.TabIndex = 149;
-            this.textBoxFractionSubtractionNumeratorReduced.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBoxFractionDividingNumeratorReduced
-            // 
-            this.textBoxFractionDividingNumeratorReduced.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionDividingNumeratorReduced.Location = new System.Drawing.Point(208, 203);
-            this.textBoxFractionDividingNumeratorReduced.Name = "textBoxFractionDividingNumeratorReduced";
-            this.textBoxFractionDividingNumeratorReduced.ReadOnly = true;
-            this.textBoxFractionDividingNumeratorReduced.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionDividingNumeratorReduced.TabIndex = 153;
-            this.textBoxFractionDividingNumeratorReduced.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBoxFractionDividingDenominatorReduced
-            // 
-            this.textBoxFractionDividingDenominatorReduced.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFractionDividingDenominatorReduced.Location = new System.Drawing.Point(208, 229);
-            this.textBoxFractionDividingDenominatorReduced.Name = "textBoxFractionDividingDenominatorReduced";
-            this.textBoxFractionDividingDenominatorReduced.ReadOnly = true;
-            this.textBoxFractionDividingDenominatorReduced.Size = new System.Drawing.Size(20, 20);
-            this.textBoxFractionDividingDenominatorReduced.TabIndex = 154;
-            this.textBoxFractionDividingDenominatorReduced.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(299, 34);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(14, 13);
+            this.label12.TabIndex = 166;
+            this.label12.Text = "=";
             // 
             // formMathFormulas
             // 
@@ -1898,5 +2096,17 @@ namespace CalculationsAndConversionsCalculator
         private TextBox textBoxFractionSubtractionNumeratorReduced;
         private TextBox textBoxFractionDividingNumeratorReduced;
         private TextBox textBoxFractionDividingDenominatorReduced;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private Label label11;
+        private Label label12;
+        private TextBox textBoxFractionDividingDecimal;
+        private TextBox textBoxFractionMultiplyingDecimal;
+        private TextBox textBoxFractionSubtractionDecimal;
+        private TextBox textBoxFractionAdditionDecimal;
     }
 }
