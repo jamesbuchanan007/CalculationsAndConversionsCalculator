@@ -309,5 +309,198 @@ namespace CalculationsAndConversionsCalculator
             textBoxConeTotalSurfaceAreaOutput.Clear();
             textBoxConeDiameterInput.Focus();
         }
+        //GROUP - HYPTENUSE - CLIPBOARD
+        private void buttonHypotenuseClipboard_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(textBoxHypotenuseSideC.Text);
+        }
+        //GROUP - CIRCLE - AREA - CLIPBOARD
+        private void buttonCircleAreaClipboard_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(textBoxCircleAreaOutput.Text);
+        }
+        //GROUP - CIRCLE - CIRCUMFERENCE - CLIPBOARD
+        private void buttonCircleCircumferenceClipboard_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(textBoxCircleCircumberenceOutput.Text);
+        }
+        //GROUP - SPHERE - VOLUME - CLIPBOARD
+        private void buttonSphereVolumeClipboard_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(textBoxSphereVolumeOutput.Text);
+        }
+        //GROUP - SPHERE - SURFACE AREA - CLIPBOARD
+        private void buttonSphereSurfaceAreaClipboard_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(textBoxSphereSurfaceAreaOutput.Text);
+        }
+        //GROUP - CYLINDER - VOLUME - CLIPBOARD
+        private void buttonCylinderVolumeClipboard_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(textBoxCylinderVolumeOutput.Text);
+        }
+        //GROUP - CYLINDER - LATERAL AREA - CLIPBOARD
+        private void buttonCylinderLateralAreaClipboard_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(textBoxCylinderLateralAreaOutput.Text);
+        }
+        //GROUP - CYLINDER - TOTAL SURFACE AREA - CLIPBOARD
+        private void buttonCylinderSurfaceAreaClipboard_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(textBoxCylinderTotalSurfaceAreaOutput.Text);
+        }
+        //GROUP - CONE - VOLUME - CLIPBOARD
+        private void buttonConeVolumeClipboard_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(textBoxConeVolumeOutput.Text);
+        }
+        //GROUP - CONE - LATERAL AREA - CLIPBOARD
+        private void buttonConeLateralAreaClipboard_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(textBoxConeLateralAreaOutput.Text);
+        }
+        //GROUP - CONE - TOTAL SURFACE AREA - CLIPBOARD
+        private void buttonConeSurfaceAreaClipboard_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(textBoxConeTotalSurfaceAreaOutput.Text);
+        }
+        //GROUP - FRACTIONS - ADDITION - CALCULATE
+        private void buttonFractionsAdditionCalculate_Click(object sender, EventArgs e)
+        {
+            var numA = int.TryParse(textBoxFractionAdditionA.Text, out var inputA);
+            var numB = int.TryParse(textBoxFractionAdditionB.Text, out var inputB);
+            var numC = int.TryParse(textBoxFractionAdditionC.Text, out var inputC);
+            var numD = int.TryParse(textBoxFractionAdditionD.Text, out var inputD);
+
+            if (string.IsNullOrWhiteSpace(textBoxFractionAdditionA.Text))
+            {
+                MessageBox.Show("Please enter a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionAdditionA.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(textBoxFractionAdditionB.Text))
+            {
+                MessageBox.Show("Please enter a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionAdditionB.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(textBoxFractionAdditionC.Text))
+            {
+                MessageBox.Show("Please enter a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionAdditionC.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(textBoxFractionAdditionD.Text))
+            {
+                MessageBox.Show("Please enter a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionAdditionD.Focus();
+                return;
+            }
+
+            if (!numA)
+            {
+                MessageBox.Show("Must be an Integer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionAdditionA.Clear();
+                textBoxFractionAdditionA.Focus();
+                return;
+            }
+            if (!numB)
+            {
+                MessageBox.Show("Must be an Integer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionAdditionB.Clear();
+                textBoxFractionAdditionB.Focus();
+                return;
+            }
+            if (!numC)
+            {
+                MessageBox.Show("Must be an Integer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionAdditionC.Clear();
+                textBoxFractionAdditionC.Focus();
+                return;
+            }
+            if (!numD)
+            {
+                MessageBox.Show("Must be an Integer", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxFractionAdditionD.Clear();
+                textBoxFractionAdditionD.Focus();
+                return;
+            }
+
+            var numerator = (inputA * inputD) + (inputB * inputC);
+            var denominator = inputB * inputD;
+
+            var gcd = GetGreatestCommonDivisor(numerator, denominator);
+
+            var numReduced = numerator / gcd;
+            var denReduced = denominator / gcd;
+
+            textBoxFractionAdditionNumerator.Text = numerator.ToString();
+            textBoxFractionAdditionDenominator.Text = denominator.ToString();
+            textBoxFractionAdditionNumeratorReduced.Text = numReduced.ToString();
+            textBoxFractionAdditionDenominatorReduced.Text = denReduced.ToString();
+        }
+
+        //FIND GREATEST COMMON DIVISOR
+        private int GetGreatestCommonDivisor(int numerator, int denominator)
+        {
+            while (numerator != 0 && denominator != 0)
+            {
+                if (numerator > denominator) numerator %= denominator;
+                else
+                {
+                    denominator %= numerator;
+                }
+            }
+
+            return numerator == 0 ? denominator : numerator;
+        }
+
+        private void buttonFractionsClear_Click(object sender, EventArgs e)
+        {
+            textBoxFractionAdditionA.Clear();
+            textBoxFractionAdditionB.Clear();
+            textBoxFractionAdditionC.Clear();
+            textBoxFractionAdditionD.Clear();
+            textBoxFractionAdditionNumerator.Clear();
+            textBoxFractionAdditionNumeratorReduced.Clear();
+            textBoxFractionsAdditionMixedNumerator.Clear();
+            textBoxFractionAdditionDenominator.Clear();
+            textBoxFractionAdditionDenominatorReduced.Clear();
+            textBoxFractionsAdditionMixedDenominator.Clear();
+            textBoxFractionsAdditionMixedWholeNumber.Clear();
+            textBoxFractionSubtractionA.Clear();
+            textBoxFractionSubtractionB.Clear();
+            textBoxFractionSubtractionC.Clear();
+            textBoxFractionSubtractionD.Clear();
+            textBoxFractionSubtractionNumerator.Clear();
+            textBoxFractionSubtractionNumeratorReduced.Clear();
+            textBoxFractionsSubtractionMixedNumerator.Clear();
+            textBoxFractionSubtractionDenominator.Clear();
+            textBoxFractionSubtractionDenominatorReduced.Clear();
+            textBoxFractionsSubtractionMixedDenominator.Clear();
+            textBoxFractionsSubtractionMixedWholeNumber.Clear();
+            textBoxFractionMultiplyingA.Clear();
+            textBoxFractionMultiplyingB.Clear();
+            textBoxFractionMultiplyingC.Clear();
+            textBoxFractionMultiplyingD.Clear();
+            textBoxFractionMultiplyingNumerator.Clear();
+            textBoxFractionMultiplyingNumeratorReduced.Clear();
+            textBoxFractionsMultiplyingMixedNumerator.Clear();
+            textBoxFractionMultiplyingDenominator.Clear();
+            textBoxFractionMultiplyingDenominatorReduced.Clear();
+            textBoxFractionsMultiplyingMixedDenominator.Clear();
+            textBoxFractionsMultiplyingMixedWholeNumber.Clear();
+            textBoxFractionDividingA.Clear();
+            textBoxFractionDividingB.Clear();
+            textBoxFractionDividingC.Clear();
+            textBoxFractionDividingD.Clear();
+            textBoxFractionDividingNumerator.Clear();
+            textBoxFractionDividingNumeratorReduced.Clear();
+            textBoxFractionsDividingMixedNumerator.Clear();
+            textBoxFractionDividingDenominator.Clear();
+            textBoxFractionDividingDenominatorReduced.Clear();
+            textBoxFractionsDividingMixedDenominator.Clear();
+            textBoxFractionsDividingMixedWholeNumber.Clear();
+        }
     }
 }
