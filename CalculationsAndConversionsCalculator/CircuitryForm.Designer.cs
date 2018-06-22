@@ -30,17 +30,17 @@
         {
             this.buttonCircuitryHome = new System.Windows.Forms.Button();
             this.buttonCircuitryExit = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelDirections = new System.Windows.Forms.Label();
             this.labelCircuitCapacitors = new System.Windows.Forms.Label();
             this.textBoxCapacitorParallel = new System.Windows.Forms.TextBox();
             this.textBoxCapacitorSeries = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.labelCapacitorsParallel = new System.Windows.Forms.Label();
+            this.labelCapacitorsSeries = new System.Windows.Forms.Label();
             this.labelCircuitInductors = new System.Windows.Forms.Label();
             this.textBoxInductorParallel = new System.Windows.Forms.TextBox();
             this.textBoxInductorSeries = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelInductorsParallel = new System.Windows.Forms.Label();
+            this.labelInductorsSeries = new System.Windows.Forms.Label();
             this.labelCircuitResistors = new System.Windows.Forms.Label();
             this.buttonCircuitResistanceClear = new System.Windows.Forms.Button();
             this.textBoxResistorParallel = new System.Windows.Forms.TextBox();
@@ -49,6 +49,7 @@
             this.labelCircuitOutput = new System.Windows.Forms.Label();
             this.labelSeriesResistance = new System.Windows.Forms.Label();
             this.buttonCircuitResistanceCalculate = new System.Windows.Forms.Button();
+            this.textBoxCircuitryOutput = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonCircuitryHome
@@ -59,7 +60,7 @@
             this.buttonCircuitryHome.Location = new System.Drawing.Point(12, 328);
             this.buttonCircuitryHome.Name = "buttonCircuitryHome";
             this.buttonCircuitryHome.Size = new System.Drawing.Size(75, 23);
-            this.buttonCircuitryHome.TabIndex = 89;
+            this.buttonCircuitryHome.TabIndex = 9;
             this.buttonCircuitryHome.Text = "Home";
             this.buttonCircuitryHome.UseVisualStyleBackColor = false;
             this.buttonCircuitryHome.Click += new System.EventHandler(this.buttonCircuitryHome_Click);
@@ -72,19 +73,19 @@
             this.buttonCircuitryExit.Location = new System.Drawing.Point(284, 328);
             this.buttonCircuitryExit.Name = "buttonCircuitryExit";
             this.buttonCircuitryExit.Size = new System.Drawing.Size(75, 23);
-            this.buttonCircuitryExit.TabIndex = 90;
+            this.buttonCircuitryExit.TabIndex = 10;
             this.buttonCircuitryExit.Text = "Exit Program";
             this.buttonCircuitryExit.UseVisualStyleBackColor = false;
             this.buttonCircuitryExit.Click += new System.EventHandler(this.buttonCircuitryExit_Click);
             // 
-            // label1
+            // labelDirections
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 272);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(333, 13);
-            this.label1.TabIndex = 91;
-            this.label1.Text = "Enter Series / Parallel values to pertinent columns and click calculate";
+            this.labelDirections.AutoSize = true;
+            this.labelDirections.Location = new System.Drawing.Point(20, 272);
+            this.labelDirections.Name = "labelDirections";
+            this.labelDirections.Size = new System.Drawing.Size(333, 13);
+            this.labelDirections.TabIndex = 91;
+            this.labelDirections.Text = "Enter Series / Parallel values to pertinent columns and click calculate";
             // 
             // labelCircuitCapacitors
             // 
@@ -102,7 +103,7 @@
             this.textBoxCapacitorParallel.Multiline = true;
             this.textBoxCapacitorParallel.Name = "textBoxCapacitorParallel";
             this.textBoxCapacitorParallel.Size = new System.Drawing.Size(41, 138);
-            this.textBoxCapacitorParallel.TabIndex = 116;
+            this.textBoxCapacitorParallel.TabIndex = 6;
             // 
             // textBoxCapacitorSeries
             // 
@@ -110,29 +111,29 @@
             this.textBoxCapacitorSeries.Multiline = true;
             this.textBoxCapacitorSeries.Name = "textBoxCapacitorSeries";
             this.textBoxCapacitorSeries.Size = new System.Drawing.Size(46, 138);
-            this.textBoxCapacitorSeries.TabIndex = 115;
+            this.textBoxCapacitorSeries.TabIndex = 5;
             // 
-            // label5
+            // labelCapacitorsParallel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(304, 37);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 13);
-            this.label5.TabIndex = 114;
-            this.label5.Text = "Parallel";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelCapacitorsParallel.AutoSize = true;
+            this.labelCapacitorsParallel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCapacitorsParallel.Location = new System.Drawing.Point(304, 37);
+            this.labelCapacitorsParallel.Name = "labelCapacitorsParallel";
+            this.labelCapacitorsParallel.Size = new System.Drawing.Size(49, 13);
+            this.labelCapacitorsParallel.TabIndex = 114;
+            this.labelCapacitorsParallel.Text = "Parallel";
+            this.labelCapacitorsParallel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label6
+            // labelCapacitorsSeries
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(253, 37);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 13);
-            this.label6.TabIndex = 113;
-            this.label6.Text = "Series";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelCapacitorsSeries.AutoSize = true;
+            this.labelCapacitorsSeries.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCapacitorsSeries.Location = new System.Drawing.Point(253, 37);
+            this.labelCapacitorsSeries.Name = "labelCapacitorsSeries";
+            this.labelCapacitorsSeries.Size = new System.Drawing.Size(42, 13);
+            this.labelCapacitorsSeries.TabIndex = 113;
+            this.labelCapacitorsSeries.Text = "Series";
+            this.labelCapacitorsSeries.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelCircuitInductors
             // 
@@ -150,7 +151,7 @@
             this.textBoxInductorParallel.Multiline = true;
             this.textBoxInductorParallel.Name = "textBoxInductorParallel";
             this.textBoxInductorParallel.Size = new System.Drawing.Size(41, 138);
-            this.textBoxInductorParallel.TabIndex = 111;
+            this.textBoxInductorParallel.TabIndex = 4;
             // 
             // textBoxInductorSeries
             // 
@@ -158,29 +159,29 @@
             this.textBoxInductorSeries.Multiline = true;
             this.textBoxInductorSeries.Name = "textBoxInductorSeries";
             this.textBoxInductorSeries.Size = new System.Drawing.Size(46, 138);
-            this.textBoxInductorSeries.TabIndex = 110;
+            this.textBoxInductorSeries.TabIndex = 3;
             // 
-            // label2
+            // labelInductorsParallel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(191, 37);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
-            this.label2.TabIndex = 109;
-            this.label2.Text = "Parallel";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelInductorsParallel.AutoSize = true;
+            this.labelInductorsParallel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInductorsParallel.Location = new System.Drawing.Point(191, 37);
+            this.labelInductorsParallel.Name = "labelInductorsParallel";
+            this.labelInductorsParallel.Size = new System.Drawing.Size(49, 13);
+            this.labelInductorsParallel.TabIndex = 109;
+            this.labelInductorsParallel.Text = "Parallel";
+            this.labelInductorsParallel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // labelInductorsSeries
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(140, 37);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
-            this.label3.TabIndex = 108;
-            this.label3.Text = "Series";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelInductorsSeries.AutoSize = true;
+            this.labelInductorsSeries.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInductorsSeries.Location = new System.Drawing.Point(140, 37);
+            this.labelInductorsSeries.Name = "labelInductorsSeries";
+            this.labelInductorsSeries.Size = new System.Drawing.Size(42, 13);
+            this.labelInductorsSeries.TabIndex = 108;
+            this.labelInductorsSeries.Text = "Series";
+            this.labelInductorsSeries.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelCircuitResistors
             // 
@@ -200,7 +201,7 @@
             this.buttonCircuitResistanceClear.Location = new System.Drawing.Point(227, 224);
             this.buttonCircuitResistanceClear.Name = "buttonCircuitResistanceClear";
             this.buttonCircuitResistanceClear.Size = new System.Drawing.Size(75, 23);
-            this.buttonCircuitResistanceClear.TabIndex = 106;
+            this.buttonCircuitResistanceClear.TabIndex = 8;
             this.buttonCircuitResistanceClear.Text = "Clear";
             this.buttonCircuitResistanceClear.UseVisualStyleBackColor = false;
             this.buttonCircuitResistanceClear.Click += new System.EventHandler(this.buttonCircuitResistanceClear_Click);
@@ -211,7 +212,7 @@
             this.textBoxResistorParallel.Multiline = true;
             this.textBoxResistorParallel.Name = "textBoxResistorParallel";
             this.textBoxResistorParallel.Size = new System.Drawing.Size(41, 138);
-            this.textBoxResistorParallel.TabIndex = 105;
+            this.textBoxResistorParallel.TabIndex = 2;
             // 
             // textBoxResistorSeries
             // 
@@ -219,7 +220,7 @@
             this.textBoxResistorSeries.Multiline = true;
             this.textBoxResistorSeries.Name = "textBoxResistorSeries";
             this.textBoxResistorSeries.Size = new System.Drawing.Size(46, 138);
-            this.textBoxResistorSeries.TabIndex = 104;
+            this.textBoxResistorSeries.TabIndex = 1;
             // 
             // labelParallelResistance
             // 
@@ -236,10 +237,11 @@
             // 
             this.labelCircuitOutput.AutoSize = true;
             this.labelCircuitOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCircuitOutput.Location = new System.Drawing.Point(172, 205);
+            this.labelCircuitOutput.Location = new System.Drawing.Point(117, 202);
             this.labelCircuitOutput.Name = "labelCircuitOutput";
-            this.labelCircuitOutput.Size = new System.Drawing.Size(0, 13);
+            this.labelCircuitOutput.Size = new System.Drawing.Size(36, 13);
             this.labelCircuitOutput.TabIndex = 103;
+            this.labelCircuitOutput.Text = "Total";
             this.labelCircuitOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelSeriesResistance
@@ -262,26 +264,36 @@
             this.buttonCircuitResistanceCalculate.Location = new System.Drawing.Point(78, 224);
             this.buttonCircuitResistanceCalculate.Name = "buttonCircuitResistanceCalculate";
             this.buttonCircuitResistanceCalculate.Size = new System.Drawing.Size(75, 23);
-            this.buttonCircuitResistanceCalculate.TabIndex = 101;
+            this.buttonCircuitResistanceCalculate.TabIndex = 7;
             this.buttonCircuitResistanceCalculate.Text = "Calculate";
             this.buttonCircuitResistanceCalculate.UseVisualStyleBackColor = false;
             this.buttonCircuitResistanceCalculate.Click += new System.EventHandler(this.buttonCircuitResistanceCalculate_Click_1);
+            // 
+            // textBoxCircuitryOutput
+            // 
+            this.textBoxCircuitryOutput.Location = new System.Drawing.Point(159, 198);
+            this.textBoxCircuitryOutput.Name = "textBoxCircuitryOutput";
+            this.textBoxCircuitryOutput.ReadOnly = true;
+            this.textBoxCircuitryOutput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCircuitryOutput.TabIndex = 118;
+            this.textBoxCircuitryOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // formCircuitry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(371, 363);
+            this.Controls.Add(this.textBoxCircuitryOutput);
             this.Controls.Add(this.labelCircuitCapacitors);
             this.Controls.Add(this.textBoxCapacitorParallel);
             this.Controls.Add(this.textBoxCapacitorSeries);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.labelCapacitorsParallel);
+            this.Controls.Add(this.labelCapacitorsSeries);
             this.Controls.Add(this.labelCircuitInductors);
             this.Controls.Add(this.textBoxInductorParallel);
             this.Controls.Add(this.textBoxInductorSeries);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelInductorsParallel);
+            this.Controls.Add(this.labelInductorsSeries);
             this.Controls.Add(this.labelCircuitResistors);
             this.Controls.Add(this.buttonCircuitResistanceClear);
             this.Controls.Add(this.textBoxResistorParallel);
@@ -290,7 +302,7 @@
             this.Controls.Add(this.labelCircuitOutput);
             this.Controls.Add(this.labelSeriesResistance);
             this.Controls.Add(this.buttonCircuitResistanceCalculate);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelDirections);
             this.Controls.Add(this.buttonCircuitryExit);
             this.Controls.Add(this.buttonCircuitryHome);
             this.Name = "formCircuitry";
@@ -305,17 +317,17 @@
 
         private System.Windows.Forms.Button buttonCircuitryHome;
         private System.Windows.Forms.Button buttonCircuitryExit;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelDirections;
         private System.Windows.Forms.Label labelCircuitCapacitors;
         private System.Windows.Forms.TextBox textBoxCapacitorParallel;
         private System.Windows.Forms.TextBox textBoxCapacitorSeries;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelCapacitorsParallel;
+        private System.Windows.Forms.Label labelCapacitorsSeries;
         private System.Windows.Forms.Label labelCircuitInductors;
         private System.Windows.Forms.TextBox textBoxInductorParallel;
         private System.Windows.Forms.TextBox textBoxInductorSeries;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelInductorsParallel;
+        private System.Windows.Forms.Label labelInductorsSeries;
         private System.Windows.Forms.Label labelCircuitResistors;
         private System.Windows.Forms.Button buttonCircuitResistanceClear;
         private System.Windows.Forms.TextBox textBoxResistorParallel;
@@ -324,5 +336,6 @@
         private System.Windows.Forms.Label labelCircuitOutput;
         private System.Windows.Forms.Label labelSeriesResistance;
         private System.Windows.Forms.Button buttonCircuitResistanceCalculate;
+        private System.Windows.Forms.TextBox textBoxCircuitryOutput;
     }
 }

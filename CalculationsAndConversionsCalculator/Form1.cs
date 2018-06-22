@@ -64,9 +64,19 @@ namespace CalculationsAndConversionsCalculator
                     formCircuitry formCircuitry = new formCircuitry();
                     formCircuitry.Show();
                     break;
+                case "Math Formulas":
+                    this.Hide();
+                    formMathFormulas formMathFormulas = new formMathFormulas();
+                    formMathFormulas.Show();
+                    break;
 
             }
             
+        }
+
+        private void comboBoxChooseType_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+
         }
     }
 }

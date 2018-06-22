@@ -171,7 +171,7 @@ namespace CalculationsAndConversionsCalculator
                 capSeries +
                 capParallel).ToString("F");
 
-            labelCircuitOutput.Text = totalRsRpIsIpCsCp + " Ohms";
+            textBoxCircuitryOutput.Text = totalRsRpIsIpCsCp + " Ohms";
 
         }
 
@@ -184,7 +184,7 @@ namespace CalculationsAndConversionsCalculator
             textBoxInductorSeries.Clear();
             textBoxInductorParallel.Clear();
             textBoxResistorSeries.Focus();
-            labelCircuitOutput.Text = "";
+            textBoxCircuitryOutput.Clear();
         }
 
         private void buttonCircuitryHome_Click(object sender, EventArgs e)

@@ -1,4 +1,6 @@
-﻿namespace CalculationsAndConversionsCalculator
+﻿using System.Windows.Forms;
+
+namespace CalculationsAndConversionsCalculator
 {
     partial class formMathFormulas
     {
@@ -90,13 +92,19 @@
             this.buttonFractionsClear = new System.Windows.Forms.Button();
             this.groupBoxFractions = new System.Windows.Forms.GroupBox();
             this.groupBoxHypotenuse = new System.Windows.Forms.GroupBox();
+            this.textBoxHypotenuseSideC = new System.Windows.Forms.TextBox();
+            this.textBoxHypotenuseSideB = new System.Windows.Forms.TextBox();
             this.groupBoxCircle = new System.Windows.Forms.GroupBox();
-            this.labelAreaOfCircleDiameter = new System.Windows.Forms.Label();
-            this.labelCircleArea = new System.Windows.Forms.Label();
-            this.textBoxCircleAreaOutput = new System.Windows.Forms.TextBox();
+            this.labelCircleUOM = new System.Windows.Forms.Label();
+            this.textBoxCircleUOM = new System.Windows.Forms.TextBox();
             this.labelCircleCircumference = new System.Windows.Forms.Label();
             this.textBoxCircleCircumberenceOutput = new System.Windows.Forms.TextBox();
+            this.labelCircleArea = new System.Windows.Forms.Label();
+            this.textBoxCircleAreaOutput = new System.Windows.Forms.TextBox();
+            this.labelAreaOfCircleDiameter = new System.Windows.Forms.Label();
             this.groupBoxSphere = new System.Windows.Forms.GroupBox();
+            this.labelSphereUOM = new System.Windows.Forms.Label();
+            this.textBoxSphereUOM = new System.Windows.Forms.TextBox();
             this.labelSphereSurfaceArea = new System.Windows.Forms.Label();
             this.textBoxSphereSurfaceAreaOutput = new System.Windows.Forms.TextBox();
             this.labelSphereVolume = new System.Windows.Forms.Label();
@@ -106,6 +114,10 @@
             this.buttonSphereCalculate = new System.Windows.Forms.Button();
             this.buttonSphereClear = new System.Windows.Forms.Button();
             this.groupBoxCylinder = new System.Windows.Forms.GroupBox();
+            this.labelCylinderUOM = new System.Windows.Forms.Label();
+            this.textBoxCylinderUOM = new System.Windows.Forms.TextBox();
+            this.labelCylinderTotalSurfaceArea = new System.Windows.Forms.Label();
+            this.textBoxCylinderTotalSurfaceAreaOutput = new System.Windows.Forms.TextBox();
             this.labelCylinderLateralArea = new System.Windows.Forms.Label();
             this.textBoxCylinderLateralAreaOutput = new System.Windows.Forms.TextBox();
             this.labelCylinderVolume = new System.Windows.Forms.Label();
@@ -114,22 +126,34 @@
             this.textBoxCylinderDiameterInput = new System.Windows.Forms.TextBox();
             this.buttonCylinderCalculate = new System.Windows.Forms.Button();
             this.buttonCylinderClear = new System.Windows.Forms.Button();
-            this.labelCylinderTotalSurfaceArea = new System.Windows.Forms.Label();
-            this.textBoxCylinderTotalSurfaceAreaOutput = new System.Windows.Forms.TextBox();
             this.groupBoxCone = new System.Windows.Forms.GroupBox();
+            this.labelConeUOM = new System.Windows.Forms.Label();
+            this.textBoxConeUOM = new System.Windows.Forms.TextBox();
             this.labelConeTotalSurfaceAre = new System.Windows.Forms.Label();
             this.textBoxConeTotalSurfaceAreaOutput = new System.Windows.Forms.TextBox();
             this.labelConeLateralArea = new System.Windows.Forms.Label();
             this.textBoxConeLateralAreaOutput = new System.Windows.Forms.TextBox();
             this.labelConeVolume = new System.Windows.Forms.Label();
             this.textBoxConeVolumeOutput = new System.Windows.Forms.TextBox();
-            this.labelConeDiameter = new System.Windows.Forms.Label();
-            this.textBoxConeDiameterInput = new System.Windows.Forms.TextBox();
             this.buttonConeCalculate = new System.Windows.Forms.Button();
             this.buttonConeClear = new System.Windows.Forms.Button();
-            this.textBoxHypotenuseSideB = new System.Windows.Forms.TextBox();
-            this.textBoxHypotenuseSideC = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.labelCylinderHeight = new System.Windows.Forms.Label();
+            this.textBoxCylinderHeightInput = new System.Windows.Forms.TextBox();
+            this.labelConeHeight = new System.Windows.Forms.Label();
+            this.textBoxConeHeightInput = new System.Windows.Forms.TextBox();
+            this.labelConeDiameter = new System.Windows.Forms.Label();
+            this.textBoxConeDiameterInput = new System.Windows.Forms.TextBox();
+            this.buttonCircleAreaClipboard = new System.Windows.Forms.Button();
+            this.buttonbuttonCircleCircleClipboard = new System.Windows.Forms.Button();
+            this.buttonSphereVolumeClipboard = new System.Windows.Forms.Button();
+            this.buttonSphereSurfaceAreaClipboard = new System.Windows.Forms.Button();
+            this.buttonCylinderVolumeClipboard = new System.Windows.Forms.Button();
+            this.buttonCylinderLateralAreaClipboard = new System.Windows.Forms.Button();
+            this.buttonCylinderSurfaceAreaClipboard = new System.Windows.Forms.Button();
+            this.buttonConeSurfaceAreaClipboard = new System.Windows.Forms.Button();
+            this.buttonConeLateralAreaClipboard = new System.Windows.Forms.Button();
+            this.buttonConeVolumeClipboard = new System.Windows.Forms.Button();
             this.groupBoxFractions.SuspendLayout();
             this.groupBoxHypotenuse.SuspendLayout();
             this.groupBoxCircle.SuspendLayout();
@@ -149,6 +173,7 @@
             this.buttonCircleClear.TabIndex = 74;
             this.buttonCircleClear.Text = "Clear";
             this.buttonCircleClear.UseVisualStyleBackColor = false;
+            this.buttonCircleClear.Click += new System.EventHandler(this.buttonCircleClear_Click);
             // 
             // buttonHypotenuseClear
             // 
@@ -161,6 +186,7 @@
             this.buttonHypotenuseClear.TabIndex = 73;
             this.buttonHypotenuseClear.Text = "Clear";
             this.buttonHypotenuseClear.UseVisualStyleBackColor = false;
+            this.buttonHypotenuseClear.Click += new System.EventHandler(this.buttonHypotenuseClear_Click);
             // 
             // buttonCircleCalculate
             // 
@@ -174,13 +200,16 @@
             this.buttonCircleCalculate.TabIndex = 72;
             this.buttonCircleCalculate.Text = "Calculate";
             this.buttonCircleCalculate.UseVisualStyleBackColor = false;
+            this.buttonCircleCalculate.Click += new System.EventHandler(this.buttonCircleCalculate_Click);
             // 
             // textBoxAreaofCircleDiameterInput
             // 
+            this.textBoxAreaofCircleDiameterInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxAreaofCircleDiameterInput.Location = new System.Drawing.Point(6, 34);
             this.textBoxAreaofCircleDiameterInput.Name = "textBoxAreaofCircleDiameterInput";
             this.textBoxAreaofCircleDiameterInput.Size = new System.Drawing.Size(100, 20);
             this.textBoxAreaofCircleDiameterInput.TabIndex = 70;
+            this.textBoxAreaofCircleDiameterInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonHypotenuseCalculate
             // 
@@ -194,6 +223,7 @@
             this.buttonHypotenuseCalculate.TabIndex = 68;
             this.buttonHypotenuseCalculate.Text = "Calculate";
             this.buttonHypotenuseCalculate.UseVisualStyleBackColor = false;
+            this.buttonHypotenuseCalculate.Click += new System.EventHandler(this.buttonHypotenuseCalculate_Click);
             // 
             // labelHypotenuseOutput
             // 
@@ -205,10 +235,12 @@
             // 
             // textBoxHypotenuseSideA
             // 
+            this.textBoxHypotenuseSideA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxHypotenuseSideA.Location = new System.Drawing.Point(8, 19);
             this.textBoxHypotenuseSideA.Name = "textBoxHypotenuseSideA";
             this.textBoxHypotenuseSideA.Size = new System.Drawing.Size(74, 20);
             this.textBoxHypotenuseSideA.TabIndex = 65;
+            this.textBoxHypotenuseSideA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.textBoxHypotenuseSideA, "Side A");
             // 
             // buttonMathFormulaFormExit
@@ -239,36 +271,45 @@
             // 
             // textBoxFractionAdditionA
             // 
+            this.textBoxFractionAdditionA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFractionAdditionA.Location = new System.Drawing.Point(79, 19);
             this.textBoxFractionAdditionA.Name = "textBoxFractionAdditionA";
             this.textBoxFractionAdditionA.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionAdditionA.TabIndex = 94;
+            this.textBoxFractionAdditionA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionAdditionB
             // 
+            this.textBoxFractionAdditionB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFractionAdditionB.Location = new System.Drawing.Point(79, 45);
             this.textBoxFractionAdditionB.Name = "textBoxFractionAdditionB";
             this.textBoxFractionAdditionB.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionAdditionB.TabIndex = 95;
+            this.textBoxFractionAdditionB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionAdditionC
             // 
+            this.textBoxFractionAdditionC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFractionAdditionC.Location = new System.Drawing.Point(120, 19);
             this.textBoxFractionAdditionC.Name = "textBoxFractionAdditionC";
             this.textBoxFractionAdditionC.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionAdditionC.TabIndex = 96;
+            this.textBoxFractionAdditionC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionAdditionD
             // 
+            this.textBoxFractionAdditionD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFractionAdditionD.Location = new System.Drawing.Point(120, 45);
             this.textBoxFractionAdditionD.Name = "textBoxFractionAdditionD";
             this.textBoxFractionAdditionD.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionAdditionD.TabIndex = 97;
+            this.textBoxFractionAdditionD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionAdditionDenominator
             // 
             this.textBoxFractionAdditionDenominator.Location = new System.Drawing.Point(165, 45);
             this.textBoxFractionAdditionDenominator.Name = "textBoxFractionAdditionDenominator";
+            this.textBoxFractionAdditionDenominator.ReadOnly = true;
             this.textBoxFractionAdditionDenominator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionAdditionDenominator.TabIndex = 99;
             // 
@@ -276,6 +317,7 @@
             // 
             this.textBoxFractionAdditionNumerator.Location = new System.Drawing.Point(165, 19);
             this.textBoxFractionAdditionNumerator.Name = "textBoxFractionAdditionNumerator";
+            this.textBoxFractionAdditionNumerator.ReadOnly = true;
             this.textBoxFractionAdditionNumerator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionAdditionNumerator.TabIndex = 98;
             // 
@@ -283,6 +325,7 @@
             // 
             this.textBoxFractionsAdditionMixedWholeNumber.Location = new System.Drawing.Point(211, 31);
             this.textBoxFractionsAdditionMixedWholeNumber.Name = "textBoxFractionsAdditionMixedWholeNumber";
+            this.textBoxFractionsAdditionMixedWholeNumber.ReadOnly = true;
             this.textBoxFractionsAdditionMixedWholeNumber.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsAdditionMixedWholeNumber.TabIndex = 100;
             // 
@@ -290,6 +333,7 @@
             // 
             this.textBoxFractionsAdditionMixedDenominator.Location = new System.Drawing.Point(237, 45);
             this.textBoxFractionsAdditionMixedDenominator.Name = "textBoxFractionsAdditionMixedDenominator";
+            this.textBoxFractionsAdditionMixedDenominator.ReadOnly = true;
             this.textBoxFractionsAdditionMixedDenominator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsAdditionMixedDenominator.TabIndex = 102;
             // 
@@ -297,24 +341,27 @@
             // 
             this.textBoxFractionsAdditionMixedNumerator.Location = new System.Drawing.Point(237, 19);
             this.textBoxFractionsAdditionMixedNumerator.Name = "textBoxFractionsAdditionMixedNumerator";
+            this.textBoxFractionsAdditionMixedNumerator.ReadOnly = true;
             this.textBoxFractionsAdditionMixedNumerator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsAdditionMixedNumerator.TabIndex = 101;
             // 
             // labelFractionAddition
             // 
             this.labelFractionAddition.AutoSize = true;
+            this.labelFractionAddition.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFractionAddition.Location = new System.Drawing.Point(22, 34);
             this.labelFractionAddition.Name = "labelFractionAddition";
-            this.labelFractionAddition.Size = new System.Drawing.Size(53, 13);
+            this.labelFractionAddition.Size = new System.Drawing.Size(45, 13);
             this.labelFractionAddition.TabIndex = 103;
             this.labelFractionAddition.Text = "Addition";
             // 
             // labelFractionSubtraction
             // 
             this.labelFractionSubtraction.AutoSize = true;
+            this.labelFractionSubtraction.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFractionSubtraction.Location = new System.Drawing.Point(6, 95);
             this.labelFractionSubtraction.Name = "labelFractionSubtraction";
-            this.labelFractionSubtraction.Size = new System.Drawing.Size(72, 13);
+            this.labelFractionSubtraction.Size = new System.Drawing.Size(61, 13);
             this.labelFractionSubtraction.TabIndex = 113;
             this.labelFractionSubtraction.Text = "Subtraction";
             // 
@@ -322,6 +369,7 @@
             // 
             this.textBoxFractionsSubtractionMixedDenominator.Location = new System.Drawing.Point(237, 106);
             this.textBoxFractionsSubtractionMixedDenominator.Name = "textBoxFractionsSubtractionMixedDenominator";
+            this.textBoxFractionsSubtractionMixedDenominator.ReadOnly = true;
             this.textBoxFractionsSubtractionMixedDenominator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsSubtractionMixedDenominator.TabIndex = 112;
             // 
@@ -329,6 +377,7 @@
             // 
             this.textBoxFractionsSubtractionMixedNumerator.Location = new System.Drawing.Point(237, 80);
             this.textBoxFractionsSubtractionMixedNumerator.Name = "textBoxFractionsSubtractionMixedNumerator";
+            this.textBoxFractionsSubtractionMixedNumerator.ReadOnly = true;
             this.textBoxFractionsSubtractionMixedNumerator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsSubtractionMixedNumerator.TabIndex = 111;
             // 
@@ -336,6 +385,7 @@
             // 
             this.textBoxFractionsSubtractionMixedWholeNumber.Location = new System.Drawing.Point(211, 92);
             this.textBoxFractionsSubtractionMixedWholeNumber.Name = "textBoxFractionsSubtractionMixedWholeNumber";
+            this.textBoxFractionsSubtractionMixedWholeNumber.ReadOnly = true;
             this.textBoxFractionsSubtractionMixedWholeNumber.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsSubtractionMixedWholeNumber.TabIndex = 110;
             // 
@@ -343,6 +393,7 @@
             // 
             this.textBoxFractionSubtractionDenominator.Location = new System.Drawing.Point(165, 106);
             this.textBoxFractionSubtractionDenominator.Name = "textBoxFractionSubtractionDenominator";
+            this.textBoxFractionSubtractionDenominator.ReadOnly = true;
             this.textBoxFractionSubtractionDenominator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionSubtractionDenominator.TabIndex = 109;
             // 
@@ -350,43 +401,53 @@
             // 
             this.textBoxFractionSubtractionNumerator.Location = new System.Drawing.Point(165, 80);
             this.textBoxFractionSubtractionNumerator.Name = "textBoxFractionSubtractionNumerator";
+            this.textBoxFractionSubtractionNumerator.ReadOnly = true;
             this.textBoxFractionSubtractionNumerator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionSubtractionNumerator.TabIndex = 108;
             // 
             // textBoxFractionSubtractionD
             // 
+            this.textBoxFractionSubtractionD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFractionSubtractionD.Location = new System.Drawing.Point(120, 106);
             this.textBoxFractionSubtractionD.Name = "textBoxFractionSubtractionD";
             this.textBoxFractionSubtractionD.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionSubtractionD.TabIndex = 107;
+            this.textBoxFractionSubtractionD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionSubtractionC
             // 
+            this.textBoxFractionSubtractionC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFractionSubtractionC.Location = new System.Drawing.Point(120, 80);
             this.textBoxFractionSubtractionC.Name = "textBoxFractionSubtractionC";
             this.textBoxFractionSubtractionC.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionSubtractionC.TabIndex = 106;
+            this.textBoxFractionSubtractionC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionSubtractionB
             // 
+            this.textBoxFractionSubtractionB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFractionSubtractionB.Location = new System.Drawing.Point(79, 106);
             this.textBoxFractionSubtractionB.Name = "textBoxFractionSubtractionB";
             this.textBoxFractionSubtractionB.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionSubtractionB.TabIndex = 105;
+            this.textBoxFractionSubtractionB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionSubtractionA
             // 
+            this.textBoxFractionSubtractionA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFractionSubtractionA.Location = new System.Drawing.Point(79, 80);
             this.textBoxFractionSubtractionA.Name = "textBoxFractionSubtractionA";
             this.textBoxFractionSubtractionA.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionSubtractionA.TabIndex = 104;
+            this.textBoxFractionSubtractionA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelFractionMultiplying
             // 
             this.labelFractionMultiplying.AutoSize = true;
+            this.labelFractionMultiplying.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFractionMultiplying.Location = new System.Drawing.Point(11, 157);
             this.labelFractionMultiplying.Name = "labelFractionMultiplying";
-            this.labelFractionMultiplying.Size = new System.Drawing.Size(67, 13);
+            this.labelFractionMultiplying.Size = new System.Drawing.Size(56, 13);
             this.labelFractionMultiplying.TabIndex = 123;
             this.labelFractionMultiplying.Text = "Multiplying";
             // 
@@ -394,6 +455,7 @@
             // 
             this.textBoxFractionsMultiplyingMixedDenominator.Location = new System.Drawing.Point(237, 168);
             this.textBoxFractionsMultiplyingMixedDenominator.Name = "textBoxFractionsMultiplyingMixedDenominator";
+            this.textBoxFractionsMultiplyingMixedDenominator.ReadOnly = true;
             this.textBoxFractionsMultiplyingMixedDenominator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsMultiplyingMixedDenominator.TabIndex = 122;
             // 
@@ -401,6 +463,7 @@
             // 
             this.textBoxFractionsMultiplyingMixedNumerator.Location = new System.Drawing.Point(237, 142);
             this.textBoxFractionsMultiplyingMixedNumerator.Name = "textBoxFractionsMultiplyingMixedNumerator";
+            this.textBoxFractionsMultiplyingMixedNumerator.ReadOnly = true;
             this.textBoxFractionsMultiplyingMixedNumerator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsMultiplyingMixedNumerator.TabIndex = 121;
             // 
@@ -408,6 +471,7 @@
             // 
             this.textBoxFractionsMultiplyingMixedWholeNumber.Location = new System.Drawing.Point(211, 154);
             this.textBoxFractionsMultiplyingMixedWholeNumber.Name = "textBoxFractionsMultiplyingMixedWholeNumber";
+            this.textBoxFractionsMultiplyingMixedWholeNumber.ReadOnly = true;
             this.textBoxFractionsMultiplyingMixedWholeNumber.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsMultiplyingMixedWholeNumber.TabIndex = 120;
             // 
@@ -415,6 +479,7 @@
             // 
             this.textBoxFractionMultiplyingDenominator.Location = new System.Drawing.Point(165, 168);
             this.textBoxFractionMultiplyingDenominator.Name = "textBoxFractionMultiplyingDenominator";
+            this.textBoxFractionMultiplyingDenominator.ReadOnly = true;
             this.textBoxFractionMultiplyingDenominator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionMultiplyingDenominator.TabIndex = 119;
             // 
@@ -422,43 +487,53 @@
             // 
             this.textBoxFractionMultiplyingNumerator.Location = new System.Drawing.Point(165, 142);
             this.textBoxFractionMultiplyingNumerator.Name = "textBoxFractionMultiplyingNumerator";
+            this.textBoxFractionMultiplyingNumerator.ReadOnly = true;
             this.textBoxFractionMultiplyingNumerator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionMultiplyingNumerator.TabIndex = 118;
             // 
             // textBoxFractionMultiplyingD
             // 
+            this.textBoxFractionMultiplyingD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFractionMultiplyingD.Location = new System.Drawing.Point(120, 168);
             this.textBoxFractionMultiplyingD.Name = "textBoxFractionMultiplyingD";
             this.textBoxFractionMultiplyingD.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionMultiplyingD.TabIndex = 117;
+            this.textBoxFractionMultiplyingD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionMultiplyingC
             // 
+            this.textBoxFractionMultiplyingC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFractionMultiplyingC.Location = new System.Drawing.Point(120, 142);
             this.textBoxFractionMultiplyingC.Name = "textBoxFractionMultiplyingC";
             this.textBoxFractionMultiplyingC.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionMultiplyingC.TabIndex = 116;
+            this.textBoxFractionMultiplyingC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionMultiplyingB
             // 
+            this.textBoxFractionMultiplyingB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFractionMultiplyingB.Location = new System.Drawing.Point(79, 168);
             this.textBoxFractionMultiplyingB.Name = "textBoxFractionMultiplyingB";
             this.textBoxFractionMultiplyingB.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionMultiplyingB.TabIndex = 115;
+            this.textBoxFractionMultiplyingB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionMultiplyingA
             // 
+            this.textBoxFractionMultiplyingA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFractionMultiplyingA.Location = new System.Drawing.Point(79, 142);
             this.textBoxFractionMultiplyingA.Name = "textBoxFractionMultiplyingA";
             this.textBoxFractionMultiplyingA.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionMultiplyingA.TabIndex = 114;
+            this.textBoxFractionMultiplyingA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelFractionDividing
             // 
             this.labelFractionDividing.AutoSize = true;
+            this.labelFractionDividing.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFractionDividing.Location = new System.Drawing.Point(22, 218);
             this.labelFractionDividing.Name = "labelFractionDividing";
-            this.labelFractionDividing.Size = new System.Drawing.Size(53, 13);
+            this.labelFractionDividing.Size = new System.Drawing.Size(45, 13);
             this.labelFractionDividing.TabIndex = 133;
             this.labelFractionDividing.Text = "Dividing";
             // 
@@ -466,6 +541,7 @@
             // 
             this.textBoxFractionsDividingMixedDenominator.Location = new System.Drawing.Point(237, 229);
             this.textBoxFractionsDividingMixedDenominator.Name = "textBoxFractionsDividingMixedDenominator";
+            this.textBoxFractionsDividingMixedDenominator.ReadOnly = true;
             this.textBoxFractionsDividingMixedDenominator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsDividingMixedDenominator.TabIndex = 132;
             // 
@@ -473,6 +549,7 @@
             // 
             this.textBoxFractionsDividingMixedNumerator.Location = new System.Drawing.Point(237, 203);
             this.textBoxFractionsDividingMixedNumerator.Name = "textBoxFractionsDividingMixedNumerator";
+            this.textBoxFractionsDividingMixedNumerator.ReadOnly = true;
             this.textBoxFractionsDividingMixedNumerator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsDividingMixedNumerator.TabIndex = 131;
             // 
@@ -480,6 +557,7 @@
             // 
             this.textBoxFractionsDividingMixedWholeNumber.Location = new System.Drawing.Point(211, 215);
             this.textBoxFractionsDividingMixedWholeNumber.Name = "textBoxFractionsDividingMixedWholeNumber";
+            this.textBoxFractionsDividingMixedWholeNumber.ReadOnly = true;
             this.textBoxFractionsDividingMixedWholeNumber.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionsDividingMixedWholeNumber.TabIndex = 130;
             // 
@@ -487,6 +565,7 @@
             // 
             this.textBoxFractionDividingDenominator.Location = new System.Drawing.Point(165, 229);
             this.textBoxFractionDividingDenominator.Name = "textBoxFractionDividingDenominator";
+            this.textBoxFractionDividingDenominator.ReadOnly = true;
             this.textBoxFractionDividingDenominator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionDividingDenominator.TabIndex = 129;
             // 
@@ -494,36 +573,45 @@
             // 
             this.textBoxFractionDividingNumerator.Location = new System.Drawing.Point(165, 203);
             this.textBoxFractionDividingNumerator.Name = "textBoxFractionDividingNumerator";
+            this.textBoxFractionDividingNumerator.ReadOnly = true;
             this.textBoxFractionDividingNumerator.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionDividingNumerator.TabIndex = 128;
             // 
             // textBoxFractionDividingD
             // 
+            this.textBoxFractionDividingD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFractionDividingD.Location = new System.Drawing.Point(120, 229);
             this.textBoxFractionDividingD.Name = "textBoxFractionDividingD";
             this.textBoxFractionDividingD.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionDividingD.TabIndex = 127;
+            this.textBoxFractionDividingD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionDividingC
             // 
+            this.textBoxFractionDividingC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFractionDividingC.Location = new System.Drawing.Point(120, 203);
             this.textBoxFractionDividingC.Name = "textBoxFractionDividingC";
             this.textBoxFractionDividingC.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionDividingC.TabIndex = 126;
+            this.textBoxFractionDividingC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionDividingB
             // 
+            this.textBoxFractionDividingB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFractionDividingB.Location = new System.Drawing.Point(79, 229);
             this.textBoxFractionDividingB.Name = "textBoxFractionDividingB";
             this.textBoxFractionDividingB.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionDividingB.TabIndex = 125;
+            this.textBoxFractionDividingB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxFractionDividingA
             // 
+            this.textBoxFractionDividingA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFractionDividingA.Location = new System.Drawing.Point(79, 203);
             this.textBoxFractionDividingA.Name = "textBoxFractionDividingA";
             this.textBoxFractionDividingA.Size = new System.Drawing.Size(20, 20);
             this.textBoxFractionDividingA.TabIndex = 124;
+            this.textBoxFractionDividingA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelFractionPlusSign
             // 
@@ -698,8 +786,33 @@
             this.groupBoxHypotenuse.TabStop = false;
             this.groupBoxHypotenuse.Text = "Hypotenuse";
             // 
+            // textBoxHypotenuseSideC
+            // 
+            this.textBoxHypotenuseSideC.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxHypotenuseSideC.Location = new System.Drawing.Point(168, 19);
+            this.textBoxHypotenuseSideC.Name = "textBoxHypotenuseSideC";
+            this.textBoxHypotenuseSideC.ReadOnly = true;
+            this.textBoxHypotenuseSideC.Size = new System.Drawing.Size(74, 20);
+            this.textBoxHypotenuseSideC.TabIndex = 75;
+            this.textBoxHypotenuseSideC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBoxHypotenuseSideC, "Side C");
+            // 
+            // textBoxHypotenuseSideB
+            // 
+            this.textBoxHypotenuseSideB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxHypotenuseSideB.Location = new System.Drawing.Point(88, 19);
+            this.textBoxHypotenuseSideB.Name = "textBoxHypotenuseSideB";
+            this.textBoxHypotenuseSideB.Size = new System.Drawing.Size(74, 20);
+            this.textBoxHypotenuseSideB.TabIndex = 74;
+            this.textBoxHypotenuseSideB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBoxHypotenuseSideB, "Side B");
+            // 
             // groupBoxCircle
             // 
+            this.groupBoxCircle.Controls.Add(this.buttonbuttonCircleCircleClipboard);
+            this.groupBoxCircle.Controls.Add(this.buttonCircleAreaClipboard);
+            this.groupBoxCircle.Controls.Add(this.labelCircleUOM);
+            this.groupBoxCircle.Controls.Add(this.textBoxCircleUOM);
             this.groupBoxCircle.Controls.Add(this.labelCircleCircumference);
             this.groupBoxCircle.Controls.Add(this.textBoxCircleCircumberenceOutput);
             this.groupBoxCircle.Controls.Add(this.labelCircleArea);
@@ -716,51 +829,81 @@
             this.groupBoxCircle.TabStop = false;
             this.groupBoxCircle.Text = "Circle";
             // 
-            // labelAreaOfCircleDiameter
+            // labelCircleUOM
             // 
-            this.labelAreaOfCircleDiameter.AutoSize = true;
-            this.labelAreaOfCircleDiameter.Location = new System.Drawing.Point(3, 18);
-            this.labelAreaOfCircleDiameter.Name = "labelAreaOfCircleDiameter";
-            this.labelAreaOfCircleDiameter.Size = new System.Drawing.Size(57, 13);
-            this.labelAreaOfCircleDiameter.TabIndex = 0;
-            this.labelAreaOfCircleDiameter.Text = "Diameter";
+            this.labelCircleUOM.AutoSize = true;
+            this.labelCircleUOM.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCircleUOM.Location = new System.Drawing.Point(113, 18);
+            this.labelCircleUOM.Name = "labelCircleUOM";
+            this.labelCircleUOM.Size = new System.Drawing.Size(30, 13);
+            this.labelCircleUOM.TabIndex = 81;
+            this.labelCircleUOM.Text = "UoM";
             // 
-            // labelCircleArea
+            // textBoxCircleUOM
             // 
-            this.labelCircleArea.AutoSize = true;
-            this.labelCircleArea.Location = new System.Drawing.Point(3, 57);
-            this.labelCircleArea.Name = "labelCircleArea";
-            this.labelCircleArea.Size = new System.Drawing.Size(33, 13);
-            this.labelCircleArea.TabIndex = 75;
-            this.labelCircleArea.Text = "Area";
-            // 
-            // textBoxCircleAreaOutput
-            // 
-            this.textBoxCircleAreaOutput.Location = new System.Drawing.Point(6, 73);
-            this.textBoxCircleAreaOutput.Name = "textBoxCircleAreaOutput";
-            this.textBoxCircleAreaOutput.ReadOnly = true;
-            this.textBoxCircleAreaOutput.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCircleAreaOutput.TabIndex = 76;
+            this.textBoxCircleUOM.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCircleUOM.Location = new System.Drawing.Point(115, 34);
+            this.textBoxCircleUOM.Name = "textBoxCircleUOM";
+            this.textBoxCircleUOM.Size = new System.Drawing.Size(27, 20);
+            this.textBoxCircleUOM.TabIndex = 79;
+            this.textBoxCircleUOM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelCircleCircumference
             // 
             this.labelCircleCircumference.AutoSize = true;
+            this.labelCircleCircumference.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCircleCircumference.Location = new System.Drawing.Point(3, 96);
             this.labelCircleCircumference.Name = "labelCircleCircumference";
-            this.labelCircleCircumference.Size = new System.Drawing.Size(88, 13);
+            this.labelCircleCircumference.Size = new System.Drawing.Size(75, 13);
             this.labelCircleCircumference.TabIndex = 77;
             this.labelCircleCircumference.Text = "Circumference";
             // 
             // textBoxCircleCircumberenceOutput
             // 
+            this.textBoxCircleCircumberenceOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCircleCircumberenceOutput.Location = new System.Drawing.Point(6, 112);
             this.textBoxCircleCircumberenceOutput.Name = "textBoxCircleCircumberenceOutput";
             this.textBoxCircleCircumberenceOutput.ReadOnly = true;
             this.textBoxCircleCircumberenceOutput.Size = new System.Drawing.Size(100, 20);
             this.textBoxCircleCircumberenceOutput.TabIndex = 78;
+            this.textBoxCircleCircumberenceOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // labelCircleArea
+            // 
+            this.labelCircleArea.AutoSize = true;
+            this.labelCircleArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCircleArea.Location = new System.Drawing.Point(3, 57);
+            this.labelCircleArea.Name = "labelCircleArea";
+            this.labelCircleArea.Size = new System.Drawing.Size(29, 13);
+            this.labelCircleArea.TabIndex = 75;
+            this.labelCircleArea.Text = "Area";
+            // 
+            // textBoxCircleAreaOutput
+            // 
+            this.textBoxCircleAreaOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCircleAreaOutput.Location = new System.Drawing.Point(6, 73);
+            this.textBoxCircleAreaOutput.Name = "textBoxCircleAreaOutput";
+            this.textBoxCircleAreaOutput.ReadOnly = true;
+            this.textBoxCircleAreaOutput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCircleAreaOutput.TabIndex = 76;
+            this.textBoxCircleAreaOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // labelAreaOfCircleDiameter
+            // 
+            this.labelAreaOfCircleDiameter.AutoSize = true;
+            this.labelAreaOfCircleDiameter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAreaOfCircleDiameter.Location = new System.Drawing.Point(3, 18);
+            this.labelAreaOfCircleDiameter.Name = "labelAreaOfCircleDiameter";
+            this.labelAreaOfCircleDiameter.Size = new System.Drawing.Size(49, 13);
+            this.labelAreaOfCircleDiameter.TabIndex = 0;
+            this.labelAreaOfCircleDiameter.Text = "Diameter";
             // 
             // groupBoxSphere
             // 
+            this.groupBoxSphere.Controls.Add(this.buttonSphereSurfaceAreaClipboard);
+            this.groupBoxSphere.Controls.Add(this.buttonSphereVolumeClipboard);
+            this.groupBoxSphere.Controls.Add(this.labelSphereUOM);
+            this.groupBoxSphere.Controls.Add(this.textBoxSphereUOM);
             this.groupBoxSphere.Controls.Add(this.labelSphereSurfaceArea);
             this.groupBoxSphere.Controls.Add(this.textBoxSphereSurfaceAreaOutput);
             this.groupBoxSphere.Controls.Add(this.labelSphereVolume);
@@ -777,55 +920,83 @@
             this.groupBoxSphere.TabStop = false;
             this.groupBoxSphere.Text = "Sphere";
             // 
+            // labelSphereUOM
+            // 
+            this.labelSphereUOM.AutoSize = true;
+            this.labelSphereUOM.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSphereUOM.Location = new System.Drawing.Point(110, 18);
+            this.labelSphereUOM.Name = "labelSphereUOM";
+            this.labelSphereUOM.Size = new System.Drawing.Size(30, 13);
+            this.labelSphereUOM.TabIndex = 82;
+            this.labelSphereUOM.Text = "UoM";
+            // 
+            // textBoxSphereUOM
+            // 
+            this.textBoxSphereUOM.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSphereUOM.Location = new System.Drawing.Point(112, 34);
+            this.textBoxSphereUOM.Name = "textBoxSphereUOM";
+            this.textBoxSphereUOM.Size = new System.Drawing.Size(27, 20);
+            this.textBoxSphereUOM.TabIndex = 80;
+            this.textBoxSphereUOM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // labelSphereSurfaceArea
             // 
             this.labelSphereSurfaceArea.AutoSize = true;
+            this.labelSphereSurfaceArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSphereSurfaceArea.Location = new System.Drawing.Point(3, 96);
             this.labelSphereSurfaceArea.Name = "labelSphereSurfaceArea";
-            this.labelSphereSurfaceArea.Size = new System.Drawing.Size(81, 13);
+            this.labelSphereSurfaceArea.Size = new System.Drawing.Size(69, 13);
             this.labelSphereSurfaceArea.TabIndex = 77;
             this.labelSphereSurfaceArea.Text = "Surface Area";
             // 
             // textBoxSphereSurfaceAreaOutput
             // 
+            this.textBoxSphereSurfaceAreaOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSphereSurfaceAreaOutput.Location = new System.Drawing.Point(6, 112);
             this.textBoxSphereSurfaceAreaOutput.Name = "textBoxSphereSurfaceAreaOutput";
             this.textBoxSphereSurfaceAreaOutput.ReadOnly = true;
             this.textBoxSphereSurfaceAreaOutput.Size = new System.Drawing.Size(100, 20);
             this.textBoxSphereSurfaceAreaOutput.TabIndex = 78;
+            this.textBoxSphereSurfaceAreaOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelSphereVolume
             // 
             this.labelSphereVolume.AutoSize = true;
+            this.labelSphereVolume.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSphereVolume.Location = new System.Drawing.Point(3, 57);
             this.labelSphereVolume.Name = "labelSphereVolume";
-            this.labelSphereVolume.Size = new System.Drawing.Size(48, 13);
+            this.labelSphereVolume.Size = new System.Drawing.Size(42, 13);
             this.labelSphereVolume.TabIndex = 75;
             this.labelSphereVolume.Text = "Volume";
             // 
             // textBoxSphereVolumeOutput
             // 
+            this.textBoxSphereVolumeOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSphereVolumeOutput.Location = new System.Drawing.Point(6, 73);
             this.textBoxSphereVolumeOutput.Name = "textBoxSphereVolumeOutput";
             this.textBoxSphereVolumeOutput.ReadOnly = true;
             this.textBoxSphereVolumeOutput.Size = new System.Drawing.Size(100, 20);
             this.textBoxSphereVolumeOutput.TabIndex = 76;
+            this.textBoxSphereVolumeOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelSphereDiameter
             // 
             this.labelSphereDiameter.AutoSize = true;
+            this.labelSphereDiameter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSphereDiameter.Location = new System.Drawing.Point(3, 18);
             this.labelSphereDiameter.Name = "labelSphereDiameter";
-            this.labelSphereDiameter.Size = new System.Drawing.Size(57, 13);
+            this.labelSphereDiameter.Size = new System.Drawing.Size(49, 13);
             this.labelSphereDiameter.TabIndex = 0;
             this.labelSphereDiameter.Text = "Diameter";
             // 
             // textBoxSphereDiameterInput
             // 
+            this.textBoxSphereDiameterInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSphereDiameterInput.Location = new System.Drawing.Point(6, 34);
             this.textBoxSphereDiameterInput.Name = "textBoxSphereDiameterInput";
             this.textBoxSphereDiameterInput.Size = new System.Drawing.Size(100, 20);
             this.textBoxSphereDiameterInput.TabIndex = 70;
+            this.textBoxSphereDiameterInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonSphereCalculate
             // 
@@ -839,6 +1010,7 @@
             this.buttonSphereCalculate.TabIndex = 72;
             this.buttonSphereCalculate.Text = "Calculate";
             this.buttonSphereCalculate.UseVisualStyleBackColor = false;
+            this.buttonSphereCalculate.Click += new System.EventHandler(this.buttonSphereCalculate_Click);
             // 
             // buttonSphereClear
             // 
@@ -851,9 +1023,17 @@
             this.buttonSphereClear.TabIndex = 74;
             this.buttonSphereClear.Text = "Clear";
             this.buttonSphereClear.UseVisualStyleBackColor = false;
+            this.buttonSphereClear.Click += new System.EventHandler(this.buttonSphereClear_Click);
             // 
             // groupBoxCylinder
             // 
+            this.groupBoxCylinder.Controls.Add(this.buttonCylinderSurfaceAreaClipboard);
+            this.groupBoxCylinder.Controls.Add(this.buttonCylinderLateralAreaClipboard);
+            this.groupBoxCylinder.Controls.Add(this.buttonCylinderVolumeClipboard);
+            this.groupBoxCylinder.Controls.Add(this.labelCylinderHeight);
+            this.groupBoxCylinder.Controls.Add(this.textBoxCylinderHeightInput);
+            this.groupBoxCylinder.Controls.Add(this.labelCylinderUOM);
+            this.groupBoxCylinder.Controls.Add(this.textBoxCylinderUOM);
             this.groupBoxCylinder.Controls.Add(this.labelCylinderTotalSurfaceArea);
             this.groupBoxCylinder.Controls.Add(this.textBoxCylinderTotalSurfaceAreaOutput);
             this.groupBoxCylinder.Controls.Add(this.labelCylinderLateralArea);
@@ -872,55 +1052,103 @@
             this.groupBoxCylinder.TabStop = false;
             this.groupBoxCylinder.Text = "Cylinder";
             // 
+            // labelCylinderUOM
+            // 
+            this.labelCylinderUOM.AutoSize = true;
+            this.labelCylinderUOM.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCylinderUOM.Location = new System.Drawing.Point(112, 18);
+            this.labelCylinderUOM.Name = "labelCylinderUOM";
+            this.labelCylinderUOM.Size = new System.Drawing.Size(30, 13);
+            this.labelCylinderUOM.TabIndex = 83;
+            this.labelCylinderUOM.Text = "UoM";
+            // 
+            // textBoxCylinderUOM
+            // 
+            this.textBoxCylinderUOM.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCylinderUOM.Location = new System.Drawing.Point(114, 34);
+            this.textBoxCylinderUOM.Name = "textBoxCylinderUOM";
+            this.textBoxCylinderUOM.Size = new System.Drawing.Size(27, 20);
+            this.textBoxCylinderUOM.TabIndex = 82;
+            this.textBoxCylinderUOM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // labelCylinderTotalSurfaceArea
+            // 
+            this.labelCylinderTotalSurfaceArea.AutoSize = true;
+            this.labelCylinderTotalSurfaceArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCylinderTotalSurfaceArea.Location = new System.Drawing.Point(3, 134);
+            this.labelCylinderTotalSurfaceArea.Name = "labelCylinderTotalSurfaceArea";
+            this.labelCylinderTotalSurfaceArea.Size = new System.Drawing.Size(96, 13);
+            this.labelCylinderTotalSurfaceArea.TabIndex = 79;
+            this.labelCylinderTotalSurfaceArea.Text = "Total Surface Area";
+            // 
+            // textBoxCylinderTotalSurfaceAreaOutput
+            // 
+            this.textBoxCylinderTotalSurfaceAreaOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCylinderTotalSurfaceAreaOutput.Location = new System.Drawing.Point(6, 150);
+            this.textBoxCylinderTotalSurfaceAreaOutput.Name = "textBoxCylinderTotalSurfaceAreaOutput";
+            this.textBoxCylinderTotalSurfaceAreaOutput.ReadOnly = true;
+            this.textBoxCylinderTotalSurfaceAreaOutput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCylinderTotalSurfaceAreaOutput.TabIndex = 80;
+            this.textBoxCylinderTotalSurfaceAreaOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // labelCylinderLateralArea
             // 
             this.labelCylinderLateralArea.AutoSize = true;
+            this.labelCylinderLateralArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCylinderLateralArea.Location = new System.Drawing.Point(3, 96);
             this.labelCylinderLateralArea.Name = "labelCylinderLateralArea";
-            this.labelCylinderLateralArea.Size = new System.Drawing.Size(76, 13);
+            this.labelCylinderLateralArea.Size = new System.Drawing.Size(64, 13);
             this.labelCylinderLateralArea.TabIndex = 77;
             this.labelCylinderLateralArea.Text = "Lateral Area";
             // 
             // textBoxCylinderLateralAreaOutput
             // 
+            this.textBoxCylinderLateralAreaOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCylinderLateralAreaOutput.Location = new System.Drawing.Point(6, 112);
             this.textBoxCylinderLateralAreaOutput.Name = "textBoxCylinderLateralAreaOutput";
             this.textBoxCylinderLateralAreaOutput.ReadOnly = true;
             this.textBoxCylinderLateralAreaOutput.Size = new System.Drawing.Size(100, 20);
             this.textBoxCylinderLateralAreaOutput.TabIndex = 78;
+            this.textBoxCylinderLateralAreaOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelCylinderVolume
             // 
             this.labelCylinderVolume.AutoSize = true;
+            this.labelCylinderVolume.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCylinderVolume.Location = new System.Drawing.Point(3, 57);
             this.labelCylinderVolume.Name = "labelCylinderVolume";
-            this.labelCylinderVolume.Size = new System.Drawing.Size(48, 13);
+            this.labelCylinderVolume.Size = new System.Drawing.Size(42, 13);
             this.labelCylinderVolume.TabIndex = 75;
             this.labelCylinderVolume.Text = "Volume";
             // 
             // textBoxCylinderVolumeOutput
             // 
+            this.textBoxCylinderVolumeOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCylinderVolumeOutput.Location = new System.Drawing.Point(6, 73);
             this.textBoxCylinderVolumeOutput.Name = "textBoxCylinderVolumeOutput";
             this.textBoxCylinderVolumeOutput.ReadOnly = true;
             this.textBoxCylinderVolumeOutput.Size = new System.Drawing.Size(100, 20);
             this.textBoxCylinderVolumeOutput.TabIndex = 76;
+            this.textBoxCylinderVolumeOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelCylinderDiameter
             // 
             this.labelCylinderDiameter.AutoSize = true;
+            this.labelCylinderDiameter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCylinderDiameter.Location = new System.Drawing.Point(3, 18);
             this.labelCylinderDiameter.Name = "labelCylinderDiameter";
-            this.labelCylinderDiameter.Size = new System.Drawing.Size(57, 13);
+            this.labelCylinderDiameter.Size = new System.Drawing.Size(49, 13);
             this.labelCylinderDiameter.TabIndex = 0;
             this.labelCylinderDiameter.Text = "Diameter";
             // 
             // textBoxCylinderDiameterInput
             // 
+            this.textBoxCylinderDiameterInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCylinderDiameterInput.Location = new System.Drawing.Point(6, 34);
             this.textBoxCylinderDiameterInput.Name = "textBoxCylinderDiameterInput";
-            this.textBoxCylinderDiameterInput.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCylinderDiameterInput.Size = new System.Drawing.Size(46, 20);
             this.textBoxCylinderDiameterInput.TabIndex = 70;
+            this.textBoxCylinderDiameterInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonCylinderCalculate
             // 
@@ -934,6 +1162,7 @@
             this.buttonCylinderCalculate.TabIndex = 72;
             this.buttonCylinderCalculate.Text = "Calculate";
             this.buttonCylinderCalculate.UseVisualStyleBackColor = false;
+            this.buttonCylinderCalculate.Click += new System.EventHandler(this.buttonCylinderCalculate_Click);
             // 
             // buttonCylinderClear
             // 
@@ -946,34 +1175,25 @@
             this.buttonCylinderClear.TabIndex = 74;
             this.buttonCylinderClear.Text = "Clear";
             this.buttonCylinderClear.UseVisualStyleBackColor = false;
-            // 
-            // labelCylinderTotalSurfaceArea
-            // 
-            this.labelCylinderTotalSurfaceArea.AutoSize = true;
-            this.labelCylinderTotalSurfaceArea.Location = new System.Drawing.Point(3, 134);
-            this.labelCylinderTotalSurfaceArea.Name = "labelCylinderTotalSurfaceArea";
-            this.labelCylinderTotalSurfaceArea.Size = new System.Drawing.Size(114, 13);
-            this.labelCylinderTotalSurfaceArea.TabIndex = 79;
-            this.labelCylinderTotalSurfaceArea.Text = "Total Surface Area";
-            // 
-            // textBoxCylinderTotalSurfaceAreaOutput
-            // 
-            this.textBoxCylinderTotalSurfaceAreaOutput.Location = new System.Drawing.Point(6, 150);
-            this.textBoxCylinderTotalSurfaceAreaOutput.Name = "textBoxCylinderTotalSurfaceAreaOutput";
-            this.textBoxCylinderTotalSurfaceAreaOutput.ReadOnly = true;
-            this.textBoxCylinderTotalSurfaceAreaOutput.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCylinderTotalSurfaceAreaOutput.TabIndex = 80;
+            this.buttonCylinderClear.Click += new System.EventHandler(this.buttonCylinderClear_Click);
             // 
             // groupBoxCone
             // 
+            this.groupBoxCone.Controls.Add(this.buttonConeSurfaceAreaClipboard);
+            this.groupBoxCone.Controls.Add(this.buttonConeLateralAreaClipboard);
+            this.groupBoxCone.Controls.Add(this.buttonConeVolumeClipboard);
+            this.groupBoxCone.Controls.Add(this.labelConeHeight);
+            this.groupBoxCone.Controls.Add(this.textBoxConeHeightInput);
+            this.groupBoxCone.Controls.Add(this.labelConeUOM);
+            this.groupBoxCone.Controls.Add(this.labelConeDiameter);
+            this.groupBoxCone.Controls.Add(this.textBoxConeUOM);
+            this.groupBoxCone.Controls.Add(this.textBoxConeDiameterInput);
             this.groupBoxCone.Controls.Add(this.labelConeTotalSurfaceAre);
             this.groupBoxCone.Controls.Add(this.textBoxConeTotalSurfaceAreaOutput);
             this.groupBoxCone.Controls.Add(this.labelConeLateralArea);
             this.groupBoxCone.Controls.Add(this.textBoxConeLateralAreaOutput);
             this.groupBoxCone.Controls.Add(this.labelConeVolume);
             this.groupBoxCone.Controls.Add(this.textBoxConeVolumeOutput);
-            this.groupBoxCone.Controls.Add(this.labelConeDiameter);
-            this.groupBoxCone.Controls.Add(this.textBoxConeDiameterInput);
             this.groupBoxCone.Controls.Add(this.buttonConeCalculate);
             this.groupBoxCone.Controls.Add(this.buttonConeClear);
             this.groupBoxCone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -984,72 +1204,84 @@
             this.groupBoxCone.TabStop = false;
             this.groupBoxCone.Text = "Cone";
             // 
+            // labelConeUOM
+            // 
+            this.labelConeUOM.AutoSize = true;
+            this.labelConeUOM.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConeUOM.Location = new System.Drawing.Point(110, 17);
+            this.labelConeUOM.Name = "labelConeUOM";
+            this.labelConeUOM.Size = new System.Drawing.Size(30, 13);
+            this.labelConeUOM.TabIndex = 84;
+            this.labelConeUOM.Text = "UoM";
+            // 
+            // textBoxConeUOM
+            // 
+            this.textBoxConeUOM.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxConeUOM.Location = new System.Drawing.Point(112, 34);
+            this.textBoxConeUOM.Name = "textBoxConeUOM";
+            this.textBoxConeUOM.Size = new System.Drawing.Size(27, 20);
+            this.textBoxConeUOM.TabIndex = 81;
+            this.textBoxConeUOM.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // labelConeTotalSurfaceAre
             // 
             this.labelConeTotalSurfaceAre.AutoSize = true;
+            this.labelConeTotalSurfaceAre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelConeTotalSurfaceAre.Location = new System.Drawing.Point(3, 134);
             this.labelConeTotalSurfaceAre.Name = "labelConeTotalSurfaceAre";
-            this.labelConeTotalSurfaceAre.Size = new System.Drawing.Size(114, 13);
+            this.labelConeTotalSurfaceAre.Size = new System.Drawing.Size(96, 13);
             this.labelConeTotalSurfaceAre.TabIndex = 79;
             this.labelConeTotalSurfaceAre.Text = "Total Surface Area";
             // 
             // textBoxConeTotalSurfaceAreaOutput
             // 
+            this.textBoxConeTotalSurfaceAreaOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxConeTotalSurfaceAreaOutput.Location = new System.Drawing.Point(6, 150);
             this.textBoxConeTotalSurfaceAreaOutput.Name = "textBoxConeTotalSurfaceAreaOutput";
             this.textBoxConeTotalSurfaceAreaOutput.ReadOnly = true;
             this.textBoxConeTotalSurfaceAreaOutput.Size = new System.Drawing.Size(100, 20);
             this.textBoxConeTotalSurfaceAreaOutput.TabIndex = 80;
+            this.textBoxConeTotalSurfaceAreaOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelConeLateralArea
             // 
             this.labelConeLateralArea.AutoSize = true;
+            this.labelConeLateralArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelConeLateralArea.Location = new System.Drawing.Point(3, 96);
             this.labelConeLateralArea.Name = "labelConeLateralArea";
-            this.labelConeLateralArea.Size = new System.Drawing.Size(76, 13);
+            this.labelConeLateralArea.Size = new System.Drawing.Size(64, 13);
             this.labelConeLateralArea.TabIndex = 77;
             this.labelConeLateralArea.Text = "Lateral Area";
             // 
             // textBoxConeLateralAreaOutput
             // 
+            this.textBoxConeLateralAreaOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxConeLateralAreaOutput.Location = new System.Drawing.Point(6, 112);
             this.textBoxConeLateralAreaOutput.Name = "textBoxConeLateralAreaOutput";
             this.textBoxConeLateralAreaOutput.ReadOnly = true;
             this.textBoxConeLateralAreaOutput.Size = new System.Drawing.Size(100, 20);
             this.textBoxConeLateralAreaOutput.TabIndex = 78;
+            this.textBoxConeLateralAreaOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelConeVolume
             // 
             this.labelConeVolume.AutoSize = true;
+            this.labelConeVolume.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelConeVolume.Location = new System.Drawing.Point(3, 57);
             this.labelConeVolume.Name = "labelConeVolume";
-            this.labelConeVolume.Size = new System.Drawing.Size(48, 13);
+            this.labelConeVolume.Size = new System.Drawing.Size(42, 13);
             this.labelConeVolume.TabIndex = 75;
             this.labelConeVolume.Text = "Volume";
             // 
             // textBoxConeVolumeOutput
             // 
+            this.textBoxConeVolumeOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxConeVolumeOutput.Location = new System.Drawing.Point(6, 73);
             this.textBoxConeVolumeOutput.Name = "textBoxConeVolumeOutput";
             this.textBoxConeVolumeOutput.ReadOnly = true;
             this.textBoxConeVolumeOutput.Size = new System.Drawing.Size(100, 20);
             this.textBoxConeVolumeOutput.TabIndex = 76;
-            // 
-            // labelConeDiameter
-            // 
-            this.labelConeDiameter.AutoSize = true;
-            this.labelConeDiameter.Location = new System.Drawing.Point(3, 18);
-            this.labelConeDiameter.Name = "labelConeDiameter";
-            this.labelConeDiameter.Size = new System.Drawing.Size(57, 13);
-            this.labelConeDiameter.TabIndex = 0;
-            this.labelConeDiameter.Text = "Diameter";
-            // 
-            // textBoxConeDiameterInput
-            // 
-            this.textBoxConeDiameterInput.Location = new System.Drawing.Point(6, 34);
-            this.textBoxConeDiameterInput.Name = "textBoxConeDiameterInput";
-            this.textBoxConeDiameterInput.Size = new System.Drawing.Size(100, 20);
-            this.textBoxConeDiameterInput.TabIndex = 70;
+            this.textBoxConeVolumeOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // buttonConeCalculate
             // 
@@ -1063,6 +1295,7 @@
             this.buttonConeCalculate.TabIndex = 72;
             this.buttonConeCalculate.Text = "Calculate";
             this.buttonConeCalculate.UseVisualStyleBackColor = false;
+            this.buttonConeCalculate.Click += new System.EventHandler(this.buttonConeCalculate_Click);
             // 
             // buttonConeClear
             // 
@@ -1075,23 +1308,154 @@
             this.buttonConeClear.TabIndex = 74;
             this.buttonConeClear.Text = "Clear";
             this.buttonConeClear.UseVisualStyleBackColor = false;
+            this.buttonConeClear.Click += new System.EventHandler(this.buttonConeClear_Click);
             // 
-            // textBoxHypotenuseSideB
+            // labelCylinderHeight
             // 
-            this.textBoxHypotenuseSideB.Location = new System.Drawing.Point(88, 19);
-            this.textBoxHypotenuseSideB.Name = "textBoxHypotenuseSideB";
-            this.textBoxHypotenuseSideB.Size = new System.Drawing.Size(74, 20);
-            this.textBoxHypotenuseSideB.TabIndex = 74;
-            this.toolTip1.SetToolTip(this.textBoxHypotenuseSideB, "Side B");
+            this.labelCylinderHeight.AutoSize = true;
+            this.labelCylinderHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCylinderHeight.Location = new System.Drawing.Point(57, 18);
+            this.labelCylinderHeight.Name = "labelCylinderHeight";
+            this.labelCylinderHeight.Size = new System.Drawing.Size(38, 13);
+            this.labelCylinderHeight.TabIndex = 84;
+            this.labelCylinderHeight.Text = "Height";
             // 
-            // textBoxHypotenuseSideC
+            // textBoxCylinderHeightInput
             // 
-            this.textBoxHypotenuseSideC.Location = new System.Drawing.Point(168, 19);
-            this.textBoxHypotenuseSideC.Name = "textBoxHypotenuseSideC";
-            this.textBoxHypotenuseSideC.ReadOnly = true;
-            this.textBoxHypotenuseSideC.Size = new System.Drawing.Size(74, 20);
-            this.textBoxHypotenuseSideC.TabIndex = 75;
-            this.toolTip1.SetToolTip(this.textBoxHypotenuseSideC, "Side C");
+            this.textBoxCylinderHeightInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCylinderHeightInput.Location = new System.Drawing.Point(60, 34);
+            this.textBoxCylinderHeightInput.Name = "textBoxCylinderHeightInput";
+            this.textBoxCylinderHeightInput.Size = new System.Drawing.Size(46, 20);
+            this.textBoxCylinderHeightInput.TabIndex = 85;
+            this.textBoxCylinderHeightInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // labelConeHeight
+            // 
+            this.labelConeHeight.AutoSize = true;
+            this.labelConeHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConeHeight.Location = new System.Drawing.Point(57, 18);
+            this.labelConeHeight.Name = "labelConeHeight";
+            this.labelConeHeight.Size = new System.Drawing.Size(38, 13);
+            this.labelConeHeight.TabIndex = 88;
+            this.labelConeHeight.Text = "Height";
+            // 
+            // textBoxConeHeightInput
+            // 
+            this.textBoxConeHeightInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxConeHeightInput.Location = new System.Drawing.Point(60, 34);
+            this.textBoxConeHeightInput.Name = "textBoxConeHeightInput";
+            this.textBoxConeHeightInput.Size = new System.Drawing.Size(46, 20);
+            this.textBoxConeHeightInput.TabIndex = 89;
+            this.textBoxConeHeightInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // labelConeDiameter
+            // 
+            this.labelConeDiameter.AutoSize = true;
+            this.labelConeDiameter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConeDiameter.Location = new System.Drawing.Point(3, 18);
+            this.labelConeDiameter.Name = "labelConeDiameter";
+            this.labelConeDiameter.Size = new System.Drawing.Size(49, 13);
+            this.labelConeDiameter.TabIndex = 86;
+            this.labelConeDiameter.Text = "Diameter";
+            // 
+            // textBoxConeDiameterInput
+            // 
+            this.textBoxConeDiameterInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxConeDiameterInput.Location = new System.Drawing.Point(6, 34);
+            this.textBoxConeDiameterInput.Name = "textBoxConeDiameterInput";
+            this.textBoxConeDiameterInput.Size = new System.Drawing.Size(46, 20);
+            this.textBoxConeDiameterInput.TabIndex = 87;
+            this.textBoxConeDiameterInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // buttonCircleAreaClipboard
+            // 
+            this.buttonCircleAreaClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCircleAreaClipboard.Location = new System.Drawing.Point(114, 71);
+            this.buttonCircleAreaClipboard.Name = "buttonCircleAreaClipboard";
+            this.buttonCircleAreaClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonCircleAreaClipboard.TabIndex = 82;
+            this.buttonCircleAreaClipboard.UseVisualStyleBackColor = true;
+            // 
+            // buttonbuttonCircleCircleClipboard
+            // 
+            this.buttonbuttonCircleCircleClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonbuttonCircleCircleClipboard.Location = new System.Drawing.Point(114, 110);
+            this.buttonbuttonCircleCircleClipboard.Name = "buttonbuttonCircleCircleClipboard";
+            this.buttonbuttonCircleCircleClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonbuttonCircleCircleClipboard.TabIndex = 83;
+            this.buttonbuttonCircleCircleClipboard.UseVisualStyleBackColor = true;
+            // 
+            // buttonSphereVolumeClipboard
+            // 
+            this.buttonSphereVolumeClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSphereVolumeClipboard.Location = new System.Drawing.Point(112, 71);
+            this.buttonSphereVolumeClipboard.Name = "buttonSphereVolumeClipboard";
+            this.buttonSphereVolumeClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonSphereVolumeClipboard.TabIndex = 84;
+            this.buttonSphereVolumeClipboard.UseVisualStyleBackColor = true;
+            // 
+            // buttonSphereSurfaceAreaClipboard
+            // 
+            this.buttonSphereSurfaceAreaClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSphereSurfaceAreaClipboard.Location = new System.Drawing.Point(112, 110);
+            this.buttonSphereSurfaceAreaClipboard.Name = "buttonSphereSurfaceAreaClipboard";
+            this.buttonSphereSurfaceAreaClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonSphereSurfaceAreaClipboard.TabIndex = 85;
+            this.buttonSphereSurfaceAreaClipboard.UseVisualStyleBackColor = true;
+            // 
+            // buttonCylinderVolumeClipboard
+            // 
+            this.buttonCylinderVolumeClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCylinderVolumeClipboard.Location = new System.Drawing.Point(113, 71);
+            this.buttonCylinderVolumeClipboard.Name = "buttonCylinderVolumeClipboard";
+            this.buttonCylinderVolumeClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonCylinderVolumeClipboard.TabIndex = 86;
+            this.buttonCylinderVolumeClipboard.UseVisualStyleBackColor = true;
+            // 
+            // buttonCylinderLateralAreaClipboard
+            // 
+            this.buttonCylinderLateralAreaClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCylinderLateralAreaClipboard.Location = new System.Drawing.Point(113, 110);
+            this.buttonCylinderLateralAreaClipboard.Name = "buttonCylinderLateralAreaClipboard";
+            this.buttonCylinderLateralAreaClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonCylinderLateralAreaClipboard.TabIndex = 87;
+            this.buttonCylinderLateralAreaClipboard.UseVisualStyleBackColor = true;
+            // 
+            // buttonCylinderSurfaceAreaClipboard
+            // 
+            this.buttonCylinderSurfaceAreaClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCylinderSurfaceAreaClipboard.Location = new System.Drawing.Point(113, 148);
+            this.buttonCylinderSurfaceAreaClipboard.Name = "buttonCylinderSurfaceAreaClipboard";
+            this.buttonCylinderSurfaceAreaClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonCylinderSurfaceAreaClipboard.TabIndex = 88;
+            this.buttonCylinderSurfaceAreaClipboard.UseVisualStyleBackColor = true;
+            // 
+            // buttonConeSurfaceAreaClipboard
+            // 
+            this.buttonConeSurfaceAreaClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonConeSurfaceAreaClipboard.Location = new System.Drawing.Point(111, 148);
+            this.buttonConeSurfaceAreaClipboard.Name = "buttonConeSurfaceAreaClipboard";
+            this.buttonConeSurfaceAreaClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonConeSurfaceAreaClipboard.TabIndex = 92;
+            this.buttonConeSurfaceAreaClipboard.UseVisualStyleBackColor = true;
+            // 
+            // buttonConeLateralAreaClipboard
+            // 
+            this.buttonConeLateralAreaClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonConeLateralAreaClipboard.Location = new System.Drawing.Point(111, 110);
+            this.buttonConeLateralAreaClipboard.Name = "buttonConeLateralAreaClipboard";
+            this.buttonConeLateralAreaClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonConeLateralAreaClipboard.TabIndex = 91;
+            this.buttonConeLateralAreaClipboard.UseVisualStyleBackColor = true;
+            // 
+            // buttonConeVolumeClipboard
+            // 
+            this.buttonConeVolumeClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonConeVolumeClipboard.Location = new System.Drawing.Point(111, 71);
+            this.buttonConeVolumeClipboard.Name = "buttonConeVolumeClipboard";
+            this.buttonConeVolumeClipboard.Size = new System.Drawing.Size(28, 23);
+            this.buttonConeVolumeClipboard.TabIndex = 90;
+            this.buttonConeVolumeClipboard.UseVisualStyleBackColor = true;
             // 
             // formMathFormulas
             // 
@@ -1133,7 +1497,7 @@
         private System.Windows.Forms.TextBox textBoxAreaofCircleDiameterInput;
         private System.Windows.Forms.Button buttonHypotenuseCalculate;
         private System.Windows.Forms.Label labelHypotenuseOutput;
-        private System.Windows.Forms.TextBox textBoxHypotenuseSideA;
+        private TextBox textBoxHypotenuseSideA;
         private System.Windows.Forms.Button buttonMathFormulaFormExit;
         private System.Windows.Forms.Button buttonMathFormulaFormHome;
         private System.Windows.Forms.TextBox textBoxFractionAdditionA;
@@ -1224,9 +1588,31 @@
         private System.Windows.Forms.TextBox textBoxConeLateralAreaOutput;
         private System.Windows.Forms.Label labelConeVolume;
         private System.Windows.Forms.TextBox textBoxConeVolumeOutput;
-        private System.Windows.Forms.Label labelConeDiameter;
-        private System.Windows.Forms.TextBox textBoxConeDiameterInput;
         private System.Windows.Forms.Button buttonConeCalculate;
         private System.Windows.Forms.Button buttonConeClear;
+        private TextBox textBoxCircleUOM;
+        private TextBox textBoxSphereUOM;
+        private TextBox textBoxCylinderUOM;
+        private TextBox textBoxConeUOM;
+        private Label labelCircleUOM;
+        private Label labelSphereUOM;
+        private Label labelCylinderUOM;
+        private Label labelConeUOM;
+        private Label labelCylinderHeight;
+        private TextBox textBoxCylinderHeightInput;
+        private Label labelConeHeight;
+        private TextBox textBoxConeHeightInput;
+        private Label labelConeDiameter;
+        private TextBox textBoxConeDiameterInput;
+        private Button buttonCircleAreaClipboard;
+        private Button buttonbuttonCircleCircleClipboard;
+        private Button buttonSphereSurfaceAreaClipboard;
+        private Button buttonSphereVolumeClipboard;
+        private Button buttonCylinderSurfaceAreaClipboard;
+        private Button buttonCylinderLateralAreaClipboard;
+        private Button buttonCylinderVolumeClipboard;
+        private Button buttonConeSurfaceAreaClipboard;
+        private Button buttonConeLateralAreaClipboard;
+        private Button buttonConeVolumeClipboard;
     }
 }
