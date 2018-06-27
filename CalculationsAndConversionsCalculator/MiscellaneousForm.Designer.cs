@@ -49,8 +49,19 @@
             this.textBoxDiscountCalculatorDiscountRate = new System.Windows.Forms.TextBox();
             this.labelEnterDiscount = new System.Windows.Forms.Label();
             this.groupBoxTipCalculator = new System.Windows.Forms.GroupBox();
+            this.buttonTipCalculatorCalculate = new System.Windows.Forms.Button();
+            this.textBoxTipCalculatorTotalTabAmount = new System.Windows.Forms.TextBox();
+            this.buttonTipCalculatorClear = new System.Windows.Forms.Button();
+            this.labelTipCalculatorTotalTabAmount = new System.Windows.Forms.Label();
+            this.textBoxTipCalculatorTipAmount = new System.Windows.Forms.TextBox();
+            this.labelTipCalculatorTipAmount = new System.Windows.Forms.Label();
+            this.labelTipCalculatorChooseRate = new System.Windows.Forms.Label();
+            this.comboBoxTipCalculator = new System.Windows.Forms.ComboBox();
+            this.textBoxTipCalculatorTabAmount = new System.Windows.Forms.TextBox();
+            this.labelTipCalculatorTabAmount = new System.Windows.Forms.Label();
             this.groupBoxLeapYear.SuspendLayout();
             this.groupBoxDiscount.SuspendLayout();
+            this.groupBoxTipCalculator.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonCircuitryExit
@@ -58,7 +69,7 @@
             this.buttonCircuitryExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonCircuitryExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCircuitryExit.ForeColor = System.Drawing.Color.White;
-            this.buttonCircuitryExit.Location = new System.Drawing.Point(713, 415);
+            this.buttonCircuitryExit.Location = new System.Drawing.Point(545, 415);
             this.buttonCircuitryExit.Name = "buttonCircuitryExit";
             this.buttonCircuitryExit.Size = new System.Drawing.Size(75, 23);
             this.buttonCircuitryExit.TabIndex = 12;
@@ -112,7 +123,7 @@
             // 
             // buttonBirthYearGo
             // 
-            this.buttonBirthYearGo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.buttonBirthYearGo.BackColor = System.Drawing.Color.Lime;
             this.buttonBirthYearGo.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.buttonBirthYearGo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBirthYearGo.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -291,19 +302,142 @@
             // 
             // groupBoxTipCalculator
             // 
+            this.groupBoxTipCalculator.Controls.Add(this.buttonTipCalculatorCalculate);
+            this.groupBoxTipCalculator.Controls.Add(this.textBoxTipCalculatorTotalTabAmount);
+            this.groupBoxTipCalculator.Controls.Add(this.buttonTipCalculatorClear);
+            this.groupBoxTipCalculator.Controls.Add(this.labelTipCalculatorTotalTabAmount);
+            this.groupBoxTipCalculator.Controls.Add(this.textBoxTipCalculatorTipAmount);
+            this.groupBoxTipCalculator.Controls.Add(this.labelTipCalculatorTipAmount);
+            this.groupBoxTipCalculator.Controls.Add(this.labelTipCalculatorChooseRate);
+            this.groupBoxTipCalculator.Controls.Add(this.comboBoxTipCalculator);
+            this.groupBoxTipCalculator.Controls.Add(this.textBoxTipCalculatorTabAmount);
+            this.groupBoxTipCalculator.Controls.Add(this.labelTipCalculatorTabAmount);
             this.groupBoxTipCalculator.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxTipCalculator.Location = new System.Drawing.Point(232, 13);
             this.groupBoxTipCalculator.Name = "groupBoxTipCalculator";
-            this.groupBoxTipCalculator.Size = new System.Drawing.Size(200, 292);
+            this.groupBoxTipCalculator.Size = new System.Drawing.Size(387, 164);
             this.groupBoxTipCalculator.TabIndex = 15;
             this.groupBoxTipCalculator.TabStop = false;
             this.groupBoxTipCalculator.Text = "Tip Calculator";
+            // 
+            // buttonTipCalculatorCalculate
+            // 
+            this.buttonTipCalculatorCalculate.BackColor = System.Drawing.Color.Lime;
+            this.buttonTipCalculatorCalculate.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonTipCalculatorCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonTipCalculatorCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTipCalculatorCalculate.Location = new System.Drawing.Point(24, 124);
+            this.buttonTipCalculatorCalculate.Name = "buttonTipCalculatorCalculate";
+            this.buttonTipCalculatorCalculate.Size = new System.Drawing.Size(75, 23);
+            this.buttonTipCalculatorCalculate.TabIndex = 21;
+            this.buttonTipCalculatorCalculate.Text = "Calculate";
+            this.buttonTipCalculatorCalculate.UseVisualStyleBackColor = false;
+            this.buttonTipCalculatorCalculate.Click += new System.EventHandler(this.buttonTipCalculatorCalculate_Click);
+            // 
+            // textBoxTipCalculatorTotalTabAmount
+            // 
+            this.textBoxTipCalculatorTotalTabAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTipCalculatorTotalTabAmount.Location = new System.Drawing.Point(304, 127);
+            this.textBoxTipCalculatorTotalTabAmount.Name = "textBoxTipCalculatorTotalTabAmount";
+            this.textBoxTipCalculatorTotalTabAmount.ReadOnly = true;
+            this.textBoxTipCalculatorTotalTabAmount.Size = new System.Drawing.Size(77, 20);
+            this.textBoxTipCalculatorTotalTabAmount.TabIndex = 7;
+            this.textBoxTipCalculatorTotalTabAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // buttonTipCalculatorClear
+            // 
+            this.buttonTipCalculatorClear.BackColor = System.Drawing.Color.Red;
+            this.buttonTipCalculatorClear.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonTipCalculatorClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.buttonTipCalculatorClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonTipCalculatorClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTipCalculatorClear.Location = new System.Drawing.Point(105, 124);
+            this.buttonTipCalculatorClear.Name = "buttonTipCalculatorClear";
+            this.buttonTipCalculatorClear.Size = new System.Drawing.Size(75, 23);
+            this.buttonTipCalculatorClear.TabIndex = 20;
+            this.buttonTipCalculatorClear.Text = "Clear";
+            this.buttonTipCalculatorClear.UseVisualStyleBackColor = false;
+            this.buttonTipCalculatorClear.Click += new System.EventHandler(this.buttonTipCalculatorClear_Click);
+            // 
+            // labelTipCalculatorTotalTabAmount
+            // 
+            this.labelTipCalculatorTotalTabAmount.AutoSize = true;
+            this.labelTipCalculatorTotalTabAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTipCalculatorTotalTabAmount.Location = new System.Drawing.Point(206, 130);
+            this.labelTipCalculatorTotalTabAmount.Name = "labelTipCalculatorTotalTabAmount";
+            this.labelTipCalculatorTotalTabAmount.Size = new System.Drawing.Size(92, 13);
+            this.labelTipCalculatorTotalTabAmount.TabIndex = 6;
+            this.labelTipCalculatorTotalTabAmount.Text = "Total Tab Amount";
+            // 
+            // textBoxTipCalculatorTipAmount
+            // 
+            this.textBoxTipCalculatorTipAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTipCalculatorTipAmount.Location = new System.Drawing.Point(304, 101);
+            this.textBoxTipCalculatorTipAmount.Name = "textBoxTipCalculatorTipAmount";
+            this.textBoxTipCalculatorTipAmount.ReadOnly = true;
+            this.textBoxTipCalculatorTipAmount.Size = new System.Drawing.Size(77, 20);
+            this.textBoxTipCalculatorTipAmount.TabIndex = 5;
+            this.textBoxTipCalculatorTipAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // labelTipCalculatorTipAmount
+            // 
+            this.labelTipCalculatorTipAmount.AutoSize = true;
+            this.labelTipCalculatorTipAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTipCalculatorTipAmount.Location = new System.Drawing.Point(237, 104);
+            this.labelTipCalculatorTipAmount.Name = "labelTipCalculatorTipAmount";
+            this.labelTipCalculatorTipAmount.Size = new System.Drawing.Size(61, 13);
+            this.labelTipCalculatorTipAmount.TabIndex = 4;
+            this.labelTipCalculatorTipAmount.Text = "Tip Amount";
+            // 
+            // labelTipCalculatorChooseRate
+            // 
+            this.labelTipCalculatorChooseRate.AutoSize = true;
+            this.labelTipCalculatorChooseRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTipCalculatorChooseRate.Location = new System.Drawing.Point(116, 16);
+            this.labelTipCalculatorChooseRate.Name = "labelTipCalculatorChooseRate";
+            this.labelTipCalculatorChooseRate.Size = new System.Drawing.Size(120, 13);
+            this.labelTipCalculatorChooseRate.TabIndex = 3;
+            this.labelTipCalculatorChooseRate.Text = "Choose Rate of Service";
+            // 
+            // comboBoxTipCalculator
+            // 
+            this.comboBoxTipCalculator.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxTipCalculator.FormattingEnabled = true;
+            this.comboBoxTipCalculator.Items.AddRange(new object[] {
+            "0 - Server never came back",
+            "10% - Checked on you 1 time, refilled your drinks, dropped check",
+            "15% - Checked on you 1+ times, refilled your drinks, and dropped the check",
+            "18% - Same as above; server offered appetizers, dessert, and coffee",
+            "20% - Same as above; very attentive, friendly, no issues"});
+            this.comboBoxTipCalculator.Location = new System.Drawing.Point(6, 40);
+            this.comboBoxTipCalculator.Name = "comboBoxTipCalculator";
+            this.comboBoxTipCalculator.Size = new System.Drawing.Size(375, 21);
+            this.comboBoxTipCalculator.TabIndex = 2;
+            // 
+            // textBoxTipCalculatorTabAmount
+            // 
+            this.textBoxTipCalculatorTabAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxTipCalculatorTabAmount.Location = new System.Drawing.Point(304, 75);
+            this.textBoxTipCalculatorTabAmount.Name = "textBoxTipCalculatorTabAmount";
+            this.textBoxTipCalculatorTabAmount.Size = new System.Drawing.Size(77, 20);
+            this.textBoxTipCalculatorTabAmount.TabIndex = 1;
+            this.textBoxTipCalculatorTabAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // labelTipCalculatorTabAmount
+            // 
+            this.labelTipCalculatorTabAmount.AutoSize = true;
+            this.labelTipCalculatorTabAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTipCalculatorTabAmount.Location = new System.Drawing.Point(189, 78);
+            this.labelTipCalculatorTabAmount.Name = "labelTipCalculatorTabAmount";
+            this.labelTipCalculatorTabAmount.Size = new System.Drawing.Size(109, 13);
+            this.labelTipCalculatorTabAmount.TabIndex = 0;
+            this.labelTipCalculatorTabAmount.Text = "Enter Tab Amount";
             // 
             // formMiscellaneous
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(632, 450);
             this.Controls.Add(this.groupBoxTipCalculator);
             this.Controls.Add(this.groupBoxDiscount);
             this.Controls.Add(this.groupBoxLeapYear);
@@ -316,6 +450,8 @@
             this.groupBoxLeapYear.PerformLayout();
             this.groupBoxDiscount.ResumeLayout(false);
             this.groupBoxDiscount.PerformLayout();
+            this.groupBoxTipCalculator.ResumeLayout(false);
+            this.groupBoxTipCalculator.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -343,5 +479,15 @@
         private System.Windows.Forms.TextBox textBoxDiscountCalculatorDiscountRate;
         private System.Windows.Forms.Label labelEnterDiscount;
         private System.Windows.Forms.GroupBox groupBoxTipCalculator;
+        private System.Windows.Forms.Label labelTipCalculatorChooseRate;
+        private System.Windows.Forms.ComboBox comboBoxTipCalculator;
+        private System.Windows.Forms.TextBox textBoxTipCalculatorTabAmount;
+        private System.Windows.Forms.Label labelTipCalculatorTabAmount;
+        private System.Windows.Forms.Button buttonTipCalculatorCalculate;
+        private System.Windows.Forms.TextBox textBoxTipCalculatorTotalTabAmount;
+        private System.Windows.Forms.Button buttonTipCalculatorClear;
+        private System.Windows.Forms.Label labelTipCalculatorTotalTabAmount;
+        private System.Windows.Forms.TextBox textBoxTipCalculatorTipAmount;
+        private System.Windows.Forms.Label labelTipCalculatorTipAmount;
     }
 }

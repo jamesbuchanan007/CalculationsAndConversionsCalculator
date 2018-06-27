@@ -132,5 +132,73 @@ namespace CalculationsAndConversionsCalculator
             textBoxDiscountCalculatorSaleAmount.Clear();
             textBoxDiscountCalculatorDiscountRate.Focus();
         }
+
+        private void buttonTipCalculatorClear_Click(object sender, EventArgs e)
+        {
+            comboBoxTipCalculator.Text = "";
+            textBoxTipCalculatorTabAmount.Clear();
+            textBoxTipCalculatorTipAmount.Clear();
+            textBoxTipCalculatorTotalTabAmount.Clear();
+            comboBoxTipCalculator.Focus();
+        }
+
+        private void buttonTipCalculatorCalculate_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(comboBoxTipCalculator.Text))
+            {
+                MessageBox.Show("Choose Rate of Service", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                comboBoxTipCalculator.Focus();
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(textBoxTipCalculatorTabAmount.Text))
+            {
+                MessageBox.Show("Please Enter Tab Amount", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxTipCalculatorTabAmount.Focus();
+                return;
+            }
+
+            var isNum = double.TryParse(textBoxTipCalculatorTabAmount.Text, out double tabAmount);
+
+            if (!isNum)
+            {
+                MessageBox.Show("Tab Amount Must Be A Number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxTipCalculatorTabAmount.Clear();
+                textBoxTipCalculatorTabAmount.Focus();
+                return;
+            }
+
+            switch (comboBoxTipCalculator.SelectedIndex)
+            {
+                case 0:
+                    textBoxTipCalculatorTipAmount.Text = "$0.00";
+                    textBoxTipCalculatorTotalTabAmount.Text = tabAmount.ToString("C");
+                    break;
+                case 1:
+                    var tipAmount = tabAmount * 0.10;
+                    var totalTab = tipAmount + tabAmount;
+                    textBoxTipCalculatorTipAmount.Text = tipAmount.ToString("C");
+                    textBoxTipCalculatorTotalTabAmount.Text = totalTab.ToString("C");
+                    break;
+                case 2:
+                    var tipAmount1 = tabAmount * 0.15;
+                    var totalTab1 = tipAmount1 + tabAmount;
+                    textBoxTipCalculatorTipAmount.Text = tipAmount1.ToString("C");
+                    textBoxTipCalculatorTotalTabAmount.Text = totalTab1.ToString("C");
+                    break;
+                case 3:
+                    var tipAmount2 = tabAmount * 0.18;
+                    var totalTab2 = tipAmount2 + tabAmount;
+                    textBoxTipCalculatorTipAmount.Text = tipAmount2.ToString("C");
+                    textBoxTipCalculatorTotalTabAmount.Text = totalTab2.ToString("C");
+                    break;
+                case 4:
+                    var tipAmount3 = tabAmount * 0.20;
+                    var totalTab3 = tipAmount3 + tabAmount;
+                    textBoxTipCalculatorTipAmount.Text = tipAmount3.ToString("C");
+                    textBoxTipCalculatorTotalTabAmount.Text = totalTab3.ToString("C");
+                    break;
+            }
+        }
     }
 }
