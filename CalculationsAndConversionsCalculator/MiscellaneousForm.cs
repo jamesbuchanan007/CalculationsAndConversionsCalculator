@@ -12,27 +12,27 @@ namespace CalculationsAndConversionsCalculator
 
         private void buttonBirthYearGo_Click(object sender, EventArgs e)
         {
-            var isNum = int.TryParse(textBoxBirthYearInput.Text, out var birthYear);
+            var isNum = int.TryParse(textBoxLeapYearInput.Text, out var birthYear);
 
-            if (string.IsNullOrWhiteSpace(textBoxBirthYearInput.Text))
+            if (string.IsNullOrWhiteSpace(textBoxLeapYearInput.Text))
             {
                 MessageBox.Show("Cannot Be Empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBoxBirthYearInput.Focus();
+                textBoxLeapYearInput.Focus();
                 return;
             }
 
             if (birthYear <= 0)
             {
                 MessageBox.Show("Your Age is Zero?", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBoxBirthYearInput.Clear();
-                textBoxBirthYearInput.Focus();
+                textBoxLeapYearInput.Clear();
+                textBoxLeapYearInput.Focus();
             }
 
             if (!isNum)
             {
                 MessageBox.Show("Numbers Only.  No Decimals or Letters", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBoxBirthYearInput.Clear();
-                textBoxBirthYearInput.Focus();
+                textBoxLeapYearInput.Clear();
+                textBoxLeapYearInput.Focus();
                 return;
             }
 
@@ -42,27 +42,27 @@ namespace CalculationsAndConversionsCalculator
                 {
                     if (birthYear % 400 == 0)
                     {
-                        textBoxBirthYearIsALeapYear.Text = "Is A Leap Year";
+                        textBoxLeapYearIsALeapYear.Text = "Is A Leap Year";
                     }
                     else
                     {
-                        textBoxBirthYearIsALeapYear.Text = "Is Not A Leap Year";
+                        textBoxLeapYearIsALeapYear.Text = "Is Not A Leap Year";
                     }
                 }
                 else
                 {
-                    textBoxBirthYearIsALeapYear.Text = "Is A Leap Year";
+                    textBoxLeapYearIsALeapYear.Text = "Is A Leap Year";
                 }
             }
             else
             {
-                textBoxBirthYearIsALeapYear.Text = "Is Not A Leap Year";
+                textBoxLeapYearIsALeapYear.Text = "Is Not A Leap Year";
             }
-            
+
 
         }
 
-        
+
 
         private void buttonCircuitryHome_Click(object sender, EventArgs e)
         {
@@ -73,9 +73,9 @@ namespace CalculationsAndConversionsCalculator
 
         private void buttonBirthYearClear_Click(object sender, EventArgs e)
         {
-            textBoxBirthYearInput.Clear();
-            textBoxBirthYearIsALeapYear.Clear();
-            textBoxBirthYearInput.Focus();
+            textBoxLeapYearInput.Clear();
+            textBoxLeapYearIsALeapYear.Clear();
+            textBoxLeapYearInput.Focus();
         }
 
         private void buttonCircuitryExit_Click(object sender, EventArgs e)
@@ -83,6 +83,54 @@ namespace CalculationsAndConversionsCalculator
             Application.Exit();
         }
 
+        private void buttonDiscountCalculatorCalculate_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(textBoxDiscountCalculatorDiscountRate.Text))
+            {
+                MessageBox.Show("Please Enter Discount %", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxDiscountCalculatorDiscountRate.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(textBoxDiscountCalculatorPrice.Text))
+            {
+                MessageBox.Show("Please Enter Discount %", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxDiscountCalculatorDiscountRate.Focus();
+                return;
+            }
 
+            var isNum1 = double.TryParse(textBoxDiscountCalculatorDiscountRate.Text, out double discountRate);
+            var isNum2 = double.TryParse(textBoxDiscountCalculatorPrice.Text, out double price);
+
+            if (!isNum1)
+            {
+                MessageBox.Show("Discount must be a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxDiscountCalculatorDiscountRate.Clear();
+                textBoxDiscountCalculatorDiscountRate.Focus();
+                return;
+            }
+
+            if (!isNum2)
+            {
+                MessageBox.Show("Price must be a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxDiscountCalculatorPrice.Clear();
+                textBoxDiscountCalculatorPrice.Focus();
+                return;
+            }
+
+            var discountAmount = price * (discountRate / 100);
+            textBoxDiscountCalculatorDiscountOutput.Text = discountAmount.ToString("C");
+
+            var salePrice = price - discountAmount;
+            textBoxDiscountCalculatorSaleAmount.Text = salePrice.ToString("C");
+        }
+
+        private void buttonDiscountCalculatorClear_Click(object sender, EventArgs e)
+        {
+            textBoxDiscountCalculatorPrice.Clear();
+            textBoxDiscountCalculatorDiscountRate.Clear();
+            textBoxDiscountCalculatorDiscountOutput.Clear();
+            textBoxDiscountCalculatorSaleAmount.Clear();
+            textBoxDiscountCalculatorDiscountRate.Focus();
+        }
     }
 }
