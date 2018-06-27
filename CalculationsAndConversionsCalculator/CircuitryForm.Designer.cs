@@ -50,6 +50,12 @@
             this.labelSeriesResistance = new System.Windows.Forms.Label();
             this.buttonCircuitResistanceCalculate = new System.Windows.Forms.Button();
             this.textBoxCircuitryOutput = new System.Windows.Forms.TextBox();
+            this.textBoxVoltage = new System.Windows.Forms.TextBox();
+            this.labelVoltage = new System.Windows.Forms.Label();
+            this.textBoxCurrent = new System.Windows.Forms.TextBox();
+            this.labelCurrent = new System.Windows.Forms.Label();
+            this.textBoxPower = new System.Windows.Forms.TextBox();
+            this.labelPower = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonCircuitryHome
@@ -57,7 +63,7 @@
             this.buttonCircuitryHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.buttonCircuitryHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCircuitryHome.ForeColor = System.Drawing.Color.Transparent;
-            this.buttonCircuitryHome.Location = new System.Drawing.Point(12, 328);
+            this.buttonCircuitryHome.Location = new System.Drawing.Point(12, 263);
             this.buttonCircuitryHome.Name = "buttonCircuitryHome";
             this.buttonCircuitryHome.Size = new System.Drawing.Size(75, 23);
             this.buttonCircuitryHome.TabIndex = 9;
@@ -70,7 +76,7 @@
             this.buttonCircuitryExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.buttonCircuitryExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCircuitryExit.ForeColor = System.Drawing.Color.White;
-            this.buttonCircuitryExit.Location = new System.Drawing.Point(284, 328);
+            this.buttonCircuitryExit.Location = new System.Drawing.Point(458, 263);
             this.buttonCircuitryExit.Name = "buttonCircuitryExit";
             this.buttonCircuitryExit.Size = new System.Drawing.Size(75, 23);
             this.buttonCircuitryExit.TabIndex = 10;
@@ -81,11 +87,11 @@
             // labelDirections
             // 
             this.labelDirections.AutoSize = true;
-            this.labelDirections.Location = new System.Drawing.Point(20, 272);
+            this.labelDirections.Location = new System.Drawing.Point(135, 224);
             this.labelDirections.Name = "labelDirections";
-            this.labelDirections.Size = new System.Drawing.Size(333, 13);
+            this.labelDirections.Size = new System.Drawing.Size(282, 13);
             this.labelDirections.TabIndex = 91;
-            this.labelDirections.Text = "Enter Series / Parallel values to pertinent columns and click calculate";
+            this.labelDirections.Text = "Enter Series / Parallel / Voltage values and click calculate";
             // 
             // labelCircuitCapacitors
             // 
@@ -198,7 +204,7 @@
             this.buttonCircuitResistanceClear.BackColor = System.Drawing.Color.Red;
             this.buttonCircuitResistanceClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCircuitResistanceClear.ForeColor = System.Drawing.Color.White;
-            this.buttonCircuitResistanceClear.Location = new System.Drawing.Point(227, 224);
+            this.buttonCircuitResistanceClear.Location = new System.Drawing.Point(457, 179);
             this.buttonCircuitResistanceClear.Name = "buttonCircuitResistanceClear";
             this.buttonCircuitResistanceClear.Size = new System.Drawing.Size(75, 23);
             this.buttonCircuitResistanceClear.TabIndex = 8;
@@ -237,11 +243,11 @@
             // 
             this.labelCircuitOutput.AutoSize = true;
             this.labelCircuitOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCircuitOutput.Location = new System.Drawing.Point(117, 202);
+            this.labelCircuitOutput.Location = new System.Drawing.Point(356, 94);
             this.labelCircuitOutput.Name = "labelCircuitOutput";
-            this.labelCircuitOutput.Size = new System.Drawing.Size(36, 13);
+            this.labelCircuitOutput.Size = new System.Drawing.Size(70, 13);
             this.labelCircuitOutput.TabIndex = 103;
-            this.labelCircuitOutput.Text = "Total";
+            this.labelCircuitOutput.Text = "Resistance";
             this.labelCircuitOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelSeriesResistance
@@ -261,7 +267,7 @@
             this.buttonCircuitResistanceCalculate.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.buttonCircuitResistanceCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCircuitResistanceCalculate.ForeColor = System.Drawing.Color.Black;
-            this.buttonCircuitResistanceCalculate.Location = new System.Drawing.Point(78, 224);
+            this.buttonCircuitResistanceCalculate.Location = new System.Drawing.Point(372, 179);
             this.buttonCircuitResistanceCalculate.Name = "buttonCircuitResistanceCalculate";
             this.buttonCircuitResistanceCalculate.Size = new System.Drawing.Size(75, 23);
             this.buttonCircuitResistanceCalculate.TabIndex = 7;
@@ -271,18 +277,81 @@
             // 
             // textBoxCircuitryOutput
             // 
-            this.textBoxCircuitryOutput.Location = new System.Drawing.Point(159, 198);
+            this.textBoxCircuitryOutput.Location = new System.Drawing.Point(432, 91);
             this.textBoxCircuitryOutput.Name = "textBoxCircuitryOutput";
             this.textBoxCircuitryOutput.ReadOnly = true;
             this.textBoxCircuitryOutput.Size = new System.Drawing.Size(100, 20);
             this.textBoxCircuitryOutput.TabIndex = 118;
             this.textBoxCircuitryOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // textBoxVoltage
+            // 
+            this.textBoxVoltage.Location = new System.Drawing.Point(389, 51);
+            this.textBoxVoltage.Name = "textBoxVoltage";
+            this.textBoxVoltage.Size = new System.Drawing.Size(100, 20);
+            this.textBoxVoltage.TabIndex = 119;
+            // 
+            // labelVoltage
+            // 
+            this.labelVoltage.AutoSize = true;
+            this.labelVoltage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelVoltage.Location = new System.Drawing.Point(397, 36);
+            this.labelVoltage.Name = "labelVoltage";
+            this.labelVoltage.Size = new System.Drawing.Size(84, 13);
+            this.labelVoltage.TabIndex = 120;
+            this.labelVoltage.Text = "Enter Voltage";
+            // 
+            // textBoxCurrent
+            // 
+            this.textBoxCurrent.Location = new System.Drawing.Point(432, 117);
+            this.textBoxCurrent.Name = "textBoxCurrent";
+            this.textBoxCurrent.ReadOnly = true;
+            this.textBoxCurrent.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCurrent.TabIndex = 122;
+            this.textBoxCurrent.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // labelCurrent
+            // 
+            this.labelCurrent.AutoSize = true;
+            this.labelCurrent.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCurrent.Location = new System.Drawing.Point(378, 120);
+            this.labelCurrent.Name = "labelCurrent";
+            this.labelCurrent.Size = new System.Drawing.Size(48, 13);
+            this.labelCurrent.TabIndex = 121;
+            this.labelCurrent.Text = "Current";
+            this.labelCurrent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBoxPower
+            // 
+            this.textBoxPower.Location = new System.Drawing.Point(432, 143);
+            this.textBoxPower.Name = "textBoxPower";
+            this.textBoxPower.ReadOnly = true;
+            this.textBoxPower.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPower.TabIndex = 124;
+            this.textBoxPower.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // labelPower
+            // 
+            this.labelPower.AutoSize = true;
+            this.labelPower.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPower.Location = new System.Drawing.Point(384, 146);
+            this.labelPower.Name = "labelPower";
+            this.labelPower.Size = new System.Drawing.Size(42, 13);
+            this.labelPower.TabIndex = 123;
+            this.labelPower.Text = "Power";
+            this.labelPower.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // formCircuitry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 363);
+            this.ClientSize = new System.Drawing.Size(545, 300);
+            this.Controls.Add(this.textBoxPower);
+            this.Controls.Add(this.labelPower);
+            this.Controls.Add(this.textBoxCurrent);
+            this.Controls.Add(this.labelCurrent);
+            this.Controls.Add(this.labelVoltage);
+            this.Controls.Add(this.textBoxVoltage);
             this.Controls.Add(this.textBoxCircuitryOutput);
             this.Controls.Add(this.labelCircuitCapacitors);
             this.Controls.Add(this.textBoxCapacitorParallel);
@@ -337,5 +406,11 @@
         private System.Windows.Forms.Label labelSeriesResistance;
         private System.Windows.Forms.Button buttonCircuitResistanceCalculate;
         private System.Windows.Forms.TextBox textBoxCircuitryOutput;
+        private System.Windows.Forms.TextBox textBoxVoltage;
+        private System.Windows.Forms.Label labelVoltage;
+        private System.Windows.Forms.TextBox textBoxCurrent;
+        private System.Windows.Forms.Label labelCurrent;
+        private System.Windows.Forms.TextBox textBoxPower;
+        private System.Windows.Forms.Label labelPower;
     }
 }

@@ -169,9 +169,35 @@ namespace CalculationsAndConversionsCalculator
                 indSeries +
                 indParallel +
                 capSeries +
-                capParallel).ToString("F");
+                capParallel);
 
-            textBoxCircuitryOutput.Text = totalRsRpIsIpCsCp + " Ohms";
+            textBoxCircuitryOutput.Text = totalRsRpIsIpCsCp.ToString("F") + " Ohms";
+
+            double voltage;
+            var isVolt = double.TryParse(textBoxVoltage.Text, out voltage);
+
+            if (string.IsNullOrWhiteSpace(textBoxVoltage.Text))
+            {
+                MessageBox.Show("Please Enter Voltage", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxVoltage.Focus();
+                return;
+            }
+
+            if (!isVolt)
+            {
+                MessageBox.Show("Voltage must be a number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxVoltage.Clear();
+                textBoxVoltage.Focus();
+                return;
+            }
+
+            var current = voltage / totalRsRpIsIpCsCp;
+            textBoxCurrent.Text = current.ToString("F") + " amps";
+
+            var power = current * voltage;
+            textBoxPower.Text = power.ToString("F") + " Watts";
+
+
 
         }
 
@@ -185,6 +211,9 @@ namespace CalculationsAndConversionsCalculator
             textBoxInductorParallel.Clear();
             textBoxResistorSeries.Focus();
             textBoxCircuitryOutput.Clear();
+            textBoxVoltage.Clear();
+            textBoxPower.Clear();
+            textBoxCurrent.Clear();
         }
 
         private void buttonCircuitryHome_Click(object sender, EventArgs e)

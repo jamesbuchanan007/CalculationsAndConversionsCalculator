@@ -69,6 +69,11 @@ namespace CalculationsAndConversionsCalculator
                     formMathFormulas formMathFormulas = new formMathFormulas();
                     formMathFormulas.Show();
                     break;
+                case "Miscellaneous":
+                    this.Hide();
+                    formMiscellaneous formMiscellaneous = new formMiscellaneous();
+                    formMiscellaneous.Show();
+                    break;
 
             }
             
