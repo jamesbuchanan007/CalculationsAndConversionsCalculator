@@ -515,12 +515,13 @@
             this.textBoxDistanceTimeDistance.Name = "textBoxDistanceTimeDistance";
             this.textBoxDistanceTimeDistance.Size = new System.Drawing.Size(95, 20);
             this.textBoxDistanceTimeDistance.TabIndex = 5;
+            this.textBoxDistanceTimeDistance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelDistanceTimeDistanceNeeded
             // 
             this.labelDistanceTimeDistanceNeeded.AutoSize = true;
             this.labelDistanceTimeDistanceNeeded.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDistanceTimeDistanceNeeded.Location = new System.Drawing.Point(8, 76);
+            this.labelDistanceTimeDistanceNeeded.Location = new System.Drawing.Point(3, 76);
             this.labelDistanceTimeDistanceNeeded.Name = "labelDistanceTimeDistanceNeeded";
             this.labelDistanceTimeDistanceNeeded.Size = new System.Drawing.Size(77, 13);
             this.labelDistanceTimeDistanceNeeded.TabIndex = 4;
@@ -528,18 +529,20 @@
             // 
             // comboBoxDistanceTimeRate
             // 
+            this.comboBoxDistanceTimeRate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxDistanceTimeRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxDistanceTimeRate.FormattingEnabled = true;
             this.comboBoxDistanceTimeRate.Items.AddRange(new object[] {
-            "Miles per Hour (mph)",
-            "Miles per Second (mps)",
-            "Kilometers per Hour (km/h)",
-            "Kilometers per Second (kps)",
-            "Knots (kn or kt)",
-            "Feet per Second (fps or ft/s)",
-            "Meters per Second (m/s)"});
+            "mph",
+            "mps",
+            "km/h",
+            "km/s",
+            "kn or kt",
+            "fps or ft/s",
+            "m/s"});
             this.comboBoxDistanceTimeRate.Location = new System.Drawing.Point(129, 45);
             this.comboBoxDistanceTimeRate.Name = "comboBoxDistanceTimeRate";
+            this.comboBoxDistanceTimeRate.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.comboBoxDistanceTimeRate.Size = new System.Drawing.Size(57, 21);
             this.comboBoxDistanceTimeRate.TabIndex = 3;
             // 
@@ -547,7 +550,7 @@
             // 
             this.labelDistanceTimeSpeedRate.AutoSize = true;
             this.labelDistanceTimeSpeedRate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDistanceTimeSpeedRate.Location = new System.Drawing.Point(54, 48);
+            this.labelDistanceTimeSpeedRate.Location = new System.Drawing.Point(54, 49);
             this.labelDistanceTimeSpeedRate.Name = "labelDistanceTimeSpeedRate";
             this.labelDistanceTimeSpeedRate.Size = new System.Drawing.Size(69, 13);
             this.labelDistanceTimeSpeedRate.TabIndex = 2;
@@ -560,6 +563,7 @@
             this.textBoxDistanceTimeSpeed.Name = "textBoxDistanceTimeSpeed";
             this.textBoxDistanceTimeSpeed.Size = new System.Drawing.Size(57, 20);
             this.textBoxDistanceTimeSpeed.TabIndex = 1;
+            this.textBoxDistanceTimeSpeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelDistanceTimeSpeed
             // 
@@ -598,18 +602,18 @@
             "Light Year(s)",
             "Earth Radius",
             "Lunar Distance",
-            "Astronomical Unit (AU)",
+            "Astro. Unit (AU)",
             "Parsec(s)"});
-            this.comboBoxDistanceTimeDistanceUnit.Location = new System.Drawing.Point(91, 98);
+            this.comboBoxDistanceTimeDistanceUnit.Location = new System.Drawing.Point(83, 98);
             this.comboBoxDistanceTimeDistanceUnit.Name = "comboBoxDistanceTimeDistanceUnit";
-            this.comboBoxDistanceTimeDistanceUnit.Size = new System.Drawing.Size(95, 21);
+            this.comboBoxDistanceTimeDistanceUnit.Size = new System.Drawing.Size(103, 21);
             this.comboBoxDistanceTimeDistanceUnit.TabIndex = 85;
             // 
             // labelDistanceTimeDistanceUnit
             // 
             this.labelDistanceTimeDistanceUnit.AutoSize = true;
             this.labelDistanceTimeDistanceUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDistanceTimeDistanceUnit.Location = new System.Drawing.Point(14, 101);
+            this.labelDistanceTimeDistanceUnit.Location = new System.Drawing.Point(6, 101);
             this.labelDistanceTimeDistanceUnit.Name = "labelDistanceTimeDistanceUnit";
             this.labelDistanceTimeDistanceUnit.Size = new System.Drawing.Size(71, 13);
             this.labelDistanceTimeDistanceUnit.TabIndex = 84;
