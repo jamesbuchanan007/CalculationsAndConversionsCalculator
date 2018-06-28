@@ -8,6 +8,7 @@ namespace CalculationsAndConversionsCalculator
         public formMiscellaneous()
         {
             InitializeComponent();
+            buttonDistanceTimeClipboard.Text = "\u2702";
         }
 
         private void buttonBirthYearGo_Click(object sender, EventArgs e)
@@ -200,5 +201,86 @@ namespace CalculationsAndConversionsCalculator
                     break;
             }
         }
+
+        private void buttonDistanceTimeClear_Click(object sender, EventArgs e)
+        {
+            textBoxDistanceTimeSpeed.Clear();
+            textBoxDistanceTimeDistance.Clear();
+            textBoxDistanceTimeOutput.Clear();
+            comboBoxDistanceTimeRate.Text = "";
+            textBoxDistanceTimeSpeed.Focus();
+        }
+
+        private void buttonDistanceTimeClipboard_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(textBoxDistanceTimeOutput.Text);
+        }
+
+        private void buttonDistanceTimeCalculate_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(textBoxDistanceTimeSpeed.Text))
+            {
+                MessageBox.Show("Please Enter Speed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxDistanceTimeSpeed.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(textBoxDistanceTimeDistance.Text))
+            {
+                MessageBox.Show("Please Enter Distance", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxDistanceTimeDistance.Focus();
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(comboBoxDistanceTimeRate.Text))
+            {
+                MessageBox.Show("Please Choose Rate of Speed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                comboBoxDistanceTimeRate.Focus();
+                return;
+            }
+
+            var isNum1 = double.TryParse(textBoxDistanceTimeSpeed.Text, out var speed);
+            var isNum2 = double.TryParse(textBoxDistanceTimeDistance.Text, out var distance);
+
+            if (!isNum1)
+            {
+                MessageBox.Show("Must Be A Number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxDistanceTimeSpeed.Clear();
+                textBoxDistanceTimeSpeed.Focus();
+                return;
+            }
+            if (!isNum2)
+            {
+                MessageBox.Show("Must Be A Number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxDistanceTimeDistance.Clear();
+                textBoxDistanceTimeDistance.Focus();
+                return;
+            }
+
+            switch (comboBoxDistanceTimeRate.SelectedIndex)
+            {
+                case 0:
+
+                    break;
+                case 1:
+
+                    break;
+                case 2:
+
+                    break;
+                case 3:
+
+                    break;
+                case 4:
+
+                    break;
+                case 5:
+
+                    break;
+                case 6:
+
+                    break;
+            }
+
+        }
+
     }
 }
