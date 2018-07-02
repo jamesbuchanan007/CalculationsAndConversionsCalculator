@@ -255,32 +255,308 @@ namespace CalculationsAndConversionsCalculator
                 return;
             }
 
+            double time;
+            double convertedDistance;
+            string displayedText;
+
             switch (comboBoxDistanceTimeRate.SelectedIndex)
             {
                 case 0:
-
+                    convertedDistance = ConvertDistance("miles", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
+                    time = convertedDistance / speed;
+                    displayedText = ConvertTime("hours", time);
                     break;
                 case 1:
-
+                    convertedDistance = ConvertDistance("miles", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
+                    time = convertedDistance / speed;
+                    displayedText = ConvertTime("seconds", time);
                     break;
                 case 2:
-
+                    convertedDistance = ConvertDistance("kilometer", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
+                    time = convertedDistance / speed;
+                    displayedText = ConvertTime("hours", time);
                     break;
                 case 3:
-
+                    convertedDistance = ConvertDistance("kilometer", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
+                    time = convertedDistance / speed;
+                    displayedText = ConvertTime("seconds", time);
                     break;
                 case 4:
-
+                    convertedDistance = ConvertDistance("knot", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
+                    time = convertedDistance / speed;
+                    displayedText = ConvertTime("hours", time);
                     break;
                 case 5:
-
+                    convertedDistance = ConvertDistance("feet", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
+                    time = convertedDistance / speed;
+                    displayedText = ConvertTime("seconds", time);
                     break;
                 case 6:
-
+                    convertedDistance = ConvertDistance("meters", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
+                    time = convertedDistance / speed;
+                    displayedText = ConvertTime("seconds", time);
                     break;
             }
 
         }
 
+        private string ConvertTime(string timeUnits, double time)
+        {
+            string displayedText;
+            double years = 0;
+            double weeks = 0;
+            double days = 0;
+            double hours = 0;
+            double minutes = 0;
+            double seconds = 0;
+            double milliseconds = 0;
+
+            if (timeUnits == "hours")
+            {
+                hours = Math.Truncate(time);
+                minutes = (time - hours) * 60;
+                seconds = (minutes - Math.Truncate(minutes)) * 60;
+                milliseconds = (seconds - Math.Truncate(seconds)) * 1000;
+
+                if (hours >= 24)
+                {
+                    days = hours / 24;
+                    hours = days - Math.Truncate(days) * 24;
+
+                    if (days >= 7)
+                    {
+                        weeks = days / 7;
+                        days = weeks - Math.Truncate(weeks) * 7;
+                        hours = days - Math.Truncate(days) * 24;
+
+                        if (weeks >= 52)
+                        {
+                            years = weeks / 52;
+                            weeks = years - Math.Truncate(years) * 52;
+                            days = weeks - Math.Truncate(weeks) * 7;
+                            hours = days - Math.Truncate(days) * 24;
+                        }
+                    }
+
+                    displayedText = years > 0 ? "{0} years", years: "";
+                }
+
+            }
+
+            if (timeUnits == "seconds")
+            {
+                seconds = Math.Truncate(time);
+            }
+
+            return displayedText;
+        }
+
+        private double ConvertDistance(string distanceUnit, int indexComboBox, double distance)
+        {
+            double convertedDistance = 0.0;
+
+            if (distanceUnit == "miles")
+            {
+                switch (indexComboBox)
+                {
+                    case 0:
+                        convertedDistance = distance / 1;           //mile
+                        break;
+                    case 1:
+                        convertedDistance = distance / 1.609344;    //km 
+                        break;
+                    case 2:
+                        convertedDistance = distance / 5280;        //feet
+                        break;
+                    case 3:
+                        convertedDistance = distance / 1760;        //yard
+                        break;
+                    case 4:
+                        convertedDistance = distance / 1609.344;    //meter
+                        break;
+                    case 5:
+                        convertedDistance = distance / 0.28965875;  //league
+                        break;
+                    case 6:
+                        convertedDistance = distance / 880;         //fathom
+                        break;
+                    case 7:
+                        convertedDistance = distance / 0.86897624;  //nautical mile
+                        break;
+                    case 8:
+                        convertedDistance = distance / 1.7011E-13;  //light year
+                        break;
+                    case 9:
+                        convertedDistance = distance / 1.0758E-8;   //Astronomical unit AU
+                        break;
+                    case 10:
+                        convertedDistance = distance / 5.2155E-14;  //parsec
+                        break;
+
+                }
+            }
+
+            if (distanceUnit == "kilometer")
+            {
+                switch (indexComboBox)
+                {
+                    case 0:
+                        convertedDistance = distance / 0.62137119;           //mile
+                        break;
+                    case 1:
+                        convertedDistance = distance / 1;    //km 
+                        break;
+                    case 2:
+                        convertedDistance = distance / 3280.8399;        //feet
+                        break;
+                    case 3:
+                        convertedDistance = distance / 1093.6133;        //yard
+                        break;
+                    case 4:
+                        convertedDistance = distance / 1000;    //meter
+                        break;
+                    case 5:
+                        convertedDistance = distance / 0.1799856;  //league
+                        break;
+                    case 6:
+                        convertedDistance = distance / 546.806649;         //fathom
+                        break;
+                    case 7:
+                        convertedDistance = distance / 0.5399568;  //nautical mile
+                        break;
+                    case 8:
+                        convertedDistance = distance / 1.0570E-13;  //light year
+                        break;
+                    case 9:
+                        convertedDistance = distance / 6.6846E-9;   //Astronomical unit AU
+                        break;
+                    case 10:
+                        convertedDistance = distance / 3.2408E-14;  //parsec
+                        break;
+                }
+            }
+
+            if (distanceUnit == "knot")
+            {
+                switch (indexComboBox)
+                {
+                    case 0:
+                        convertedDistance = distance / 1.15077945;           //mile
+                        break;
+                    case 1:
+                        convertedDistance = distance / 1.852;    //km 
+                        break;
+                    case 2:
+                        convertedDistance = distance / 6076.11549;        //feet
+                        break;
+                    case 3:
+                        convertedDistance = distance / 2025.37183;        //yard
+                        break;
+                    case 4:
+                        convertedDistance = distance / 1852;    //meter
+                        break;
+                    case 5:
+                        convertedDistance = distance / 0.33333333;  //league
+                        break;
+                    case 6:
+                        convertedDistance = distance / 1012.68591;         //fathom
+                        break;
+                    case 7:
+                        convertedDistance = distance / 1;  //nautical mile
+                        break;
+                    case 8:
+                        convertedDistance = distance / 1.9576E-13;  //light year
+                        break;
+                    case 9:
+                        convertedDistance = distance / 1.2380E-8;   //Astronomical unit AU
+                        break;
+                    case 10:
+                        convertedDistance = distance / 6.0019E-14;  //parsec
+                        break;
+                }
+            }
+
+            if (distanceUnit == "feet")
+            {
+                switch (indexComboBox)
+                {
+                    case 0:
+                        convertedDistance = distance / 0.00018939;           //mile
+                        break;
+                    case 1:
+                        convertedDistance = distance / 0.0003048;    //km 
+                        break;
+                    case 2:
+                        convertedDistance = distance / 1;        //feet
+                        break;
+                    case 3:
+                        convertedDistance = distance / 0.33333333;        //yard
+                        break;
+                    case 4:
+                        convertedDistance = distance / 0.3048;    //meter
+                        break;
+                    case 5:
+                        convertedDistance = distance / 0.00005486;  //league
+                        break;
+                    case 6:
+                        convertedDistance = distance / 0.16666667;         //fathom
+                        break;
+                    case 7:
+                        convertedDistance = distance / 0.00016458;  //nautical mile
+                        break;
+                    case 8:
+                        convertedDistance = distance / 3.2217E-17;  //light year
+                        break;
+                    case 9:
+                        convertedDistance = distance / 2.0375E-12;   //Astronomical unit AU
+                        break;
+                    case 10:
+                        convertedDistance = distance / 9.8779E-18;  //parsec
+                        break;
+                }
+            }
+
+            if (distanceUnit == "meters")
+            {
+                switch (indexComboBox)
+                {
+                    case 0:
+                        convertedDistance = distance / 0.00062137;           //mile
+                        break;
+                    case 1:
+                        convertedDistance = distance / 0.001;    //km 
+                        break;
+                    case 2:
+                        convertedDistance = distance / 3.2808399;        //feet
+                        break;
+                    case 3:
+                        convertedDistance = distance / 1.0936133;        //yard
+                        break;
+                    case 4:
+                        convertedDistance = distance / 1;    //meter
+                        break;
+                    case 5:
+                        convertedDistance = distance / 0.00017999;  //league
+                        break;
+                    case 6:
+                        convertedDistance = distance / 0.54680665;         //fathom
+                        break;
+                    case 7:
+                        convertedDistance = distance / 0.00053996;  //nautical mile
+                        break;
+                    case 8:
+                        convertedDistance = distance / 1.0570E-16;  //light year
+                        break;
+                    case 9:
+                        convertedDistance = distance / 6.6846E-12;   //Astronomical unit AU
+                        break;
+                    case 10:
+                        convertedDistance = distance / 3.2408E-17;  //parsec
+                        break;
+                }
+            }
+
+            return convertedDistance;
+        }
     }
 }
