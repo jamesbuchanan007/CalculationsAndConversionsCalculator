@@ -208,6 +208,7 @@ namespace CalculationsAndConversionsCalculator
             textBoxDistanceTimeDistance.Clear();
             textBoxDistanceTimeOutput.Clear();
             comboBoxDistanceTimeRate.Text = "";
+            comboBoxDistanceTimeDistanceUnit.Text = "";
             textBoxDistanceTimeSpeed.Focus();
         }
 
@@ -265,36 +266,58 @@ namespace CalculationsAndConversionsCalculator
                     convertedDistance = ConvertDistance("miles", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
                     time = convertedDistance / speed;
                     displayedText = ConvertTime("hours", time);
+
+                    textBoxDistanceTimeOutput.Text =
+                        "At " + textBoxDistanceTimeSpeed.Text + comboBoxDistanceTimeRate.Text + ", it will take " +
+                            displayedText + " to travel " + textBoxDistanceTimeDistance.Text + " " + comboBoxDistanceTimeDistanceUnit.Text;
                     break;
                 case 1:
                     convertedDistance = ConvertDistance("miles", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
                     time = convertedDistance / speed;
                     displayedText = ConvertTime("seconds", time);
+                    textBoxDistanceTimeOutput.Text =
+                        "At " + textBoxDistanceTimeSpeed.Text + comboBoxDistanceTimeRate.Text + ", it will take " +
+                        displayedText + " to travel " + textBoxDistanceTimeDistance.Text + " " + comboBoxDistanceTimeDistanceUnit.Text;
                     break;
                 case 2:
                     convertedDistance = ConvertDistance("kilometer", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
                     time = convertedDistance / speed;
                     displayedText = ConvertTime("hours", time);
+                    textBoxDistanceTimeOutput.Text =
+                        "At " + textBoxDistanceTimeSpeed.Text + comboBoxDistanceTimeRate.Text + ", it will take " +
+                        displayedText + " to travel " + textBoxDistanceTimeDistance.Text + " " + comboBoxDistanceTimeDistanceUnit.Text;
                     break;
                 case 3:
                     convertedDistance = ConvertDistance("kilometer", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
                     time = convertedDistance / speed;
                     displayedText = ConvertTime("seconds", time);
+                    textBoxDistanceTimeOutput.Text =
+                        "At " + textBoxDistanceTimeSpeed.Text + comboBoxDistanceTimeRate.Text + ", it will take " +
+                        displayedText + " to travel " + textBoxDistanceTimeDistance.Text + " " + comboBoxDistanceTimeDistanceUnit.Text;
                     break;
                 case 4:
                     convertedDistance = ConvertDistance("knot", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
                     time = convertedDistance / speed;
                     displayedText = ConvertTime("hours", time);
+                    textBoxDistanceTimeOutput.Text =
+                        "At " + textBoxDistanceTimeSpeed.Text + comboBoxDistanceTimeRate.Text + ", it will take " +
+                        displayedText + " to travel " + textBoxDistanceTimeDistance.Text + " " + comboBoxDistanceTimeDistanceUnit.Text;
                     break;
                 case 5:
                     convertedDistance = ConvertDistance("feet", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
                     time = convertedDistance / speed;
                     displayedText = ConvertTime("seconds", time);
+                    textBoxDistanceTimeOutput.Text =
+                        "At " + textBoxDistanceTimeSpeed.Text + comboBoxDistanceTimeRate.Text + ", it will take " +
+                        displayedText + " to travel " + textBoxDistanceTimeDistance.Text + " " + comboBoxDistanceTimeDistanceUnit.Text;
                     break;
                 case 6:
                     convertedDistance = ConvertDistance("meters", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
                     time = convertedDistance / speed;
                     displayedText = ConvertTime("seconds", time);
+                    textBoxDistanceTimeOutput.Text =
+                        "At " + textBoxDistanceTimeSpeed.Text + comboBoxDistanceTimeRate.Text + ", it will take " +
+                        displayedText + " to travel " + textBoxDistanceTimeDistance.Text + " " + comboBoxDistanceTimeDistanceUnit.Text;
                     break;
             }
 
@@ -314,41 +337,103 @@ namespace CalculationsAndConversionsCalculator
             if (timeUnits == "hours")
             {
                 hours = Math.Truncate(time);
-                minutes = (time - hours) * 60;
-                seconds = (minutes - Math.Truncate(minutes)) * 60;
-                milliseconds = (seconds - Math.Truncate(seconds)) * 1000;
+                minutes = Math.Truncate((time - hours) * 60);
+                seconds = Math.Truncate(((time - hours) * 60 - minutes) * 60);
+                milliseconds = Math.Truncate((((time - hours) * 60 - minutes) * 60 - seconds) * 1000);
 
                 if (hours >= 24)
                 {
-                    days = hours / 24;
-                    hours = days - Math.Truncate(days) * 24;
+                    days = Math.Truncate(time / 24);
+                    hours = ((time / 24) - days) * 24;
 
                     if (days >= 7)
                     {
-                        weeks = days / 7;
-                        days = weeks - Math.Truncate(weeks) * 7;
-                        hours = days - Math.Truncate(days) * 24;
+                        weeks = Math.Truncate(time / 168);
+                        days = Math.Truncate((time / 168 - weeks) * 7);
+                        hours = Math.Truncate(((time / 168 - weeks) * 7 - days) * 24);
 
                         if (weeks >= 52)
                         {
-                            years = weeks / 52;
-                            weeks = years - Math.Truncate(years) * 52;
-                            days = weeks - Math.Truncate(weeks) * 7;
-                            hours = days - Math.Truncate(days) * 24;
+                            years = Math.Truncate(time / 8760);
+                            weeks = Math.Truncate((time / 8760 - years) * 52);
+                            days = Math.Truncate(((time / 8760 - years) * 52 - weeks) * 7);
+                            hours = Math.Truncate((((time / 8760 - years) * 52 - weeks) * 7 - days) * 24);
                         }
                     }
 
-                    displayedText = years > 0 ? "{0} years", years: "";
                 }
+                displayedText = years > 0 ? years == 1 ? years + " year, " : years.ToString("N0") + " years, " : "";
 
+                displayedText = weeks > 0 ? weeks == 1 ? displayedText + weeks + " week, " : displayedText + weeks + " weeks, " : displayedText;
+                displayedText = days > 0 ? days == 1 ? displayedText + days + " day, " : displayedText + days + " days, " : displayedText;
+                displayedText = hours > 0 ? hours == 1 ? displayedText + hours + " hour, " : displayedText + hours + " hours, " : displayedText;
+                displayedText = minutes > 0 ? minutes == 1 ? displayedText + minutes + " minute, " : displayedText + minutes + " minutes, " : displayedText;
+                displayedText = seconds > 0 ? seconds == 1 ? displayedText + seconds + " second, " : displayedText + seconds + " seconds, " : displayedText;
+                displayedText = milliseconds > 0 ? displayedText + milliseconds + " ms" : displayedText;
+
+                return displayedText;
             }
-
-            if (timeUnits == "seconds")
+            else
             {
                 seconds = Math.Truncate(time);
+                milliseconds = Math.Truncate((time - seconds) * 1000);
+
+                if (seconds >= 60)
+                {
+                    minutes = Math.Truncate(time / 60);
+                    seconds = Math.Truncate((time / 60 - minutes) * 60);
+                    milliseconds = Math.Truncate(((time / 60 - minutes) * 60 - seconds) * 1000);
+
+                    if (minutes >= 60)
+                    {
+                        hours = Math.Truncate(time / 3600);
+                        minutes = Math.Truncate((time / 3600 - hours) * 60);
+                        seconds = Math.Truncate(((time / 3600 - hours) * 60 - minutes) * 60);
+                        milliseconds = Math.Truncate((((time / 3600 - hours) * 60 - minutes) * 60 - seconds) * 1000);
+
+                        if (hours >= 24)
+                        {
+                            days = Math.Truncate(time / 86400);
+                            hours = Math.Truncate((time / 86400 - days) * 24);
+                            minutes = Math.Truncate(((time / 86400 - days) * 24 - hours) * 60);
+                            seconds = Math.Truncate((((time / 86400 - days) * 24 - hours) * 60 - minutes) * 60);
+                            milliseconds = Math.Truncate(((((time / 86400 - days) * 24 - hours) * 60 - minutes) * 60 - seconds) * 1000);
+
+                            if (days >= 7)
+                            {
+                                weeks = Math.Truncate(time / 604800);
+                                days = Math.Truncate((time / 604800 - weeks) * 7);
+                                hours = Math.Truncate(((time / 604800 - weeks) * 7 - days) * 24);
+                                minutes = Math.Truncate((((time / 604800 - weeks) * 7 - days) * 24 - hours) * 60);
+                                seconds = Math.Truncate(((((time / 604800 - weeks) * 7 - days) * 24 - hours) * 60 - minutes) * 60);
+                                milliseconds = Math.Truncate((((((time / 604800 - weeks) * 7 - days) * 24 - hours) * 60 - minutes) * 60 - seconds) * 1000);
+
+                                if (weeks >= 52)
+                                {
+                                    years = Math.Truncate(time / 31536000);
+                                    weeks = Math.Truncate((time / 31536000 - years) * 52);
+                                    days = Math.Truncate(((time / 31536000 - years) * 52 - weeks) * 7);
+                                    hours = Math.Truncate((((time / 31536000 - years) * 52 - weeks) * 7 - days) * 24);
+                                    minutes = Math.Truncate(((((time / 31536000 - years) * 52 - weeks) * 7 - days) * 24 - hours) * 60);
+                                    seconds = Math.Truncate((((((time / 31536000 - years) * 52 - weeks) * 7 - days) * 24 - hours) * 60 - minutes) * 60);
+                                    milliseconds = Math.Truncate(((((((time / 31536000 - years) * 52 - weeks) * 7 - days) * 24 - hours) * 60 - minutes) * 60 - seconds) * 1000);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                displayedText = years > 0 ? years == 1 ? years + " year, " : years.ToString("N0") + " years, " : "";
+                displayedText = weeks > 0 ? weeks == 1 ? displayedText + weeks + " week, " : displayedText + weeks + " weeks, " : displayedText;
+                displayedText = days > 0 ? days == 1 ? displayedText + days + " day, " : displayedText + days + " days, " : displayedText;
+                displayedText = hours > 0 ? hours == 1 ? displayedText + hours + " hour, " : displayedText + hours + " hours, " : displayedText;
+                displayedText = minutes > 0 ? minutes == 1 ? displayedText + minutes + " minute, " : displayedText + minutes + " minutes, " : displayedText;
+                displayedText = seconds > 0 ? seconds == 1 ? displayedText + seconds + " second, " : displayedText + seconds + " seconds, " : displayedText;
+                displayedText = milliseconds > 0 ? displayedText + milliseconds + " ms" : displayedText;
+
+                return displayedText;
             }
 
-            return displayedText;
         }
 
         private double ConvertDistance(string distanceUnit, int indexComboBox, double distance)

@@ -513,6 +513,7 @@
             // 
             // textBoxDistanceTimeOutput
             // 
+            this.textBoxDistanceTimeOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxDistanceTimeOutput.Location = new System.Drawing.Point(192, 19);
             this.textBoxDistanceTimeOutput.Multiline = true;
             this.textBoxDistanceTimeOutput.Name = "textBoxDistanceTimeOutput";
