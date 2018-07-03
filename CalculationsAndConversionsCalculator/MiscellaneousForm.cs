@@ -206,15 +206,35 @@ namespace CalculationsAndConversionsCalculator
         {
             textBoxDistanceTimeSpeed.Clear();
             textBoxDistanceTimeDistance.Clear();
-            textBoxDistanceTimeOutput.Clear();
             comboBoxDistanceTimeRate.Text = "";
             comboBoxDistanceTimeDistanceUnit.Text = "";
+            textBoxDistanceResultYears.Clear();
+            textBoxDistanceResultWeeks.Clear();
+            textBoxDistanceResultDays.Clear();
+            textBoxDistanceResultHours.Clear();
+            textBoxDistanceResultMinutes.Clear();
+            textBoxDistanceResultSeconds.Clear();
+            textBoxDistanceResultMilliseconds.Clear();
             textBoxDistanceTimeSpeed.Focus();
         }
 
         private void buttonDistanceTimeClipboard_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(textBoxDistanceTimeOutput.Text);
+            string displayedText = "";
+
+            displayedText = "To go " + textBoxDistanceTimeDistance.Text + " " + comboBoxDistanceTimeDistanceUnit.Text + " at " + textBoxDistanceTimeSpeed.Text +
+                            comboBoxDistanceTimeRate.Text + " will take approx. ";
+
+            displayedText = textBoxDistanceResultYears.Text != "" ? textBoxDistanceResultYears.Text == "1" ? displayedText + textBoxDistanceResultYears.Text + " year, " : displayedText + textBoxDistanceResultYears.Text + " years, " : displayedText;
+
+            displayedText = textBoxDistanceResultWeeks.Text != "" ? textBoxDistanceResultWeeks.Text == "1" ? displayedText + textBoxDistanceResultWeeks.Text + " week, " : displayedText + textBoxDistanceResultWeeks.Text + " weeks, " : displayedText;
+            displayedText = textBoxDistanceResultDays.Text != "" ? textBoxDistanceResultDays.Text == "1" ? displayedText + textBoxDistanceResultDays.Text + " day, " : displayedText + textBoxDistanceResultDays.Text + " days, " : displayedText;
+            displayedText = textBoxDistanceResultHours.Text != "" ? textBoxDistanceResultHours.Text == "1" ? displayedText + textBoxDistanceResultHours.Text + " hour, " : displayedText + textBoxDistanceResultHours.Text + " hours, " : displayedText;
+            displayedText = textBoxDistanceResultMinutes.Text != "" ? textBoxDistanceResultMinutes.Text == "1" ? displayedText + textBoxDistanceResultMinutes.Text + " minute, " : displayedText + textBoxDistanceResultMinutes.Text + " minutes, " : displayedText;
+            displayedText = textBoxDistanceResultSeconds.Text != "" ? textBoxDistanceResultSeconds.Text == "1" ? displayedText + textBoxDistanceResultSeconds.Text + " second, " : displayedText + textBoxDistanceResultSeconds.Text + " seconds, " : displayedText;
+            displayedText = textBoxDistanceResultMilliseconds.Text != "" ? displayedText + textBoxDistanceResultMilliseconds.Text + " ms" : displayedText;
+
+            Clipboard.SetText(displayedText);
         }
 
         private void buttonDistanceTimeCalculate_Click(object sender, EventArgs e)
@@ -258,7 +278,7 @@ namespace CalculationsAndConversionsCalculator
 
             double time;
             double convertedDistance;
-            string displayedText;
+            Result displayedText = new Result();
 
             switch (comboBoxDistanceTimeRate.SelectedIndex)
             {
@@ -266,66 +286,51 @@ namespace CalculationsAndConversionsCalculator
                     convertedDistance = ConvertDistance("miles", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
                     time = convertedDistance / speed;
                     displayedText = ConvertTime("hours", time);
-
-                    textBoxDistanceTimeOutput.Text =
-                        "At " + textBoxDistanceTimeSpeed.Text + comboBoxDistanceTimeRate.Text + ", it will take " +
-                            displayedText + " to travel " + textBoxDistanceTimeDistance.Text + " " + comboBoxDistanceTimeDistanceUnit.Text;
                     break;
                 case 1:
                     convertedDistance = ConvertDistance("miles", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
                     time = convertedDistance / speed;
                     displayedText = ConvertTime("seconds", time);
-                    textBoxDistanceTimeOutput.Text =
-                        "At " + textBoxDistanceTimeSpeed.Text + comboBoxDistanceTimeRate.Text + ", it will take " +
-                        displayedText + " to travel " + textBoxDistanceTimeDistance.Text + " " + comboBoxDistanceTimeDistanceUnit.Text;
                     break;
                 case 2:
                     convertedDistance = ConvertDistance("kilometer", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
                     time = convertedDistance / speed;
                     displayedText = ConvertTime("hours", time);
-                    textBoxDistanceTimeOutput.Text =
-                        "At " + textBoxDistanceTimeSpeed.Text + comboBoxDistanceTimeRate.Text + ", it will take " +
-                        displayedText + " to travel " + textBoxDistanceTimeDistance.Text + " " + comboBoxDistanceTimeDistanceUnit.Text;
                     break;
                 case 3:
                     convertedDistance = ConvertDistance("kilometer", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
                     time = convertedDistance / speed;
                     displayedText = ConvertTime("seconds", time);
-                    textBoxDistanceTimeOutput.Text =
-                        "At " + textBoxDistanceTimeSpeed.Text + comboBoxDistanceTimeRate.Text + ", it will take " +
-                        displayedText + " to travel " + textBoxDistanceTimeDistance.Text + " " + comboBoxDistanceTimeDistanceUnit.Text;
                     break;
                 case 4:
                     convertedDistance = ConvertDistance("knot", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
                     time = convertedDistance / speed;
                     displayedText = ConvertTime("hours", time);
-                    textBoxDistanceTimeOutput.Text =
-                        "At " + textBoxDistanceTimeSpeed.Text + comboBoxDistanceTimeRate.Text + ", it will take " +
-                        displayedText + " to travel " + textBoxDistanceTimeDistance.Text + " " + comboBoxDistanceTimeDistanceUnit.Text;
                     break;
                 case 5:
                     convertedDistance = ConvertDistance("feet", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
                     time = convertedDistance / speed;
                     displayedText = ConvertTime("seconds", time);
-                    textBoxDistanceTimeOutput.Text =
-                        "At " + textBoxDistanceTimeSpeed.Text + comboBoxDistanceTimeRate.Text + ", it will take " +
-                        displayedText + " to travel " + textBoxDistanceTimeDistance.Text + " " + comboBoxDistanceTimeDistanceUnit.Text;
                     break;
                 case 6:
                     convertedDistance = ConvertDistance("meters", comboBoxDistanceTimeDistanceUnit.SelectedIndex, distance);
                     time = convertedDistance / speed;
                     displayedText = ConvertTime("seconds", time);
-                    textBoxDistanceTimeOutput.Text =
-                        "At " + textBoxDistanceTimeSpeed.Text + comboBoxDistanceTimeRate.Text + ", it will take " +
-                        displayedText + " to travel " + textBoxDistanceTimeDistance.Text + " " + comboBoxDistanceTimeDistanceUnit.Text;
                     break;
             }
 
+            textBoxDistanceResultYears.Text = displayedText.Years != 0 ? displayedText.Years.ToString("N0") : "";
+            textBoxDistanceResultWeeks.Text = displayedText.Weeks != 0 ? displayedText.Weeks.ToString() : "";
+            textBoxDistanceResultDays.Text = displayedText.Days != 0 ? displayedText.Days.ToString() : "";
+            textBoxDistanceResultHours.Text = displayedText.Hours != 0 ? displayedText.Hours.ToString() : "";
+            textBoxDistanceResultMinutes.Text = displayedText.Minutes != 0 ? displayedText.Minutes.ToString() : "";
+            textBoxDistanceResultSeconds.Text = displayedText.Seconds != 0 ? displayedText.Seconds.ToString() : "";
+            textBoxDistanceResultMilliseconds.Text = displayedText.Milliseconds != 0 ? displayedText.Milliseconds.ToString() : "";
+
         }
 
-        private string ConvertTime(string timeUnits, double time)
+        private Result ConvertTime(string timeUnits, double time)
         {
-            string displayedText;
             double years = 0;
             double weeks = 0;
             double days = 0;
@@ -344,7 +349,7 @@ namespace CalculationsAndConversionsCalculator
                 if (hours >= 24)
                 {
                     days = Math.Truncate(time / 24);
-                    hours = ((time / 24) - days) * 24;
+                    hours = Math.Truncate((time / 24 - days) * 24);
 
                     if (days >= 7)
                     {
@@ -362,16 +367,6 @@ namespace CalculationsAndConversionsCalculator
                     }
 
                 }
-                displayedText = years > 0 ? years == 1 ? years + " year, " : years.ToString("N0") + " years, " : "";
-
-                displayedText = weeks > 0 ? weeks == 1 ? displayedText + weeks + " week, " : displayedText + weeks + " weeks, " : displayedText;
-                displayedText = days > 0 ? days == 1 ? displayedText + days + " day, " : displayedText + days + " days, " : displayedText;
-                displayedText = hours > 0 ? hours == 1 ? displayedText + hours + " hour, " : displayedText + hours + " hours, " : displayedText;
-                displayedText = minutes > 0 ? minutes == 1 ? displayedText + minutes + " minute, " : displayedText + minutes + " minutes, " : displayedText;
-                displayedText = seconds > 0 ? seconds == 1 ? displayedText + seconds + " second, " : displayedText + seconds + " seconds, " : displayedText;
-                displayedText = milliseconds > 0 ? displayedText + milliseconds + " ms" : displayedText;
-
-                return displayedText;
             }
             else
             {
@@ -423,16 +418,20 @@ namespace CalculationsAndConversionsCalculator
                     }
                 }
 
-                displayedText = years > 0 ? years == 1 ? years + " year, " : years.ToString("N0") + " years, " : "";
-                displayedText = weeks > 0 ? weeks == 1 ? displayedText + weeks + " week, " : displayedText + weeks + " weeks, " : displayedText;
-                displayedText = days > 0 ? days == 1 ? displayedText + days + " day, " : displayedText + days + " days, " : displayedText;
-                displayedText = hours > 0 ? hours == 1 ? displayedText + hours + " hour, " : displayedText + hours + " hours, " : displayedText;
-                displayedText = minutes > 0 ? minutes == 1 ? displayedText + minutes + " minute, " : displayedText + minutes + " minutes, " : displayedText;
-                displayedText = seconds > 0 ? seconds == 1 ? displayedText + seconds + " second, " : displayedText + seconds + " seconds, " : displayedText;
-                displayedText = milliseconds > 0 ? displayedText + milliseconds + " ms" : displayedText;
-
-                return displayedText;
             }
+
+            var result = new Result
+            {
+                Years = years,
+                Weeks = weeks,
+                Days = days,
+                Hours = hours,
+                Minutes = minutes,
+                Seconds = seconds,
+                Milliseconds = milliseconds
+            };
+
+            return result;
 
         }
 
@@ -643,5 +642,16 @@ namespace CalculationsAndConversionsCalculator
 
             return convertedDistance;
         }
+    }
+
+    public class Result
+    {
+        public double Years { get; set; }
+        public double Weeks { get; set; }
+        public double Days { get; set; }
+        public double Hours { get; set; }
+        public double Minutes { get; set; }
+        public double Seconds { get; set; }
+        public double Milliseconds { get; set; }
     }
 }

@@ -63,7 +63,6 @@
             this.comboBoxDistanceTimeDistanceUnit = new System.Windows.Forms.ComboBox();
             this.labelDistanceTimeDistanceUnit = new System.Windows.Forms.Label();
             this.buttonDistanceTimeClipboard = new System.Windows.Forms.Button();
-            this.textBoxDistanceTimeOutput = new System.Windows.Forms.TextBox();
             this.buttonDistanceTimeCalculate = new System.Windows.Forms.Button();
             this.buttonDistanceTimeClear = new System.Windows.Forms.Button();
             this.textBoxDistanceTimeDistance = new System.Windows.Forms.TextBox();
@@ -72,10 +71,26 @@
             this.labelDistanceTimeSpeedRate = new System.Windows.Forms.Label();
             this.textBoxDistanceTimeSpeed = new System.Windows.Forms.TextBox();
             this.labelDistanceTimeSpeed = new System.Windows.Forms.Label();
+            this.groupBoxDistanceResult = new System.Windows.Forms.GroupBox();
+            this.textBoxDistanceResultYears = new System.Windows.Forms.TextBox();
+            this.textBoxDistanceResultWeeks = new System.Windows.Forms.TextBox();
+            this.textBoxDistanceResultDays = new System.Windows.Forms.TextBox();
+            this.textBoxDistanceResultMinutes = new System.Windows.Forms.TextBox();
+            this.textBoxDistanceResultHours = new System.Windows.Forms.TextBox();
+            this.textBoxDistanceResultMilliseconds = new System.Windows.Forms.TextBox();
+            this.textBoxDistanceResultSeconds = new System.Windows.Forms.TextBox();
+            this.labelDistanceResultYears = new System.Windows.Forms.Label();
+            this.labelDistanceResultDays = new System.Windows.Forms.Label();
+            this.labelDistanceResultWeeks = new System.Windows.Forms.Label();
+            this.labelDistanceResultHours = new System.Windows.Forms.Label();
+            this.labelDistanceResultMinutes = new System.Windows.Forms.Label();
+            this.labelDistanceResultSeconds = new System.Windows.Forms.Label();
+            this.labelDistanceResultMilliseconds = new System.Windows.Forms.Label();
             this.groupBoxLeapYear.SuspendLayout();
             this.groupBoxDiscount.SuspendLayout();
             this.groupBoxTipCalculator.SuspendLayout();
             this.groupBoxDistanceTime.SuspendLayout();
+            this.groupBoxDistanceResult.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonCircuitryExit
@@ -449,10 +464,10 @@
             // 
             // groupBoxDistanceTime
             // 
+            this.groupBoxDistanceTime.Controls.Add(this.groupBoxDistanceResult);
             this.groupBoxDistanceTime.Controls.Add(this.comboBoxDistanceTimeDistanceUnit);
             this.groupBoxDistanceTime.Controls.Add(this.labelDistanceTimeDistanceUnit);
             this.groupBoxDistanceTime.Controls.Add(this.buttonDistanceTimeClipboard);
-            this.groupBoxDistanceTime.Controls.Add(this.textBoxDistanceTimeOutput);
             this.groupBoxDistanceTime.Controls.Add(this.buttonDistanceTimeCalculate);
             this.groupBoxDistanceTime.Controls.Add(this.buttonDistanceTimeClear);
             this.groupBoxDistanceTime.Controls.Add(this.textBoxDistanceTimeDistance);
@@ -464,7 +479,7 @@
             this.groupBoxDistanceTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxDistanceTime.Location = new System.Drawing.Point(232, 194);
             this.groupBoxDistanceTime.Name = "groupBoxDistanceTime";
-            this.groupBoxDistanceTime.Size = new System.Drawing.Size(388, 131);
+            this.groupBoxDistanceTime.Size = new System.Drawing.Size(388, 215);
             this.groupBoxDistanceTime.TabIndex = 16;
             this.groupBoxDistanceTime.TabStop = false;
             this.groupBoxDistanceTime.Text = "Distance / Time Calculator";
@@ -503,7 +518,7 @@
             // buttonDistanceTimeClipboard
             // 
             this.buttonDistanceTimeClipboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDistanceTimeClipboard.Location = new System.Drawing.Point(273, 95);
+            this.buttonDistanceTimeClipboard.Location = new System.Drawing.Point(158, 139);
             this.buttonDistanceTimeClipboard.Name = "buttonDistanceTimeClipboard";
             this.buttonDistanceTimeClipboard.Size = new System.Drawing.Size(28, 23);
             this.buttonDistanceTimeClipboard.TabIndex = 83;
@@ -511,24 +526,13 @@
             this.buttonDistanceTimeClipboard.UseVisualStyleBackColor = true;
             this.buttonDistanceTimeClipboard.Click += new System.EventHandler(this.buttonDistanceTimeClipboard_Click);
             // 
-            // textBoxDistanceTimeOutput
-            // 
-            this.textBoxDistanceTimeOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxDistanceTimeOutput.Location = new System.Drawing.Point(192, 19);
-            this.textBoxDistanceTimeOutput.Multiline = true;
-            this.textBoxDistanceTimeOutput.Name = "textBoxDistanceTimeOutput";
-            this.textBoxDistanceTimeOutput.ReadOnly = true;
-            this.textBoxDistanceTimeOutput.Size = new System.Drawing.Size(189, 70);
-            this.textBoxDistanceTimeOutput.TabIndex = 24;
-            this.textBoxDistanceTimeOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // buttonDistanceTimeCalculate
             // 
             this.buttonDistanceTimeCalculate.BackColor = System.Drawing.Color.Lime;
             this.buttonDistanceTimeCalculate.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.buttonDistanceTimeCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDistanceTimeCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDistanceTimeCalculate.Location = new System.Drawing.Point(192, 95);
+            this.buttonDistanceTimeCalculate.Location = new System.Drawing.Point(9, 182);
             this.buttonDistanceTimeCalculate.Name = "buttonDistanceTimeCalculate";
             this.buttonDistanceTimeCalculate.Size = new System.Drawing.Size(75, 23);
             this.buttonDistanceTimeCalculate.TabIndex = 23;
@@ -543,7 +547,7 @@
             this.buttonDistanceTimeClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.buttonDistanceTimeClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDistanceTimeClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDistanceTimeClear.Location = new System.Drawing.Point(307, 96);
+            this.buttonDistanceTimeClear.Location = new System.Drawing.Point(111, 182);
             this.buttonDistanceTimeClear.Name = "buttonDistanceTimeClear";
             this.buttonDistanceTimeClear.Size = new System.Drawing.Size(75, 23);
             this.buttonDistanceTimeClear.TabIndex = 22;
@@ -618,6 +622,156 @@
             this.labelDistanceTimeSpeed.TabIndex = 0;
             this.labelDistanceTimeSpeed.Text = "Enter Your Speed";
             // 
+            // groupBoxDistanceResult
+            // 
+            this.groupBoxDistanceResult.Controls.Add(this.labelDistanceResultMilliseconds);
+            this.groupBoxDistanceResult.Controls.Add(this.labelDistanceResultSeconds);
+            this.groupBoxDistanceResult.Controls.Add(this.labelDistanceResultMinutes);
+            this.groupBoxDistanceResult.Controls.Add(this.labelDistanceResultHours);
+            this.groupBoxDistanceResult.Controls.Add(this.labelDistanceResultWeeks);
+            this.groupBoxDistanceResult.Controls.Add(this.labelDistanceResultDays);
+            this.groupBoxDistanceResult.Controls.Add(this.labelDistanceResultYears);
+            this.groupBoxDistanceResult.Controls.Add(this.textBoxDistanceResultMilliseconds);
+            this.groupBoxDistanceResult.Controls.Add(this.textBoxDistanceResultSeconds);
+            this.groupBoxDistanceResult.Controls.Add(this.textBoxDistanceResultHours);
+            this.groupBoxDistanceResult.Controls.Add(this.textBoxDistanceResultMinutes);
+            this.groupBoxDistanceResult.Controls.Add(this.textBoxDistanceResultDays);
+            this.groupBoxDistanceResult.Controls.Add(this.textBoxDistanceResultWeeks);
+            this.groupBoxDistanceResult.Controls.Add(this.textBoxDistanceResultYears);
+            this.groupBoxDistanceResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxDistanceResult.Location = new System.Drawing.Point(192, 15);
+            this.groupBoxDistanceResult.Name = "groupBoxDistanceResult";
+            this.groupBoxDistanceResult.Size = new System.Drawing.Size(187, 194);
+            this.groupBoxDistanceResult.TabIndex = 86;
+            this.groupBoxDistanceResult.TabStop = false;
+            this.groupBoxDistanceResult.Text = "Result";
+            // 
+            // textBoxDistanceResultYears
+            // 
+            this.textBoxDistanceResultYears.Location = new System.Drawing.Point(81, 13);
+            this.textBoxDistanceResultYears.Name = "textBoxDistanceResultYears";
+            this.textBoxDistanceResultYears.ReadOnly = true;
+            this.textBoxDistanceResultYears.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDistanceResultYears.TabIndex = 0;
+            this.textBoxDistanceResultYears.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxDistanceResultWeeks
+            // 
+            this.textBoxDistanceResultWeeks.Location = new System.Drawing.Point(81, 39);
+            this.textBoxDistanceResultWeeks.Name = "textBoxDistanceResultWeeks";
+            this.textBoxDistanceResultWeeks.ReadOnly = true;
+            this.textBoxDistanceResultWeeks.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDistanceResultWeeks.TabIndex = 1;
+            this.textBoxDistanceResultWeeks.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxDistanceResultDays
+            // 
+            this.textBoxDistanceResultDays.Location = new System.Drawing.Point(81, 65);
+            this.textBoxDistanceResultDays.Name = "textBoxDistanceResultDays";
+            this.textBoxDistanceResultDays.ReadOnly = true;
+            this.textBoxDistanceResultDays.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDistanceResultDays.TabIndex = 2;
+            this.textBoxDistanceResultDays.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxDistanceResultMinutes
+            // 
+            this.textBoxDistanceResultMinutes.Location = new System.Drawing.Point(81, 116);
+            this.textBoxDistanceResultMinutes.Name = "textBoxDistanceResultMinutes";
+            this.textBoxDistanceResultMinutes.ReadOnly = true;
+            this.textBoxDistanceResultMinutes.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDistanceResultMinutes.TabIndex = 3;
+            this.textBoxDistanceResultMinutes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxDistanceResultHours
+            // 
+            this.textBoxDistanceResultHours.Location = new System.Drawing.Point(81, 91);
+            this.textBoxDistanceResultHours.Name = "textBoxDistanceResultHours";
+            this.textBoxDistanceResultHours.ReadOnly = true;
+            this.textBoxDistanceResultHours.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDistanceResultHours.TabIndex = 4;
+            this.textBoxDistanceResultHours.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxDistanceResultMilliseconds
+            // 
+            this.textBoxDistanceResultMilliseconds.Location = new System.Drawing.Point(81, 168);
+            this.textBoxDistanceResultMilliseconds.Name = "textBoxDistanceResultMilliseconds";
+            this.textBoxDistanceResultMilliseconds.ReadOnly = true;
+            this.textBoxDistanceResultMilliseconds.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDistanceResultMilliseconds.TabIndex = 5;
+            this.textBoxDistanceResultMilliseconds.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxDistanceResultSeconds
+            // 
+            this.textBoxDistanceResultSeconds.Location = new System.Drawing.Point(81, 142);
+            this.textBoxDistanceResultSeconds.Name = "textBoxDistanceResultSeconds";
+            this.textBoxDistanceResultSeconds.ReadOnly = true;
+            this.textBoxDistanceResultSeconds.Size = new System.Drawing.Size(100, 20);
+            this.textBoxDistanceResultSeconds.TabIndex = 6;
+            this.textBoxDistanceResultSeconds.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // labelDistanceResultYears
+            // 
+            this.labelDistanceResultYears.AutoSize = true;
+            this.labelDistanceResultYears.Location = new System.Drawing.Point(41, 16);
+            this.labelDistanceResultYears.Name = "labelDistanceResultYears";
+            this.labelDistanceResultYears.Size = new System.Drawing.Size(34, 13);
+            this.labelDistanceResultYears.TabIndex = 7;
+            this.labelDistanceResultYears.Text = "Years";
+            // 
+            // labelDistanceResultDays
+            // 
+            this.labelDistanceResultDays.AutoSize = true;
+            this.labelDistanceResultDays.Location = new System.Drawing.Point(44, 68);
+            this.labelDistanceResultDays.Name = "labelDistanceResultDays";
+            this.labelDistanceResultDays.Size = new System.Drawing.Size(31, 13);
+            this.labelDistanceResultDays.TabIndex = 8;
+            this.labelDistanceResultDays.Text = "Days";
+            // 
+            // labelDistanceResultWeeks
+            // 
+            this.labelDistanceResultWeeks.AutoSize = true;
+            this.labelDistanceResultWeeks.Location = new System.Drawing.Point(34, 42);
+            this.labelDistanceResultWeeks.Name = "labelDistanceResultWeeks";
+            this.labelDistanceResultWeeks.Size = new System.Drawing.Size(41, 13);
+            this.labelDistanceResultWeeks.TabIndex = 9;
+            this.labelDistanceResultWeeks.Text = "Weeks";
+            // 
+            // labelDistanceResultHours
+            // 
+            this.labelDistanceResultHours.AutoSize = true;
+            this.labelDistanceResultHours.Location = new System.Drawing.Point(40, 94);
+            this.labelDistanceResultHours.Name = "labelDistanceResultHours";
+            this.labelDistanceResultHours.Size = new System.Drawing.Size(35, 13);
+            this.labelDistanceResultHours.TabIndex = 10;
+            this.labelDistanceResultHours.Text = "Hours";
+            // 
+            // labelDistanceResultMinutes
+            // 
+            this.labelDistanceResultMinutes.AutoSize = true;
+            this.labelDistanceResultMinutes.Location = new System.Drawing.Point(31, 119);
+            this.labelDistanceResultMinutes.Name = "labelDistanceResultMinutes";
+            this.labelDistanceResultMinutes.Size = new System.Drawing.Size(44, 13);
+            this.labelDistanceResultMinutes.TabIndex = 11;
+            this.labelDistanceResultMinutes.Text = "Minutes";
+            // 
+            // labelDistanceResultSeconds
+            // 
+            this.labelDistanceResultSeconds.AutoSize = true;
+            this.labelDistanceResultSeconds.Location = new System.Drawing.Point(26, 145);
+            this.labelDistanceResultSeconds.Name = "labelDistanceResultSeconds";
+            this.labelDistanceResultSeconds.Size = new System.Drawing.Size(49, 13);
+            this.labelDistanceResultSeconds.TabIndex = 12;
+            this.labelDistanceResultSeconds.Text = "Seconds";
+            // 
+            // labelDistanceResultMilliseconds
+            // 
+            this.labelDistanceResultMilliseconds.AutoSize = true;
+            this.labelDistanceResultMilliseconds.Location = new System.Drawing.Point(11, 171);
+            this.labelDistanceResultMilliseconds.Name = "labelDistanceResultMilliseconds";
+            this.labelDistanceResultMilliseconds.Size = new System.Drawing.Size(64, 13);
+            this.labelDistanceResultMilliseconds.TabIndex = 13;
+            this.labelDistanceResultMilliseconds.Text = "Milliseconds";
+            // 
             // formMiscellaneous
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -640,6 +794,8 @@
             this.groupBoxTipCalculator.PerformLayout();
             this.groupBoxDistanceTime.ResumeLayout(false);
             this.groupBoxDistanceTime.PerformLayout();
+            this.groupBoxDistanceResult.ResumeLayout(false);
+            this.groupBoxDistanceResult.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -686,9 +842,23 @@
         private System.Windows.Forms.Label labelDistanceTimeSpeedRate;
         private System.Windows.Forms.TextBox textBoxDistanceTimeSpeed;
         private System.Windows.Forms.Label labelDistanceTimeSpeed;
-        private System.Windows.Forms.TextBox textBoxDistanceTimeOutput;
         private System.Windows.Forms.Button buttonDistanceTimeClipboard;
         private System.Windows.Forms.ComboBox comboBoxDistanceTimeDistanceUnit;
         private System.Windows.Forms.Label labelDistanceTimeDistanceUnit;
+        private System.Windows.Forms.GroupBox groupBoxDistanceResult;
+        private System.Windows.Forms.Label labelDistanceResultMilliseconds;
+        private System.Windows.Forms.Label labelDistanceResultSeconds;
+        private System.Windows.Forms.Label labelDistanceResultMinutes;
+        private System.Windows.Forms.Label labelDistanceResultHours;
+        private System.Windows.Forms.Label labelDistanceResultWeeks;
+        private System.Windows.Forms.Label labelDistanceResultDays;
+        private System.Windows.Forms.Label labelDistanceResultYears;
+        private System.Windows.Forms.TextBox textBoxDistanceResultMilliseconds;
+        private System.Windows.Forms.TextBox textBoxDistanceResultSeconds;
+        private System.Windows.Forms.TextBox textBoxDistanceResultHours;
+        private System.Windows.Forms.TextBox textBoxDistanceResultMinutes;
+        private System.Windows.Forms.TextBox textBoxDistanceResultDays;
+        private System.Windows.Forms.TextBox textBoxDistanceResultWeeks;
+        private System.Windows.Forms.TextBox textBoxDistanceResultYears;
     }
 }
